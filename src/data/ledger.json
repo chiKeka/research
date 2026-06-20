@@ -26,7 +26,14 @@
       "prereg_audit": null,
       "corrections": [],
       "related_to": [],
-      "evidence": [],
+      "evidence": [
+        {
+          "date": "2026-06-15",
+          "direction": "supports",
+          "note": "NBER w34836 Yotzov, Barrero et al. (Firm Data on AI, 2026): 6000-executive survey across US, UK, Germany, Australia. 69 percent of firms actively use AI. Nine-in-ten executives report no impact of AI on employment or productivity over the last 3 years. Adoption is real; conversion to measured output is not. Direct firm-level confirmation of the AI Solow paradox at end-Q2 2026, supporting the directional claim that aggregate productivity stats will not show clear AI-driven gains through end-2026.",
+          "source_url": "https://www.nber.org/papers/w34836"
+        }
+      ],
       "resolution": null
     },
     {
@@ -99,6 +106,18 @@
           "direction": "supports",
           "note": "EU Commission Code of Practice on marking AI-generated content published 2026-06-10 and Scientific Panel/Advisory Forum appointed 2026-06-01. Omnibus simplification package (May 7 deal) reportedly progressing toward formal adoption before 2026-08-02 per Council/Commission press materials. The interpretive substrate is being installed in parallel with the perimeter shrinking - net direction on enforceable obligations for frontier deployers is still reduction by end-2026, but the per-obligation compliance cost rises. Signal: 2026-06-12-eu-ai-office-enforcement-substrate-bifurcation.md",
           "source_url": "https://digital-strategy.ec.europa.eu/en/policies/ai-office"
+        },
+        {
+          "date": "2026-06-16",
+          "direction": "supports",
+          "note": "EU AI Act omnibus deal confirms Annex III HRAIS obligations deferred from 2026-08-02 to 2027-12-02 (16-month deferral) and Annex I HRAIS from 2027-08-02 to 2028-08-02 (12-month deferral); SME-style simplifications extended to 750-employee/EUR150M firms. The omnibus is delivering the predicted reduction in enforceable obligations for frontier deployers.",
+          "source_url": "https://www.whitecase.com/insight-alert/eu-agrees-digital-omnibus-deal-simplify-ai-rules"
+        },
+        {
+          "date": "2026-06-19",
+          "direction": "supports",
+          "note": "Council, Parliament, Commission reached provisional political agreement on Digital AI Omnibus 7 May 2026; Council Member State representatives confirmed deal 13 May 2026. The omnibus deferred high-risk obligations to 2 Dec 2027 (Annex III) and 2 Aug 2028 (Annex I products) - reduces near-term enforceable compliance burden on frontier deployers. Formal vote expected June-July 2026, entry into force shortly after publication in OJ.",
+          "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/"
         }
       ],
       "resolution": null
@@ -248,6 +267,30 @@
           "direction": "supports",
           "note": "Council/Parliament/Commission reached provisional agreement on EU Digital Omnibus on AI 2026-05-07. Multiple legal trackers report formal Council adoption expected June 2026 with publication anticipated July - putting the path to formal adoption by 2026-07-31 squarely on track but not yet completed.",
           "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/"
+        },
+        {
+          "date": "2026-06-15",
+          "direction": "supports",
+          "note": "IMCO and LIBE committees adopted the provisional Digital Omnibus AI agreement on 2026-06-02 (vote: 93 in favor, 4 against, 15 abstentions). Multiple trackers (Latham, Inside Privacy, NicFab, MediaLaws, Matheson) record plenary vote scheduled for June 2026 session with formal Council adoption tracked for June-July to avoid the 2026-08-02 Annex III HRAIS lapse. The committee adoption is the procedural gate before plenary; the claim's strict update test (formal Council adoption recorded in EU register) is now one procedural step closer.",
+          "source_url": "https://agenceurope.eu/en/bulletin/article/13879/32/provisional-agreement-on-digital-omnibus-gets-green-light-from-european-parliaments-competent-committees"
+        },
+        {
+          "date": "2026-06-16",
+          "direction": "against",
+          "note": "Trilogue STALLED at the May 13 follow-up after April 28 failure; Cypriot Council Presidency (term ends June 30) racing to close before handing to Lithuania. Adoption-by-July-31 is no longer the default path and now depends on a clean Cypriot landing or a fast Lithuanian pickup. Lowers probability.",
+          "source_url": "https://www.modulos.ai/blog/ai-act-omnibus-trilogue-failed/"
+        },
+        {
+          "date": "2026-06-18",
+          "direction": "supports",
+          "note": "EU Council presidency and European Parliament reached provisional agreement on AI Act Omnibus VII simplification package on 2026-05-07. Formal Council adoption expected in coming weeks (June-July), with publication anticipated before 2 August 2026. Bears toward formal adoption by 2026-07-31 deadline.",
+          "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/"
+        },
+        {
+          "date": "2026-06-19",
+          "direction": "supports",
+          "note": "Provisional Digital AI Omnibus deal reached 7 May 2026 (trilogue), Member State representatives confirmed 13 May 2026 in Council. Inside Privacy and Inside Global Tech reporting formal Parliament and Council adoption expected June-July 2026, ahead of 2 August 2026 trigger date for high-risk rules. Track milestone: formal OJ publication.",
+          "source_url": "https://www.insideglobaltech.com/2026/05/28/eu-ai-act-update-timeline-relief-targeted-simplification-and-new-prohibitions/"
         }
       ],
       "resolution": null
@@ -283,7 +326,14 @@
           "date": "2026-06-11T17:08:37Z"
         }
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "date": "2026-06-14",
+          "direction": "supports",
+          "note": "Confirmed Big Five capex topology as of 2026-Q2: Microsoft 90B, Alphabet 80-190B (raised from 75-185B), Meta 15-135B, Amazon 00B FY2026 - 25B aggregate up 77% YoY. Alphabet has already raised guidance once intra-year (the relevant claim outcome). The Q2 earnings calls (Jul-Aug) are the actual resolution event - this is base-rate evidence for the next raise.",
+          "source_url": "https://www.tomshardware.com/tech-industry/big-tech/big-techs-ai-spending-plans-reach-725-billion"
+        }
+      ],
       "resolution": null
     },
     {
@@ -479,7 +529,20 @@
           "date": "2026-06-11T17:08:37Z"
         }
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "date": "2026-06-14",
+          "direction": "supports",
+          "note": "EU Commission published the final voluntary Code of Practice on marking and labelling AI-generated content on 2026-06-10, operationalising Article 50 transparency obligations effective 2026-08-02; the Commission has committed to follow with formal Article 50 implementation guidelines. Confirms the AI Office's substrate-building tempo even as the omnibus defers HRAIS deadlines - same week opposite vector. Not yet the omnibus-deferral-explicit guidance the claim's update test requires.",
+          "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1328"
+        },
+        {
+          "date": "2026-06-16",
+          "direction": "supports",
+          "note": "European Commission published Code of Practice on marking and labelling AI-generated content on 2026-06-10 — Commission-level interpretive guidance ahead of HRAIS obligations. Not the AI Office itself, but the same interpretive direction; the AI Office sits inside the Commission's DG CNECT and typically pivots its FAQ updates onto Commission codes within weeks.",
+          "source_url": "https://www.lw.com/en/insights/ai-act-update-eu-resolves-to-change-rules-and-extend-deadlines"
+        }
+      ],
       "resolution": null
     },
     {
@@ -556,6 +619,12 @@
           "direction": "supports",
           "note": "Prediction markets (Polymarket, Kalshi) price 97-98% probability of Fed holding rates at the June 16-17 meeting prior to the July 28-29 meeting; markets price no rate moves rest of 2026; FOMC has held three consecutive meetings (April 29 was 8-4 hold with most dissents since 1992); Kevin Warsh installed as Chair 2026-05-15 inheriting divided committee, recent May CPI 4.2% YoY reduces cut odds. All directionally supportive of HOLD-or-CUT (the claim direction) at July 28-29; no scenario raises rates is currently priced.",
           "source_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "date": "2026-06-18",
+          "direction": "against",
+          "note": "FOMC June 2026 dot plot raised median 2026 year-end fed funds rate to 3.8 pct from 3.4 pct in March; 9 of 18 participants now project at least one rate hike in 2026. Warsh's first press conference framed hawkish. Raises probability of a July 2026 hike, weakly against the 88 pct NOT-raise prior.",
+          "source_url": "https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20260617.htm"
         }
       ],
       "resolution": null
@@ -609,13 +678,17 @@
       "frameworks": [],
       "update_test": "Federal Reserve press release on or about 2026-06-17 ~14:00 ET reporting the FOMC decision: confirmed if upper bound of target range == upper bound at 2026-04-29 (3.75%); disconfirmed otherwise.",
       "resolve_by": "2026-06-18",
-      "status": "open",
+      "status": "resolved",
       "validity": null,
       "prereg_audit": null,
       "corrections": [],
       "related_to": [],
       "evidence": [],
-      "resolution": null
+      "resolution": {
+        "date": "2026-06-17T12:09:11Z",
+        "outcome": "confirmed",
+        "note": "FOMC June 17 2026 statement holds target federal funds range at 3.50-3.75 percent unchanged from April 29 (upper bound 3.75% == prior 3.75%). Warsh's first meeting as Chair; decision announced 14:00 ET. Evidence: https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm (corroborated by Kiplinger/Reuters/Stocktitan live reports 2026-06-17)"
+      }
     },
     {
       "id": "claim-20260611-002",
@@ -659,7 +732,7 @@
       "frameworks": [],
       "update_test": "Bank of England Monetary Policy Summary published 2026-06-18 at 12:00 BST: confirmed if the Bank Rate decision reported equals 3.75 percent (the prior-meeting level); disconfirmed if the rate is set above or below 3.75 percent.",
       "resolve_by": "2026-06-19",
-      "status": "open",
+      "status": "resolved",
       "validity": null,
       "prereg_audit": {
         "date": "2026-06-12T12:12:14Z",
@@ -673,8 +746,19 @@
       },
       "corrections": [],
       "related_to": [],
-      "evidence": [],
-      "resolution": null
+      "evidence": [
+        {
+          "date": "2026-06-17",
+          "direction": "supports",
+          "note": "BoE MPC consensus pre-meeting (2026-06-17): widely expected to hold at 3.75% on June 18 despite rising inflation pressure; Bailey/Breeden public statements emphasize caution. Division within MPC (Pill/Greene/Mann signal hike-leaning) but consensus is hold. Not resolving until 2026-06-18 12:00 BST.",
+          "source_url": "https://www.bankofengland.co.uk/monetary-policy/the-interest-rate-bank-rate"
+        }
+      ],
+      "resolution": {
+        "date": "2026-06-18T12:07:48Z",
+        "outcome": "confirmed",
+        "note": "Bank of England MPC announcement 2026-06-18 at 12:00 BST: Bank Rate held at 3.75 percent (unchanged from prior meeting). Vote split 7-2 with 2 members dissenting in favor of a 25bp rise. Source: bankofengland.co.uk/monetary-policy/the-interest-rate-bank-rate"
+      }
     },
     {
       "id": "claim-20260612-002",
@@ -693,7 +777,7 @@
       "frameworks": [],
       "update_test": "FOMC Summary of Economic Projections PDF posted 2026-06-17 ~14:00 ET on federalreserve.gov: read the median 2026 year-end federal funds rate projection in the dot-plot table. Confirmed if the median 2026 year-end value is at or above 3.4 percent; disconfirmed if the median is below 3.4 percent.",
       "resolve_by": "2026-06-18",
-      "status": "open",
+      "status": "resolved",
       "validity": null,
       "prereg_audit": {
         "date": "2026-06-12T12:12:25Z",
@@ -714,8 +798,19 @@
           "date": "2026-06-12T12:12:49Z"
         }
       ],
-      "evidence": [],
-      "resolution": null
+      "evidence": [
+        {
+          "date": "2026-06-17",
+          "direction": "supports",
+          "note": "FOMC June 17 2026 SEP released ~14:00 ET; consensus pre-release reporting expected median 2026 year-end rate to rise from March's 3.4% given May CPI at 4.2% YoY and removal of the lone projected cut. Specific median number not yet captured in scans - log evidence and wait for Sunday Reckoning to verify exact figure against test.",
+          "source_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ],
+      "resolution": {
+        "date": "2026-06-18T12:07:42Z",
+        "outcome": "confirmed",
+        "note": "FOMC June 2026 Summary of Economic Projections released 2026-06-17 at 14:00 ET: median 2026 year-end federal funds rate printed 3.8 percent (up from 3.4 percent in March 2026 SEP). 9 of 18 participants projected at least one rate hike in 2026, 8 expected no change, 1 expected a cut. Threshold ≥ 3.4 percent met. Source: federalreserve.gov/monetarypolicy/fomcprojtabl20260617.htm"
+      }
     },
     {
       "id": "claim-20260612-003",
@@ -761,10 +856,838 @@
           "direction": "supports",
           "note": "AfCFTA Secretariat publicly named 2026-05-19 (Accra launch) and confirmed end-June Country Implementation Forum target for Kenya, Morocco, Nigeria. Pilot already running early phases: national forums, core-infrastructure integration, digital-currency/stablecoin regulatory testing. Trajectory supports the 2026-07-15 update test; forums not yet confirmed established as of 2026-06-13.",
           "source_url": "https://www.ghanamma.com/2026/05/29/nigeria-kenya-and-morocco-to-pilot-afcfta-digital-trade-infrastructure/"
+        },
+        {
+          "date": "2026-06-14",
+          "direction": "against",
+          "note": "Today is 2026-06-14, 16 days before the 2026-07-15 deadline; no public announcement of Country Implementation Forum establishment from Kenya, Morocco, or Nigeria has surfaced in scans. AfCFTA Secretariat 2026-05-19 Accra communique remains the most recent operational milestone.",
+          "source_url": "https://idtechwire.com/kenya-morocco-and-nigeria-selected-for-adapt-african-digital-trade-pilots/"
         }
       ],
       "resolution": null
     },
+    {
+      "id": "claim-20260613-001",
+      "date": "2026-06-13",
+      "registered_at": "2026-06-13T12:09:38Z",
+      "claim": "The Bank of England Monetary Policy Committee June 18 2026 vote will show at least 7 of 9 members voting to hold Bank Rate at 3.75 percent",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "Bank of England MPC June 18 2026 scheduled meeting (Bank of England calendar) and the published voting record convention - the next MPC summary publishes the vote split inside the minutes on the meeting date",
+      "withdrawal": null,
+      "confidence": 0.82,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.78,
+      "frameworks": [],
+      "update_test": "BoE Monetary Policy Summary or Minutes for the meeting ending 2026-06-18 (published at 12:00 noon GMT on 2026-06-18) shows at least 7 of 9 MPC members voting to maintain Bank Rate at 3.75 percent",
+      "resolve_by": "2026-06-25",
+      "status": "resolved",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-06-13T12:09:38Z",
+        "auditor": "twin",
+        "note": "Searched 'Bank of England MPC June 18 2026 vote split' on 2026-06-13; meeting has not occurred; previews (HomeOwners Alliance, MortgageOne) expect hold but vote split not disclosed in advance",
+        "queries": [
+          "Bank of England MPC June 18 2026 rate decision preview Bank Rate 3.75",
+          "BoE June 2026 vote split preview"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [
+        {
+          "id": "claim-20260612-001",
+          "relation": "probes",
+          "note": "Same BoE 2026-06-18 meeting; 613-001 sharpens 612-001 from binary hold/no-hold to vote-split granularity. Resolution evidence overlaps but reads different aspects.",
+          "date": "2026-06-13T12:10:03Z"
+        }
+      ],
+      "evidence": [
+        {
+          "date": "2026-06-17",
+          "direction": "supports",
+          "note": "BoE consensus pre-2026-06-18: Pill and Greene have publicly signaled a vote for an immediate rate rise; Catherine Mann signaled openness to rise if energy crisis worsens. If 2-3 dissent for hike materializes, vote splits 7-2 or 6-3, both consistent with the claim's >=7 of 9 hold threshold only at exactly 7-2.",
+          "source_url": "https://www.kaeltripton.com/latest/bank-of-england-interest-rate-june-2026/"
+        }
+      ],
+      "resolution": {
+        "date": "2026-06-18T12:07:50Z",
+        "outcome": "confirmed",
+        "note": "BoE MPC June 18 2026 vote: 7-2 to hold Bank Rate at 3.75 percent. 7 of 9 members voted hold, 2 dissented (Pill, Greene per pre-meeting signaling) in favor of a 25bp rise. Threshold ≥ 7 of 9 voting hold met. Source: bankofengland.co.uk/monetary-policy/the-interest-rate-bank-rate"
+      }
+    },
+    {
+      "id": "claim-20260613-002",
+      "date": "2026-06-13",
+      "registered_at": "2026-06-13T12:09:46Z",
+      "claim": "Nigeria will publish its National AI Strategy as a formal document on an official Nigerian government domain by 2026-08-12",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "Nigeria National AI Strategy drafting process led by NITDA and the Federal Ministry of Communications Innovation and Digital Economy; multiple 2026 reports describe it as in draft and expected late-2025-to-early-2026 with a slipped target",
+      "withdrawal": null,
+      "confidence": 0.38,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.42,
+      "frameworks": [],
+      "update_test": "By 2026-08-12, a document titled 'Nigeria National AI Strategy' (or close variant) is publicly available on an official .gov.ng domain (NITDA, FMCIDE, or equivalent), dated 2026",
+      "resolve_by": "2026-08-12",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-06-13T12:09:46Z",
+        "auditor": "twin",
+        "note": "Searched 'Nigeria National AI Strategy publication 2026' on 2026-06-13; sources describe the strategy as still in draft and expected to be 'finalised between late 2025 and early 2026' with no evidence of formal publication as of the audit date",
+        "queries": [
+          "Nigeria National AI Strategy publication 2026",
+          "NITDA National AI Strategy site:gov.ng 2026"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [
+        {
+          "date": "2026-06-18",
+          "direction": "supports",
+          "note": "Nigeria's National AI Strategy already exists as a formal document on official .gov.ng domain (NCAIR/NITDA): 2024-08-01 version at ncair.nitda.gov.ng/wp-content/uploads/2024/08/National-AI-Strategy_01082024-copy.pdf and a 2025-09-19 revised version at ncair.nitda.gov.ng/wp-content/uploads/2025/09/National-Artificial-Intelligence-Strategy-19092025.pdf. Public launch by Minister Bosun Tijani on 2026-04-20 at NAICI unveiling. INTERPRETIVE: claim text reads 'will publish' which suggests prospective formal release, but the artifact already meets the surface test of the update_test. Logging evidence; Sunday Reckoning to re-verify and possibly early-resolve.",
+          "source_url": "https://ncair.nitda.gov.ng/wp-content/uploads/2025/09/National-Artificial-Intelligence-Strategy-19092025.pdf"
+        }
+      ],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260613-003",
+      "date": "2026-06-13",
+      "registered_at": "2026-06-13T12:09:56Z",
+      "claim": "By 2026-08-12, at least one of the three AfCFTA ADAPT pilot countries (Kenya, Morocco, Nigeria) will publicly publish a formal regulatory framework or pilot specification governing digital-currency or stablecoin settlements explicitly under the ADAPT initiative",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "in",
+      "grounding": "AfCFTA ADAPT pilot launched 2026-05-19 Accra; the publicly-announced implementation roadmap explicitly names testing of 'regulatory frameworks including models for digital currencies and stablecoin settlements' as an early-phase milestone",
+      "withdrawal": null,
+      "confidence": 0.28,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.3,
+      "frameworks": [
+        "Infrastructure Stack Model"
+      ],
+      "update_test": "By 2026-08-12, a Kenyan, Moroccan, or Nigerian central bank, finance ministry, or AfCFTA Secretariat publishes a document on an official government or AfCFTA domain that names 'ADAPT' and specifies regulatory rules or pilot procedures for digital-currency or stablecoin settlements",
+      "resolve_by": "2026-08-12",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-06-13T12:09:56Z",
+        "auditor": "twin",
+        "note": "Searched 'AfCFTA ADAPT pilot Kenya Morocco Nigeria digital trade framework June 2026' on 2026-06-13; rollout is in the forum-establishment phase, no published regulatory framework on digital currencies or stablecoin settlements under ADAPT as of the audit date",
+        "queries": [
+          "AfCFTA ADAPT Kenya Morocco Nigeria stablecoin digital currency regulatory framework",
+          "AfCFTA ADAPT CBDC pilot 2026"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [
+        {
+          "id": "claim-20260612-003",
+          "relation": "probes",
+          "note": "Same ADAPT pilot; 612-003 reads the forum-establishment milestone, 613-003 reads the deeper regulatory-framework layer (digital currencies and stablecoin settlements) named in the official roadmap.",
+          "date": "2026-06-13T12:10:03Z"
+        }
+      ],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260614-001",
+      "date": "2026-06-14",
+      "registered_at": "2026-06-14T12:14:19Z",
+      "claim": "The Bank of Canada Governing Council will hold the policy rate at 2.25 percent (no change from its 2026-04-29 hold) at its 2026-07-15 rate decision.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "Bank of Canada has held at 2.25 percent at five consecutive meetings since October 2025 (most recent hold 2026-04-29); next scheduled rate decision is 2026-07-15.",
+      "withdrawal": null,
+      "confidence": 0.9,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.75,
+      "frameworks": [],
+      "update_test": "Bank of Canada press release dated 2026-07-15 announcing the policy rate decision. Confirmed if the announced overnight rate target remains 2.25 percent; disconfirmed on any change (cut or hike) of 25bp or more.",
+      "resolve_by": "2026-07-15",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-06-14T12:14:19Z",
+        "auditor": "twin",
+        "note": "Searched 2026-06-14 for 'Bank of Canada rate decision July 29 2026 preview' and 'Bank of Canada interest rate June 2026'; the next decision is 2026-07-15 and has not yet occurred. No leaked decision is in public record.",
+        "queries": [
+          "Bank of Canada rate decision July 29 2026 preview",
+          "Bank of Canada interest rate schedule 2026"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260614-002",
+      "date": "2026-06-14",
+      "registered_at": "2026-06-14T12:14:28Z",
+      "claim": "The Bank of Japan Policy Board will raise the short-term policy rate target by 25 basis points to 1.00 percent (from the current 0.75 percent) at its 2026-06-16/17 Monetary Policy Meeting.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "BoJ March 2026 statement left the short-term rate at 0.75 percent; Bloomberg 2026-06-04 reported the BoJ is mulling a June rate hike to 1 percent with another possible later in 2026.",
+      "withdrawal": null,
+      "confidence": 0.55,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.3,
+      "frameworks": [],
+      "update_test": "Bank of Japan policy statement issued 2026-06-17 by approximately 12:00 JST. Confirmed if the announced short-term policy interest rate target is 1.00 percent (or its equivalent 0.95-1.00 percent corridor language); disconfirmed if rate is held at 0.75 percent or any other figure.",
+      "resolve_by": "2026-06-17",
+      "status": "resolved",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-06-14T12:14:28Z",
+        "auditor": "twin",
+        "note": "Searched 2026-06-14 for 'Bank of Japan rate decision July 30 31 2026 schedule' and 'Bank of Japan current policy rate June 2026'. The 2026-06-16/17 BoJ meeting has not concluded; no decision is public yet.",
+        "queries": [
+          "Bank of Japan Monetary Policy Meeting July 2026 dates",
+          "Bank of Japan current policy rate June 2026 0.50 short-term"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": {
+        "date": "2026-06-16T12:12:08Z",
+        "outcome": "confirmed",
+        "note": "BoJ raised policy rate by 25bp to 1.00%, 7-1 vote (Asada dissented, reflationist stance), announced June 16 2026. Decision and vote split confirmed by Reuters/Investing.com and FXStreet coverage of the June 15-16 meeting. Source: https://www.investing.com/news/economy-news/bank-of-japan-set-to-raise-rates-to-31year-high-vow-further-increases-4743332"
+      }
+    },
+    {
+      "id": "claim-20260615-001",
+      "date": "2026-06-15",
+      "registered_at": "2026-06-15T12:15:12Z",
+      "claim": "US Bureau of Labor Statistics Consumer Price Index report for June 2026 (scheduled release 2026-07-14 at 08:30 ET) shows all-items CPI 12-month percentage change at or above 4.0 percent",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "BLS CPI release for June 2026 is a scheduled, public macroeconomic data release on a fixed calendar (2026-07-14, 08:30 ET); recent May 2026 print available on bls.gov",
+      "withdrawal": null,
+      "confidence": 0.65,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.55,
+      "frameworks": [
+        "Innovation Energy Cycle"
+      ],
+      "update_test": "BLS CPI news release for 2026 M06 (June 2026 data) published on bls.gov on or about 2026-07-14: confirmed if the headline all-items 12-month percent change is 4.0 or higher; disconfirmed if it is below 4.0",
+      "resolve_by": "2026-07-20",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-06-15T12:15:12Z",
+        "auditor": "twin",
+        "note": "Searched 2026-06-15 for 'US BLS CPI June 2026 release date'; release scheduled 2026-07-14 08:30 ET per BLS release schedule and usinflationcalculator/cpiinflationcalculator trackers; June print not yet available. Searched 'CPI June 2026 released': latest available print is May 2026 (M05) at 4.2 percent on BLS news release. The June print has not been released; outcome is open.",
+        "queries": [
+          "US BLS CPI June 2026 release date July 11 schedule",
+          "CPI June 2026 released"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260615-002",
+      "date": "2026-06-15",
+      "registered_at": "2026-06-15T12:15:21Z",
+      "claim": "US Bureau of Economic Analysis advance estimate of Q2 2026 real gross domestic product (scheduled release 2026-07-30 at 08:30 ET) shows annualized real GDP growth between 1.0 and 3.0 percent, inclusive",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "BEA advance Q2 GDP estimate is a scheduled public macroeconomic data release on a fixed calendar; Q1 2026 advance estimate was published on schedule",
+      "withdrawal": null,
+      "confidence": 0.62,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.5,
+      "frameworks": [
+        "Innovation Energy Cycle"
+      ],
+      "update_test": "BEA news release for advance estimate of 2026 Q2 GDP published on bea.gov on or about 2026-07-30: confirmed if the annualized seasonally adjusted real GDP growth rate falls in the closed interval [1.0, 3.0] percent; disconfirmed if it falls below 1.0 or above 3.0",
+      "resolve_by": "2026-08-05",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-06-15T12:15:21Z",
+        "auditor": "twin",
+        "note": "Searched 2026-06-15 for BEA Q2 2026 advance GDP release schedule; not yet released, scheduled per standard BEA calendar at end of July 2026 (advance estimate typically posted last business day of month following quarter close). No advance Q2 2026 estimate is available on bea.gov.",
+        "queries": [
+          "BEA Q2 2026 advance GDP release schedule"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260616-001",
+      "date": "2026-06-16",
+      "registered_at": "2026-06-16T12:12:35Z",
+      "claim": "US Bureau of Economic Analysis Personal Income and Outlays release for May 2026 (scheduled 2026-06-25, 8:30 EDT) prints core PCE year-over-year at or above 3.2 percent",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "BEA Personal Income and Outlays monthly release scheduled 2026-06-25; April 2026 core PCE printed 3.3 percent year-over-year (FRED PCEPILFE)",
+      "withdrawal": null,
+      "confidence": 0.62,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.55,
+      "frameworks": [],
+      "update_test": "BEA Personal Income and Outlays for May 2026, official table, core PCE (excl food and energy) year-over-year value at or above 3.2 percent",
+      "resolve_by": "2026-06-26",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-06-16T12:12:35Z",
+        "auditor": "twin",
+        "note": "Searched 'US PCE inflation report May 2026 release date core PCE BEA schedule' on 2026-06-16; release scheduled 2026-06-25, not yet out. April 2026 core PCE 3.3 percent confirmed via FRED and BEA April release. No advance May print is public.",
+        "queries": [
+          "US PCE inflation report May 2026 release date core PCE BEA schedule"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260616-002",
+      "date": "2026-06-16",
+      "registered_at": "2026-06-16T12:12:44Z",
+      "claim": "Eurostat euro area HICP flash estimate for June 2026 (scheduled release 2026-07-01) prints headline annual inflation at or below 3.1 percent",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "Eurostat euro area HICP monthly flash; May 2026 headline was 3.2 percent (Eurostat release 2026-06-02). Statistical calendar at https://ec.europa.eu/eurostat/news/euro-indicators places the June flash on 2026-07-01 at 11:00 CET.",
+      "withdrawal": null,
+      "confidence": 0.45,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.45,
+      "frameworks": [],
+      "update_test": "Eurostat euro area HICP flash estimate for June 2026 (release 2026-07-01) headline annual rate at or below 3.1 percent",
+      "resolve_by": "2026-07-02",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-06-16T12:12:44Z",
+        "auditor": "twin",
+        "note": "Searched 'Eurozone June 2026 CPI flash estimate Eurostat release date headline inflation' on 2026-06-16; June 2026 flash release scheduled 2026-07-01, not out. May 2026 flash printed 3.2 percent.",
+        "queries": [
+          "Eurozone June 2026 CPI flash estimate Eurostat release date headline inflation"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260616-003",
+      "date": "2026-06-16",
+      "registered_at": "2026-06-16T12:12:53Z",
+      "claim": "South Africa's Department of Communications and Digital Technologies publishes a revised draft National AI Policy on an official government website by 2026-08-15",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "in",
+      "grounding": "First draft published 2026-04-10 by DCDT; withdrawn by Minister Malatsi on 2026-04-26 after AI-hallucinated citations were found in the reference list; original consultation deadline was 2026-06-10",
+      "withdrawal": null,
+      "confidence": 0.3,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.3,
+      "frameworks": [
+        "Cultural Adoption Filter"
+      ],
+      "update_test": "A revised draft National AI Policy is published on an official Republic of South Africa government website (gov.za, dcdt.gov.za, or gazette) on or before 2026-08-15, identifiable by document title and version",
+      "resolve_by": "2026-08-16",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-06-16T12:12:53Z",
+        "auditor": "twin",
+        "note": "Searched 'South Africa national AI policy republished draft second consultation timeline 2026' on 2026-06-16; no revised draft published yet; legal-analysis sources indicate republication expected 'later in 2026/2027' with no committed date.",
+        "queries": [
+          "South Africa national AI policy republished draft second consultation timeline 2026"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [
+        {
+          "id": "claim-20260613-002",
+          "relation": "shares-system",
+          "note": "Both probe African national-AI-strategy publication on official government sites within an overlapping summer 2026 window (Nigeria 2026-08-12, South Africa 2026-08-15); they share the institutional-capacity-vs-publication-discipline system but in different jurisdictions.",
+          "date": "2026-06-16T12:12:58Z"
+        }
+      ],
+      "evidence": [
+        {
+          "date": "2026-06-19",
+          "direction": "against",
+          "note": "Broadcast Media Africa 27 May 2026: South Africa DCDT revised AI Policy timeline now targets revised expert review concluding October 2026, Cabinet submission November 2026, public-comment publication January 2027. This pushes the revised draft public release well past the 15 August 2026 deadline in claim. Withdrawn 26 April 2026 after AI-hallucinated citations; consultation deadline was 10 June 2026 with no announced acceleration.",
+          "source_url": "https://news.broadcastmediaafrica.com/2026/05/27/south-africas-national-ai-policy-new-draft-set-for-release-in-january-2027-following-expert-review/"
+        }
+      ],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260617-001",
+      "date": "2026-06-17",
+      "registered_at": "2026-06-17T12:14:30Z",
+      "claim": "The US Bureau of Labor Statistics Employment Situation report for June 2026 (scheduled release 2026-07-03 at 8:30 ET) will report a headline unemployment rate at or below 4.4 percent (i.e., not above the May 2026 print of 4.3 percent by more than 0.1 percentage point).",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "BLS Employment Situation for June 2026 is on the BLS release calendar for 2026-07-03 at 8:30 ET. May 2026 print reported unemployment rate 4.3 percent with nonfarm payroll change +172,000 against a +88,000 consensus, indicating resilient labor market.",
+      "withdrawal": null,
+      "confidence": 0.7,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.7,
+      "frameworks": [],
+      "update_test": "BLS Employment Situation press release for June 2026 published on bls.gov on or about 2026-07-03 at 8:30 ET: confirmed if the reported headline unemployment rate (seasonally adjusted) is at or below 4.4 percent; disconfirmed if the reported headline unemployment rate is above 4.4 percent.",
+      "resolve_by": "2026-07-04",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-06-17T12:14:30Z",
+        "auditor": "twin",
+        "note": "Searched 2026-06-17 for the June 2026 BLS Employment Situation; release is scheduled for 2026-07-03 and the data are not yet public. May 2026 print (4.3 percent unemployment, +172k NFP) confirmed via Bloomberg and BLS empsit.htm 2026-06-05. Outcome not already known.",
+        "queries": [
+          "BLS May 2026 unemployment rate nonfarm payrolls report",
+          "BLS June 2026 Employment Situation"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260617-002",
+      "date": "2026-06-17",
+      "registered_at": "2026-06-17T12:14:36Z",
+      "claim": "The US Bureau of Labor Statistics Employment Situation report for June 2026 (scheduled release 2026-07-03 at 8:30 ET) will report a change in total nonfarm payroll employment (seasonally adjusted) at or above +100,000 jobs.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "BLS Employment Situation for June 2026 release scheduled 2026-07-03 at 8:30 ET. May 2026 print reported nonfarm payroll change +172,000 (well above +88,000 consensus). March-April 2026 revisions added 93,000 jobs combined upward. Labor market in moderate-resilient growth phase.",
+      "withdrawal": null,
+      "confidence": 0.72,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.7,
+      "frameworks": [],
+      "update_test": "BLS Employment Situation press release for June 2026 published on bls.gov on or about 2026-07-03 at 8:30 ET: confirmed if the reported total nonfarm payroll change (seasonally adjusted, initial release figure, not later revisions) is at or above +100,000; disconfirmed if the figure is below +100,000.",
+      "resolve_by": "2026-07-04",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-06-17T12:14:36Z",
+        "auditor": "twin",
+        "note": "Searched 2026-06-17 for the June 2026 BLS Employment Situation; not yet released. May 2026 +172k confirmed via Bloomberg, UPI, bls.gov empsit.htm 2026-06-05. Outcome not already known.",
+        "queries": [
+          "BLS May 2026 unemployment rate nonfarm payrolls report"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260617-003",
+      "date": "2026-06-17",
+      "registered_at": "2026-06-17T12:14:44Z",
+      "claim": "By 2026-08-01, federal agencies will publicly publish or announce a designed voluntary frontier model engagement framework as directed by the Trump Executive Order on Promoting Advanced AI Innovation and Security (signed 2026-06-02).",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "in",
+      "grounding": "Trump EO Promoting Advanced AI Innovation and Security signed 2026-06-02 (White House press release confirmed by multiple legal alerts: Latham/Watkins, Ropes & Gray, Crowell, Skadden, Freshfields). EO directs federal agencies to design a voluntary frontier-model engagement framework by 2026-08-01, with up to 30-day pre-release access window for participating developers.",
+      "withdrawal": null,
+      "confidence": 0.55,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.55,
+      "frameworks": [
+        "Institutional Adaptation Lag"
+      ],
+      "update_test": "By 2026-08-01 EOD UTC, identifiable public artifact (joint federal release, NIST/OSTP/DOC/DHS publication, formal whitehouse.gov announcement, or Federal Register notice) describing the designed voluntary frontier model engagement framework, including the participation procedure and the 30-day pre-release access mechanism. Confirmed if such an artifact exists by deadline; disconfirmed if no such artifact is published by 2026-08-01.",
+      "resolve_by": "2026-08-08",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-06-17T12:14:44Z",
+        "auditor": "twin",
+        "note": "Searched 2026-06-17 for federal voluntary frontier model engagement framework; no design publication yet found as of today. EO was signed 2026-06-02; design deadline 2026-08-01 is 45 days out. Legal alerts confirm design responsibility but do not yet describe a published framework. Outcome not already known.",
+        "queries": [
+          "Trump executive order June 2 2026 advanced AI frontier model voluntary engagement framework",
+          "AI governance policy news June 2026"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260618-001",
+      "date": "2026-06-18",
+      "registered_at": "2026-06-18T12:11:38Z",
+      "claim": "Bank of Japan holds policy rate at 1.0 percent at its July 30-31 2026 Monetary Policy Meeting (no change from the May 2026 hike to 1.0 percent)",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "Bank of Japan calendar: Monetary Policy Meeting scheduled 2026-07-30 to 2026-07-31; Outlook Report published 2026-07-31. May 2026 meeting raised rate to 1.0 percent in 7-1 vote (resolved claim-20260614-002). BoJ held in 7 of 9 meetings since exiting NIRP; typical pattern is hike then 2-3 meeting pause; OIS pricing shows next hike to 1.25 not expected until Q4 2026",
+      "withdrawal": null,
+      "confidence": 0.74,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.7,
+      "frameworks": [
+        "Knowledge Gradient Model"
+      ],
+      "update_test": "Bank of Japan Monetary Policy Statement and Outlook Report published 2026-07-31 on boj.or.jp reports the target for the uncollateralized overnight call rate held at around 1.0 percent (i.e., no change from the May 2026 hike to 1.0 percent)",
+      "resolve_by": "2026-08-01",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-06-18T12:11:38Z",
+        "auditor": "twin",
+        "note": "Web searches confirmed no policy statement published yet for the July 30-31 meeting; next meeting per BoJ calendar is July 30-31 2026",
+        "queries": [
+          "Bank of Japan July 30 31 2026 monetary policy meeting outlook report",
+          "BoJ rate hike pause pattern 2026 next move OIS swap pricing"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260618-002",
+      "date": "2026-06-18",
+      "registered_at": "2026-06-18T12:11:49Z",
+      "claim": "UK CPI 12-month rate for June 2026 prints at or above 2.8 percent (matching or exceeding the May 2026 print of 2.8 percent)",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "ONS Consumer Prices Index, UK: May 2026 release confirmed CPI rose 2.8 percent in 12 months to May 2026, unchanged from April 2026. BoE June 2026 MPC June statement flagged that inflation is expected to rise as energy effects pass through; UK now in Iran-war energy-price shock window",
+      "withdrawal": null,
+      "confidence": 0.68,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.55,
+      "frameworks": [
+        "Macroeconomic Regime Model"
+      ],
+      "update_test": "ONS Consumer Prices Index release for June 2026 (scheduled approximately 2026-07-16 to 2026-07-22) shows the CPI 12-month rate (headline) at or above 2.8 percent (the May 2026 print)",
+      "resolve_by": "2026-07-25",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-06-18T12:11:49Z",
+        "auditor": "twin",
+        "note": "ONS June 2026 CPI release has not occurred; release window is mid-to-late July 2026 per ONS calendar",
+        "queries": [
+          "UK CPI June 2026 forecast inflation print release date July",
+          "Bank of England June 18 2026 inflation outlook"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260618-003",
+      "date": "2026-06-18",
+      "registered_at": "2026-06-18T12:11:55Z",
+      "claim": "ISM Services PMI for June 2026 (release scheduled 2026-07-06) prints at or above 50.0 (signaling expansion)",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "ISM Services PMI is released on the third business day of each month. May 2026 print was above 50 (most recent expansion); services sector has stayed above 50 in 9 of the last 12 prints, with occasional dips. Hawkish Fed SEP (June 17) signals resilient services demand",
+      "withdrawal": null,
+      "confidence": 0.7,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.65,
+      "frameworks": [
+        "Macroeconomic Regime Model"
+      ],
+      "update_test": "Institute for Supply Management Services PMI headline composite index for June 2026 (release scheduled approximately 2026-07-06 at 10:00 ET on ismworld.org) prints at or above 50.0",
+      "resolve_by": "2026-07-10",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-06-18T12:11:55Z",
+        "auditor": "twin",
+        "note": "ISM Services PMI for June 2026 has not been released; June 2026 data releases first week of July 2026",
+        "queries": [
+          "ISM Services PMI June 2026 release",
+          "US services PMI June 2026 expansion forecast"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260618-004",
+      "date": "2026-06-18",
+      "registered_at": "2026-06-18T12:12:09Z",
+      "claim": "Between 2026-06-18 and 2026-08-15, at least one African Union member state outside the current published-strategy set (Nigeria, Kenya, Egypt, Ghana, South Africa, Mauritius, Rwanda, Senegal, Benin, Morocco) publishes a formal national artificial intelligence strategy document on an official government domain",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "in",
+      "grounding": "African Union Continental AI Strategy adopted July 2024 set a 5-year window for national strategy adoption. As of June 2026, 10 African states have published national AI strategies. Tunisia, Zambia, Ethiopia, and Cote d'Ivoire have all signaled drafts in development per Smart Africa updates 2026 Q1",
+      "withdrawal": null,
+      "confidence": 0.42,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.35,
+      "frameworks": [
+        "Infrastructure Stack Model"
+      ],
+      "update_test": "By 2026-08-15, identifiable PDF or formal page on an official African Union member-state government domain (.gov of any country other than the ten named) titled or substantively a national AI strategy or framework, dated 2026-06-18 or later",
+      "resolve_by": "2026-08-15",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-06-18T12:12:09Z",
+        "auditor": "twin",
+        "note": "Web search for African AI strategy 2026 confirms current set of published-strategy states; no new published strategy from outside this set has been confirmed as of 2026-06-18",
+        "queries": [
+          "African tech AI infrastructure news June 2026 Nigeria Kenya Ghana",
+          "AfricArXiv African academic AI governance research 2026"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260618-005",
+      "date": "2026-06-18",
+      "registered_at": "2026-06-18T12:12:17Z",
+      "claim": "Between 2026-08-02 (EU AI Act GPAI enforcement start) and 2026-08-30, the European Commission AI Office publishes at least one new formal guidance, FAQ update, implementing decision, or notice (other than the previously committed copyright guidance per claim-20260610-017) materially addressing obligations or expectations for GPAI model providers",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "in",
+      "grounding": "EU AI Act GPAI enforcement powers activate 2026-08-02 (one-year grace period ends). Article 65 RFI, evaluation, and fine powers all kick in that day. Enforcement-start dates are typically accompanied by guidance refreshes; claim-20260610-017 separately tracks the copyright-specific guidance",
+      "withdrawal": null,
+      "confidence": 0.72,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.6,
+      "frameworks": [
+        "Cultural Adoption Filter"
+      ],
+      "update_test": "By 2026-08-30, at least one new document on the official ec.europa.eu domain (digital-strategy.ec.europa.eu, ai-act-service-desk.ec.europa.eu, or AI Office press release) dated between 2026-08-02 and 2026-08-30 that is not the copyright-specific guidance, materially addressing GPAI provider obligations",
+      "resolve_by": "2026-08-30",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-06-18T12:12:17Z",
+        "auditor": "twin",
+        "note": "AI Office has not published any post-Aug-2 guidance document yet; enforcement start is six weeks away",
+        "queries": [
+          "EU AI Office GPAI Code of Practice 2026 publication enforcement",
+          "EU AI Act August 2 2026 GPAI enforcement first action"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260619-001",
+      "date": "2026-06-19",
+      "registered_at": "2026-06-19T12:10:47Z",
+      "claim": "ISM Manufacturing PMI for June 2026 (scheduled release 2026-07-01) prints at or above 50.0 (signaling expansion in the manufacturing sector).",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "Institute for Supply Management Manufacturing Business Survey Committee publishes monthly Manufacturing PMI; the June 2026 reading is scheduled for release on 2026-07-01. May 2026 reading was 54.0 (release 2026-06-01), the fifth consecutive month of expansion and the highest reading since May 2022.",
+      "withdrawal": null,
+      "confidence": 0.74,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.55,
+      "frameworks": [],
+      "update_test": "On 2026-07-01, the Institute for Supply Management official June 2026 Manufacturing PMI release prints a headline Manufacturing PMI of 50.0 or higher. Confirmed if the headline reading is at or above 50.0, disconfirmed if below 50.0.",
+      "resolve_by": "2026-07-03",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-06-19T12:10:47Z",
+        "auditor": "twin",
+        "note": "Searched Industry Today, PRNewswire, Trading Economics, ISM official site, Forex Factory 2026-06-19 - no June 2026 release found, scheduled for 2026-07-01",
+        "queries": [
+          "ISM Manufacturing PMI June 2026 release",
+          "ISM Manufacturing PMI May 2026 result"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260619-002",
+      "date": "2026-06-19",
+      "registered_at": "2026-06-19T12:10:55Z",
+      "claim": "China National Bureau of Statistics Manufacturing PMI for June 2026 (scheduled release 2026-06-30) prints at or above 50.0.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "China NBS publishes monthly Manufacturing PMI on the last calendar day of each month; the June 2026 reading is scheduled for release on 2026-06-30. May 2026 reading printed 50.0 exactly, down 0.3 points month-over-month, a 4-month low. The series has hovered at the expansion-contraction threshold through Q2 2026.",
+      "withdrawal": null,
+      "confidence": 0.46,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.48,
+      "frameworks": [],
+      "update_test": "On 2026-06-30, the China National Bureau of Statistics official June 2026 Manufacturing PMI release prints a headline value of 50.0 or higher. Confirmed at or above 50.0, disconfirmed below 50.0.",
+      "resolve_by": "2026-07-02",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-06-19T12:10:55Z",
+        "auditor": "twin",
+        "note": "Searched Trading Economics, Investing.com, Mysteel, NBS English site, FXStreet calendar 2026-06-19 - no June 2026 release found, scheduled for 2026-06-30",
+        "queries": [
+          "China NBS Manufacturing PMI June 2026",
+          "China NBS Manufacturing PMI May 2026 result"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260619-003",
+      "date": "2026-06-19",
+      "registered_at": "2026-06-19T12:11:11Z",
+      "claim": "US Department of Labor weekly initial jobless claims report for the week ending 2026-06-27 (scheduled release 2026-07-03) prints seasonally adjusted initial claims below 240,000.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "US Department of Labor publishes weekly initial unemployment insurance claims each Thursday. Week ending 2026-06-13 release printed 226,000 (down 4,000), four-week moving average 223,250. Series has held a 215-240K band through Q2 2026 despite continuing-claims drift higher (1.81M). Week ending 2026-06-20 release scheduled 2026-06-26.",
+      "withdrawal": null,
+      "confidence": 0.7,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.65,
+      "frameworks": [],
+      "update_test": "On 2026-07-03 (one-day early due to Independence Day), the US Department of Labor weekly unemployment insurance claims release reports seasonally adjusted initial claims of fewer than 240,000 for the week ending 2026-06-27. Confirmed if printed value is below 240,000, disconfirmed if at or above 240,000.",
+      "resolve_by": "2026-07-07",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-06-19T12:11:11Z",
+        "auditor": "twin",
+        "note": "Searched FRED ICSA series, Quartz, Verified Investing, DOL ui/data.pdf 2026-06-19 - latest available is week ending 2026-06-13 (226K); the week ending 2026-06-27 release is scheduled 2026-07-03.",
+        "queries": [
+          "US initial jobless claims weekly report June 2026",
+          "DOL unemployment insurance claims latest"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260619-004",
+      "date": "2026-06-19",
+      "registered_at": "2026-06-19T12:11:26Z",
+      "claim": "At least one of the three AfCFTA ADAPT pilot countries (Kenya, Morocco, Nigeria) publicly confirms the formal establishment of its national ADAPT Country Implementation Forum via an official government, AfCFTA Secretariat, or named-partner channel by 2026-06-30.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "in",
+      "grounding": "AfCFTA Secretariat announced 2026-05-19 in Accra that Country Implementation Forums in all three pilot countries are targeted for establishment by the end of June 2026. As of 2026-06-19, no public announcement of any specific Forum being established has surfaced in news searches; the 2026-05-19 Accra announcement remains the most recent ADAPT milestone in the public record.",
+      "withdrawal": null,
+      "confidence": 0.62,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.55,
+      "frameworks": [],
+      "update_test": "By 2026-06-30 23:59 UTC, an identifiable public announcement (Kenyan, Moroccan, or Nigerian government press release, AfCFTA Secretariat communique, IOTA Foundation blog, Tony Blair Institute press release, or WEF announcement) confirms the formal establishment of an ADAPT Country Implementation Forum in at least one of Kenya, Morocco, or Nigeria. Confirmed if any one country has such an announcement on or before the deadline; disconfirmed if none.",
+      "resolve_by": "2026-06-30",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-06-19T12:11:26Z",
+        "auditor": "twin",
+        "note": "Searched IOTA blog, Africa.com, Tech.africa, AfCFTA Secretariat news, Biometric Update, ID Tech Wire, Coinmonks, Financial Nigeria, Zawya, Bizcommunity, ENS Africa 2026-06-19 - all coverage refers to the 2026-05-19 selection and the by-end-June target; no Forum has been publicly established yet.",
+        "queries": [
+          "ADAPT Country Implementation Forum Kenya Morocco Nigeria established announcement",
+          "AfCFTA ADAPT Implementation Forum June 2026 launch"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [
+        {
+          "id": "claim-20260612-003",
+          "relation": "probes",
+          "note": "Probes the existing all-three-by-2026-07-15 claim with a sharper near-term any-one-by-2026-06-30 test - tracks whether the end-June milestone is hit publicly on at least the first leg",
+          "date": "2026-06-19T12:11:26Z"
+        }
+      ],
+      "evidence": [],
+      "resolution": null
+    }
+  ],
+  "experiments": [
     {
       "id": "claim-20260612-hs2-P1",
       "date": "2026-06-12",
@@ -1082,164 +2005,6 @@
         "outcome": "confirmed",
         "note": "Governing variable = exit cost (commitment), not fragility/trigger. Two within-case natural experiments: HS2 P1 (committed, builds) vs P2b (uncommitted, cancelled) under identical triggers; CA-HSR committed segment builds vs uncommitted system descoped. Bruno wins scoped, loses pure. | source: experiments/hs2-backtest/claim2-results.md (16-case fragility-selected reference class, 2026-06-12)"
       }
-    },
-    {
-      "id": "claim-20260613-001",
-      "date": "2026-06-13",
-      "registered_at": "2026-06-13T12:09:38Z",
-      "claim": "The Bank of England Monetary Policy Committee June 18 2026 vote will show at least 7 of 9 members voting to hold Bank Rate at 3.75 percent",
-      "committed_by": "twin",
-      "tier": "calibration",
-      "frame": "out",
-      "grounding": "Bank of England MPC June 18 2026 scheduled meeting (Bank of England calendar) and the published voting record convention - the next MPC summary publishes the vote split inside the minutes on the meeting date",
-      "withdrawal": null,
-      "confidence": 0.82,
-      "confidence_source": "twin-estimated",
-      "confidence_rationale": null,
-      "base_rate": 0.78,
-      "frameworks": [],
-      "update_test": "BoE Monetary Policy Summary or Minutes for the meeting ending 2026-06-18 (published at 12:00 noon GMT on 2026-06-18) shows at least 7 of 9 MPC members voting to maintain Bank Rate at 3.75 percent",
-      "resolve_by": "2026-06-25",
-      "status": "open",
-      "validity": null,
-      "prereg_audit": {
-        "date": "2026-06-13T12:09:38Z",
-        "auditor": "twin",
-        "note": "Searched 'Bank of England MPC June 18 2026 vote split' on 2026-06-13; meeting has not occurred; previews (HomeOwners Alliance, MortgageOne) expect hold but vote split not disclosed in advance",
-        "queries": [
-          "Bank of England MPC June 18 2026 rate decision preview Bank Rate 3.75",
-          "BoE June 2026 vote split preview"
-        ],
-        "outcome_already_known": false
-      },
-      "corrections": [],
-      "related_to": [
-        {
-          "id": "claim-20260612-001",
-          "relation": "probes",
-          "note": "Same BoE 2026-06-18 meeting; 613-001 sharpens 612-001 from binary hold/no-hold to vote-split granularity. Resolution evidence overlaps but reads different aspects.",
-          "date": "2026-06-13T12:10:03Z"
-        }
-      ],
-      "evidence": [],
-      "resolution": null
-    },
-    {
-      "id": "claim-20260613-002",
-      "date": "2026-06-13",
-      "registered_at": "2026-06-13T12:09:46Z",
-      "claim": "Nigeria will publish its National AI Strategy as a formal document on an official Nigerian government domain by 2026-08-12",
-      "committed_by": "twin",
-      "tier": "calibration",
-      "frame": "out",
-      "grounding": "Nigeria National AI Strategy drafting process led by NITDA and the Federal Ministry of Communications Innovation and Digital Economy; multiple 2026 reports describe it as in draft and expected late-2025-to-early-2026 with a slipped target",
-      "withdrawal": null,
-      "confidence": 0.38,
-      "confidence_source": "twin-estimated",
-      "confidence_rationale": null,
-      "base_rate": 0.42,
-      "frameworks": [],
-      "update_test": "By 2026-08-12, a document titled 'Nigeria National AI Strategy' (or close variant) is publicly available on an official .gov.ng domain (NITDA, FMCIDE, or equivalent), dated 2026",
-      "resolve_by": "2026-08-12",
-      "status": "open",
-      "validity": null,
-      "prereg_audit": {
-        "date": "2026-06-13T12:09:46Z",
-        "auditor": "twin",
-        "note": "Searched 'Nigeria National AI Strategy publication 2026' on 2026-06-13; sources describe the strategy as still in draft and expected to be 'finalised between late 2025 and early 2026' with no evidence of formal publication as of the audit date",
-        "queries": [
-          "Nigeria National AI Strategy publication 2026",
-          "NITDA National AI Strategy site:gov.ng 2026"
-        ],
-        "outcome_already_known": false
-      },
-      "corrections": [],
-      "related_to": [],
-      "evidence": [],
-      "resolution": null
-    },
-    {
-      "id": "claim-20260613-003",
-      "date": "2026-06-13",
-      "registered_at": "2026-06-13T12:09:56Z",
-      "claim": "By 2026-08-12, at least one of the three AfCFTA ADAPT pilot countries (Kenya, Morocco, Nigeria) will publicly publish a formal regulatory framework or pilot specification governing digital-currency or stablecoin settlements explicitly under the ADAPT initiative",
-      "committed_by": "twin",
-      "tier": "calibration",
-      "frame": "in",
-      "grounding": "AfCFTA ADAPT pilot launched 2026-05-19 Accra; the publicly-announced implementation roadmap explicitly names testing of 'regulatory frameworks including models for digital currencies and stablecoin settlements' as an early-phase milestone",
-      "withdrawal": null,
-      "confidence": 0.28,
-      "confidence_source": "twin-estimated",
-      "confidence_rationale": null,
-      "base_rate": 0.3,
-      "frameworks": [
-        "Infrastructure Stack Model"
-      ],
-      "update_test": "By 2026-08-12, a Kenyan, Moroccan, or Nigerian central bank, finance ministry, or AfCFTA Secretariat publishes a document on an official government or AfCFTA domain that names 'ADAPT' and specifies regulatory rules or pilot procedures for digital-currency or stablecoin settlements",
-      "resolve_by": "2026-08-12",
-      "status": "open",
-      "validity": null,
-      "prereg_audit": {
-        "date": "2026-06-13T12:09:56Z",
-        "auditor": "twin",
-        "note": "Searched 'AfCFTA ADAPT pilot Kenya Morocco Nigeria digital trade framework June 2026' on 2026-06-13; rollout is in the forum-establishment phase, no published regulatory framework on digital currencies or stablecoin settlements under ADAPT as of the audit date",
-        "queries": [
-          "AfCFTA ADAPT Kenya Morocco Nigeria stablecoin digital currency regulatory framework",
-          "AfCFTA ADAPT CBDC pilot 2026"
-        ],
-        "outcome_already_known": false
-      },
-      "corrections": [],
-      "related_to": [
-        {
-          "id": "claim-20260612-003",
-          "relation": "probes",
-          "note": "Same ADAPT pilot; 612-003 reads the forum-establishment milestone, 613-003 reads the deeper regulatory-framework layer (digital currencies and stablecoin settlements) named in the official roadmap.",
-          "date": "2026-06-13T12:10:03Z"
-        }
-      ],
-      "evidence": [],
-      "resolution": null
-    },
-    {
-      "id": "claim-20260614-001",
-      "date": "2026-06-14",
-      "registered_at": "2026-06-14T16:28:19Z",
-      "claim": "No AfCFTA ADAPT pilot (Kenya, Morocco, or Nigeria) will produce a data-centre or compute build of >USD 100M or >20MW that the builder or financier publicly credits to the ADAPT instrument as the but-for cause, by 2027-06-30.",
-      "committed_by": "bruno",
-      "tier": "structural",
-      "frame": "in",
-      "grounding": "AfCFTA ADAPT launched Nov 2025; pilot countries Kenya/Morocco/Nigeria designated 2026-05-19 (Accra). It is a digital-trade DPI program (digital identity, payments, interoperable data exchange, e-trade documents on the TWIN stack; partners TBI, IOTA Foundation, WEF) - NOT a compute/data-centre financing instrument. Real instrument existing today.",
-      "withdrawal": null,
-      "confidence": 0.98,
-      "confidence_source": "bruno-stated",
-      "confidence_rationale": null,
-      "base_rate": null,
-      "frameworks": [
-        "Institutional Adaptation Lag"
-      ],
-      "update_test": "By 2027-06-30: confirmed if no African data-centre/compute build of >USD100M or >20MW is publicly and decisively credited (but-for) to the AfCFTA ADAPT instrument by its builder/financier; disconfirmed if at least one such but-for attribution exists.",
-      "resolve_by": "2027-06-30",
-      "status": "open",
-      "validity": null,
-      "prereg_audit": {
-        "date": "2026-06-14T16:28:19Z",
-        "auditor": "twin",
-        "note": "Web search 2026-06-14 (AfCFTA ADAPT data centre compute Kenya Morocco Nigeria 2026): ADAPT is in pilot/forum-establishment phase and scoped to trade plumbing; no >USD100M/>20MW compute build attributed to the ADAPT instrument exists. Test has not fired.",
-        "queries": [],
-        "outcome_already_known": false
-      },
-      "corrections": [],
-      "related_to": [
-        {
-          "id": "claim-20260610-007",
-          "relation": "sharpens",
-          "note": "Bruno-stated /probe sharpening of 007: scopes the AU-instrument disconfirmer to the one live AU-adjacent instrument with implementation teeth (ADAPT), with a but-for attribution test. 007 stays locked at 0.70 twin-estimated (immutable); this records Bruno's 0.98 gold-standard belief on the named disconfirmation channel.",
-          "date": "2026-06-14T16:28:19Z"
-        }
-      ],
-      "evidence": [],
-      "resolution": null
     }
   ]
 }
