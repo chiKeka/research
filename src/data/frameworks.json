@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Absorption Stack Model",
+    "domain": "cultural_technology",
+    "description": "A capability becomes real only where it clears both the infrastructure stack (Raw→Usable→Effective) and the cultural absorption layers (access→medium→narrative→proximity). Mismatches produce stranded capacity (infrastructure without absorption) or frustrated demand (absorption without substrate)."
+  },
+  {
+    "name": "Cultural Adoption Filter",
+    "domain": "cultural_technology",
+    "description": "Technology does not diffuse neutrally through culture. It passes through a filter of language, narrative, local knowledge, and power structures that transforms, adopts, rejects, or hollows out what passes through. Adoption is not reception — it is translation."
+  },
+  {
+    "name": "Medium Gradient",
+    "domain": "cultural_technology",
+    "description": "Populations live in different media environments — oral, literate, digital, AI-mediated — each producing different cognitive capabilities. The gradient is not information access but cognitive modality. Moving across the gradient changes not what you know but how you think."
+  },
+  {
+    "name": "Narrative Infrastructure Model",
+    "domain": "cultural_technology",
+    "description": "Stories, myths, and shared narratives function as infrastructure — they determine which technologies get adopted, which institutions gain legitimacy, and whose knowledge counts. Narrative is not decorative; it is structural."
+  },
+  {
+    "name": "Proximity Gradient",
+    "domain": "cultural_technology",
+    "description": "The closer you are to a technology, the more you see nuance. The further away, the more you see magic or threat."
+  },
+  {
+    "name": "Infrastructure Stack Model",
+    "domain": "infrastructure_systems",
+    "description": "Physical → Digital → Cognitive infrastructure layers. Each layer produces compounding leverage effects across systems — investments at lower layers unlock capacity at higher layers. The stack is also a harmonic series with each layer oscillating at different temporal frequencies."
+  },
+  {
+    "name": "Universal Basic Compute",
+    "domain": "infrastructure_systems",
+    "description": "Three-layer compute access model: Raw Compute, Usable Compute, Effective Compute. Framework for democratizing AI access."
+  },
+  {
+    "name": "Consent Horizon Model",
+    "domain": "institutional_systems",
+    "description": "Every system of collective action has a maximum temporal distance over which it can generate legitimate stakeholder commitment - the consent horizon. Below it, projects succeed through existing governance. Above it, projects require purpose infrastructure (narrative + institutional + technological layers) that extends the horizon. Five components: Consent Horizon (temporal limit), Purpose Infrastructure (extension stack), Stakeholder Stratigraphy (tiered engagement architecture), Intermediate Deliverability (value at every stage), Capture Resistance (anti-corruption at structural frequency)."
+  },
+  {
+    "name": "Corruption Frequency Model",
+    "domain": "institutional_systems",
+    "description": "Corruption is not a single phenomenon but a composite signal — a superposition of periodic forces at three temporal frequencies: Transactional (~1-5yr, individual graft), Institutional (~7-15yr, regulatory capture/dependency corruption), and Structural (~30-60yr, deep power distortion). Anti-corruption efforts fail when they target the wrong frequency band. Extends the Corruption Tolerance Model by adding a temporal dimension: tolerance is amplitude, frequency is composition."
+  },
+  {
+    "name": "Governance Cycle Renewal Gap",
+    "domain": "institutional_systems",
+    "description": "Governance has its own Innovation Energy Cycle. It is currently deep in the Contraction phase. The last Hype phase was the 1960s wave of public-service idealism (Kennedy 'ask not', Peace Corps, civil rights bureaucracies). Cost ran through the 1970s-1990s with stagflation and pension crises. Contraction has dominated since the 2000s. Talent reallocation requires a Renewal-phase trigger (new narrative infrastructure, crisis-driven demand, methodological breakthrough) that has not yet formed. Without that trigger, governance stays in Contraction even while its objective leverage rises."
+  },
+  {
+    "name": "Institutional Adaptation Lag",
+    "domain": "institutional_systems",
+    "description": "Technology evolves faster than institutions. The gap creates instability and opportunity."
+  },
+  {
+    "name": "Liquid Oath Model",
+    "domain": "institutional_systems",
+    "description": "A token gate is a sworn boundary with loyalty stripped out and liquidity added in. Transferability and pseudonymity rewire the sworn order's failure modes: the brotherhood becomes buyable (whale capture) and maximally unembedded (terminal autonomy). Core law: the loyalty-scale tradeoff - the oath buys loyalty by forbidding exit, the token buys scale by guaranteeing it, and no single boundary has both. Prediction: token communities reach cohesion only by re-introducing illiquidity/identity (soulbound reputation) at the core."
+  },
+  {
+    "name": "Maturation Slot",
+    "domain": "institutional_systems",
+    "description": "A sworn order resolves upward into civic infrastructure only when the institutional tier above it is open. Three states: open (order matures into the institution it scaffolds - Templars to bank, Masons to civil society), filled-by-healthy (order stays ornamental), filled-by-captured (looks occupied, functionally vacant - the most dangerous and most generative state, where cults feed and a better-designed order could grow). Explains why identical sworn orders mature in one era and fester in another: institutional headroom, not the order itself."
+  },
+  {
+    "name": "Prediction Horizon Model",
+    "domain": "institutional_systems",
+    "description": "Every system has a finite prediction horizon determined by its structural complexity class. 2-body systems (bilateral, linear) have long horizons. 3-body+ systems (multilateral, nonlinear) have dramatically shorter horizons. The fundamental governance error is applying long-horizon institutional designs to short-horizon systems. Components: Horizon Length, Complexity Class, Governance Mismatch, Adaptive Threshold."
+  },
+  {
+    "name": "Sworn Boundary Model",
+    "domain": "institutional_systems",
+    "description": "Cohesion produced by sworn secrecy is boundary-shaped: it strengthens what it encloses and hardens what it excludes in one inseparable operation. Whether it builds or fractures a polity is fixed by boundary topology (enclosing vs partitioning), set by monopoly-vs-plurality, embedding-vs-autonomy, universality-vs-elite-capture. Secret societies can be inherited as cohesion but not deployed to create it."
+  },
+  {
+    "name": "The Commitment Threshold",
+    "domain": "institutional_systems",
+    "description": "A major programme's cancellability is a step function of its commitment status (legal + contractual exit cost), not a continuous function of its performance/fragility. Below the threshold (proposed, uncommitted scope) a deteriorating case or even a mild political trigger is sufficient to cancel; above it (legislated + contracted) the case can collapse and the programme still completes. The precipitating exogenous trigger is largely fungible; position relative to the threshold is not."
+  },
+  {
+    "name": "Verifiable Commons",
+    "domain": "institutional_systems",
+    "description": "A ZK-gated, function-enclosing, decentralized institution that builds cohesion without becoming a cult or a contender for sovereignty. Three conditions: (1) encloses a function the state has VACATED (savings, escrow, dispute resolution, credentialing) not sovereignty it still holds; (2) keeps a local illiquid identity-bound core under a liquid scalable edge (liquidity gradient) - scale the infrastructure without tokenizing the bond; (3) secrecy is privacy not opacity (public rules, private members via zero-knowledge proofs), making it auditable from outside. The buildable form of decentralized nation-building in a captured-institution state."
+  },
+  {
+    "name": "Agent Gradient Model",
+    "domain": "intelligence_systems",
+    "description": "Uneven distribution of autonomous cognitive capability across markets, organizations, and individuals. Three layers: Access, Orchestration, Trust. Societies allocate intelligence across individuals, institutions, and machines — the gradient measures the outcome of that allocation. AI shifts allocation patterns, reshaping who has agent capability."
+  },
+  {
+    "name": "Cognitive Infrastructure Model",
+    "domain": "intelligence_systems",
+    "description": "Technologies that scale humanity's ability to process knowledge: writing → press → internet → AI"
+  },
+  {
+    "name": "Innovation Energy Cycle",
+    "domain": "intelligence_systems",
+    "description": "Imagination → Hype → Adoption → Application → Cost → Contraction → Renewal"
+  },
+  {
+    "name": "Generative Threshold",
+    "domain": "opportunity_systems",
+    "description": "Every self-organizing system has a dual-threshold structure: a lower threshold below which all capacity is consumed by survival maintenance, and an upper threshold above which excess surplus converts to comfort maintenance. Between them lies the generative band where exploratory innovation occurs. The lower transition is a phase transition whose sharpness varies with maintenance load intensity. Seven components: Maintenance Load, Generative Surplus, Threshold Point, Exploration Horizon, Generative Decay (comfort trap), Threshold Sharpness, Generative Band. Distinguishes Type 1 (maintenance innovation - below threshold, necessity-driven) from Type 2 (generative innovation - above threshold, curiosity-driven)."
+  },
+  {
+    "name": "Human Operating System",
+    "domain": "opportunity_systems",
+    "description": "Five-layer model of human behavior: Physical, Biological, Cognitive, Cultural, Developmental."
+  },
+  {
+    "name": "Opportunity Gradient Model",
+    "domain": "opportunity_systems",
+    "description": "Opportunities are unevenly distributed. Access to tools and networks determines trajectories."
+  },
+  {
+    "name": "Reallocation Threshold",
+    "domain": "opportunity_systems",
+    "description": "Talent can only reallocate to a destination domain that is above the institutional capacity level at which a system has surplus to absorb new inputs productively. Below the threshold, all institutional capacity is consumed by maintenance and survival, and the domain cannot absorb new talent even when it is structurally available. Most governance contexts in legacy states are below the threshold. Predicts that automatic talent reallocation will fail to materialize in the contexts most in need of it."
+  }
+]

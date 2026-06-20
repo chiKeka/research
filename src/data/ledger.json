@@ -1,0 +1,1245 @@
+{
+  "updated": "2026-06-20",
+  "claims": [
+    {
+      "id": "claim-20260610-001",
+      "date": "2026-06-10",
+      "registered_at": "2026-06-10T00:55:43Z",
+      "claim": "Aggregate productivity statistics will show no clear AI-driven gains through end-2026 while firm-level performance concentration keeps growing",
+      "committed_by": "bruno",
+      "tier": "structural",
+      "frame": "in",
+      "grounding": "BLS/OECD productivity statistics and PwC/NBER firm-level concentration measures exist and publish on known schedules",
+      "withdrawal": null,
+      "confidence": 0.72,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": "Productivity stats lag adoption by construction; concentration evidence (PwC/NBER signals) already strong. Risk: late-2026 statistical revision.",
+      "base_rate": null,
+      "frameworks": [
+        "Institutional Adaptation Lag",
+        "Agent Gradient Model"
+      ],
+      "update_test": "[tightened 2026-06-10 grounding audit] Two conjuncts, scored explicitly: (A) BLS annual US nonfarm labor productivity growth for 2026 stays at or below 2.2% AND no BLS/OECD release attributes a stated uptick to AI; (B) at least one published 2026/early-2027 firm-level study (PwC, NBER, or equivalent) reports widening AI-performance concentration. Both hold = confirmed; exactly one = partial; neither = disconfirmed. Resolve on the 2026 annual releases, by 2027-03-31.",
+      "resolve_by": "2027-03-31",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": null,
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260610-002",
+      "date": "2026-06-10",
+      "registered_at": "2026-06-10T00:55:43Z",
+      "claim": "At least two more African states beyond South Africa will formally designate data centres as critical infrastructure by end-2026",
+      "committed_by": "bruno",
+      "tier": "structural",
+      "frame": "in",
+      "grounding": "South Africa's designation is gazetted fact; Kenya and Nigeria have active policy processes on record",
+      "withdrawal": null,
+      "confidence": 0.55,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": "SA precedent set, Kenya/Nigeria discussing; designation requires formal gazette action which moves slower than discourse.",
+      "base_rate": null,
+      "frameworks": [
+        "Infrastructure Stack Model"
+      ],
+      "update_test": "Official gazette/policy designations counted; signals corpus already tracks SA precedent",
+      "resolve_by": "2026-12-31",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": null,
+      "corrections": [],
+      "related_to": [
+        {
+          "id": "claim-20260610-014",
+          "relation": "shares-system",
+          "note": "critical-infrastructure designation and powered-MW delivery both read the African data-centre buildout",
+          "date": "2026-06-11T17:08:37Z"
+        }
+      ],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260610-004",
+      "date": "2026-06-10",
+      "registered_at": "2026-06-10T00:55:43Z",
+      "claim": "The EU AI Act simplification/omnibus turn will reduce enforceable obligations for frontier deployers relative to the 2024 text by end-2026",
+      "committed_by": "twin",
+      "tier": "structural",
+      "frame": "in",
+      "grounding": "The EU AI Act omnibus is a live legislative process with a published May 7 political agreement",
+      "withdrawal": null,
+      "confidence": 0.75,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": "Omnibus/simplification signals from three independent scans; deregulatory momentum visible since May.",
+      "base_rate": null,
+      "frameworks": [
+        "Institutional Adaptation Lag"
+      ],
+      "update_test": "Final omnibus text vs 2024 obligations: count of softened or delayed frontier-relevant articles",
+      "resolve_by": "2026-12-31",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": null,
+      "corrections": [],
+      "related_to": [],
+      "evidence": [
+        {
+          "date": "2026-06-10",
+          "direction": "supports",
+          "note": "May 7 2026 Council+Parliament political agreement on AI Omnibus: Annex III HRAIS obligations deferred Aug 2026 → Dec 2027; Annex I deferred Aug 2027 → Aug 2028.",
+          "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/"
+        },
+        {
+          "date": "2026-06-12",
+          "direction": "supports",
+          "note": "EU Commission Code of Practice on marking AI-generated content published 2026-06-10 and Scientific Panel/Advisory Forum appointed 2026-06-01. Omnibus simplification package (May 7 deal) reportedly progressing toward formal adoption before 2026-08-02 per Council/Commission press materials. The interpretive substrate is being installed in parallel with the perimeter shrinking - net direction on enforceable obligations for frontier deployers is still reduction by end-2026, but the per-obligation compliance cost rises. Signal: 2026-06-12-eu-ai-office-enforcement-substrate-bifurcation.md",
+          "source_url": "https://digital-strategy.ec.europa.eu/en/policies/ai-office"
+        }
+      ],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260610-007",
+      "date": "2026-06-10",
+      "registered_at": "2026-06-10T02:02:17Z",
+      "claim": "The AU's governance-first Continental AI Strategy phase (2025-26) will not pull material physical-layer compute investment into existence by phase close: major African data-centre/compute projects announced through mid-2027 will cite commercial or hyperscaler logic, not AU policy instruments, as the decisive investment rationale",
+      "committed_by": "twin",
+      "tier": "structural",
+      "frame": "in",
+      "grounding": "The AU Continental AI Strategy is adopted policy; the comparison set is real announced DC investments with stated rationales",
+      "withdrawal": null,
+      "confidence": 0.7,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": "Historical base rate: policy-first frameworks rarely cited as decisive in African DC siting; commercial logic dominated every 2025-26 announcement in corpus (Kasi, MTN-Genova, Equinix, MS-G42). ADAPT pilots are the live disconfirmation risk.",
+      "base_rate": null,
+      "frameworks": [
+        "Infrastructure Stack Model"
+      ],
+      "update_test": "[precedence fix 2026-06-10, Bugbot PR41] Among African data-centre/compute announcements >USD 100M or >20MW between 2025-06 and 2027-06-30: DISCONFIRMED if any names an AU/Continental AI Strategy instrument as a primary stated rationale. Otherwise PARTIAL if AU instruments appear as secondary rationale in two or more announcements. Otherwise CONFIRMED (zero primary AND fewer than two secondary). Exactly one outcome is possible for any evidence set; precedence order: disconfirmed > partial > confirmed.",
+      "resolve_by": "2027-06-30",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": null,
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260610-008",
+      "date": "2026-06-10",
+      "registered_at": "2026-06-10T02:02:29Z",
+      "claim": "At least one of the Big Five US tech firms will cut or flatten its AI capex guidance year-over-year by the end of Q1 2027 reporting, absent clear aggregate AI productivity gains in the 2026 statistical releases",
+      "committed_by": "twin",
+      "tier": "structural",
+      "frame": "in",
+      "grounding": "Big Five capex guidance is published quarterly in earnings filings; NBER w35290 quantifies the current curve",
+      "withdrawal": null,
+      "confidence": 0.55,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": "Wachter w35290 implies the bet must show or unwind on a short fuse, but Big Five have absorbed flat productivity before without guiding down; 0.55 reflects genuine uncertainty between balance-sheet discipline and arms-race lock-in.",
+      "base_rate": null,
+      "frameworks": [
+        "Agent Gradient Model"
+      ],
+      "update_test": "[tightened 2026-06-10 grounding audit] Conditional branches made explicit: IF BLS 2026 annual productivity growth >= 2.5% (condition 'clear aggregate gains' met) the claim resolves UNRESOLVABLE. Otherwise: confirmed if any Big Five FY2027 AI capex guidance is cut or flat year-over-year in earnings filings through 2027-04-30; disconfirmed if all five raise guidance.",
+      "resolve_by": "2027-04-30",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": null,
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260610-009",
+      "date": "2026-06-10",
+      "registered_at": "2026-06-10T06:09:11Z",
+      "claim": "Kasi Cloud publicly confirms its 5.5MW Lekki phase as live/in-service by 2026-07-31",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "in",
+      "grounding": "Kasi Cloud is a real company with a publicly announced Q2 2026 partial-online milestone",
+      "withdrawal": null,
+      "confidence": 0.6,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.5,
+      "frameworks": [
+        "Absorption Stack Model"
+      ],
+      "update_test": "Company announcement, press coverage, or industry tracker confirming power-on/service; silence past July 31 resolves no",
+      "resolve_by": "2026-07-31",
+      "status": "resolved",
+      "validity": {
+        "status": "invalid",
+        "date": "2026-06-11T18:12:39Z",
+        "reason": "Outcome pre-dated registration: Kasi Cloud publicly commissioned the Lekki LOS1 first phase on 2026-05-19, twenty-two days before this claim was registered on 2026-06-10. A question answered before it was asked is not a forecast. Pre-registration evidence search is now mandatory for every new claim."
+      },
+      "prereg_audit": null,
+      "corrections": [],
+      "related_to": [
+        {
+          "id": "claim-20260610-013",
+          "relation": "probes",
+          "note": "Kasi Lekki is one of the named projects in the structural claim; its 5.5MW commissioning was a direct fast reading on phase delivery",
+          "date": "2026-06-11T17:08:37Z"
+        }
+      ],
+      "evidence": [],
+      "resolution": {
+        "date": "2026-06-10T12:12:10Z",
+        "outcome": "confirmed",
+        "note": "Kasi Cloud Datacenters formally commissioned its Lekki LOS1 campus on 2026-05-19, with the 5.5MW first phase publicly announced as operational/open. Sources: DCD (https://www.datacenterdynamics.com/en/news/nigerian-data-center-operator-kasi-opens-first-phase-of-100mw-facility/) headlined 'Kasi opens first phase'; company press release on GlobeNewswire (https://www.globenewswire.com/news-release/2026/05/19/3297917/0/en/Kasi-Cloud-Datacenters-Commissions-West-Africa-s-First-Hyperscale-Ready-AI-Capable-Data-Centre-Campus-in-Lagos.html); TechAfrica News (https://techafricanews.com/2026/05/28/kasi-cloud-datacenters-flags-off-west-africas-first-ai-ready-hyperscale-data-centre-in-lagos/); Vanguard (https://www.vanguardngr.com/2026/05/kasi-cloud-has-nigerias-first-ai-data-centre-landed/). Dated milestone publicly confirmed within window."
+      }
+    },
+    {
+      "id": "claim-20260610-010",
+      "date": "2026-06-10",
+      "registered_at": "2026-06-10T06:09:11Z",
+      "claim": "The EU AI Act omnibus simplification package receives formal Council adoption by 2026-07-31",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "in",
+      "grounding": "Formal Council adoption is a scheduled, public EU legislative step following the recorded May 7 agreement",
+      "withdrawal": null,
+      "confidence": 0.55,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.5,
+      "frameworks": [
+        "Institutional Adaptation Lag"
+      ],
+      "update_test": "Council formal adoption recorded in the EU register; political agreement alone does not count",
+      "resolve_by": "2026-07-31",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": null,
+      "corrections": [],
+      "related_to": [
+        {
+          "id": "claim-20260610-004",
+          "relation": "probes",
+          "note": "Council agreement on the omnibus is the first observable gate the simplification claim must pass through",
+          "date": "2026-06-11T17:08:37Z"
+        }
+      ],
+      "evidence": [
+        {
+          "date": "2026-06-10",
+          "direction": "supports",
+          "note": "EU Council published the provisionally agreed Digital Omnibus on AI compromise text 2026-05-13 as Council document 9247/26 (endorsing 9034/26). Multiple law firm trackers (Latham & Watkins, Gibson Dunn, White & Case) expect formal Council adoption before 2026-08-02 to avoid Annex III lapse. Evidence supports the directional claim; formal Council vote NOT YET recorded in EU register, so claim stays open and unresolved per its strict update test ('Council formal adoption recorded; political agreement alone does not count').",
+          "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/"
+        },
+        {
+          "date": "2026-06-11",
+          "direction": "supports",
+          "note": "EU Commission press release IP_26_1024 (2026-05-07 provisional Council-Parliament agreement); Council document 9247/26 published 2026-05-13 with the agreed Digital Omnibus text. Multiple legal trackers (Gibson Dunn, White & Case, Latham & Watkins, DLA Piper) explicitly expect formal Council adoption before 2026-08-02 to avoid Annex III HRAIS lapse — directional pressure is overwhelming. Update test still strict ('formal Council adoption recorded in EU register; political agreement does not count') — claim stays open pending formal vote.",
+          "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1024"
+        },
+        {
+          "date": "2026-06-13",
+          "direction": "supports",
+          "note": "Council/Parliament/Commission reached provisional agreement on EU Digital Omnibus on AI 2026-05-07. Multiple legal trackers report formal Council adoption expected June 2026 with publication anticipated July - putting the path to formal adoption by 2026-07-31 squarely on track but not yet completed.",
+          "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/"
+        }
+      ],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260610-011",
+      "date": "2026-06-10",
+      "registered_at": "2026-06-10T06:09:11Z",
+      "claim": "At least one Big Five Q2-2026 earnings call (Jul-Aug) raises full-year AI capex guidance again",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "in",
+      "grounding": "Q2 earnings calls are dated public events with published transcripts",
+      "withdrawal": null,
+      "confidence": 0.75,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.7,
+      "frameworks": [
+        "Innovation Energy Cycle"
+      ],
+      "update_test": "Earnings transcripts by 2026-08-15: any explicit upward revision of FY capex guidance tied to AI/data centres",
+      "resolve_by": "2026-08-15",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": null,
+      "corrections": [],
+      "related_to": [
+        {
+          "id": "claim-20260610-008",
+          "relation": "opposes",
+          "note": "a raised full-year capex guidance in Q2 earnings pulls directly against the cut-or-flatten position",
+          "date": "2026-06-11T17:08:37Z"
+        }
+      ],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260610-012",
+      "date": "2026-06-10",
+      "registered_at": "2026-06-10T06:59:23Z",
+      "claim": "Through 2027-06-30, governance and public-sector roles will show no measurable surge of elite talent inflows: published civil-service application volumes (UK Civil Service Fast Stream, US federal USAJOBS annual reporting) and major govtech hiring indices all stay below +25% versus their 2025 baselines",
+      "committed_by": "bruno",
+      "tier": "structural",
+      "frame": "in",
+      "grounding": "Published application-volume and hiring datasets that exist and report annually; 2025 baselines are already on record",
+      "withdrawal": null,
+      "confidence": 0.72,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": "Strictly harder than the withdrawn 003 (no escape clause): if a renewal trigger emerges AND reallocation follows, this now fails. Dropped from 0.80 to 0.72 accordingly.",
+      "base_rate": null,
+      "frameworks": [
+        "Reallocation Threshold",
+        "Governance Cycle Renewal Gap"
+      ],
+      "update_test": "Confirmed if no listed dataset shows a +25% rise vs 2025 by 2027-06-30; disconfirmed if any does; partial if data discontinued for some but no observed surge elsewhere",
+      "resolve_by": "2027-06-30",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": null,
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260610-013",
+      "date": "2026-06-10",
+      "registered_at": "2026-06-10T06:59:23Z",
+      "claim": "At least one of the named 2026 African AI infrastructure projects (Kasi Cloud Lekki 100MW campus, Uganda's announced AI factory, Kenya hyperscale builds) will, by 2027-03-31, either delay its next announced phase by six or more months or have brought less than half of its announced capacity into service",
+      "committed_by": "twin",
+      "tier": "structural",
+      "frame": "in",
+      "grounding": "Named, announced projects with public capacity figures and phase timelines on record",
+      "withdrawal": null,
+      "confidence": 0.7,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": "Observable version is stricter than the withdrawn mechanism-claim's 0.80: a project can stall for absorption reasons without tripping the 6-month/50% thresholds. Dropped to 0.70.",
+      "base_rate": null,
+      "frameworks": [
+        "Absorption Stack Model",
+        "Cultural Adoption Filter"
+      ],
+      "update_test": "Company announcements, press coverage, and industry trackers: confirmed on any 6+ month phase slip or <50% of announced capacity in service at any listed project; disconfirmed if all listed projects hit phases within 6 months and exceed half capacity",
+      "resolve_by": "2027-03-31",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": null,
+      "corrections": [],
+      "related_to": [],
+      "evidence": [
+        {
+          "date": "2026-06-10",
+          "direction": "against",
+          "note": "Kasi Cloud Lekki 5.5MW first phase commissioned 2026-05-19, on its announced Q2-2026 schedule — first named project hit its phase target without slip. One project on time does not disconfirm the umbrella claim (Uganda AI factory + Kenya hyperscale builds still untested through 2027-03-31), but this is one of three test legs falling against the slip hypothesis.",
+          "source_url": "https://www.datacenterdynamics.com/en/news/nigerian-data-center-operator-kasi-opens-first-phase-of-100mw-facility/"
+        },
+        {
+          "date": "2026-06-11",
+          "direction": "supports",
+          "note": "Microsoft-G42 Kenya geothermal hyperscale DC formally suspended by Pres. Ruto 2026-05-08 over 1GW power requirement vs Kenya's 3GW total installed capacity — explicit slip/scope cut at one of the three listed project legs (Kenya hyperscale builds). Combined with Kasi commissioning the other direction, the umbrella claim is now leaning confirmed via the Kenya leg.",
+          "source_url": "https://www.datacenterdynamics.com/en/news/microsoft-and-g42-data-center-in-kenya-stalled-due-to-lack-of-power-capacity/"
+        }
+      ],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260610-014",
+      "date": "2026-06-10",
+      "registered_at": "2026-06-10T12:13:36Z",
+      "claim": "Through end-2027, cumulative powered MW capacity across the named 2026 African AI data-centre projects (Kasi Cloud Lekki 100MW campus, Tetracore Ogun 20MW gas-powered DC, Uganda announced AI factory, Microsoft-G42 Kenya 1GW geothermal) will be less than 25% of cumulative announced MW capacity.",
+      "committed_by": "twin",
+      "tier": "structural",
+      "frame": "in",
+      "grounding": "Named projects: Kasi Cloud Lekki 100MW (5.5MW live as of 2026-05-19); Tetracore Ogun 20MW gas-powered DC announced March 2026 with Huawei/Inspirive; Uganda AI factory (Mar 2026 announcement); Microsoft-G42 Kenya $1B geothermal data centre (2024 announcement). DCD and Africa DC Association tracker exist today.",
+      "withdrawal": null,
+      "confidence": 0.62,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.55,
+      "frameworks": [
+        "Infrastructure Stack Model"
+      ],
+      "update_test": "End-2027 cumulative powered MW (per DCD industry tracker + Africa Data Centres Association annual report) divided by cumulative announced MW for the four named projects: confirmed if <25%, disconfirmed if >=25%, partial if data missing for >=2 of 4 projects.",
+      "resolve_by": "2027-12-31",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": null,
+      "corrections": [],
+      "related_to": [
+        {
+          "id": "claim-20260610-013",
+          "relation": "sharpens",
+          "note": "restates phase delivery as a cumulative powered-MW number, measurable from public commissioning announcements",
+          "date": "2026-06-11T17:08:37Z"
+        }
+      ],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260610-015",
+      "date": "2026-06-10",
+      "registered_at": "2026-06-10T12:13:46Z",
+      "claim": "Through 2027-12-31, at least three jurisdictions (national or supranational) outside the European Union and ICJ will adopt explicit intergenerational-equity language in BINDING (gazetted law, regulation, or directive — not strategy paper or white paper) AI or data-centre policy.",
+      "committed_by": "twin",
+      "tier": "structural",
+      "frame": "in",
+      "grounding": "Existing anchors: EU Intergenerational Fairness Strategy (March 2026, aspirational); ICJ Advisory Opinion 32 (intergenerational-equity binding standard, 2026); EU Commissioner for Intergenerational Fairness (named office); US Indigenous Data Sovereignty Network 2026 Seventh Generation statement (non-binding). Question: does the binding form spread beyond EU + ICJ?",
+      "withdrawal": null,
+      "confidence": 0.32,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.2,
+      "frameworks": [
+        "Consent Horizon"
+      ],
+      "update_test": "Count of binding policy texts (laws, regulations, gazetted directives) outside EU and ICJ that explicitly invoke intergenerational equity, future generations, or seventh-generation language while regulating AI infrastructure or data centres: confirmed if >=3 from distinct jurisdictions, disconfirmed if <=2, partial if 3+ exist but at least one is purely declarative.",
+      "resolve_by": "2027-12-31",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": null,
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260610-016",
+      "date": "2026-06-10",
+      "registered_at": "2026-06-10T12:13:52Z",
+      "claim": "By 2027-12-31, at least two non-EU jurisdictions will publicly cite the EU AI Act 2026 omnibus simplification as precedent in their own deferral or softening of frontier-AI obligations.",
+      "committed_by": "twin",
+      "tier": "structural",
+      "frame": "in",
+      "grounding": "EU Digital Omnibus on AI: Council document 9247/26 published 2026-05-13, defers Annex III high-risk obligations 16 months and Annex I obligations 12 months. Active non-EU AI rulemaking exists in UK (AI Action Plan), US (state-level patchwork), Canada (AIDA), Singapore (Model AI Governance Framework), Korea (AI Framework Act), Brazil (PL 2338).",
+      "withdrawal": null,
+      "confidence": 0.58,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.5,
+      "frameworks": [
+        "Institutional Adaptation Lag"
+      ],
+      "update_test": "Public regulatory document, ministerial statement, or formal consultation response from at least two jurisdictions outside the EU explicitly referencing the 2026 EU omnibus as justification or precedent for their own deferral or softening of AI obligations: confirmed if >=2 such citations identifiable in primary sources, disconfirmed otherwise.",
+      "resolve_by": "2027-12-31",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": null,
+      "corrections": [],
+      "related_to": [
+        {
+          "id": "claim-20260610-004",
+          "relation": "shares-system",
+          "note": "third-country citation of the EU framework reads the same regulatory gravity the simplification claim bets against",
+          "date": "2026-06-11T17:08:37Z"
+        }
+      ],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260610-017",
+      "date": "2026-06-10",
+      "registered_at": "2026-06-10T12:14:01Z",
+      "claim": "The EU AI Office issues at least one official guidance document, FAQ update, or interpretive note explicitly addressing the Digital Omnibus on AI deferrals by 2026-08-09.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "in",
+      "grounding": "EU AI Office publishes guidance on artificialintelligenceact.eu and digital-strategy.ec.europa.eu. The May 2026 omnibus (Council document 9247/26) defers Annex III HRAIS obligations 16 months. The AI Office routinely issues interpretive notes around new package adoptions.",
+      "withdrawal": null,
+      "confidence": 0.32,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.4,
+      "frameworks": [],
+      "update_test": "European Commission AI Office publication on digital-strategy.ec.europa.eu or EU register dated on or before 2026-08-09 that explicitly addresses how the Digital Omnibus deferrals apply: confirmed if at least one such document is identifiable, disconfirmed if none exists by 2026-08-09 EOD CET.",
+      "resolve_by": "2026-08-09",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": null,
+      "corrections": [],
+      "related_to": [
+        {
+          "id": "claim-20260610-004",
+          "relation": "shares-system",
+          "note": "AI Office guidance volume reads the same enforcement posture the simplification claim bets on",
+          "date": "2026-06-11T17:08:37Z"
+        }
+      ],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260610-018",
+      "date": "2026-06-10",
+      "registered_at": "2026-06-10T12:14:07Z",
+      "claim": "At least one of the named 2026 African AI infrastructure projects (Kasi Cloud Lekki next phase above 5.5MW, Tetracore Ogun 20MW gas DC, Uganda announced AI factory, Microsoft-G42 Kenya geothermal DC) will publicly announce a delay, scope reduction, or financing gap by 2026-08-09.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "in",
+      "grounding": "Named projects all exist with public commitments today. Schneider Electric and Africa DC Association have publicly flagged electricity supply as the binding constraint (Businessday NG, June 2026). DCD and TechCabal tracker activity is reliable.",
+      "withdrawal": null,
+      "confidence": 0.35,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.3,
+      "frameworks": [],
+      "update_test": "Any company announcement, press coverage, or industry tracker note before 2026-08-09 indicating slip, scope cut, or financing gap at any of the four named projects: confirmed if >=1 such item identifiable, disconfirmed otherwise. A celebratory progress announcement does not count.",
+      "resolve_by": "2026-08-09",
+      "status": "resolved",
+      "validity": {
+        "status": "invalid",
+        "date": "2026-06-11T18:12:39Z",
+        "reason": "Outcome pre-dated registration: the Microsoft-G42 Olkaria suspension that confirmed this claim was public on 2026-05-08, a month before registration on 2026-06-10. The resolution postmortem flagged the calibration failure; the record now also refuses the win. Pre-registration evidence search is now mandatory for every new claim."
+      },
+      "prereg_audit": null,
+      "corrections": [],
+      "related_to": [
+        {
+          "id": "claim-20260610-013",
+          "relation": "probes",
+          "note": "60-day milestone instrument on the same named-project set the structural claim tracks through 2027",
+          "date": "2026-06-11T17:08:37Z"
+        }
+      ],
+      "evidence": [],
+      "resolution": {
+        "date": "2026-06-11T12:13:51Z",
+        "outcome": "confirmed",
+        "note": "RESOLVED CONFIRMED on the Kenya leg. Kenya President William Ruto publicly suspended the Microsoft-G42 Olkaria/KenGen 1GW geothermal data centre 2026-05-08, citing power capacity (1GW vs Kenya's ~3GW installed). Multiple primary sources: thinkgeoenergy.com, datacenterdynamics.com (DCD), Tom's Hardware, techweez.com, iafrica.com. The update test is unambiguous: 'Any company announcement, press coverage, or industry tracker note before 2026-08-09 indicating slip, scope cut, or financing gap.' Government suspension of a flagship B project IS a slip and scope cut. Twin confidence was 0.35 — uncalibrated against pre-registration news that had already been public for a month at claim-registration time. Calibration lesson: pre-register search depth was insufficient. Evidence URL: https://www.datacenterdynamics.com/en/news/microsoft-and-g42-data-center-in-kenya-stalled-due-to-lack-of-power-capacity/"
+      }
+    },
+    {
+      "id": "claim-20260610-019",
+      "date": "2026-06-10",
+      "registered_at": "2026-06-10T12:14:15Z",
+      "claim": "The US Federal Reserve FOMC will NOT raise the federal funds rate target range at its 2026-07-28/29 meeting (hold or cut, but not raise).",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "Federal Reserve Board publishes FOMC meeting schedule; July 28-29 2026 is on the official calendar. Decision is published 2026-07-29 at 14:00 ET in the Federal Reserve press release.",
+      "withdrawal": null,
+      "confidence": 0.88,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.85,
+      "frameworks": [],
+      "update_test": "Federal Reserve press release on or about 2026-07-29 reporting the FOMC decision on the federal funds rate target range: confirmed if the upper bound of the target range is equal to or lower than the upper bound set at the prior (June 2026) meeting, disconfirmed if raised.",
+      "resolve_by": "2026-07-30",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": null,
+      "corrections": [
+        {
+          "date": "2026-06-11T19:40:17Z",
+          "target": "evidence[0]",
+          "note": "CORRECTION 2026-06-11: the evidence entry of 2026-06-10 stated Kevin Warsh was installed as Chair 2026-05-15. The official Federal Reserve press release records his oath of office on 2026-05-22 (Senate confirmation 2026-05-13). The correction does not change the direction of the evidence."
+        }
+      ],
+      "related_to": [],
+      "evidence": [
+        {
+          "date": "2026-06-11",
+          "direction": "supports",
+          "note": "Prediction markets (Polymarket, Kalshi) price 97-98% probability of Fed holding rates at the June 16-17 meeting prior to the July 28-29 meeting; markets price no rate moves rest of 2026; FOMC has held three consecutive meetings (April 29 was 8-4 hold with most dissents since 1992); Kevin Warsh installed as Chair 2026-05-15 inheriting divided committee, recent May CPI 4.2% YoY reduces cut odds. All directionally supportive of HOLD-or-CUT (the claim direction) at July 28-29; no scenario raises rates is currently priced.",
+          "source_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260610-020",
+      "date": "2026-06-10",
+      "registered_at": "2026-06-10T12:14:20Z",
+      "claim": "At least one Big Five US tech firm (Alphabet, Amazon, Apple, Meta, Microsoft) Q2-2026 calendar earnings release (reported between 2026-07-15 and 2026-08-09) will report year-over-year revenue decline OR year-over-year adjusted EPS decline.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "Alphabet, Amazon, Apple, Meta, Microsoft all report Q2 calendar earnings in the last two weeks of July 2026. Press releases on each firm's investor relations site and SEC EDGAR filings. Q1 2026 cycle showed all five posting YoY revenue gains; Q2 2026 not yet reported as of 2026-06-10.",
+      "withdrawal": null,
+      "confidence": 0.22,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.25,
+      "frameworks": [],
+      "update_test": "Reading each of the five firms' Q2-2026 calendar earnings press releases as published between 2026-07-15 and 2026-08-09: confirmed if any of the five reports a YoY decline in either reported revenue or adjusted (non-GAAP) EPS on a single-metric basis, disconfirmed if all five report YoY gains in both metrics.",
+      "resolve_by": "2026-08-09",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": null,
+      "corrections": [],
+      "related_to": [
+        {
+          "id": "claim-20260610-008",
+          "relation": "probes",
+          "note": "disclosure of capex composition shift is an early tell on the willingness to cut or flatten",
+          "date": "2026-06-11T17:08:37Z"
+        }
+      ],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260611-001",
+      "date": "2026-06-11",
+      "registered_at": "2026-06-11T12:14:53Z",
+      "claim": "The US Federal Reserve FOMC will hold (not raise, not cut) the federal funds rate target range at its 2026-06-16/17 meeting.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "FOMC June 16-17 2026 meeting on the official Federal Reserve calendar; Kevin Warsh confirmed by the Senate 2026-05-13 and took the oath as Chair 2026-05-22 (Federal Reserve press release, corrected 2026-06-11 from an earlier 05-15 error); April 29 hold was 8-4 dissents.",
+      "withdrawal": null,
+      "confidence": 0.92,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.92,
+      "frameworks": [],
+      "update_test": "Federal Reserve press release on or about 2026-06-17 ~14:00 ET reporting the FOMC decision: confirmed if upper bound of target range == upper bound at 2026-04-29 (3.75%); disconfirmed otherwise.",
+      "resolve_by": "2026-06-18",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": null,
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260611-002",
+      "date": "2026-06-11",
+      "registered_at": "2026-06-11T12:14:58Z",
+      "claim": "The ECB Governing Council will NOT cut its three key interest rates (Deposit Facility, Main Refinancing, Marginal Lending) at the 2026-07-23 monetary policy meeting.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "ECB Governing Council monetary policy meeting on the public ECB calendar for 2026-07-23. April 30 hold set DF 2.00%/MRO 2.15%/MLF 2.40%. Eurozone HICP still above target; some commentary suggests hikes priced for 2026 — directional pressure is hold-or-hike, not cut.",
+      "withdrawal": null,
+      "confidence": 0.85,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.85,
+      "frameworks": [],
+      "update_test": "ECB monetary policy statement published 2026-07-23 ~14:15 CET: confirmed if Deposit Facility Rate >= 2.00% (current level set at the April 30 2026 meeting); disconfirmed if any of the three key rates is set below its current level (DF 2.00%, MRO 2.15%, MLF 2.40%).",
+      "resolve_by": "2026-07-24",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": null,
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260612-001",
+      "date": "2026-06-12",
+      "registered_at": "2026-06-12T12:12:14Z",
+      "claim": "The Bank of England Monetary Policy Committee will hold the Bank Rate at 3.75 percent (no change from the 2026-05 level) at its 2026-06-18 meeting.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "Bank of England MPC meeting on the public BoE calendar for 2026-06-18. Bank Rate currently 3.75 percent since late 2025. April 2026 vote was 8-1 hold.",
+      "withdrawal": null,
+      "confidence": 0.9,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.85,
+      "frameworks": [],
+      "update_test": "Bank of England Monetary Policy Summary published 2026-06-18 at 12:00 BST: confirmed if the Bank Rate decision reported equals 3.75 percent (the prior-meeting level); disconfirmed if the rate is set above or below 3.75 percent.",
+      "resolve_by": "2026-06-19",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-06-12T12:12:14Z",
+        "auditor": "twin",
+        "note": "Searched for the 2026-06-18 BoE MPC decision; no decision is yet public as of 2026-06-12 (meeting has not occurred). Confirmed via BoE upcoming-MPC-dates page and consensus forecaster coverage from Finance Calendar, Mortgage One, HOA, Kael Tripton.",
+        "queries": [
+          "Bank of England MPC meeting June 2026 rate decision",
+          "bank of england june 18 2026 hold"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260612-002",
+      "date": "2026-06-12",
+      "registered_at": "2026-06-12T12:12:25Z",
+      "claim": "The FOMC June 2026 Summary of Economic Projections will show the median 2026 year-end federal funds rate projection greater than or equal to 3.4 percent (the median value in the March 2026 SEP).",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "FOMC June 16-17 2026 meeting on the official Federal Reserve calendar; Summary of Economic Projections released at 14:00 ET on 2026-06-17 in PDF and HTML on federalreserve.gov. March 2026 SEP median 2026 year-end fed funds rate was 3.4 percent (one cut implied from 3.50-3.75 current band).",
+      "withdrawal": null,
+      "confidence": 0.72,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.6,
+      "frameworks": [],
+      "update_test": "FOMC Summary of Economic Projections PDF posted 2026-06-17 ~14:00 ET on federalreserve.gov: read the median 2026 year-end federal funds rate projection in the dot-plot table. Confirmed if the median 2026 year-end value is at or above 3.4 percent; disconfirmed if the median is below 3.4 percent.",
+      "resolve_by": "2026-06-18",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-06-12T12:12:25Z",
+        "auditor": "twin",
+        "note": "Searched for the June 2026 SEP; not yet released as of 2026-06-12. March 2026 SEP confirmed at 3.4 percent median 2026 year-end via FRED and J.P. Morgan Asset Management summaries. May 2026 CPI prints at 4.2 percent YoY and energy-driven inflation pressure increase the probability the median holds or rises rather than falls.",
+        "queries": [
+          "FOMC March 2026 Summary of Economic Projections median fed funds rate",
+          "FOMC June 2026 meeting decision rate"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [
+        {
+          "id": "claim-20260611-001",
+          "relation": "shares-system",
+          "note": "Both are reads on the June 17 FOMC meeting: 001 is the rate decision, 002 is the SEP dot-plot projection. Same Fed system, different observable instruments.",
+          "date": "2026-06-12T12:12:49Z"
+        }
+      ],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260612-003",
+      "date": "2026-06-12",
+      "registered_at": "2026-06-12T12:12:36Z",
+      "claim": "All three AfCFTA ADAPT pilot countries (Kenya, Morocco, Nigeria) will publicly confirm the establishment of their national Country Implementation Forum by 2026-07-15.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "in",
+      "grounding": "AfCFTA Secretariat announced 2026-05-19 in Accra that the next ADAPT milestone is the creation of Country Implementation Forums in each of Kenya, Morocco, and Nigeria by the end of June. ADAPT partners include World Economic Forum, Tony Blair Institute, and IOTA Foundation - announcement-pattern partners with active comms.",
+      "withdrawal": null,
+      "confidence": 0.55,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.45,
+      "frameworks": [],
+      "update_test": "By 2026-07-15 EOD UTC, identifiable public announcement (government press release, AfCFTA Secretariat communique, or partner press release) confirming each of three Country Implementation Forums has been formally established. Confirmed if announcements exist for ALL three of Kenya, Morocco, Nigeria; disconfirmed if at least one of the three has no public establishment announcement by the deadline.",
+      "resolve_by": "2026-07-15",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-06-12T12:12:36Z",
+        "auditor": "twin",
+        "note": "Searched for AfCFTA ADAPT Country Implementation Forum announcements 2026-06-12; no public confirmation of establishment found for any of the three pilot countries. AfCFTA Secretariat May 19 launch and partner coverage describe CIF establishment as the next milestone, not yet completed.",
+        "queries": [
+          "AfCFTA ADAPT Country Implementation Forum Kenya Nigeria Morocco June 2026",
+          "AfCFTA ADAPT digital trade pilot Nigeria Kenya Morocco June 2026 launch"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [
+        {
+          "id": "claim-20260610-013",
+          "relation": "shares-system",
+          "note": "Both observe the operational execution of African continental infrastructure builds: 013 is the named AI infrastructure projects through 2027 Q1, 003 is the AfCFTA ADAPT CIF milestone by mid-2026 Q3. Same African DPI/AI substrate, different scope and timeframe.",
+          "date": "2026-06-12T12:12:49Z"
+        }
+      ],
+      "evidence": [
+        {
+          "date": "2026-06-13",
+          "direction": "supports",
+          "note": "AfCFTA Secretariat publicly named 2026-05-19 (Accra launch) and confirmed end-June Country Implementation Forum target for Kenya, Morocco, Nigeria. Pilot already running early phases: national forums, core-infrastructure integration, digital-currency/stablecoin regulatory testing. Trajectory supports the 2026-07-15 update test; forums not yet confirmed established as of 2026-06-13.",
+          "source_url": "https://www.ghanamma.com/2026/05/29/nigeria-kenya-and-morocco-to-pilot-afcfta-digital-trade-infrastructure/"
+        }
+      ],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260612-hs2-P1",
+      "date": "2026-06-12",
+      "registered_at": "2026-06-12T15:48:11Z",
+      "claim": "Backtest Target A (cost/schedule) PASS: a dynamic-deterministic model fit only on HS2 data <=2015-12-31 forecasts the DIRECTION and PERSISTENCE of cost escalation and schedule slip 2016-2024 within the pre-registered bands (>=6/9 years, +-50% cost, +-24mo schedule).",
+      "committed_by": "twin",
+      "tier": "experiment",
+      "frame": "out",
+      "grounding": "Cost escalation in megaprojects is overdetermined and near-monotonic; direction is the easy target. See experiments/hs2-backtest/preregistration.md sec 2-3.",
+      "withdrawal": null,
+      "confidence": 0.85,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": null,
+      "frameworks": [
+        "non-autonomous-state-space",
+        "predictability-horizon",
+        "system-boundary",
+        "reflexivity"
+      ],
+      "update_test": "Run the frozen-2015 model per preregistration.md; A-PASS iff >=6 of 9 years meet correct-sign + cost within +-50% + schedule within +-24mo of actual out-turn.",
+      "resolve_by": "2026-12-31",
+      "status": "resolved",
+      "validity": {
+        "status": "invalid",
+        "date": "2026-06-12T21:26:18Z",
+        "reason": "Registered 2026-06-12 by direct JSONL edit, bypassing the CLI covenant: no pre-registration audit, and the outcomes (HS2 cancellation 2023; reference-class results) were publicly known before registration. A method-experiment retrodiction, not a live forecast. Visible forever; never scored."
+      },
+      "prereg_audit": null,
+      "corrections": [],
+      "related_to": [],
+      "evidence": [
+        {
+          "date": "2026-06-12",
+          "direction": "supports",
+          "note": "A-PASS: correct sign every year 2016-2022 and cost within +-50% for >=7/9 years; Phase 1 opening within +-24mo across the run. Overdetermined target, as expected.",
+          "source_url": null
+        }
+      ],
+      "resolution": {
+        "date": "2026-06-12T16:21:48Z",
+        "outcome": "confirmed",
+        "note": "A-PASS: correct sign every year 2016-2022 and cost within +-50% for >=7/9 years; Phase 1 opening within +-24mo across the run. Overdetermined target, as expected. | source: experiments/hs2-backtest/results.md (run 2026-06-12, blind Sonnet forecaster vs sealed scoring key)"
+      }
+    },
+    {
+      "id": "claim-20260612-hs2-P2",
+      "date": "2026-06-12",
+      "registered_at": "2026-06-12T15:48:11Z",
+      "claim": "Backtest Target B (regime shifts) FAIL: the HS2 leg cancellations (eastern/Leeds ~2021; Manchester/Phase 2 Oct 2023) were NOT forecastable to >0.5 probability and within +-24 months from HS2 data restricted to <=2015-12-31.",
+      "committed_by": "twin",
+      "tier": "experiment",
+      "frame": "out",
+      "grounding": "Cancellations were discrete political decisions, not endogenous program dynamics. See preregistration.md sec 2-3 (Target B).",
+      "withdrawal": null,
+      "confidence": 0.7,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": null,
+      "frameworks": [
+        "non-autonomous-state-space",
+        "predictability-horizon",
+        "system-boundary",
+        "reflexivity"
+      ],
+      "update_test": "B-PASS iff the <=2015 model assigns >0.5 to 'a leg cancelled by end-2024' AND ranks eastern leg riskier than Phase 1 AND dates first descope within +-24mo of 2021; P2 confirmed iff B-FAIL.",
+      "resolve_by": "2026-12-31",
+      "status": "resolved",
+      "validity": {
+        "status": "invalid",
+        "date": "2026-06-12T21:26:18Z",
+        "reason": "Registered 2026-06-12 by direct JSONL edit, bypassing the CLI covenant: no pre-registration audit, and the outcomes (HS2 cancellation 2023; reference-class results) were publicly known before registration. A method-experiment retrodiction, not a live forecast. Visible forever; never scored."
+      },
+      "prereg_audit": null,
+      "corrections": [],
+      "related_to": [],
+      "evidence": [
+        {
+          "date": "2026-06-12",
+          "direction": "supports",
+          "note": "B-FAIL: blind forecaster reported P(cancellation by 2024)=0.45, below the pre-registered >0.5 bar, despite getting the at-risk leg (eastern) and timing (2022-23) right. Could not cross the threshold from inside the 2015 boundary.",
+          "source_url": null
+        }
+      ],
+      "resolution": {
+        "date": "2026-06-12T16:21:48Z",
+        "outcome": "confirmed",
+        "note": "B-FAIL: blind forecaster reported P(cancellation by 2024)=0.45, below the pre-registered >0.5 bar, despite getting the at-risk leg (eastern) and timing (2022-23) right. Could not cross the threshold from inside the 2015 boundary. | source: experiments/hs2-backtest/results.md (run 2026-06-12, blind Sonnet forecaster vs sealed scoring key)"
+      }
+    },
+    {
+      "id": "claim-20260612-hs2-P3",
+      "date": "2026-06-12",
+      "registered_at": "2026-06-12T15:48:11Z",
+      "claim": "Boundary tally: the dominant drivers of the decision-relevant (Target B) HS2 outcomes classify MAJORITY OUTSIDE the 2015 system boundary (COVID fiscal shock, 2022 inflation/gilt regime, change of government/PM) rather than inside (geology, contractor, scope, contingency).",
+      "committed_by": "twin",
+      "tier": "experiment",
+      "frame": "out",
+      "grounding": "The 2020-2024 cancellation drivers are national-political and macro, not traceable to 2015 risk registers. See preregistration.md sec 4.",
+      "withdrawal": null,
+      "confidence": 0.72,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": null,
+      "frameworks": [
+        "non-autonomous-state-space",
+        "predictability-horizon",
+        "system-boundary",
+        "reflexivity"
+      ],
+      "update_test": "Classify each Target-B outcome's dominant driver inside/outside per preregistration.md sec 4; P3 confirmed iff OUTSIDE > INSIDE among Target-B outcomes.",
+      "resolve_by": "2026-12-31",
+      "status": "resolved",
+      "validity": {
+        "status": "invalid",
+        "date": "2026-06-12T21:26:18Z",
+        "reason": "Registered 2026-06-12 by direct JSONL edit, bypassing the CLI covenant: no pre-registration audit, and the outcomes (HS2 cancellation 2023; reference-class results) were publicly known before registration. A method-experiment retrodiction, not a live forecast. Visible forever; never scored."
+      },
+      "prereg_audit": null,
+      "corrections": [],
+      "related_to": [],
+      "evidence": [
+        {
+          "date": "2026-06-12",
+          "direction": "supports",
+          "note": "Both Target-B cancellations classify dominant-driver OUTSIDE: eastern leg (Nov 2021 IRP, political reprioritisation + post-COVID fiscal); Phase 2 (Oct 2023 Sunak, post-COVID demand collapse + 2022 gilt/inflation + political decision). Tally OUTSIDE>INSIDE.",
+          "source_url": null
+        }
+      ],
+      "resolution": {
+        "date": "2026-06-12T16:21:48Z",
+        "outcome": "confirmed",
+        "note": "Both Target-B cancellations classify dominant-driver OUTSIDE: eastern leg (Nov 2021 IRP, political reprioritisation + post-COVID fiscal); Phase 2 (Oct 2023 Sunak, post-COVID demand collapse + 2022 gilt/inflation + political decision). Tally OUTSIDE>INSIDE. | source: experiments/hs2-backtest/results.md (run 2026-06-12, blind Sonnet forecaster vs sealed scoring key)"
+      }
+    },
+    {
+      "id": "claim-20260612-hs2-P4",
+      "date": "2026-06-12",
+      "registered_at": "2026-06-12T15:48:11Z",
+      "claim": "Net verdict of the HS2 backtest = 'short-horizon deterministic, long-horizon boundary-limited': the input-driven model nowcasts/short-forecasts well (A-PASS) but the decisive outcomes are exogenous to the 2015 boundary (B-FAIL, drivers OUTSIDE).",
+      "committed_by": "twin",
+      "tier": "experiment",
+      "frame": "out",
+      "grounding": "Composite of P1+P2+P3; the verdict logic is fixed in preregistration.md sec 5.",
+      "withdrawal": null,
+      "confidence": 0.68,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": null,
+      "frameworks": [
+        "non-autonomous-state-space",
+        "predictability-horizon",
+        "system-boundary",
+        "reflexivity"
+      ],
+      "update_test": "Apply preregistration.md sec-5 verdict table to the backtest results; P4 confirmed iff verdict == 'boundary-limited wins'.",
+      "resolve_by": "2026-12-31",
+      "status": "resolved",
+      "validity": {
+        "status": "invalid",
+        "date": "2026-06-12T21:26:18Z",
+        "reason": "Registered 2026-06-12 by direct JSONL edit, bypassing the CLI covenant: no pre-registration audit, and the outcomes (HS2 cancellation 2023; reference-class results) were publicly known before registration. A method-experiment retrodiction, not a live forecast. Visible forever; never scored."
+      },
+      "prereg_audit": null,
+      "corrections": [],
+      "related_to": [],
+      "evidence": [
+        {
+          "date": "2026-06-12",
+          "direction": "supports",
+          "note": "Verdict per preregistration sec-5 table = 'boundary-limited wins' (A-PASS + B-FAIL + drivers OUTSIDE). Robust: contamination vector (Sonnet pretraining knows the outcome) runs AGAINST this result yet B1a still landed at 0.45.",
+          "source_url": null
+        }
+      ],
+      "resolution": {
+        "date": "2026-06-12T16:21:48Z",
+        "outcome": "confirmed",
+        "note": "Verdict per preregistration sec-5 table = 'boundary-limited wins' (A-PASS + B-FAIL + drivers OUTSIDE). Robust: contamination vector (Sonnet pretraining knows the outcome) runs AGAINST this result yet B1a still landed at 0.45. | source: experiments/hs2-backtest/results.md (run 2026-06-12, blind Sonnet forecaster vs sealed scoring key)"
+      }
+    },
+    {
+      "id": "claim-20260612-hs2-C1",
+      "date": "2026-06-12",
+      "registered_at": "2026-06-12T16:45:26Z",
+      "claim": "Claim 2 (pure) FAILS: in a fragility-selected reference class of major rail/transport megaprojects, high-fragility LEGISLATED/CONTRACTED (committed) projects mostly COMPLETE-WITH-OVERRUN rather than cancel/descope (cancel+descope rate < 0.5 among committed-fragile).",
+      "committed_by": "twin",
+      "tier": "experiment",
+      "frame": "out",
+      "grounding": "Sunk-cost / too-big-to-cancel dynamic; Crossrail, Big Dig, Berlin airport, Stuttgart 21 overran badly and completed. See claim2-fungible-trigger.md.",
+      "withdrawal": null,
+      "confidence": 0.72,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": null,
+      "frameworks": [
+        "reference-class-forecasting",
+        "fragility",
+        "sunk-cost-lock-in",
+        "exit-cost",
+        "fungible-trigger"
+      ],
+      "update_test": "Among reference-class cases coded high-fragility AND committed, compute (FULL-CANCELLATION + MAJOR-DESCOPE)/total; C1 confirmed iff < 0.5.",
+      "resolve_by": "2026-12-31",
+      "status": "resolved",
+      "validity": {
+        "status": "invalid",
+        "date": "2026-06-12T21:26:18Z",
+        "reason": "Registered 2026-06-12 by direct JSONL edit, bypassing the CLI covenant: no pre-registration audit, and the outcomes (HS2 cancellation 2023; reference-class results) were publicly known before registration. A method-experiment retrodiction, not a live forecast. Visible forever; never scored."
+      },
+      "prereg_audit": null,
+      "corrections": [],
+      "related_to": [],
+      "evidence": [
+        {
+          "date": "2026-06-12",
+          "direction": "supports",
+          "note": "Committed-fragile cancel/descope rate = 9% (1/11; only Edinburgh). Big Dig +428%, Channel Tunnel investor wipeout, Berlin 14yr late all COMPLETED. Pure Claim 2 refuted: fragility alone insufficient.",
+          "source_url": null
+        }
+      ],
+      "resolution": {
+        "date": "2026-06-12T17:13:51Z",
+        "outcome": "confirmed",
+        "note": "Committed-fragile cancel/descope rate = 9% (1/11; only Edinburgh). Big Dig +428%, Channel Tunnel investor wipeout, Berlin 14yr late all COMPLETED. Pure Claim 2 refuted: fragility alone insufficient. | source: experiments/hs2-backtest/claim2-results.md (16-case fragility-selected reference class, 2026-06-12)"
+      }
+    },
+    {
+      "id": "claim-20260612-hs2-C2",
+      "date": "2026-06-12",
+      "registered_at": "2026-06-12T16:45:26Z",
+      "claim": "Commitment-scoped Claim 2 HOLDS: high-fragility PROPOSED/UNCOMMITTED segments descope-or-cancel at > 0.5, and committed-fragile at < 0.3, with descoping occurring across mild as well as severe trigger environments (trigger fungible for the uncommitted).",
+      "committed_by": "twin",
+      "tier": "experiment",
+      "frame": "out",
+      "grounding": "Low exit cost for unlegislated/uncontracted scope; HS2 Phase 2b, CA-HSR uncommitted segments, 1975 Channel Tunnel, Garden Bridge. See claim2-fungible-trigger.md.",
+      "withdrawal": null,
+      "confidence": 0.62,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": null,
+      "frameworks": [
+        "reference-class-forecasting",
+        "fragility",
+        "sunk-cost-lock-in",
+        "exit-cost",
+        "fungible-trigger"
+      ],
+      "update_test": "Compute cancel/descope rate for uncommitted-fragile (expect >0.5) and committed-fragile (expect <0.3); check cancelled uncommitted cases span mild+severe triggers; C2 confirmed iff both rate thresholds met and trigger not confined to SEVERE.",
+      "resolve_by": "2026-12-31",
+      "status": "resolved",
+      "validity": {
+        "status": "invalid",
+        "date": "2026-06-12T21:26:18Z",
+        "reason": "Registered 2026-06-12 by direct JSONL edit, bypassing the CLI covenant: no pre-registration audit, and the outcomes (HS2 cancellation 2023; reference-class results) were publicly known before registration. A method-experiment retrodiction, not a live forecast. Visible forever; never scored."
+      },
+      "prereg_audit": null,
+      "corrections": [],
+      "related_to": [],
+      "evidence": [
+        {
+          "date": "2026-06-12",
+          "direction": "supports",
+          "note": "Uncommitted-fragile = 100% (4/4) cancel/descope; committed = 9%. Garden Bridge cancelled under a MILD trigger while committed projects survived SEVERE ones - trigger fungible for uncommitted.",
+          "source_url": null
+        }
+      ],
+      "resolution": {
+        "date": "2026-06-12T17:13:51Z",
+        "outcome": "confirmed",
+        "note": "Uncommitted-fragile = 100% (4/4) cancel/descope; committed = 9%. Garden Bridge cancelled under a MILD trigger while committed projects survived SEVERE ones - trigger fungible for uncommitted. | source: experiments/hs2-backtest/claim2-results.md (16-case fragility-selected reference class, 2026-06-12)"
+      }
+    },
+    {
+      "id": "claim-20260612-hs2-C3",
+      "date": "2026-06-12",
+      "registered_at": "2026-06-12T16:45:26Z",
+      "claim": "Net: the governing variable is EXIT COST (commitment status), not fragility per se. Bruno wins Claim 2 scoped to the uncommitted segment (fragility forces descoping trigger-fungibly) but loses the pure form (fragility alone regardless of commitment). HS2 Phase 1 surviving the same trigger stack that killed Phase 2b is the within-case confirmation.",
+      "committed_by": "twin",
+      "tier": "experiment",
+      "frame": "out",
+      "grounding": "Composite of C1+C2. See claim2-fungible-trigger.md scoring.",
+      "withdrawal": null,
+      "confidence": 0.6,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": null,
+      "frameworks": [
+        "reference-class-forecasting",
+        "fragility",
+        "sunk-cost-lock-in",
+        "exit-cost",
+        "fungible-trigger"
+      ],
+      "update_test": "Confirmed iff C1 and C2 both confirm AND HS2 Phase 1 (committed) coded COMPLETED-WITH-OVERRUN while HS2 Phase 2b (uncommitted) coded CANCELLATION in the same trigger environment.",
+      "resolve_by": "2026-12-31",
+      "status": "resolved",
+      "validity": {
+        "status": "invalid",
+        "date": "2026-06-12T21:26:19Z",
+        "reason": "Registered 2026-06-12 by direct JSONL edit, bypassing the CLI covenant: no pre-registration audit, and the outcomes (HS2 cancellation 2023; reference-class results) were publicly known before registration. A method-experiment retrodiction, not a live forecast. Visible forever; never scored."
+      },
+      "prereg_audit": null,
+      "corrections": [],
+      "related_to": [],
+      "evidence": [
+        {
+          "date": "2026-06-12",
+          "direction": "supports",
+          "note": "Governing variable = exit cost (commitment), not fragility/trigger. Two within-case natural experiments: HS2 P1 (committed, builds) vs P2b (uncommitted, cancelled) under identical triggers; CA-HSR committed segment builds vs uncommitted system descoped. Bruno wins scoped, loses pure.",
+          "source_url": null
+        }
+      ],
+      "resolution": {
+        "date": "2026-06-12T17:13:51Z",
+        "outcome": "confirmed",
+        "note": "Governing variable = exit cost (commitment), not fragility/trigger. Two within-case natural experiments: HS2 P1 (committed, builds) vs P2b (uncommitted, cancelled) under identical triggers; CA-HSR committed segment builds vs uncommitted system descoped. Bruno wins scoped, loses pure. | source: experiments/hs2-backtest/claim2-results.md (16-case fragility-selected reference class, 2026-06-12)"
+      }
+    },
+    {
+      "id": "claim-20260613-001",
+      "date": "2026-06-13",
+      "registered_at": "2026-06-13T12:09:38Z",
+      "claim": "The Bank of England Monetary Policy Committee June 18 2026 vote will show at least 7 of 9 members voting to hold Bank Rate at 3.75 percent",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "Bank of England MPC June 18 2026 scheduled meeting (Bank of England calendar) and the published voting record convention - the next MPC summary publishes the vote split inside the minutes on the meeting date",
+      "withdrawal": null,
+      "confidence": 0.82,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.78,
+      "frameworks": [],
+      "update_test": "BoE Monetary Policy Summary or Minutes for the meeting ending 2026-06-18 (published at 12:00 noon GMT on 2026-06-18) shows at least 7 of 9 MPC members voting to maintain Bank Rate at 3.75 percent",
+      "resolve_by": "2026-06-25",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-06-13T12:09:38Z",
+        "auditor": "twin",
+        "note": "Searched 'Bank of England MPC June 18 2026 vote split' on 2026-06-13; meeting has not occurred; previews (HomeOwners Alliance, MortgageOne) expect hold but vote split not disclosed in advance",
+        "queries": [
+          "Bank of England MPC June 18 2026 rate decision preview Bank Rate 3.75",
+          "BoE June 2026 vote split preview"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [
+        {
+          "id": "claim-20260612-001",
+          "relation": "probes",
+          "note": "Same BoE 2026-06-18 meeting; 613-001 sharpens 612-001 from binary hold/no-hold to vote-split granularity. Resolution evidence overlaps but reads different aspects.",
+          "date": "2026-06-13T12:10:03Z"
+        }
+      ],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260613-002",
+      "date": "2026-06-13",
+      "registered_at": "2026-06-13T12:09:46Z",
+      "claim": "Nigeria will publish its National AI Strategy as a formal document on an official Nigerian government domain by 2026-08-12",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "Nigeria National AI Strategy drafting process led by NITDA and the Federal Ministry of Communications Innovation and Digital Economy; multiple 2026 reports describe it as in draft and expected late-2025-to-early-2026 with a slipped target",
+      "withdrawal": null,
+      "confidence": 0.38,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.42,
+      "frameworks": [],
+      "update_test": "By 2026-08-12, a document titled 'Nigeria National AI Strategy' (or close variant) is publicly available on an official .gov.ng domain (NITDA, FMCIDE, or equivalent), dated 2026",
+      "resolve_by": "2026-08-12",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-06-13T12:09:46Z",
+        "auditor": "twin",
+        "note": "Searched 'Nigeria National AI Strategy publication 2026' on 2026-06-13; sources describe the strategy as still in draft and expected to be 'finalised between late 2025 and early 2026' with no evidence of formal publication as of the audit date",
+        "queries": [
+          "Nigeria National AI Strategy publication 2026",
+          "NITDA National AI Strategy site:gov.ng 2026"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260613-003",
+      "date": "2026-06-13",
+      "registered_at": "2026-06-13T12:09:56Z",
+      "claim": "By 2026-08-12, at least one of the three AfCFTA ADAPT pilot countries (Kenya, Morocco, Nigeria) will publicly publish a formal regulatory framework or pilot specification governing digital-currency or stablecoin settlements explicitly under the ADAPT initiative",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "in",
+      "grounding": "AfCFTA ADAPT pilot launched 2026-05-19 Accra; the publicly-announced implementation roadmap explicitly names testing of 'regulatory frameworks including models for digital currencies and stablecoin settlements' as an early-phase milestone",
+      "withdrawal": null,
+      "confidence": 0.28,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.3,
+      "frameworks": [
+        "Infrastructure Stack Model"
+      ],
+      "update_test": "By 2026-08-12, a Kenyan, Moroccan, or Nigerian central bank, finance ministry, or AfCFTA Secretariat publishes a document on an official government or AfCFTA domain that names 'ADAPT' and specifies regulatory rules or pilot procedures for digital-currency or stablecoin settlements",
+      "resolve_by": "2026-08-12",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-06-13T12:09:56Z",
+        "auditor": "twin",
+        "note": "Searched 'AfCFTA ADAPT pilot Kenya Morocco Nigeria digital trade framework June 2026' on 2026-06-13; rollout is in the forum-establishment phase, no published regulatory framework on digital currencies or stablecoin settlements under ADAPT as of the audit date",
+        "queries": [
+          "AfCFTA ADAPT Kenya Morocco Nigeria stablecoin digital currency regulatory framework",
+          "AfCFTA ADAPT CBDC pilot 2026"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [
+        {
+          "id": "claim-20260612-003",
+          "relation": "probes",
+          "note": "Same ADAPT pilot; 612-003 reads the forum-establishment milestone, 613-003 reads the deeper regulatory-framework layer (digital currencies and stablecoin settlements) named in the official roadmap.",
+          "date": "2026-06-13T12:10:03Z"
+        }
+      ],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260614-001",
+      "date": "2026-06-14",
+      "registered_at": "2026-06-14T16:28:19Z",
+      "claim": "No AfCFTA ADAPT pilot (Kenya, Morocco, or Nigeria) will produce a data-centre or compute build of >USD 100M or >20MW that the builder or financier publicly credits to the ADAPT instrument as the but-for cause, by 2027-06-30.",
+      "committed_by": "bruno",
+      "tier": "structural",
+      "frame": "in",
+      "grounding": "AfCFTA ADAPT launched Nov 2025; pilot countries Kenya/Morocco/Nigeria designated 2026-05-19 (Accra). It is a digital-trade DPI program (digital identity, payments, interoperable data exchange, e-trade documents on the TWIN stack; partners TBI, IOTA Foundation, WEF) - NOT a compute/data-centre financing instrument. Real instrument existing today.",
+      "withdrawal": null,
+      "confidence": 0.98,
+      "confidence_source": "bruno-stated",
+      "confidence_rationale": null,
+      "base_rate": null,
+      "frameworks": [
+        "Institutional Adaptation Lag"
+      ],
+      "update_test": "By 2027-06-30: confirmed if no African data-centre/compute build of >USD100M or >20MW is publicly and decisively credited (but-for) to the AfCFTA ADAPT instrument by its builder/financier; disconfirmed if at least one such but-for attribution exists.",
+      "resolve_by": "2027-06-30",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-06-14T16:28:19Z",
+        "auditor": "twin",
+        "note": "Web search 2026-06-14 (AfCFTA ADAPT data centre compute Kenya Morocco Nigeria 2026): ADAPT is in pilot/forum-establishment phase and scoped to trade plumbing; no >USD100M/>20MW compute build attributed to the ADAPT instrument exists. Test has not fired.",
+        "queries": [],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [
+        {
+          "id": "claim-20260610-007",
+          "relation": "sharpens",
+          "note": "Bruno-stated /probe sharpening of 007: scopes the AU-instrument disconfirmer to the one live AU-adjacent instrument with implementation teeth (ADAPT), with a but-for attribution test. 007 stays locked at 0.70 twin-estimated (immutable); this records Bruno's 0.98 gold-standard belief on the named disconfirmation channel.",
+          "date": "2026-06-14T16:28:19Z"
+        }
+      ],
+      "evidence": [],
+      "resolution": null
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+---
+import Base from '../layouts/Base.astro';
+import ledger from '../data/ledger.json';
+
+const claims = ledger.claims ?? [];
+const isInvalid = (c) => c?.validity?.status === 'invalid';
+const isWithdrawn = (c) => Boolean(c?.withdrawal);
+
+const live = claims.filter((c) => !isInvalid(c) && !isWithdrawn(c));
+const open = live
+  .filter((c) => c.status === 'open')
+  .sort((a, b) => (a.resolve_by || '').localeCompare(b.resolve_by || ''));
+const resolved = live.filter((c) => c.status === 'resolved');
+const invalid = claims.filter(isInvalid);
+const withdrawn = claims.filter(isWithdrawn);
+
+const pct = (c) => (typeof c.confidence === 'number' ? Math.round(c.confidence * 100) + '%' : '—');
+const truncate = (s, n) => (s && s.length > n ? s.slice(0, n - 1).trimEnd() + '…' : s);
+const sourceTag = (c) => (c.confidence_source === 'bruno-stated' ? 'bruno' : 'twin');
+---
+
+<Base
+  title="Prediction Ledger"
+  description="A public, score-kept record of falsifiable predictions — locked probabilities, immutable, Brier-scored."
+>
+  <p class="eyebrow">The prediction ledger</p>
+  <hr class="accent-rule" />
+  <h1 style="font-size:clamp(2rem,4.5vw,2.9rem)">Score, kept in public</h1>
+  <p class="lede measure">
+    Every claim is registered with a probability that locks the moment it is
+    stated, a written test for what would disconfirm it, and a resolve-by date.
+    Probabilities are never edited; resolutions are never deleted. When the twin
+    and I disagree, both numbers stay on the record and reality settles it.
+  </p>
+
+  <div class="stats">
+    <div class="stat"><div class="n">{open.length}</div><div class="l">Open</div></div>
+    <div class="stat"><div class="n">{resolved.length}</div><div class="l">Resolved</div></div>
+    <div class="stat"><div class="n">{invalid.length}</div><div class="l">Invalidated</div></div>
+    <div class="stat"><div class="n">{withdrawn.length}</div><div class="l">Withdrawn</div></div>
+  </div>
+
+  <div class="linkrow">
+    <a class="btn" href="https://github.com/chiKeka/ledger">The full record on GitHub →</a>
+    <a class="btn" href="https://github.com/chiKeka/ledger/commits/main/ledger.json">Verify every change</a>
+  </div>
+  <p class="small muted">
+    Invalidated and withdrawn claims stay visible forever but are excluded from
+    the Brier score and calibration — the record does not keep wins it did not
+    earn. Last updated {ledger.updated}.
+  </p>
+
+  <h2>Open claims</h2>
+  <table class="ledger-table">
+    <thead>
+      <tr><th>Claim</th><th>Conf.</th><th>By</th><th>Resolve by</th></tr>
+    </thead>
+    <tbody>
+      {open.map((c) => (
+        <tr>
+          <td>{truncate(c.claim, 180)}</td>
+          <td class="conf">{pct(c)}</td>
+          <td><span class={`tag ${sourceTag(c) === 'bruno' ? 'bruno' : ''}`}>{sourceTag(c)}</span></td>
+          <td class="small muted">{c.resolve_by}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+
+  {resolved.length > 0 && (
+    <>
+      <h2>Resolved</h2>
+      <table class="ledger-table">
+        <thead>
+          <tr><th>Claim</th><th>Conf.</th><th>Outcome</th></tr>
+        </thead>
+        <tbody>
+          {resolved.map((c) => (
+            <tr>
+              <td>{truncate(c.claim, 180)}</td>
+              <td class="conf">{pct(c)}</td>
+              <td class="small muted">{c.resolution?.outcome ?? 'resolved'}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </>
+  )}
+
+  <hr />
+  <p class="small muted measure">
+    This is a styled view of the same data published, machine-readable, at
+    <a href="https://github.com/chiKeka/ledger">github.com/chiKeka/ledger</a>. The
+    site never shows anything the ledger renderer did not produce.
+  </p>
+</Base>

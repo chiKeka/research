@@ -1,0 +1,21 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base title="Not found" description="Page not found.">
+  <section class="hero" style="padding-bottom:2rem">
+    <p class="eyebrow">404</p>
+    <hr class="accent-rule" />
+    <h1 style="font-size:clamp(2rem,5vw,3rem)">This page isn’t on the record.</h1>
+    <p class="lede measure">
+      The link is broken or the page moved. Everything here is built in the open —
+      try one of these instead.
+    </p>
+    <div class="linkrow">
+      <a class="btn primary" href="/">Home</a>
+      <a class="btn ghost" href="/research">Research</a>
+      <a class="btn ghost" href="/ledger">Ledger</a>
+      <a class="btn ghost" href="/writing">Writing</a>
+    </div>
+  </section>
+</Base>

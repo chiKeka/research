@@ -1,0 +1,39 @@
+---
+import Base from '../layouts/Base.astro';
+import frameworks from '../data/frameworks.json';
+
+const byDomain = {};
+for (const f of frameworks) {
+  const d = (f.domain || 'general').replace(/_/g, ' ');
+  (byDomain[d] ??= []).push(f);
+}
+const domains = Object.keys(byDomain).sort();
+---
+
+<Base
+  title="Frameworks"
+  description="Named conceptual frameworks for reasoning about technology, institutions, and infrastructure."
+>
+  <p class="eyebrow">Frameworks</p>
+  <hr class="accent-rule" />
+  <h1 style="font-size:clamp(2rem,4.5vw,2.9rem)">The frameworks</h1>
+  <p class="lede measure">
+    I think in named structures so they can be argued with, stress-tested, and
+    killed when they stop earning their place. These are the active ones — each is
+    a lens, not a law.
+  </p>
+
+  {domains.map((d) => (
+    <section>
+      <h2 style="text-transform:capitalize">{d}</h2>
+      <ul class="list">
+        {byDomain[d].map((f) => (
+          <li>
+            <h3 style="margin:0 0 .3rem">{f.name}</h3>
+            <p class="muted" style="margin:0">{f.description}</p>
+          </li>
+        ))}
+      </ul>
+    </section>
+  ))}
+</Base>

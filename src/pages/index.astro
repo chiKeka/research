@@ -1,0 +1,128 @@
+---
+import Base from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import ledger from '../data/ledger.json';
+import frameworks from '../data/frameworks.json';
+
+const claims = ledger.claims ?? [];
+const live = claims.filter((c) => c?.validity?.status !== 'invalid' && !c?.withdrawal);
+const open = live.filter((c) => c.status === 'open');
+const resolved = live.filter((c) => c.status === 'resolved');
+
+const lines = [
+  {
+    name: 'AI Infrastructure & Sovereign Compute',
+    anchor: 'infrastructure',
+    blurb:
+      'Where AI meets the physical layer — energy, capital, and policy. What it takes for a region like Alberta or a continent like Africa to own compute rather than rent it.',
+  },
+  {
+    name: 'Agentic Systems',
+    anchor: 'agents',
+    blurb:
+      'The orchestration and trust primitives that let agents do real work — loop engineering, and the missing pieces between a demo and a system you can depend on.',
+  },
+  {
+    name: 'Governance & Knowledge Gradients',
+    anchor: 'governance',
+    blurb:
+      'Who controls capability, and how knowledge gradients form and close. Institutions, incentives, and the design layer that decides who AI actually serves.',
+  },
+  {
+    name: 'Public Epistemics',
+    anchor: 'epistemics',
+    blurb:
+      'Reasoning you can audit — predicting in public with locked probabilities, scoring calibration, and naming the frameworks so they can be argued with and retired.',
+  },
+];
+
+const writing = (await getCollection('writing'))
+  .sort((a, b) => (b.data.date || '').localeCompare(a.data.date || ''))
+  .slice(0, 3);
+---
+
+<Base>
+  <section class="hero">
+    <p class="eyebrow">A systems research practice</p>
+    <hr class="accent-rule" />
+    <h1>The systems where AI capability meets institutions, incentives, and infrastructure.</h1>
+    <p class="lede">
+      I study how technology, institutions, incentives, and culture interact —
+      AI infrastructure, agentic systems, and governance, with an eye on Africa
+      and Alberta. The work is done in public, the predictions are score-kept, and
+      the frameworks are named so they can be argued with.
+    </p>
+    <p class="byline">by <b>Bruno Chikeka</b> — systems-oriented technologist</p>
+    <div class="linkrow">
+      <a class="btn primary" href="/research">The research →</a>
+      <a class="btn ghost" href="/ledger">See the prediction ledger</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2>Research lines</h2>
+      <a class="more" href="/research">Read the agenda →</a>
+    </div>
+    <div class="grid cols-2">
+      {lines.map((l) => (
+        <a class="card" href={`/research#${l.anchor}`}>
+          <h3>{l.name}</h3>
+          <p>{l.blurb}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2>Method: score, kept in public</h2>
+      <a class="more" href="/ledger">Open the ledger →</a>
+    </div>
+    <p class="measure muted">
+      Analysis usually ends in a confident take that nobody can check later. This
+      practice ends in a commitment you can. Every prediction is registered with a
+      probability that locks the moment it is stated and a written test for what
+      would prove it wrong — then it is scored when reality lands. Nothing is
+      edited; nothing is quietly deleted.
+    </p>
+    <div class="stats">
+      <div class="stat"><div class="n">{open.length}</div><div class="l">Open predictions</div></div>
+      <div class="stat"><div class="n">{resolved.length}</div><div class="l">Resolved</div></div>
+      <div class="stat"><div class="n">{frameworks.length}</div><div class="l">Named frameworks</div></div>
+    </div>
+  </section>
+
+  {writing.length > 0 && (
+    <section>
+      <div class="section-head">
+        <h2>Writing</h2>
+        <a class="more" href="/writing">All writing →</a>
+      </div>
+      <ul class="list">
+        {writing.map((w) => (
+          <li>
+            <div class="meta small muted">{w.data.platform} · {w.data.date}</div>
+            <h3 style="margin:.25rem 0 .35rem"><a href={`/writing/${w.id}`}>{w.data.title}</a></h3>
+            {w.data.summary && <p class="muted small">{w.data.summary}</p>}
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  <section>
+    <div class="section-head">
+      <h2>Applied work</h2>
+      <a class="more" href="/projects">All projects →</a>
+    </div>
+    <p class="measure muted">
+      The research isn’t only on the page. It shows up as ventures and
+      builds — an AI agent platform, sovereign-infrastructure strategy, and
+      education that closes the design-layer gradient.
+    </p>
+    <div class="linkrow">
+      <a class="btn ghost" href="/projects">Afrigent, Akinke & more →</a>
+    </div>
+  </section>
+</Base>

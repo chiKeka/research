@@ -1,0 +1,33 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('writing')).sort((a, b) =>
+  (b.data.date || '').localeCompare(a.data.date || '')
+);
+---
+
+<Base title="Writing" description="Essays and posts — only pieces published in the open.">
+  <p class="eyebrow">Writing</p>
+  <hr class="accent-rule" />
+  <h1 style="font-size:clamp(2rem,4.5vw,2.9rem)">Writing</h1>
+  <p class="lede measure">
+    Long-form and short-form thinking on AI infrastructure, institutions, and
+    governance. Only pieces I have published appear here — each names its
+    frameworks and links to where it first ran.
+  </p>
+
+  {posts.length === 0 ? (
+    <p class="muted">No published pieces yet.</p>
+  ) : (
+    <ul class="list">
+      {posts.map((p) => (
+        <li>
+          <div class="meta small muted">{p.data.platform} · {p.data.date}</div>
+          <h3 style="margin:.2rem 0 .35rem"><a href={`/writing/${p.id}`}>{p.data.title}</a></h3>
+          {p.data.summary && <p class="muted">{p.data.summary}</p>}
+        </li>
+      ))}
+    </ul>
+  )}
+</Base>

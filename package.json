@@ -1,0 +1,15 @@
+{
+  "name": "bruno-chikeka-research-hub",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "prep": "node scripts/prep-data.mjs",
+    "dev": "node scripts/prep-data.mjs && astro dev",
+    "build": "node scripts/prep-data.mjs && astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^5.6.0"
+  }
+}

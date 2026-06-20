@@ -1,0 +1,65 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+const { title, description } = Astro.props;
+const siteName = 'Bruno Chikeka — Research';
+const pageTitle = title ? `${title} · ${siteName}` : siteName;
+const desc =
+  description ??
+  'Systems-oriented technology research: AI infrastructure, institutions, and a public, score-kept prediction ledger.';
+const path = Astro.url.pathname.replace(/\/$/, '') || '/';
+const nav = [
+  { href: '/research', label: 'Research' },
+  { href: '/writing', label: 'Writing' },
+  { href: '/ledger', label: 'Ledger' },
+  { href: '/frameworks', label: 'Frameworks' },
+  { href: '/projects', label: 'Projects' },
+  { href: '/about', label: 'About' },
+];
+const isCurrent = (href: string) =>
+  href === '/' ? path === '/' : path === href || path.startsWith(href + '/');
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={desc} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={desc} />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='25' font-size='26'>🜔</text></svg>" />
+  </head>
+  <body>
+    <header class="site-head">
+      <div class="wrap">
+        <a class="brand" href="/"><b>Bruno Chikeka</b> <span class="sub">· research</span></a>
+        <nav class="nav">
+          {nav.map((n) => (
+            <a href={n.href} aria-current={isCurrent(n.href) ? 'page' : undefined}>{n.label}</a>
+          ))}
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="wrap">
+        <slot />
+      </div>
+    </main>
+    <footer class="site-foot">
+      <div class="wrap">
+        <div>© {new Date().getFullYear()} Bruno Chikeka · built in the open</div>
+        <div>
+          <a href="https://github.com/chiKeka/ledger">Ledger repo</a> ·
+          <a href="https://x.com/Chikeka">@Chikeka</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

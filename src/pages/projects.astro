@@ -1,0 +1,56 @@
+---
+import Base from '../layouts/Base.astro';
+
+const projects = [
+  {
+    name: 'Afrigent',
+    tag: 'AI agent platform',
+    blurb:
+      'An AI agent platform — building the orchestration and trust layers that let agentic systems do real work in African markets.',
+  },
+  {
+    name: 'Alberta AI Infrastructure',
+    tag: 'Strategy',
+    blurb:
+      'Sovereign-compute and AI-infrastructure strategy for Alberta — where energy, capital, and policy meet at the physical layer of the stack.',
+  },
+  {
+    name: 'MSc Thesis (MMPM)',
+    tag: 'Academic',
+    blurb:
+      'A master’s dissertation in major-programme and project management, applied to the governance of large technical systems.',
+  },
+  {
+    name: 'Akinke',
+    tag: 'Education',
+    blurb:
+      'AI education for African youth — closing the design-layer gradient by putting capability, not just access, in young hands.',
+  },
+  {
+    name: 'BrunoTwin',
+    tag: 'Cognitive twin',
+    blurb:
+      'A digital cognitive twin built as a thinking-augmentation tool — extended cognition that reopens loops rather than closing them. This site, and the ledger behind it, are its public face.',
+  },
+];
+---
+
+<Base title="Projects" description="What I am building — AI infrastructure, agents, education, and a cognitive twin.">
+  <p class="eyebrow">Projects</p>
+  <hr class="accent-rule" />
+  <h1 style="font-size:clamp(2rem,4.5vw,2.9rem)">Applied work</h1>
+  <p class="lede measure">
+    The throughline is the same question in different registers: where is the
+    leverage in a system, and who gets to pull it?
+  </p>
+
+  <div class="grid cols-2" style="margin-top:1.6rem">
+    {projects.map((p) => (
+      <div class="card">
+        <div class="meta">{p.tag}</div>
+        <h3>{p.name}</h3>
+        <p>{p.blurb}</p>
+      </div>
+    ))}
+  </div>
+</Base>

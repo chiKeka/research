@@ -1,0 +1,84 @@
+---
+import Base from '../layouts/Base.astro';
+import frameworks from '../data/frameworks.json';
+import ledger from '../data/ledger.json';
+
+const open = (ledger.claims ?? []).filter(
+  (c) => c.status === 'open' && c?.validity?.status !== 'invalid' && !c?.withdrawal
+);
+
+const lines = [
+  {
+    anchor: 'infrastructure',
+    name: 'AI Infrastructure & Sovereign Compute',
+    body: `The most consequential AI questions are not about models — they are about the layer beneath them: where compute is built, who finances it, what energy feeds it, and which jurisdictions get to set the terms. I work on what it takes for a region like Alberta, or a continent like Africa, to own infrastructure rather than rent it, and on the feedback loops between energy, capital, and policy that decide whether sovereignty is real or rhetorical.`,
+    links: [{ label: 'Alberta AI Infrastructure', href: '/projects' }],
+  },
+  {
+    anchor: 'agents',
+    name: 'Agentic Systems',
+    body: `There is a wide gap between an agent that demos and an agent you can depend on. I study the orchestration and trust primitives that close it — loop engineering, error recovery, and the missing infrastructure between a clever prototype and a system doing real work in a real market. This is research I run as a builder, not just an observer.`,
+    links: [{ label: 'Afrigent', href: '/projects' }],
+  },
+  {
+    anchor: 'governance',
+    name: 'Governance & Knowledge Gradients',
+    body: `Capability concentrates, and knowledge gradients form: some people get to design with a technology while most only get to consume it. I look at the institutions and incentives that set those gradients, and at the design layer that decides who AI actually serves. The question is always structural — what system produced this, and where is the leverage to change it?`,
+    links: [{ label: 'Akinke (education)', href: '/projects' }],
+  },
+  {
+    anchor: 'epistemics',
+    name: 'Public Epistemics & Forecasting',
+    body: `A research practice should be falsifiable. So the method itself is part of the work: predictions registered with locked probabilities and explicit disconfirmation tests, scored when reality lands, and frameworks named so they can be challenged and retired when they stop earning their place. The ledger is not a gimmick — it is the discipline that keeps the rest of the agenda honest.`,
+    links: [
+      { label: 'The prediction ledger', href: '/ledger' },
+      { label: 'The frameworks', href: '/frameworks' },
+    ],
+  },
+];
+---
+
+<Base
+  title="Research"
+  description="A systems research agenda: AI infrastructure, agentic systems, governance, and public epistemics."
+>
+  <section class="hero" style="padding-bottom:1.5rem">
+    <p class="eyebrow">Research</p>
+    <hr class="accent-rule" />
+    <h1 style="font-size:clamp(2rem,5vw,3.2rem)">The agenda</h1>
+    <p class="lede measure">
+      Four lines, one question underneath all of them: what system produced this,
+      what incentives drive it, and where is the leverage? The method is public and
+      score-kept — {open.length} predictions are open right now, and {frameworks.length}
+      frameworks are active.
+    </p>
+  </section>
+
+  {lines.map((l) => (
+    <section id={l.anchor} style="scroll-margin-top:90px">
+      <h2>{l.name}</h2>
+      <p class="measure">{l.body}</p>
+      <div class="linkrow">
+        {l.links.map((k) => (
+          <a class="btn ghost" href={k.href}>{k.label} →</a>
+        ))}
+      </div>
+    </section>
+  ))}
+
+  <hr />
+  <section>
+    <h2>How the practice works</h2>
+    <p class="measure muted">
+      Predict in public. Lock the probability. Write the test that would prove you
+      wrong. Score it when it resolves — and keep the misses on the record. Name
+      the frameworks so others can argue with them, and retire the ones that stop
+      earning their place. The point is not to be right; it is to be
+      <em>checkable</em>.
+    </p>
+    <div class="linkrow">
+      <a class="btn primary" href="/ledger">Open the ledger →</a>
+      <a class="btn ghost" href="/frameworks">Browse the frameworks</a>
+    </div>
+  </section>
+</Base>
