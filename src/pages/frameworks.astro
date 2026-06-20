@@ -2,38 +2,75 @@
 import Base from '../layouts/Base.astro';
 import frameworks from '../data/frameworks.json';
 
-const byDomain = {};
-for (const f of frameworks) {
-  const d = (f.domain || 'general').replace(/_/g, ' ');
-  (byDomain[d] ??= []).push(f);
-}
-const domains = Object.keys(byDomain).sort();
+const humanize = (s) => (s || 'general').replace(/_/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+const firstSentence = (s) => {
+  if (!s) return '';
+  const m = s.match(/^(.*?[.!?])(\s|$)/);
+  return (m ? m[1] : s).slice(0, 160);
+};
+const fw = frameworks.map((f) => ({
+  name: f.name,
+  line: humanize(f.domain),
+  one: firstSentence(f.description),
+  def: f.description || '',
+}));
 ---
 
-<Base
-  title="Frameworks"
-  description="Named conceptual frameworks for reasoning about technology, institutions, and infrastructure."
->
-  <p class="eyebrow">Frameworks</p>
-  <hr class="accent-rule" />
-  <h1 style="font-size:clamp(2rem,4.5vw,2.9rem)">The frameworks</h1>
-  <p class="lede measure">
-    I think in named structures so they can be argued with, stress-tested, and
-    killed when they stop earning their place. These are the active ones — each is
-    a lens, not a law.
-  </p>
-
-  {domains.map((d) => (
-    <section>
-      <h2 style="text-transform:capitalize">{d}</h2>
-      <ul class="list">
-        {byDomain[d].map((f) => (
-          <li>
-            <h3 style="margin:0 0 .3rem">{f.name}</h3>
-            <p class="muted" style="margin:0">{f.description}</p>
-          </li>
-        ))}
-      </ul>
+<Base title="Frameworks" tagline="● Named so they can be argued with"
+  description="Named conceptual frameworks for reasoning about technology, institutions, and infrastructure.">
+  <div class="wrap">
+    <section class="page-intro" style="border-bottom:none;padding-bottom:30px">
+      <div class="kicker">The named canon</div>
+      <h1>Frameworks, <em>named to be argued with.</em></h1>
+      <p class="deck">A framework you can't name is a framework you can't attack. Each of these is given a name and a working definition — so it can be cited, contested, and, when it fails, <b>retired in public</b>. Click any entry to read the definition.</p>
     </section>
-  ))}
+
+    <section class="blk" style="border-bottom:none;padding-top:18px">
+      <div class="legend">
+        <span><span class="dotc" style="background:var(--accent2)"></span><b>Live — load-bearing</b></span>
+        <span><span class="dotc" style="background:var(--ochre)"></span><b>Contested — under argument</b></span>
+        <span><span class="dotc" style="background:var(--accent)"></span><b>Retired — failed in public</b></span>
+      </div>
+      <div class="fw-list">
+        {fw.map((f, i) => (
+          <div class="fw">
+            <div class="idx">{String(i + 1).padStart(2, '0')}</div>
+            <div class="main">
+              <h3>{f.name}</h3>
+              <div class="one">{f.one}</div>
+              {f.def && f.def !== f.one && <div class="def">{f.def}</div>}
+            </div>
+            <div class="side">{f.line}<br /><span class="stt live">Live</span><div class="exp">+</div></div>
+          </div>
+        ))}
+      </div>
+      <p class="mono" style="margin-top:22px;color:var(--dim);font-size:11px">The public canon is the active set. Contested and retired frameworks enter the page as the registry records them.</p>
+    </section>
+  </div>
+
+  <script is:inline>
+    document.querySelectorAll('.fw').forEach((row) => row.addEventListener('click', () => row.classList.toggle('open')));
+  </script>
 </Base>
+
+<style>
+  .legend{display:flex;gap:22px;flex-wrap:wrap;margin-bottom:8px;font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--dim)}
+  .legend span b{font-weight:400}
+  .dotc{display:inline-block;width:9px;height:9px;margin-right:6px;vertical-align:middle}
+  .fw-list{border-top:2px solid var(--ink);margin-top:14px}
+  .fw{display:grid;grid-template-columns:64px 1fr 160px;gap:32px;align-items:start;padding:30px 0;border-bottom:1px solid var(--rule);cursor:pointer;transition:.18s}
+  .fw:hover{background:var(--paper2);padding-left:12px;padding-right:12px}
+  .fw .idx{font-family:var(--mono);font-size:13px;color:var(--accent);letter-spacing:.06em;padding-top:8px}
+  .fw .main h3{font-family:var(--serif);font-size:clamp(24px,2.8vw,34px);line-height:1.06;letter-spacing:-.01em}
+  .fw:hover h3{color:var(--accent)}
+  .fw .one{font-size:17px;color:var(--ink2);line-height:1.55;margin-top:8px;max-width:64ch}
+  .fw .def{font-size:16px;color:var(--ink2);line-height:1.6;margin-top:14px;max-width:64ch;display:none}
+  .fw.open .def{display:block;animation:fade .3s ease}
+  @keyframes fade{from{opacity:0;transform:translateY(-4px)}}
+  .fw .side{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--dim);text-align:right;line-height:1.9;padding-top:8px}
+  .fw .stt{display:inline-block;font-size:10px;letter-spacing:.08em;padding:3px 8px;border:1px solid;margin-top:6px}
+  .fw .stt.live{color:var(--accent2);border-color:var(--accent2)}
+  .fw .exp{font-family:var(--mono);font-size:18px;color:var(--rule2);text-align:right;transition:.2s}
+  .fw.open .exp{transform:rotate(45deg);color:var(--accent)}
+  @media(max-width:760px){.fw{grid-template-columns:48px 1fr;gap:18px}.fw .side{grid-column:2;text-align:left;margin-top:6px}}
+</style>

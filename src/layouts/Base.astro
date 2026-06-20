@@ -9,6 +9,7 @@ interface Props {
   publishedTime?: string;
   modifiedTime?: string;
   jsonLd?: object | object[];
+  tagline?: string;
 }
 const {
   title,
@@ -18,6 +19,7 @@ const {
   publishedTime,
   modifiedTime,
   jsonLd,
+  tagline = '● Built in the open · predictions locked & scored',
 } = Astro.props;
 
 const siteName = 'Bruno Chikeka — Research';
@@ -31,7 +33,6 @@ const path = Astro.url.pathname.replace(/\/$/, '') || '/';
 const canonical = new URL(path, site).href;
 const ogImageUrl = new URL(ogImage, site).href;
 
-// Site-wide structured data (WebSite + Person), plus any page-specific nodes.
 const baseGraph = [
   { '@type': 'WebSite', '@id': `${site.origin}/#website`, url: site.origin, name: siteName, description: desc },
   {
@@ -45,11 +46,10 @@ const baseGraph = [
 ];
 const extra = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
 const structuredData = { '@context': 'https://schema.org', '@graph': [...baseGraph, ...extra] };
-// Escape `<` so a value containing the literal "</script>" can't break out of
-// the inline JSON-LD script element.
 const jsonLdString = JSON.stringify(structuredData).replace(/</g, '\\u003c');
 
 const nav = [
+  { href: '/', label: 'Home' },
   { href: '/research', label: 'Research' },
   { href: '/writing', label: 'Writing' },
   { href: '/ledger', label: 'Ledger' },
@@ -59,6 +59,7 @@ const nav = [
 ];
 const isCurrent = (href: string) =>
   href === '/' ? path === '/' : path === href || path.startsWith(href + '/');
+const year = new Date().getFullYear();
 ---
 
 <!doctype html>
@@ -70,6 +71,13 @@ const isCurrent = (href: string) =>
     <meta name="description" content={desc} />
     <link rel="canonical" href={canonical} />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={desc} />
     <meta property="og:type" content={ogType} />
@@ -78,12 +86,8 @@ const isCurrent = (href: string) =>
     <meta property="og:image" content={ogImageUrl} />
     <meta property="og:image:width" content="1600" />
     <meta property="og:image:height" content="840" />
-    {ogType === 'article' && publishedTime && (
-      <meta property="article:published_time" content={publishedTime} />
-    )}
-    {ogType === 'article' && modifiedTime && (
-      <meta property="article:modified_time" content={modifiedTime} />
-    )}
+    {ogType === 'article' && publishedTime && <meta property="article:published_time" content={publishedTime} />}
+    {ogType === 'article' && modifiedTime && <meta property="article:modified_time" content={modifiedTime} />}
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@Chikeka" />
@@ -97,28 +101,34 @@ const isCurrent = (href: string) =>
     <script type="application/ld+json" set:html={jsonLdString} is:inline />
   </head>
   <body>
-    <header class="site-head">
+    <header class="site">
       <div class="wrap">
-        <a class="brand" href="/"><b>Bruno Chikeka</b> <span class="sub">· research</span></a>
-        <nav class="nav">
-          {nav.map((n) => (
-            <a href={n.href} aria-current={isCurrent(n.href) ? 'page' : undefined}>{n.label}</a>
-          ))}
-        </nav>
+        <div class="topbar">
+          <span>Vol. III — Systems Desk</span>
+          <span class="e">{tagline}</span>
+          <span>Africa × Alberta</span>
+        </div>
+        <div class="mast">
+          <a class="name" href="/">Bruno Chikeka <b>· Research</b></a>
+          <div class="vol">A systems<br />research practice<br />est. 2024</div>
+        </div>
       </div>
+      <nav class="sections">
+        {nav.map((n) => (
+          <a href={n.href} class={isCurrent(n.href) ? 'active' : undefined} aria-current={isCurrent(n.href) ? 'page' : undefined}>{n.label}</a>
+        ))}
+      </nav>
     </header>
-    <main>
-      <div class="wrap">
-        <slot />
-      </div>
-    </main>
-    <footer class="site-foot">
-      <div class="wrap">
-        <div>© {new Date().getFullYear()} Bruno Chikeka · built in the open</div>
-        <div>
-          <a href="https://github.com/chiKeka/research">Source</a> ·
-          <a href="https://github.com/chiKeka/ledger">Ledger repo</a> ·
-          <a href="/rss.xml">RSS</a> ·
+
+    <slot />
+
+    <footer class="site">
+      <div class="wrap foot">
+        <span>© {year} Bruno Chikeka · built in the open</span>
+        <div class="footlinks">
+          <a href="https://github.com/chiKeka/research">Source</a>
+          <a href="https://github.com/chiKeka/ledger">Ledger repo</a>
+          <a href="/rss.xml">RSS</a>
           <a href="https://x.com/Chikeka">@Chikeka</a>
         </div>
       </div>

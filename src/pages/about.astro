@@ -2,52 +2,79 @@
 import Base from '../layouts/Base.astro';
 ---
 
-<Base title="About" description="Bruno Chikeka — systems-oriented technologist. Current focus and how this site works.">
-  <div class="measure">
-    <p class="eyebrow">About</p>
-    <hr class="accent-rule" />
-    <h1 style="font-size:clamp(2rem,4.5vw,2.9rem)">About</h1>
-    <p>
-      I’m Bruno Chikeka, a systems-oriented technologist. I analyse problems
-      through the interaction of technology, institutions, incentives, and
-      culture — infrastructure layers, feedback loops, and knowledge gradients
-      rather than isolated events. My work sits where AI capability meets the
-      physical and institutional layers that decide who it actually serves, with a
-      particular focus on Africa and Alberta.
-    </p>
+<Base title="About" tagline="● Systems-oriented technologist"
+  description="Bruno Chikeka — systems-oriented technologist. Current focus and how the practice works.">
+  <div class="wrap">
+    <section class="about">
+      <div>
+        <div class="kicker mono accent" style="margin-bottom:16px">About</div>
+        <h1>A systems-oriented technologist, working <em>in the open.</em></h1>
+        <div class="body">
+          <p>I study how technology, institutions, incentives, and culture interact — AI infrastructure, agentic systems, and governance, with an eye on <b>Africa and Alberta</b>. The two places aren't a coincidence: one has demand and a financing gap, the other has energy and a grid, and both face the same question about whether to rent capability or own it.</p>
+          <p>The practice runs on three commitments. The work is <b>done in public</b>. The predictions are <b>score-kept</b> — locked probabilities, written falsifiers, scored when reality lands. And the frameworks are <b>named</b>, so they can be argued with and, when they fail, retired without quietly disappearing.</p>
+          <p>I'm less interested in being right than in being <b>auditable</b> — in making it cheap enough to be wrong that admitting it stops being a cost. That's the whole point of the <a class="accent" href="/ledger">ledger</a>, and its rules are <a class="accent" href="/methodology">published and versioned</a>.</p>
+        </div>
+      </div>
+      <aside class="portrait">
+        <div class="ph"><span>portrait — Bruno Chikeka</span></div>
+        <div class="card">
+          <div class="h">At a glance</div>
+          <div class="row"><span>Practice</span><b>Systems research</b></div>
+          <div class="row"><span>Since</span><b>2024</b></div>
+          <div class="row"><span>Focus</span><b>AI infra · agents</b></div>
+          <div class="row"><span>Regions</span><b>Africa · Alberta</b></div>
+          <div class="row"><span>Method</span><b>Score-kept</b></div>
+        </div>
+      </aside>
+    </section>
 
-    <h2>Now</h2>
-    <p>Current focus:</p>
-    <ul>
-      <li>Building <a href="/projects">Afrigent</a>, an AI agent platform.</li>
-      <li>AI-infrastructure and sovereign-compute strategy for Alberta.</li>
-      <li>An MSc dissertation on the governance of major programmes.</li>
-      <li>
-        <a href="/projects">Akinke</a> — AI education for African youth.
-      </li>
-      <li>
-        Running a digital cognitive twin in the open, and keeping a public
-        <a href="/ledger">prediction ledger</a>.
-      </li>
-    </ul>
+    <section class="blk">
+      <div class="sec-rule"><h2>How the practice works</h2><div class="ln"></div></div>
+      <div class="principles">
+        <div class="pr"><div class="no">01</div><h3>In public</h3><p>The reasoning, the predictions, and the source all live in the open. If it can't be checked, it doesn't count.</p></div>
+        <div class="pr"><div class="no">02</div><h3>Score-kept</h3><p>Every claim locks a probability and a falsifier the moment it's stated, and is scored when reality lands. Nothing is edited or deleted.</p></div>
+        <div class="pr"><div class="no">03</div><h3>Named</h3><p>Frameworks get names so they can be cited and contested — and, when they fail, retired in public as worked examples.</p></div>
+      </div>
+    </section>
 
-    <h2>How this site works</h2>
-    <p>
-      The site is built to extend thinking, not decorate it. The
-      <a href="/ledger">ledger</a> holds falsifiable predictions with locked
-      probabilities and explicit disconfirmation tests; nothing is edited after
-      the fact, and the machine-readable record lives in a public, commit-by-commit
-      <a href="https://github.com/chiKeka/ledger">repository</a>. The
-      <a href="/writing">writing</a> names its <a href="/frameworks">frameworks</a>
-      so they can be challenged. If a framework stops earning its place, it gets
-      retired — in public. The full scoring rules are
-      <a href="/methodology">published and versioned</a>.
-    </p>
-
-    <h2>Elsewhere</h2>
-    <p>
-      <a href="https://x.com/Chikeka">@Chikeka on X</a> ·
-      <a href="https://github.com/chiKeka/ledger">Ledger repository</a>
-    </p>
+    <section class="blk" style="border-bottom:none">
+      <div class="contact">
+        <div class="big">Argue with a framework, or <em>read the ledger.</em></div>
+        <div style="display:flex;gap:13px;flex-wrap:wrap">
+          <a class="btn solid" href="/ledger">Open the ledger</a>
+          <a class="btn line" href="https://x.com/Chikeka">@Chikeka</a>
+        </div>
+      </div>
+    </section>
   </div>
 </Base>
+
+<style>
+  .about{display:grid;grid-template-columns:1.4fr .6fr;gap:54px;border-bottom:2px solid var(--ink);padding:46px 0 50px}
+  .about h1{font-family:var(--serif);font-size:clamp(36px,5vw,66px);line-height:.99;letter-spacing:-.015em}
+  .about h1 em{font-style:italic;color:var(--accent)}
+  .about .body{font-size:20px;line-height:1.7;color:var(--ink2);margin-top:24px;max-width:60ch}
+  .about .body p{margin-bottom:18px}
+  .about .body p:first-child::first-letter{font-family:var(--serif);font-size:3.1em;float:left;line-height:.78;padding:6px 12px 0 0;color:var(--accent)}
+  .about .body b{color:var(--ink);font-weight:500}
+  .about .body a{border-bottom:1px solid var(--rule2)}
+  .about .body a:hover{border-color:var(--accent)}
+  .portrait{display:flex;flex-direction:column;gap:18px}
+  .portrait .ph{aspect-ratio:3/4;background:repeating-linear-gradient(135deg,var(--paper2) 0 14px,var(--paper3) 14px 28px);border:1px dashed var(--rule2);display:flex;align-items:flex-end;padding:16px}
+  .portrait .ph span{font-family:var(--mono);font-size:11px;color:var(--dim);text-transform:uppercase;letter-spacing:.1em;background:var(--paper);padding:5px 9px;border:1px solid var(--rule)}
+  .portrait .card{border:1.5px solid var(--ink);padding:20px}
+  .portrait .card .h{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);border-bottom:1px solid var(--rule);padding-bottom:10px;margin-bottom:12px}
+  .portrait .card .row{display:flex;justify-content:space-between;font-family:var(--mono);font-size:12px;color:var(--ink2);padding:6px 0}
+  .portrait .card .row b{color:var(--ink)}
+  @media(max-width:820px){.about{grid-template-columns:1fr;gap:32px}}
+  .principles{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1.5px solid var(--ink)}
+  .pr{padding:30px 26px;border-right:1px solid var(--rule)}
+  .pr:last-child{border-right:none}
+  .pr .no{font-family:var(--mono);font-size:12px;color:var(--accent);letter-spacing:.1em}
+  .pr h3{font-family:var(--serif);font-size:23px;margin:10px 0 10px;line-height:1.1}
+  .pr p{font-size:15px;color:var(--ink2);line-height:1.55}
+  @media(max-width:760px){.principles{grid-template-columns:1fr}.pr{border-right:none;border-bottom:1px solid var(--rule)}}
+  .contact{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;padding:36px 0}
+  .contact .big{font-family:var(--serif);font-size:clamp(26px,3.4vw,40px);line-height:1.05;max-width:18ch}
+  .contact .big em{font-style:italic;color:var(--accent)}
+</style>

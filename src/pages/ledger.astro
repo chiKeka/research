@@ -1,138 +1,142 @@
 ---
 import Base from '../layouts/Base.astro';
-import ScorePanel from '../components/ScorePanel.astro';
 import ledger from '../data/ledger.json';
-import { classify, pct, truncate, attribution } from '../lib/ledger-stats.mjs';
+import frameworks from '../data/frameworks.json';
+import {
+  classify, isInvalid, isWithdrawn, outcomeBinary, brierScore, scoredClaims, truncate,
+} from '../lib/ledger-stats.mjs';
 
 const claims = ledger.claims ?? [];
 const { open, resolved, invalid, withdrawn } = classify(claims);
 const source = ledger.source ?? null;
+
+// Calibration (real numbers).
+const brier = brierScore(claims);
+const scored = scoredClaims(claims);
+const hits = scored.filter((c) => outcomeBinary(c) === 1).length;
+const meanConf = scored.length ? scored.reduce((a, c) => a + c.confidence, 0) / scored.length : null;
+
+// Records: newest first, with a render-ready status.
+const statusOf = (c) => {
+  if (isInvalid(c)) return 'invalid';
+  if (isWithdrawn(c)) return 'withdrawn';
+  if (c.status === 'resolved') return outcomeBinary(c) === 0 ? 'miss' : 'hit';
+  return 'open';
+};
+const label = { open: 'OPEN', hit: 'RESOLVED · HIT', miss: 'RESOLVED · MISS', invalid: 'INVALIDATED', withdrawn: 'WITHDRAWN' };
+const recs = [...claims]
+  .sort((a, b) => (b.registered_at || b.date || '').localeCompare(a.registered_at || a.date || ''))
+  .map((c) => ({
+    c,
+    st: statusOf(c),
+    p: Math.round((c.confidence ?? 0) * 100),
+    date: (c.registered_at || c.date || '').slice(0, 10),
+    tier: c.tier || 'claim',
+  }));
+const liveCount = open.length + resolved.length;
 ---
 
-<Base
-  title="Prediction Ledger"
-  description="A public, score-kept record of falsifiable predictions — locked probabilities, immutable, Brier-scored."
->
-  <p class="eyebrow">The prediction ledger</p>
-  <hr class="accent-rule" />
-  <h1 style="font-size:clamp(2rem,4.5vw,2.9rem)">Score, kept in public</h1>
-  <p class="lede measure">
-    Every claim is registered with a probability that locks the moment it is
-    stated, a written test for what would disconfirm it, and a resolve-by date.
-    Probabilities are never edited; resolutions are never deleted. When the twin
-    and I disagree, both numbers stay on the record and reality settles it.
-  </p>
+<Base title="Prediction Ledger" tagline="● Predictions locked & scored in public"
+  description="A public, score-kept record of falsifiable predictions — locked probabilities, immutable, Brier-scored.">
+  <div class="wrap">
+    <section class="ledhero">
+      <div class="copy">
+        <div class="kicker mono accent" style="margin-bottom:16px">The prediction ledger</div>
+        <h1>Score, kept in <em>public.</em></h1>
+        <div class="deck">Analysis usually ends in a confident take that nobody can check later. <b>This ends in a commitment you can.</b> Every claim locks a probability and a written falsifier the moment it's stated, then it's scored when reality lands.</div>
+        <p style="margin-top:20px;font-family:var(--mono);font-size:13px;color:var(--dim);letter-spacing:.04em">// nothing is edited. nothing is quietly deleted.</p>
+        {source && (
+          <p style="margin-top:14px;font-family:var(--mono);font-size:11px;color:var(--dim)">rendered from <a class="accent" href={source.url}>chiKeka/ledger@{source.commit_short}</a></p>
+        )}
+      </div>
+      <aside class="board">
+        <div class="side-h"><span>The Scoreboard</span><span>{ledger.updated?.slice(0, 4)}</span></div>
+        <div class="scoreboard">
+          <div class="sb"><span class="num a">{open.length}</span><span class="lab">Open predictions</span></div>
+          <div class="sb"><span class="num">{resolved.length}</span><span class="lab">Resolved &amp; scored</span></div>
+          <div class="sb"><span class="num">{invalid.length}</span><span class="lab">Invalidated</span></div>
+          <div class="sb"><span class="num">{frameworks.length}</span><span class="lab">Named frameworks</span></div>
+        </div>
+      </aside>
+    </section>
 
-  <div class="stats">
-    <div class="stat"><div class="n">{open.length}</div><div class="l">Open</div></div>
-    <div class="stat"><div class="n">{resolved.length}</div><div class="l">Resolved</div></div>
-    <div class="stat"><div class="n">{invalid.length}</div><div class="l">Invalidated</div></div>
-    <div class="stat"><div class="n">{withdrawn.length}</div><div class="l">Withdrawn</div></div>
+    <section class="blk">
+      <div class="sec-rule"><h2>Calibration</h2><div class="ln"></div><a class="more" href="/methodology">how scoring works →</a></div>
+      <div class="calib">
+        <div class="cell"><div class="l">Brier score · twin</div><div class="v"><b>{brier.mean === null ? '—' : brier.mean.toFixed(3)}</b></div><div class="note">Mean of (probability − outcome)². Lower is better. Across the {brier.n} resolved claims.</div></div>
+        <div class="cell"><div class="l">Hit rate vs. stated</div><div class="v">{hits} / {scored.length}</div><div class="note">Scored against the locked probability. Invalidated claims never score.</div></div>
+        <div class="cell"><div class="l">Mean confidence</div><div class="v">{meanConf === null ? '—' : meanConf.toFixed(2)}</div><div class="note">Across resolved claims. Early sample — read as directional.</div></div>
+      </div>
+    </section>
+
+    <section class="blk" style="border-bottom:none">
+      <div class="sec-rule"><h2>Records</h2><div class="ln"></div><span class="more">{liveCount} live · newest first</span></div>
+      <div class="filters">
+        <button class="fbtn on" data-f="all">All</button>
+        <button class="fbtn" data-f="open">Open</button>
+        <button class="fbtn" data-f="hit">Resolved · hit</button>
+        <button class="fbtn" data-f="miss">Resolved · miss</button>
+        <button class="fbtn" data-f="invalid">Invalidated</button>
+      </div>
+      <div class="records barscope" id="records">
+        {recs.map(({ c, st, p, date, tier }) => (
+          <a class="terminal rec" data-status={st} href={`/ledger/${c.id}`}>
+            <div class="thead"><span class="cdot r"></span><span class="cdot y"></span><span class="cdot g"></span>
+              <span class="fname">ledger — {c.id}</span>
+              <span class="tlive" style={`color:${st === 'open' ? 'var(--term-amb)' : st === 'hit' ? 'var(--term-grn)' : st === 'miss' ? 'var(--term-red)' : 'var(--term-dim)'}`}>{st === 'open' && (<span class="dot"></span>)}<span class={`stt ${st}`}>{label[st]}</span></span>
+            </div>
+            <div class="tbody"><span class="c"># {date} · {tier} · {c.committed_by}</span>
+<span class="k">claim</span>: <span class="s">"{truncate(c.claim, 96)}"</span>
+<span class="k">resolves</span>: <span class="s">{c.resolve_by}</span>
+<span class="k">falsifier</span>: <span class="r">"{truncate(c.update_test, 72)}"</span>
+<div class="tbar"><span class="lab">probability</span><span class="track"><i style={`width:${p}%`}></i></span><span class="pv">{c.confidence?.toFixed(2)}</span></div>{c.status === 'resolved' && (<span><span class="k">outcome</span>: <span class={outcomeBinary(c) === 0 ? 'r' : 'g'}>{(c.resolution?.outcome || 'resolved').toUpperCase()}</span></span>)}</div>
+          </a>
+        ))}
+      </div>
+    </section>
   </div>
 
-  <div class="linkrow">
-    <a class="btn" href="https://github.com/chiKeka/ledger">The full record on GitHub →</a>
-    <a class="btn" href="https://github.com/chiKeka/ledger/commits/main/ledger.json">Verify every change</a>
-    <a class="btn" href="/methodology">How scoring works →</a>
-  </div>
-  <p class="small muted">
-    Invalidated and withdrawn claims stay visible forever but are excluded from
-    the Brier score and calibration — the record does not keep wins it did not
-    earn. Last updated {ledger.updated}.{source && (
-      <>
-        {' '}Rendered from <a href={source.url}>chiKeka/ledger@{source.commit_short}</a>.
-      </>
-    )}
-  </p>
-
-  <ScorePanel claims={claims} />
-
-  <h2>Open claims</h2>
-  <table class="ledger-table">
-    <thead>
-      <tr><th>Claim</th><th>Conf.</th><th>By</th><th>Resolve by</th></tr>
-    </thead>
-    <tbody>
-      {open.map((c) => (
-        <tr>
-          <td><a class="claim-link" href={`/ledger/${c.id}`}>{truncate(c.claim, 180)}</a></td>
-          <td class="conf">{pct(c)}</td>
-          <td><span class={`tag ${attribution(c) === 'bruno' ? 'bruno' : ''}`}>{attribution(c)}</span></td>
-          <td class="small muted">{c.resolve_by}</td>
-        </tr>
-      ))}
-    </tbody>
-  </table>
-
-  {resolved.length > 0 && (
-    <>
-      <h2>Resolved</h2>
-      <table class="ledger-table">
-        <thead>
-          <tr><th>Claim</th><th>Conf.</th><th>By</th><th>Outcome</th></tr>
-        </thead>
-        <tbody>
-          {resolved.map((c) => (
-            <tr>
-              <td><a class="claim-link" href={`/ledger/${c.id}`}>{truncate(c.claim, 180)}</a></td>
-              <td class="conf">{pct(c)}</td>
-              <td><span class={`tag ${attribution(c) === 'bruno' ? 'bruno' : ''}`}>{attribution(c)}</span></td>
-              <td class="small muted">{c.resolution?.outcome ?? 'resolved'}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </>
-  )}
-
-  {invalid.length > 0 && (
-    <>
-      <h2>Invalidated</h2>
-      <p class="small muted measure">
-        Registered, then disqualified — most often because the outcome pre-dated
-        registration. Kept on the record in full; never scored.
-      </p>
-      <ul class="list">
-        {invalid.map((c) => (
-          <li>
-            <h3 style="margin:0 0 .3rem"><a class="claim-link" href={`/ledger/${c.id}`}>{c.claim}</a></h3>
-            <p class="small muted" style="margin:0">
-              <span class="tag warn">invalidated</span> {pct(c)} · {attribution(c)}
-              {c.validity?.date && <> · {c.validity.date.slice(0, 10)}</>}
-            </p>
-            {c.validity?.reason && <p class="muted" style="margin:.35rem 0 0">{c.validity.reason}</p>}
-          </li>
-        ))}
-      </ul>
-    </>
-  )}
-
-  {withdrawn.length > 0 && (
-    <>
-      <h2>Withdrawn</h2>
-      <ul class="list">
-        {withdrawn.map((c) => (
-          <li>
-            <h3 style="margin:0 0 .3rem"><a class="claim-link" href={`/ledger/${c.id}`}>{c.claim}</a></h3>
-            <p class="small muted" style="margin:0"><span class="tag warn">withdrawn</span> {pct(c)} · {attribution(c)}</p>
-            {typeof c.withdrawal === 'object' && c.withdrawal?.reason && (
-              <p class="muted" style="margin:.35rem 0 0">{c.withdrawal.reason}</p>
-            )}
-          </li>
-        ))}
-      </ul>
-    </>
-  )}
-
-  <hr />
-  <p class="small muted measure">
-    This is a styled view of the same data published, machine-readable, at
-    <a href="https://github.com/chiKeka/ledger">github.com/chiKeka/ledger</a>. The
-    site never shows anything the ledger renderer did not produce.
-  </p>
+  <script is:inline>
+    document.querySelectorAll('.fbtn').forEach((btn) => btn.addEventListener('click', () => {
+      const f = btn.dataset.f;
+      document.querySelectorAll('.fbtn').forEach((b) => b.classList.remove('on'));
+      btn.classList.add('on');
+      document.querySelectorAll('.rec').forEach((r) => {
+        r.style.display = (f === 'all' || r.dataset.status === f) ? '' : 'none';
+      });
+    }));
+  </script>
 </Base>
 
 <style>
-  .claim-link { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--line); }
-  .claim-link:hover { color: var(--accent); border-color: var(--accent); }
+  .ledhero{display:grid;grid-template-columns:1.2fr .8fr;gap:0;border-bottom:2px solid var(--ink)}
+  .ledhero .copy{padding:42px 44px 44px 0;border-right:1px solid var(--rule)}
+  .ledhero .board{padding:30px 0 30px 40px}
+  .ledhero h1{font-family:var(--serif);font-size:clamp(40px,6vw,80px);line-height:.96;letter-spacing:-.015em}
+  .ledhero h1 em{font-style:italic;color:var(--accent)}
+  .ledhero .deck{margin-top:22px;font-size:20px;line-height:1.55;color:var(--ink2);max-width:48ch}
+  .ledhero .deck b{color:var(--ink);font-weight:500}
+  .board .side-h{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);border-bottom:2px solid var(--ink);padding-bottom:10px;margin-bottom:4px;display:flex;justify-content:space-between}
+  @media(max-width:880px){.ledhero{grid-template-columns:1fr}.ledhero .copy{border-right:none;padding:0 0 34px}.ledhero .board{padding:0 0 36px;border-top:1px solid var(--rule)}}
+  .calib{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;border:1.5px solid var(--ink);margin:0}
+  .calib .cell{padding:24px 24px;border-right:1px solid var(--rule)}
+  .calib .cell:last-child{border-right:none}
+  .calib .l{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--dim);margin-bottom:8px}
+  .calib .v{font-family:var(--serif);font-size:38px;line-height:1;color:var(--ink)}
+  .calib .v b{color:var(--accent);font-weight:400}
+  .calib .note{font-size:14px;color:var(--ink2);margin-top:8px;line-height:1.45}
+  @media(max-width:680px){.calib{grid-template-columns:1fr}.calib .cell{border-right:none;border-bottom:1px solid var(--rule)}}
+  .filters{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:26px}
+  .fbtn{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.08em;padding:8px 14px;border:1.5px solid var(--rule2);color:var(--ink2);cursor:pointer;background:transparent;transition:.14s}
+  .fbtn:hover{border-color:var(--ink)}
+  .fbtn.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+  .records{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+  .records .terminal{margin-bottom:0;text-decoration:none;display:block}
+  .records .tbody{font-size:12.5px;line-height:1.9}
+  .stt{display:inline-block;font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:2px 7px;border:1px solid;border-radius:3px}
+  .stt.open{color:var(--term-amb);border-color:var(--term-amb)}
+  .stt.hit{color:var(--term-grn);border-color:var(--term-grn)}
+  .stt.miss{color:var(--term-red);border-color:var(--term-red)}
+  .stt.invalid,.stt.withdrawn{color:var(--term-dim);border-color:var(--term-dim)}
+  @media(max-width:820px){.records{grid-template-columns:1fr}}
 </style>
