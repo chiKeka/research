@@ -16,7 +16,7 @@ import Base from '../layouts/Base.astro';
         </div>
       </div>
       <aside class="portrait">
-        <div class="ph"><span>portrait — Bruno Chikeka</span></div>
+        <img class="ph" src="/portrait.jpg" width="760" height="1013" alt="Bruno Chikeka in a tuxedo, at a lectern before the bound Parliamentary Debates." />
         <div class="card">
           <div class="h">At a glance</div>
           <div class="row"><span>Practice</span><b>Systems research</b></div>
@@ -60,8 +60,7 @@ import Base from '../layouts/Base.astro';
   .about .body a{border-bottom:1px solid var(--rule2)}
   .about .body a:hover{border-color:var(--accent)}
   .portrait{display:flex;flex-direction:column;gap:18px}
-  .portrait .ph{aspect-ratio:3/4;background:repeating-linear-gradient(135deg,var(--paper2) 0 14px,var(--paper3) 14px 28px);border:1px dashed var(--rule2);display:flex;align-items:flex-end;padding:16px}
-  .portrait .ph span{font-family:var(--mono);font-size:11px;color:var(--dim);text-transform:uppercase;letter-spacing:.1em;background:var(--paper);padding:5px 9px;border:1px solid var(--rule)}
+  .portrait .ph{aspect-ratio:3/4;width:100%;object-fit:cover;object-position:center top;border:1.5px solid var(--ink);display:block;background:var(--paper2)}
   .portrait .card{border:1.5px solid var(--ink);padding:20px}
   .portrait .card .h{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);border-bottom:1px solid var(--rule);padding-bottom:10px;margin-bottom:12px}
   .portrait .card .row{display:flex;justify-content:space-between;font-family:var(--mono);font-size:12px;color:var(--ink2);padding:6px 0}
