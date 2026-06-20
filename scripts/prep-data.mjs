@@ -125,8 +125,9 @@ const readJsonl = (p) =>
 
 // 1) Public ledger — from the renderer's sanitized output only, stamped with the
 //    public-repo commit SHA when reachable (provenance for the detail pages).
+let tmp;
 try {
-  const tmp = fs.mkdtempSync(path.join('/tmp', 'hub-sb-'));
+  tmp = fs.mkdtempSync(path.join('/tmp', 'hub-sb-'));
   execFileSync('python3', ['scripts/render-scoreboard.py', '--out', tmp], {
     cwd: REPO,
     stdio: 'ignore',
@@ -155,6 +156,10 @@ try {
   console.log(`[prep] ledger.json: ${ledger.claims?.length ?? 0} public claims (sanitized via renderer).`);
 } catch (e) {
   console.warn('[prep] render-scoreboard failed; keeping existing ledger.json snapshot.', e.message);
+} finally {
+  // Always remove the scratch dir — otherwise every source-mode run (the weekly
+  // mirror, local parent-repo builds) leaks a /tmp/hub-sb-* directory.
+  if (tmp) fs.rmSync(tmp, { recursive: true, force: true });
 }
 
 // 2) Frameworks — active only, public-facing fields.
