@@ -1,9 +1,20 @@
 ---
 import Base from '../layouts/Base.astro';
+
+const site = Astro.site ?? new URL('https://research-azure-omega.vercel.app');
+const profilePage = {
+  '@type': 'ProfilePage',
+  '@id': `${site.origin}/about#profilepage`,
+  url: `${site.origin}/about`,
+  name: 'About Bruno Chikeka',
+  primaryImageOfPage: `${site.origin}/portrait.jpg`,
+  mainEntity: { '@id': `${site.origin}/#person` },
+};
 ---
 
-<Base title="About" tagline="● Systems-oriented technologist"
-  description="Bruno Chikeka — systems-oriented technologist. Current focus and how the practice works.">
+<Base title="About Bruno Chikeka" tagline="● Systems-oriented technologist"
+  description="Bruno Chikeka — systems-oriented technologist researching AI infrastructure, agentic systems, and governance."
+  jsonLd={profilePage}>
   <div class="wrap">
     <section class="about">
       <div>

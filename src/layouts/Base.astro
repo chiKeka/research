@@ -40,8 +40,24 @@ const baseGraph = [
     '@id': `${site.origin}/#person`,
     name: 'Bruno Chikeka',
     url: site.origin,
+    image: `${site.origin}/portrait.jpg`,
     jobTitle: 'Systems-oriented technologist',
-    sameAs: ['https://x.com/Chikeka', 'https://github.com/chiKeka'],
+    description:
+      'Bruno Chikeka is a systems-oriented technologist researching AI infrastructure, agentic systems, and governance, with a public, score-kept prediction ledger.',
+    knowsAbout: [
+      'AI infrastructure',
+      'Agentic systems',
+      'AI governance',
+      'Sovereign compute',
+      'Forecasting',
+      'Public epistemics',
+    ],
+    worksFor: { '@type': 'Organization', name: 'Afrigent' },
+    sameAs: [
+      'https://x.com/Chikeka',
+      'https://github.com/chiKeka',
+      'https://www.linkedin.com/in/bruno-chikeka',
+    ],
   },
 ];
 const extra = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
