@@ -16,7 +16,7 @@ import Base from '../layouts/Base.astro';
         </div>
       </div>
       <aside class="portrait">
-        <img class="ph" src="/portrait.jpg" width="760" height="1013" alt="Bruno Chikeka in a tuxedo, at a lectern before the bound Parliamentary Debates." />
+        <img class="ph" src="/portrait.jpg" width="900" height="900" alt="Bruno Chikeka in a tuxedo, at a lectern before the bound Parliamentary Debates." />
         <div class="card">
           <div class="h">At a glance</div>
           <div class="row"><span>Practice</span><b>Systems research</b></div>
@@ -50,7 +50,7 @@ import Base from '../layouts/Base.astro';
 </Base>
 
 <style>
-  .about{display:grid;grid-template-columns:1.4fr .6fr;gap:54px;border-bottom:2px solid var(--ink);padding:46px 0 50px}
+  .about{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;border-bottom:2px solid var(--ink);padding:46px 0 50px}
   .about h1{font-family:var(--serif);font-size:clamp(36px,5vw,66px);line-height:.99;letter-spacing:-.015em}
   .about h1 em{font-style:italic;color:var(--accent)}
   .about .body{font-size:20px;line-height:1.7;color:var(--ink2);margin-top:24px;max-width:60ch}
@@ -60,7 +60,7 @@ import Base from '../layouts/Base.astro';
   .about .body a{border-bottom:1px solid var(--rule2)}
   .about .body a:hover{border-color:var(--accent)}
   .portrait{display:flex;flex-direction:column;gap:18px}
-  .portrait .ph{aspect-ratio:3/4;width:100%;object-fit:cover;object-position:center top;border:1.5px solid var(--ink);display:block;background:var(--paper2)}
+  .portrait .ph{aspect-ratio:1/1;width:100%;object-fit:cover;object-position:center;border:1.5px solid var(--ink);display:block;background:var(--paper2)}
   .portrait .card{border:1.5px solid var(--ink);padding:20px}
   .portrait .card .h{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);border-bottom:1px solid var(--rule);padding-bottom:10px;margin-bottom:12px}
   .portrait .card .row{display:flex;justify-content:space-between;font-family:var(--mono);font-size:12px;color:var(--ink2);padding:6px 0}
