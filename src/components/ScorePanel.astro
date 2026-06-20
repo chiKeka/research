@@ -1,0 +1,227 @@
+---
+// ScorePanel.astro — build-time, zero-dependency calibration & score views for
+// the prediction ledger. All charts are inline SVG computed from ledger.json.
+import {
+  classify,
+  scoredClaims,
+  brierScore,
+  outcomeBinary,
+  confidenceBuckets,
+  groupCount,
+  horizonByMonth,
+} from '../lib/ledger-stats.mjs';
+
+const { claims = [] } = Astro.props;
+const { open, resolved } = classify(claims);
+const scored = scoredClaims(claims);
+const brier = brierScore(claims);
+// Scored as separate populations so the machine's guesses never pool into the
+// human's track record (see /methodology).
+const twinBrier = brierScore(claims.filter((c) => c?.committed_by === 'twin'));
+const brunoBrier = brierScore(claims.filter((c) => c?.committed_by === 'bruno'));
+const SMALL_SAMPLE = 10;
+
+const TWIN = '#9a6a2f'; // brass
+const BRUNO = '#3a6ea5'; // cobalt
+const colorFor = (c) => (c?.committed_by === 'bruno' ? BRUNO : TWIN);
+
+// --- Calibration strip: resolved claims placed on a 0–100% confidence axis. ---
+const W = 560;
+const padL = 8;
+const padR = 8;
+const axisY = 96;
+const xFor = (conf) => padL + conf * (W - padL - padR);
+
+// --- Open-claims confidence histogram (10-pt buckets). ---
+const buckets = confidenceBuckets(open);
+const maxBucket = Math.max(1, ...buckets.map((b) => b.n));
+
+// --- Categorical splits. ---
+const splitBy = (claimset, field) => {
+  const g = groupCount(claimset, field);
+  const total = claimset.length || 1;
+  return Object.entries(g)
+    .sort((a, b) => b[1] - a[1])
+    .map(([k, n]) => ({ k, n, frac: n / total }));
+};
+const byWho = splitBy(claims.filter((c) => c?.validity?.status !== 'invalid' && !c?.withdrawal), 'committed_by');
+const byFrame = splitBy(open, 'frame');
+const byTier = splitBy(open, 'tier');
+
+// --- Forecast horizon: open claims by resolve-by month. ---
+const horizon = horizonByMonth(open);
+const maxHorizon = Math.max(1, ...horizon.map((h) => h.n));
+const fmtMonth = (m) => {
+  const [y, mo] = m.split('-');
+  return new Date(Date.UTC(+y, +mo - 1, 1)).toLocaleDateString('en', { month: 'short', year: '2-digit', timeZone: 'UTC' });
+};
+
+const frameLabel = (k) => (k === 'in' ? 'will happen' : k === 'out' ? 'will not' : k);
+---
+
+<section class="scorepanel">
+  <div class="section-head">
+    <h2>Calibration &amp; score</h2>
+    <span class="small muted">computed at build time from the ledger</span>
+  </div>
+
+  <div class="score-grid">
+    <div class="card pad">
+      <div class="l" style="margin-bottom:.5rem">Brier score · separate populations</div>
+      <div class="brier-row">
+        <div class="brier-cell">
+          <div class="big-num">{twinBrier.mean === null ? '—' : twinBrier.mean.toFixed(3)}</div>
+          <div class="l">twin · {twinBrier.n} scored</div>
+        </div>
+        <div class="brier-cell">
+          <div class="big-num" style={`color:${BRUNO}`}>{brunoBrier.mean === null ? '—' : brunoBrier.mean.toFixed(3)}</div>
+          <div class="l">bruno · {brunoBrier.n} scored</div>
+        </div>
+      </div>
+      <p class="small muted" style="margin:.6rem 0 0">
+        Mean of (probability − outcome)² over resolved, still-valid claims, kept as
+        separate populations. Lower is better; 0.25 is the coin-flip line.{brier.n > 0 && brier.n < SMALL_SAMPLE
+          ? ` Early sample (n=${brier.n}) — read as directional, not settled.`
+          : ''}
+      </p>
+    </div>
+
+    <div class="card pad">
+      <div class="l" style="margin-bottom:.4rem">Resolved claims by locked probability</div>
+      {scored.length === 0 ? (
+        <p class="small muted" style="margin:0">No scored claims yet.</p>
+      ) : (
+        <svg viewBox={`0 0 ${W} 116`} class="chart" role="img"
+             aria-label="Resolved claims plotted by their locked probability and outcome">
+          <line x1={padL} y1={axisY} x2={W - padR} y2={axisY} stroke="var(--line)" />
+          {[0, 25, 50, 75, 100].map((t) => (
+            <g>
+              <line x1={xFor(t / 100)} y1={axisY - 4} x2={xFor(t / 100)} y2={axisY + 4} stroke="var(--faint)" />
+              <text x={xFor(t / 100)} y={axisY + 18} font-size="10" fill="var(--faint)" text-anchor="middle">{t}%</text>
+            </g>
+          ))}
+          {scored.map((c, i) => {
+            const hit = outcomeBinary(c) === 1;
+            const x = xFor(c.confidence);
+            const y = axisY - 14 - (i % 5) * 13; // stack to reduce overlap
+            return (
+              <g>
+                <line x1={x} y1={axisY} x2={x} y2={y} stroke="var(--line)" />
+                <circle cx={x} cy={y} r="5"
+                        fill={hit ? colorFor(c) : 'transparent'} stroke={colorFor(c)} stroke-width="1.5">
+                  <title>{`${Math.round(c.confidence * 100)}% · ${c.committed_by} · ${c.resolution?.outcome ?? 'resolved'}`}</title>
+                </circle>
+              </g>
+            );
+          })}
+        </svg>
+      )}
+      <div class="legend small muted">
+        <span><span class="dot" style={`background:${TWIN}`}></span>twin</span>
+        <span><span class="dot" style={`background:${BRUNO}`}></span>bruno</span>
+        <span><span class="dot ring"></span>refuted (hollow)</span>
+      </div>
+    </div>
+
+    <div class="card pad">
+      <div class="l" style="margin-bottom:.4rem">Open claims by confidence</div>
+      <svg viewBox="0 0 560 120" class="chart" role="img" aria-label="Distribution of open-claim confidence">
+        {buckets.map((b, i) => {
+          const bw = 560 / 10;
+          const h = (b.n / maxBucket) * 84;
+          return (
+            <g>
+              <rect x={i * bw + 4} y={96 - h} width={bw - 8} height={h} fill="var(--accent)" opacity="0.85" rx="2">
+                <title>{`${b.lo}–${b.hi}%: ${b.n} open`}</title>
+              </rect>
+              {b.n > 0 && <text x={i * bw + bw / 2} y={96 - h - 4} font-size="9" fill="var(--muted)" text-anchor="middle">{b.n}</text>}
+              <text x={i * bw + bw / 2} y={110} font-size="9" fill="var(--faint)" text-anchor="middle">{b.lo}</text>
+            </g>
+          );
+        })}
+      </svg>
+    </div>
+
+    <div class="card pad">
+      <div class="l" style="margin-bottom:.5rem">Open claims by horizon (resolve-by)</div>
+      {horizon.length === 0 ? (
+        <p class="small muted" style="margin:0">No dated open claims.</p>
+      ) : (
+        <svg viewBox={`0 0 560 120`} class="chart" role="img" aria-label="Open claims by resolve-by month">
+          {horizon.map((h, i) => {
+            const bw = 560 / horizon.length;
+            const pad = Math.min(5, bw * 0.18);
+            const bh = (h.n / maxHorizon) * 80;
+            return (
+              <g>
+                <rect x={i * bw + pad} y={92 - bh} width={Math.max(2, bw - 2 * pad)} height={bh} fill="var(--accent-soft)" rx="2">
+                  <title>{`${h.month}: ${h.n} open`}</title>
+                </rect>
+                <text x={i * bw + bw / 2} y={92 - bh - 4} font-size="9" fill="var(--muted)" text-anchor="middle">{h.n}</text>
+                <text x={i * bw + bw / 2} y={108} font-size="9" fill="var(--faint)" text-anchor="middle">{fmtMonth(h.month)}</text>
+              </g>
+            );
+          })}
+        </svg>
+      )}
+    </div>
+  </div>
+
+  <div class="split-row">
+    <div class="split">
+      <div class="l">Who committed it</div>
+      {byWho.map((s) => (
+        <div class="bar-line">
+          <span class="bk">{s.k}</span>
+          <span class="bar"><span class="fill" style={`width:${Math.round(s.frac * 100)}%;background:${s.k === 'bruno' ? BRUNO : TWIN}`}></span></span>
+          <span class="bn small muted">{s.n}</span>
+        </div>
+      ))}
+    </div>
+    <div class="split">
+      <div class="l">Open by frame</div>
+      {byFrame.map((s) => (
+        <div class="bar-line">
+          <span class="bk">{frameLabel(s.k)}</span>
+          <span class="bar"><span class="fill" style={`width:${Math.round(s.frac * 100)}%`}></span></span>
+          <span class="bn small muted">{s.n}</span>
+        </div>
+      ))}
+    </div>
+    <div class="split">
+      <div class="l">Open by tier</div>
+      {byTier.map((s) => (
+        <div class="bar-line">
+          <span class="bk">{s.k}</span>
+          <span class="bar"><span class="fill" style={`width:${Math.round(s.frac * 100)}%`}></span></span>
+          <span class="bn small muted">{s.n}</span>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .scorepanel { margin: 2rem 0; }
+  .score-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+  }
+  .card.pad { padding: 1rem 1.1rem; }
+  .big-num { font-family: var(--serif); font-size: 2.6rem; line-height: 1; color: var(--accent); }
+  .brier-row { display: flex; gap: 1.75rem; flex-wrap: wrap; }
+  .brier-cell .big-num { font-size: 2.2rem; }
+  .card .l { font-weight: 600; color: var(--ink-soft); font-size: .9rem; }
+  .chart { width: 100%; height: auto; display: block; }
+  .legend { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: .5rem; }
+  .legend .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: .35rem; vertical-align: middle; }
+  .legend .dot.ring { background: transparent; border: 1.5px solid var(--faint); }
+  .split-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem; margin-top: 1.25rem; }
+  .split .l { font-weight: 600; font-size: .85rem; margin-bottom: .5rem; color: var(--ink-soft); }
+  .bar-line { display: grid; grid-template-columns: 5.5rem 1fr 2rem; align-items: center; gap: .5rem; margin: .25rem 0; }
+  .bar-line .bk { font-size: .82rem; color: var(--muted); text-transform: capitalize; }
+  .bar-line .bar { background: var(--line-soft); border-radius: 4px; height: 8px; overflow: hidden; }
+  .bar-line .fill { display: block; height: 100%; background: var(--accent); border-radius: 4px; }
+  .bar-line .bn { text-align: right; }
+</style>

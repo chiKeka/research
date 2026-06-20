@@ -2006,5 +2006,13 @@
         "note": "Governing variable = exit cost (commitment), not fragility/trigger. Two within-case natural experiments: HS2 P1 (committed, builds) vs P2b (uncommitted, cancelled) under identical triggers; CA-HSR committed segment builds vs uncommitted system descoped. Bruno wins scoped, loses pure. | source: experiments/hs2-backtest/claim2-results.md (16-case fragility-selected reference class, 2026-06-12)"
       }
     }
-  ]
+  ],
+  "source": {
+    "repo": "chiKeka/ledger",
+    "commit": "551c153243e3e7a2b8550cb728dd99f12165e454",
+    "commit_short": "551c153",
+    "committed_at": "2026-06-20T01:44:21Z",
+    "fetched_at": "2026-06-20T08:57:55.646Z",
+    "url": "https://github.com/chiKeka/ledger/commit/551c153243e3e7a2b8550cb728dd99f12165e454"
+  }
 }

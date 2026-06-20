@@ -1,22 +1,12 @@
 ---
 import Base from '../layouts/Base.astro';
+import ScorePanel from '../components/ScorePanel.astro';
 import ledger from '../data/ledger.json';
+import { classify, pct, truncate, attribution } from '../lib/ledger-stats.mjs';
 
 const claims = ledger.claims ?? [];
-const isInvalid = (c) => c?.validity?.status === 'invalid';
-const isWithdrawn = (c) => Boolean(c?.withdrawal);
-
-const live = claims.filter((c) => !isInvalid(c) && !isWithdrawn(c));
-const open = live
-  .filter((c) => c.status === 'open')
-  .sort((a, b) => (a.resolve_by || '').localeCompare(b.resolve_by || ''));
-const resolved = live.filter((c) => c.status === 'resolved');
-const invalid = claims.filter(isInvalid);
-const withdrawn = claims.filter(isWithdrawn);
-
-const pct = (c) => (typeof c.confidence === 'number' ? Math.round(c.confidence * 100) + '%' : '—');
-const truncate = (s, n) => (s && s.length > n ? s.slice(0, n - 1).trimEnd() + '…' : s);
-const sourceTag = (c) => (c.confidence_source === 'bruno-stated' ? 'bruno' : 'twin');
+const { open, resolved, invalid, withdrawn } = classify(claims);
+const source = ledger.source ?? null;
 ---
 
 <Base
@@ -43,12 +33,19 @@ const sourceTag = (c) => (c.confidence_source === 'bruno-stated' ? 'bruno' : 'tw
   <div class="linkrow">
     <a class="btn" href="https://github.com/chiKeka/ledger">The full record on GitHub →</a>
     <a class="btn" href="https://github.com/chiKeka/ledger/commits/main/ledger.json">Verify every change</a>
+    <a class="btn" href="/methodology">How scoring works →</a>
   </div>
   <p class="small muted">
     Invalidated and withdrawn claims stay visible forever but are excluded from
     the Brier score and calibration — the record does not keep wins it did not
-    earn. Last updated {ledger.updated}.
+    earn. Last updated {ledger.updated}.{source && (
+      <>
+        {' '}Rendered from <a href={source.url}>chiKeka/ledger@{source.commit_short}</a>.
+      </>
+    )}
   </p>
+
+  <ScorePanel claims={claims} />
 
   <h2>Open claims</h2>
   <table class="ledger-table">
@@ -58,9 +55,9 @@ const sourceTag = (c) => (c.confidence_source === 'bruno-stated' ? 'bruno' : 'tw
     <tbody>
       {open.map((c) => (
         <tr>
-          <td>{truncate(c.claim, 180)}</td>
+          <td><a class="claim-link" href={`/ledger/${c.id}`}>{truncate(c.claim, 180)}</a></td>
           <td class="conf">{pct(c)}</td>
-          <td><span class={`tag ${sourceTag(c) === 'bruno' ? 'bruno' : ''}`}>{sourceTag(c)}</span></td>
+          <td><span class={`tag ${attribution(c) === 'bruno' ? 'bruno' : ''}`}>{attribution(c)}</span></td>
           <td class="small muted">{c.resolve_by}</td>
         </tr>
       ))}
@@ -72,18 +69,58 @@ const sourceTag = (c) => (c.confidence_source === 'bruno-stated' ? 'bruno' : 'tw
       <h2>Resolved</h2>
       <table class="ledger-table">
         <thead>
-          <tr><th>Claim</th><th>Conf.</th><th>Outcome</th></tr>
+          <tr><th>Claim</th><th>Conf.</th><th>By</th><th>Outcome</th></tr>
         </thead>
         <tbody>
           {resolved.map((c) => (
             <tr>
-              <td>{truncate(c.claim, 180)}</td>
+              <td><a class="claim-link" href={`/ledger/${c.id}`}>{truncate(c.claim, 180)}</a></td>
               <td class="conf">{pct(c)}</td>
+              <td><span class={`tag ${attribution(c) === 'bruno' ? 'bruno' : ''}`}>{attribution(c)}</span></td>
               <td class="small muted">{c.resolution?.outcome ?? 'resolved'}</td>
             </tr>
           ))}
         </tbody>
       </table>
+    </>
+  )}
+
+  {invalid.length > 0 && (
+    <>
+      <h2>Invalidated</h2>
+      <p class="small muted measure">
+        Registered, then disqualified — most often because the outcome pre-dated
+        registration. Kept on the record in full; never scored.
+      </p>
+      <ul class="list">
+        {invalid.map((c) => (
+          <li>
+            <h3 style="margin:0 0 .3rem"><a class="claim-link" href={`/ledger/${c.id}`}>{c.claim}</a></h3>
+            <p class="small muted" style="margin:0">
+              <span class="tag warn">invalidated</span> {pct(c)} · {attribution(c)}
+              {c.validity?.date && <> · {c.validity.date.slice(0, 10)}</>}
+            </p>
+            {c.validity?.reason && <p class="muted" style="margin:.35rem 0 0">{c.validity.reason}</p>}
+          </li>
+        ))}
+      </ul>
+    </>
+  )}
+
+  {withdrawn.length > 0 && (
+    <>
+      <h2>Withdrawn</h2>
+      <ul class="list">
+        {withdrawn.map((c) => (
+          <li>
+            <h3 style="margin:0 0 .3rem"><a class="claim-link" href={`/ledger/${c.id}`}>{c.claim}</a></h3>
+            <p class="small muted" style="margin:0"><span class="tag warn">withdrawn</span> {pct(c)} · {attribution(c)}</p>
+            {typeof c.withdrawal === 'object' && c.withdrawal?.reason && (
+              <p class="muted" style="margin:.35rem 0 0">{c.withdrawal.reason}</p>
+            )}
+          </li>
+        ))}
+      </ul>
     </>
   )}
 
@@ -94,3 +131,8 @@ const sourceTag = (c) => (c.confidence_source === 'bruno-stated' ? 'bruno' : 'tw
     site never shows anything the ledger renderer did not produce.
   </p>
 </Base>
+
+<style>
+  .claim-link { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--line); }
+  .claim-link:hover { color: var(--accent); border-color: var(--accent); }
+</style>

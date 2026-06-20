@@ -2,7 +2,7 @@
 title: "Introducing the public prediction ledger - quantitative tools in a qualitative world, the experiment, the twin at high level"
 date: "2026-06-11"
 platform: "linkedin"
-external_url: "https://www.linkedin.com/in/bruno-chikeka (feed post, published via composer)"
+external_url: "https://www.linkedin.com/in/bruno-chikeka"
 summary: "One of the recurring issues in forecasting for major programmes is that we rely on quantitative metrics in a highly qualitative environment. Anyone who has built forecasts from sch"
 published: true
 ---

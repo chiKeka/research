@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#faf9f5"/>
+  <rect x="28" y="28" width="1144" height="574" fill="none" stroke="#e4dfd2" stroke-width="2" rx="10"/>
+  <rect x="80" y="120" width="64" height="5" fill="#9a6a2f"/>
+  <text x="80" y="250" font-family="Georgia, 'Times New Roman', serif" font-size="92" font-weight="600" fill="#16140e">Bruno Chikeka</text>
+  <text x="80" y="320" font-family="Helvetica, Arial, sans-serif" font-size="34" fill="#5b564a">Systems research — AI infrastructure, agentic systems, governance</text>
+  <g transform="translate(80,430)">
+    <circle cx="11" cy="-10" r="11" fill="#9a6a2f"/>
+    <text x="36" y="0" font-family="Helvetica, Arial, sans-serif" font-size="38" font-weight="600" fill="#2c2920">A public, score-kept prediction ledger</text>
+  </g>
+  <text x="80" y="540" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#8c8576">Probabilities lock when stated · resolutions are never deleted</text>
+</svg>

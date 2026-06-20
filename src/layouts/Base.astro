@@ -4,14 +4,51 @@ import '../styles/global.css';
 interface Props {
   title?: string;
   description?: string;
+  ogType?: string;
+  ogImage?: string;
+  publishedTime?: string;
+  modifiedTime?: string;
+  jsonLd?: object | object[];
 }
-const { title, description } = Astro.props;
+const {
+  title,
+  description,
+  ogType = 'website',
+  ogImage = '/og.png',
+  publishedTime,
+  modifiedTime,
+  jsonLd,
+} = Astro.props;
+
 const siteName = 'Bruno Chikeka — Research';
 const pageTitle = title ? `${title} · ${siteName}` : siteName;
 const desc =
   description ??
   'Systems-oriented technology research: AI infrastructure, institutions, and a public, score-kept prediction ledger.';
+
+const site = Astro.site ?? new URL('https://research-azure-omega.vercel.app');
 const path = Astro.url.pathname.replace(/\/$/, '') || '/';
+const canonical = new URL(path, site).href;
+const ogImageUrl = new URL(ogImage, site).href;
+
+// Site-wide structured data (WebSite + Person), plus any page-specific nodes.
+const baseGraph = [
+  { '@type': 'WebSite', '@id': `${site.origin}/#website`, url: site.origin, name: siteName, description: desc },
+  {
+    '@type': 'Person',
+    '@id': `${site.origin}/#person`,
+    name: 'Bruno Chikeka',
+    url: site.origin,
+    jobTitle: 'Systems-oriented technologist',
+    sameAs: ['https://x.com/Chikeka', 'https://github.com/chiKeka'],
+  },
+];
+const extra = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
+const structuredData = { '@context': 'https://schema.org', '@graph': [...baseGraph, ...extra] };
+// Escape `<` so a value containing the literal "</script>" can't break out of
+// the inline JSON-LD script element.
+const jsonLdString = JSON.stringify(structuredData).replace(/</g, '\\u003c');
+
 const nav = [
   { href: '/research', label: 'Research' },
   { href: '/writing', label: 'Writing' },
@@ -31,10 +68,33 @@ const isCurrent = (href: string) =>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{pageTitle}</title>
     <meta name="description" content={desc} />
+    <link rel="canonical" href={canonical} />
+
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={desc} />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content={siteName} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:image:width" content="1600" />
+    <meta property="og:image:height" content="840" />
+    {ogType === 'article' && publishedTime && (
+      <meta property="article:published_time" content={publishedTime} />
+    )}
+    {ogType === 'article' && modifiedTime && (
+      <meta property="article:modified_time" content={modifiedTime} />
+    )}
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Chikeka" />
+    <meta name="twitter:creator" content="@Chikeka" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={desc} />
+    <meta name="twitter:image" content={ogImageUrl} />
+
+    <link rel="alternate" type="application/rss+xml" title="Bruno Chikeka — Writing" href="/rss.xml" />
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='25' font-size='26'>🜔</text></svg>" />
+    <script type="application/ld+json" set:html={jsonLdString} is:inline />
   </head>
   <body>
     <header class="site-head">
@@ -56,7 +116,9 @@ const isCurrent = (href: string) =>
       <div class="wrap">
         <div>© {new Date().getFullYear()} Bruno Chikeka · built in the open</div>
         <div>
+          <a href="https://github.com/chiKeka/research">Source</a> ·
           <a href="https://github.com/chiKeka/ledger">Ledger repo</a> ·
+          <a href="/rss.xml">RSS</a> ·
           <a href="https://x.com/Chikeka">@Chikeka</a>
         </div>
       </div>

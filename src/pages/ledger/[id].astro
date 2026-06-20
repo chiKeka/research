@@ -1,0 +1,161 @@
+---
+import Base from '../../layouts/Base.astro';
+import ledger from '../../data/ledger.json';
+import { isInvalid, isWithdrawn, pct, attribution, brierContribution } from '../../lib/ledger-stats.mjs';
+import { sanitizeUrl } from '../../../scripts/lib/prep-transforms.mjs';
+
+export function getStaticPaths() {
+  const claims = ledger.claims ?? [];
+  return claims.map((claim) => ({ params: { id: claim.id }, props: { claim } }));
+}
+
+const { claim } = Astro.props;
+const source = ledger.source ?? null;
+
+const statusLabel = isInvalid(claim)
+  ? 'Invalidated'
+  : isWithdrawn(claim)
+    ? 'Withdrawn'
+    : claim.status === 'resolved'
+      ? 'Resolved'
+      : 'Open';
+const brier = brierContribution(claim);
+const frame = claim.frame === 'in' ? 'will happen' : claim.frame === 'out' ? 'will not happen' : claim.frame;
+const fmtDate = (d) => (d ? d.slice(0, 10) : '');
+const desc = claim.claim.length > 155 ? claim.claim.slice(0, 152) + '…' : claim.claim;
+---
+
+<Base title={`Claim ${claim.id}`} description={desc}>
+  <article class="measure">
+    <p class="eyebrow"><a href="/ledger">← Prediction ledger</a></p>
+    <span class={`tag ${statusLabel === 'Open' ? '' : 'warn'}`}>{statusLabel}</span>
+    <h1 style="font-size:clamp(1.5rem,3.5vw,2.2rem);margin-top:.6rem">{claim.claim}</h1>
+
+    <dl class="facts">
+      <div><dt>Locked probability</dt><dd class="conf">{pct(claim)}</dd></div>
+      <div><dt>Committed by</dt><dd><span class={`tag ${attribution(claim) === 'bruno' ? 'bruno' : ''}`}>{attribution(claim)}</span> <span class="small muted">({claim.confidence_source})</span></dd></div>
+      <div><dt>Direction</dt><dd>{frame}</dd></div>
+      <div><dt>Tier</dt><dd>{claim.tier}</dd></div>
+      {typeof claim.base_rate === 'number' && <div><dt>Base rate</dt><dd>{Math.round(claim.base_rate * 100)}%</dd></div>}
+      <div><dt>Registered</dt><dd>{claim.registered_at?.replace('T', ' ').replace('Z', ' UTC')}</dd></div>
+      <div><dt>Resolve by</dt><dd>{claim.resolve_by}</dd></div>
+      {brier !== null && <div><dt>Brier contribution</dt><dd>{brier.toFixed(3)}</dd></div>}
+    </dl>
+
+    {claim.confidence_rationale && (
+      <>
+        <h2>Why this probability</h2>
+        <p>{claim.confidence_rationale}</p>
+      </>
+    )}
+
+    <h2>What would disconfirm it</h2>
+    <p>{claim.update_test}</p>
+
+    {claim.grounding && (
+      <>
+        <h2>Grounding</h2>
+        <p class="muted">{claim.grounding}</p>
+      </>
+    )}
+
+    {Array.isArray(claim.frameworks) && claim.frameworks.length > 0 && (
+      <>
+        <h2>Frameworks</h2>
+        <ul class="tagrow">{claim.frameworks.map((f) => <li class="tag">{f}</li>)}</ul>
+      </>
+    )}
+
+    {Array.isArray(claim.evidence) && claim.evidence.length > 0 && (
+      <>
+        <h2>Evidence history</h2>
+        <ul class="list">
+          {claim.evidence.map((e) => {
+            const url = sanitizeUrl(e.source_url);
+            return (
+              <li>
+                <div class="small muted">{fmtDate(e.date)} · <span class="dir">{e.direction}</span></div>
+                <p style="margin:.2rem 0 .3rem">{e.note}</p>
+                {url && <a class="small" href={url}>{url}</a>}
+              </li>
+            );
+          })}
+        </ul>
+      </>
+    )}
+
+    {isInvalid(claim) && claim.validity?.reason && (
+      <>
+        <h2>Why it was invalidated</h2>
+        <p>{claim.validity.reason}</p>
+      </>
+    )}
+
+    {claim.status === 'resolved' && claim.resolution && (
+      <>
+        <h2>Resolution</h2>
+        <p>
+          <span class="tag warn">{claim.resolution.outcome}</span>
+          {claim.resolution.date && <span class="small muted"> · {fmtDate(claim.resolution.date)}</span>}
+        </p>
+        {claim.resolution.note && <p class="muted">{claim.resolution.note}</p>}
+      </>
+    )}
+
+    {Array.isArray(claim.corrections) && claim.corrections.length > 0 && (
+      <>
+        <h2>Corrections</h2>
+        <ul class="list">
+          {claim.corrections.map((c) => (
+            <li>
+              <div class="small muted">{fmtDate(c.date)} · {c.target}</div>
+              <p style="margin:.2rem 0 0">{c.note}</p>
+            </li>
+          ))}
+        </ul>
+      </>
+    )}
+
+    {claim.prereg_audit && (
+      <>
+        <h2>Pre-registration audit</h2>
+        <p class="small muted">
+          {fmtDate(claim.prereg_audit.date)} · auditor: {claim.prereg_audit.auditor} · outcome already known:
+          {' '}{String(claim.prereg_audit.outcome_already_known)}
+        </p>
+        {claim.prereg_audit.note && <p class="muted">{claim.prereg_audit.note}</p>}
+      </>
+    )}
+
+    {Array.isArray(claim.related_to) && claim.related_to.length > 0 && (
+      <>
+        <h2>Related claims</h2>
+        <ul class="list">
+          {claim.related_to.map((r) => (
+            <li class="small">
+              <a href={`/ledger/${r.id}`}>{r.id}</a> · {r.relation}{r.note && <span class="muted"> — {r.note}</span>}
+            </li>
+          ))}
+        </ul>
+      </>
+    )}
+
+    <hr />
+    <p class="small muted">
+      Machine-readable record:
+      <a href="https://github.com/chiKeka/ledger/blob/main/ledger.json">ledger.json</a>{source && (
+        <> · this view rendered from <a href={source.url}>chiKeka/ledger@{source.commit_short}</a></>
+      )}.
+    </p>
+    <p><a href="/ledger">← All claims</a></p>
+  </article>
+</Base>
+
+<style>
+  .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: .75rem 1.25rem; margin: 1.25rem 0; padding: 1rem 1.1rem; background: var(--card); border: 1px solid var(--line); border-radius: 8px; }
+  .facts dt { font-size: .72rem; text-transform: uppercase; letter-spacing: .04em; color: var(--faint); }
+  .facts dd { margin: .15rem 0 0; font-weight: 500; }
+  .facts .conf { font-family: var(--serif); font-size: 1.3rem; color: var(--accent); }
+  .tagrow { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: .4rem; }
+  .dir { text-transform: capitalize; }
+</style>

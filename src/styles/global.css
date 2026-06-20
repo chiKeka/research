@@ -138,6 +138,7 @@ a.card:hover h3 { color: var(--accent); }
 .ledger-table .conf { font-variant-numeric: tabular-nums; font-weight: 600; white-space: nowrap; color: var(--ink); }
 .tag { display: inline-block; font-size: .66rem; text-transform: uppercase; letter-spacing: .08em; padding: .14rem .5rem; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); font-weight: 600; }
 .tag.bruno { border-color: var(--accent); color: var(--accent); }
+.tag.warn { border-color: var(--faint); color: var(--faint); background: var(--line-soft); }
 
 .list { list-style: none; padding: 0; margin: 0; }
 .list li { padding: 1.3rem 0; border-bottom: 1px solid var(--line-soft); }

@@ -1,0 +1,94 @@
+---
+import Base from '../layouts/Base.astro';
+
+const version = '1.0';
+const updated = '2026-06-20';
+---
+
+<Base
+  title="Methodology"
+  description="How the prediction ledger registers, scores, and retires claims — the public rules, versioned."
+>
+  <div class="measure">
+    <p class="eyebrow">Methodology · v{version}</p>
+    <hr class="accent-rule" />
+    <h1 style="font-size:clamp(2rem,4.5vw,2.9rem)">How the ledger keeps score</h1>
+    <p class="lede">
+      The point of the <a href="/ledger">prediction ledger</a> is to be
+      checkable. These are the rules it runs by — published so the scoring can be
+      audited and argued with, not taken on trust.
+    </p>
+
+    <h2>1. Registration</h2>
+    <p>
+      Every claim enters with a single probability, a written test for what would
+      disconfirm it, a base rate it has to beat where one exists, and a resolve-by
+      date. The probability <strong>locks the moment the claim is registered</strong>
+      and is never edited afterwards. The registration timestamp is part of the record.
+    </p>
+
+    <h2>2. Two populations, one estimator</h2>
+    <p>
+      Claims are attributed to whoever committed them — <span class="tag bruno">bruno</span>
+      (my own stated positions) or <span class="tag">twin</span> (the system's
+      analyses). The two are scored as <strong>separate populations</strong> so the
+      machine cannot launder its guesses into my track record, or vice versa.
+    </p>
+
+    <h2>3. Pre-registration audit</h2>
+    <p>
+      Before a claim counts, it is checked against the public record for whether the
+      outcome was <em>already known</em> at registration time. A question answered
+      before it was asked is not a forecast — such claims are
+      <strong>invalidated</strong>, kept visible in full, and excluded from scoring.
+    </p>
+
+    <h2>4. Resolution</h2>
+    <p>
+      A claim resolves when its written test is met by public evidence, on or before
+      its deadline. Resolutions record the outcome, the date, and a sourced note.
+      <strong>Resolutions are never deleted</strong>; misses stay on the board.
+    </p>
+
+    <h2>5. Scoring</h2>
+    <p>
+      Resolved, still-valid claims are scored with the
+      <strong>Brier score</strong> — the squared distance between the locked
+      probability and the realised outcome, <code>(probability − outcome)²</code>.
+      Lower is better; 0.25 is the coin-flip line. Invalidated and withdrawn claims
+      are never scored — the record does not keep wins it did not earn. Calibration
+      is read by confidence bucket, by population, by frame, and by horizon, with a
+      standing caveat while the resolved sample is small.
+    </p>
+
+    <h2>6. Corrections</h2>
+    <p>
+      When a factual error is found in an evidence note, it is corrected with a
+      dated, append-only correction entry rather than a silent edit. The original
+      and the correction both stay on the record.
+    </p>
+
+    <h2>7. Invalidation &amp; withdrawal</h2>
+    <p>
+      A claim can be <strong>invalidated</strong> (disqualified — e.g. the outcome
+      pre-dated registration) or <strong>withdrawn</strong>. Both remain publicly
+      visible with their reason, and neither contributes to the score.
+    </p>
+
+    <h2>8. Provenance</h2>
+    <p>
+      Everything shown here is a styled view of the machine-readable record in the
+      public <a href="https://github.com/chiKeka/ledger">chiKeka/ledger</a>
+      repository. The site renders nothing the ledger's own renderer did not
+      produce, and each ledger view names the source commit it was built from.
+    </p>
+
+    <hr />
+    <p class="small muted">
+      Version {version} · last updated {updated}. Changes to these rules are
+      versioned; the scoring of already-registered claims is never changed
+      retroactively.
+    </p>
+    <p><a href="/ledger">← Back to the ledger</a></p>
+  </div>
+</Base>
