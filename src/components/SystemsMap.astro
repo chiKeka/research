@@ -1,0 +1,99 @@
+---
+// Interactive force-directed node graph: AI capability pulled on by the forces
+// that decide where it lands. Conceptual (no data wiring). Used on home + research.
+const { title = 'The system, mapped', hint = 'drag a node · the system pushes back' } = Astro.props;
+---
+
+<div class="mapwrap">
+  <span class="maptitle">{title}</span>
+  <canvas data-systems-map role="img"
+    aria-label="Systems map: AI capability at the centre, pulled on by five forces — institutions, incentives, infrastructure, culture, and sovereign compute."></canvas>
+  <span class="maphint">{hint}</span>
+</div>
+
+<script is:inline>
+  (function () {
+    const canvas = document.querySelector('canvas[data-systems-map]');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    const cs = getComputedStyle(document.documentElement);
+    const C = {
+      ink: (cs.getPropertyValue('--ink') || '#17130d').trim(),
+      paper: (cs.getPropertyValue('--paper') || '#f3efe6').trim(),
+      paper2: (cs.getPropertyValue('--paper2') || '#eae4d6').trim(),
+      accent: (cs.getPropertyValue('--accent') || '#bd3b1c').trim(),
+      accent2: (cs.getPropertyValue('--accent2') || '#1c4a8a').trim(),
+      ochre: (cs.getPropertyValue('--ochre') || '#b5852f').trim(),
+      slate: (cs.getPropertyValue('--slate') || '#5a6b6a').trim(),
+    };
+    const nodes = [
+      { id: 'ai', label: 'AI\ncapability', x: 0.5, y: 0.46, r: 36, c: C.ink, big: true },
+      { id: 'inst', label: 'Institutions', x: 0.19, y: 0.22, r: 25, c: C.accent2 },
+      { id: 'inc', label: 'Incentives', x: 0.82, y: 0.25, r: 25, c: C.accent },
+      { id: 'infra', label: 'Infrastructure', x: 0.22, y: 0.79, r: 25, c: C.ochre },
+      { id: 'cult', label: 'Culture', x: 0.81, y: 0.77, r: 23, c: C.slate },
+      { id: 'comp', label: 'Sovereign\ncompute', x: 0.5, y: 0.88, r: 22, c: C.ink },
+    ];
+    const edges = [['ai', 'inst'], ['ai', 'inc'], ['ai', 'infra'], ['ai', 'cult'], ['ai', 'comp'], ['inst', 'inc'], ['infra', 'comp'], ['inst', 'infra'], ['inc', 'cult']];
+    let W, H, DPR, pts = [];
+    function resize() {
+      DPR = Math.min(2, window.devicePixelRatio || 1);
+      const rect = canvas.getBoundingClientRect();
+      W = rect.width; H = rect.height;
+      canvas.width = W * DPR; canvas.height = H * DPR; ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+      pts = nodes.map((n) => {
+        const ex = pts.find((p) => p.id === n.id);
+        return ex ? Object.assign(ex, { bx: n.x * W, by: n.y * H }) : { id: n.id, x: n.x * W, y: n.y * H, bx: n.x * W, by: n.y * H, vx: 0, vy: 0, node: n };
+      });
+    }
+    window.addEventListener('resize', resize);
+    let mouse = { x: -999, y: -999 }, drag = null, t = 0;
+    function pos(e) { const r = canvas.getBoundingClientRect(); const cx = (e.touches ? e.touches[0].clientX : e.clientX) - r.left; const cy = (e.touches ? e.touches[0].clientY : e.clientY) - r.top; return { x: cx, y: cy }; }
+    function down(e) { const p = pos(e); drag = pts.find((pt) => Math.hypot(pt.x - p.x, pt.y - p.y) < pt.node.r + 8) || null; if (drag) canvas.style.cursor = 'grabbing'; }
+    function move(e) { const p = pos(e); mouse.x = p.x; mouse.y = p.y; if (drag) { drag.x = p.x; drag.y = p.y; drag.vx = 0; drag.vy = 0; if (e.cancelable) e.preventDefault(); } }
+    function up() { drag = null; canvas.style.cursor = 'grab'; }
+    canvas.addEventListener('mousedown', down); canvas.addEventListener('mousemove', move); window.addEventListener('mouseup', up);
+    canvas.addEventListener('touchstart', down, { passive: true }); canvas.addEventListener('touchmove', move, { passive: false }); window.addEventListener('touchend', up);
+    canvas.addEventListener('mouseleave', () => { mouse.x = -999; mouse.y = -999; });
+
+    function loop() {
+      t += 0.016;
+      ctx.clearRect(0, 0, W, H);
+      pts.forEach((p, i) => {
+        if (p === drag) return;
+        const fx = p.bx + Math.sin(t * 0.7 + i) * 7 - p.x;
+        const fy = p.by + Math.cos(t * 0.6 + i * 1.3) * 7 - p.y;
+        p.vx += fx * 0.02; p.vy += fy * 0.02;
+        const dm = Math.hypot(p.x - mouse.x, p.y - mouse.y);
+        if (dm < 90) { const a = Math.atan2(p.y - mouse.y, p.x - mouse.x); const f = (90 - dm) * 0.08; p.vx += Math.cos(a) * f; p.vy += Math.sin(a) * f; }
+        pts.forEach((q) => { if (q === p) return; const d = Math.hypot(p.x - q.x, p.y - q.y); const min = p.node.r + q.node.r + 30; if (d < min) { const a = Math.atan2(p.y - q.y, p.x - q.x); const f = (min - d) * 0.04; p.vx += Math.cos(a) * f; p.vy += Math.sin(a) * f; } });
+        p.vx *= 0.86; p.vy *= 0.86; p.x += p.vx; p.y += p.vy;
+        p.x = Math.max(p.node.r, Math.min(W - p.node.r, p.x)); p.y = Math.max(p.node.r, Math.min(H - p.node.r, p.y));
+      });
+      const get = (id) => pts.find((p) => p.id === id);
+      edges.forEach(([a, b]) => {
+        const A = get(a), B = get(b); if (!A || !B) return;
+        ctx.strokeStyle = C.ink; ctx.globalAlpha = 0.22; ctx.lineWidth = 1.4;
+        ctx.beginPath(); ctx.moveTo(A.x, A.y); ctx.lineTo(B.x, B.y); ctx.stroke();
+        const tt = (t * 0.16 + (a.length + b.length) * 0.13) % 1;
+        const px = A.x + (B.x - A.x) * tt, py = A.y + (B.y - A.y) * tt;
+        ctx.globalAlpha = 0.85; ctx.fillStyle = C.accent; ctx.beginPath(); ctx.arc(px, py, 2.4, 0, 7); ctx.fill();
+      });
+      ctx.globalAlpha = 1;
+      pts.forEach((p) => {
+        const n = p.node; const hov = Math.hypot(p.x - mouse.x, p.y - mouse.y) < n.r + 10;
+        ctx.beginPath(); ctx.arc(p.x, p.y, n.r + (hov ? 7 : 3), 0, 7); ctx.fillStyle = C.paper; ctx.fill();
+        ctx.beginPath(); ctx.arc(p.x, p.y, n.r, 0, 7); ctx.fillStyle = n.c; ctx.fill();
+        ctx.lineWidth = 1.5; ctx.strokeStyle = C.ink; ctx.stroke();
+        if (n.big) { ctx.beginPath(); ctx.arc(p.x, p.y, n.r - 7, 0, 7); ctx.strokeStyle = 'rgba(243,239,230,.4)'; ctx.lineWidth = 1.2; ctx.stroke(); }
+        ctx.fillStyle = (n.c === C.ink || n.c === C.accent2 || n.c === C.accent || n.c === C.slate) ? C.paper : C.ink;
+        ctx.font = '600 ' + (n.big ? 13 : 11) + 'px "Space Mono", monospace';
+        ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+        const lines = n.label.split('\n');
+        lines.forEach((l, i) => ctx.fillText(l, p.x, p.y + (i - (lines.length - 1) / 2) * 13));
+      });
+      requestAnimationFrame(loop);
+    }
+    resize(); loop();
+  })();
+</script>

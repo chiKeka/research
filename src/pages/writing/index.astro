@@ -2,32 +2,72 @@
 import Base from '../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 
-const posts = (await getCollection('writing')).sort((a, b) =>
-  (b.data.date || '').localeCompare(a.data.date || '')
-);
+const posts = (await getCollection('writing'))
+  .filter((w) => w.data.published !== false)
+  .sort((a, b) => (b.data.date || '').localeCompare(a.data.date || ''));
+const feature = posts[0];
+const archive = posts.slice(1);
+const platformLabel = (p) => (p === 'x' ? 'X' : p === 'linkedin' ? 'LinkedIn' : (p || 'Web'));
 ---
 
-<Base title="Writing" description="Essays and posts — only pieces published in the open.">
-  <p class="eyebrow">Writing</p>
-  <hr class="accent-rule" />
-  <h1 style="font-size:clamp(2rem,4.5vw,2.9rem)">Writing</h1>
-  <p class="lede measure">
-    Long-form and short-form thinking on AI infrastructure, institutions, and
-    governance. Only pieces I have published appear here — each names its
-    frameworks and links to where it first ran.
-  </p>
+<Base title="Writing" tagline="● Essays, threads & field notes"
+  description="Essays and posts on AI infrastructure, agentic systems, and governance — published in the open.">
+  <div class="wrap">
+    {feature ? (
+      <article class="feature">
+        <div>
+          <div class="src"><span>{platformLabel(feature.data.platform)} · Essay</span><span>{feature.data.date}</span></div>
+          <a href={`/writing/${feature.id}`}><h1>{feature.data.title}</h1></a>
+          <div class="lede"><p class="drop">{feature.data.summary}</p></div>
+        </div>
+        <aside class="aside">
+          <div class="h">This piece</div>
+          <p>Published on {platformLabel(feature.data.platform)}, {feature.data.date}.</p>
+          <p>Read it here, in full, with its frameworks named and its sources kept.</p>
+          <p style="margin-top:18px"><a class="btn line" href={`/writing/${feature.id}`}>Read the piece →</a></p>
+          {feature.data.external_url && (<p style="margin-top:10px"><a class="mono accent" href={feature.data.external_url}>See the original →</a></p>)}
+        </aside>
+      </article>
+    ) : (
+      <section class="page-intro"><div class="kicker">Writing</div><h1>Nothing published yet.</h1></section>
+    )}
 
-  {posts.length === 0 ? (
-    <p class="muted">No published pieces yet.</p>
-  ) : (
-    <ul class="list">
-      {posts.map((p) => (
-        <li>
-          <div class="meta small muted">{p.data.platform} · {p.data.date}</div>
-          <h3 style="margin:.2rem 0 .35rem"><a href={`/writing/${p.id}`}>{p.data.title}</a></h3>
-          {p.data.summary && <p class="muted">{p.data.summary}</p>}
-        </li>
-      ))}
-    </ul>
-  )}
+    {archive.length > 0 && (
+      <section class="blk" style="border-bottom:none">
+        <div class="sec-rule"><h2>Archive</h2><div class="ln"></div><span class="more">newest first</span></div>
+        <div class="archive">
+          {archive.map((p) => (
+            <a class="post" href={`/writing/${p.id}`}>
+              <div class="when"><span class="s">{platformLabel(p.data.platform)}</span><br />{p.data.date}</div>
+              <div><h3>{p.data.title}</h3><p>{p.data.summary}</p></div>
+              <span class="go">Read →</span>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+  </div>
 </Base>
+
+<style>
+  .feature{display:grid;grid-template-columns:1.3fr .7fr;gap:48px;border-bottom:2px solid var(--ink);padding:42px 0 46px}
+  .feature .src{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.14em;color:var(--accent);display:flex;justify-content:space-between;border-bottom:1px solid var(--rule);padding-bottom:10px;margin-bottom:18px}
+  .feature h1{font-family:var(--serif);font-size:clamp(34px,4.6vw,60px);line-height:1.02;letter-spacing:-.015em}
+  .feature a:hover h1{color:var(--accent)}
+  .feature .lede{margin-top:20px;font-size:20px;line-height:1.6;color:var(--ink2)}
+  .feature .lede .drop::first-letter{font-family:var(--serif);font-size:3em;float:left;line-height:.78;padding:6px 10px 0 0;color:var(--accent)}
+  .feature .aside{border-left:1px solid var(--rule);padding-left:32px}
+  .feature .aside .h{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--dim);margin-bottom:14px}
+  .feature .aside p{font-size:16px;color:var(--ink2);line-height:1.55;margin-bottom:14px}
+  @media(max-width:820px){.feature{grid-template-columns:1fr;gap:28px}.feature .aside{border-left:none;border-top:1px solid var(--rule);padding-left:0;padding-top:22px}}
+  .archive{display:flex;flex-direction:column;border-top:1px solid var(--rule)}
+  .post{display:grid;grid-template-columns:140px 1fr 110px;gap:28px;align-items:baseline;padding:26px 0;border-bottom:1px solid var(--rule);transition:.16s}
+  .post:hover{background:var(--paper2);padding-left:12px;padding-right:12px}
+  .post .when{font-family:var(--mono);font-size:11px;color:var(--dim);text-transform:uppercase;letter-spacing:.06em;line-height:1.8}
+  .post .when .s{color:var(--accent)}
+  .post h3{font-family:var(--serif);font-size:24px;line-height:1.12}
+  .post:hover h3{color:var(--accent)}
+  .post p{font-size:15px;color:var(--ink2);line-height:1.5;margin-top:8px;max-width:62ch}
+  .post .go{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink);text-align:right;border-bottom:1.5px solid var(--accent);justify-self:end;align-self:start}
+  @media(max-width:760px){.post{grid-template-columns:1fr;gap:8px}.post .go{display:none}}
+</style>

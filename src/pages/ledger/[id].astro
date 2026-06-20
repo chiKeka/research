@@ -1,7 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import ledger from '../../data/ledger.json';
-import { isInvalid, isWithdrawn, pct, attribution, brierContribution } from '../../lib/ledger-stats.mjs';
+import { isInvalid, isWithdrawn, attribution, brierContribution, outcomeBinary, truncate } from '../../lib/ledger-stats.mjs';
 import { sanitizeUrl } from '../../../scripts/lib/prep-transforms.mjs';
 
 export function getStaticPaths() {
@@ -11,151 +11,115 @@ export function getStaticPaths() {
 
 const { claim } = Astro.props;
 const source = ledger.source ?? null;
-
-const statusLabel = isInvalid(claim)
-  ? 'Invalidated'
-  : isWithdrawn(claim)
-    ? 'Withdrawn'
-    : claim.status === 'resolved'
-      ? 'Resolved'
-      : 'Open';
+const st = isInvalid(claim) ? 'invalid' : isWithdrawn(claim) ? 'withdrawn' : claim.status === 'resolved' ? (outcomeBinary(claim) === 0 ? 'miss' : 'hit') : 'open';
+const stLabel = { open: 'Open', hit: 'Resolved · hit', miss: 'Resolved · miss', invalid: 'Invalidated', withdrawn: 'Withdrawn' }[st];
+const p = Math.round((claim.confidence ?? 0) * 100);
 const brier = brierContribution(claim);
 const frame = claim.frame === 'in' ? 'will happen' : claim.frame === 'out' ? 'will not happen' : claim.frame;
 const fmtDate = (d) => (d ? d.slice(0, 10) : '');
 const desc = claim.claim.length > 155 ? claim.claim.slice(0, 152) + '…' : claim.claim;
+const scored = !isInvalid(claim) && !isWithdrawn(claim);
 ---
 
-<Base title={`Claim ${claim.id}`} description={desc}>
-  <article class="measure">
-    <p class="eyebrow"><a href="/ledger">← Prediction ledger</a></p>
-    <span class={`tag ${statusLabel === 'Open' ? '' : 'warn'}`}>{statusLabel}</span>
-    <h1 style="font-size:clamp(1.5rem,3.5vw,2.2rem);margin-top:.6rem">{claim.claim}</h1>
+<Base title={truncate(claim.claim, 70)} description={desc} tagline="● One record · no edits, no deletes">
+  <div class="wrap">
+    <section class="page-intro" style="padding-bottom:30px">
+      <div class="kicker"><a class="accent" href="/ledger">← The prediction ledger</a></div>
+      <h1 style="font-size:clamp(28px,4vw,52px)">{claim.claim}</h1>
+    </section>
 
-    <dl class="facts">
-      <div><dt>Locked probability</dt><dd class="conf">{pct(claim)}</dd></div>
-      <div><dt>Committed by</dt><dd><span class={`tag ${attribution(claim) === 'bruno' ? 'bruno' : ''}`}>{attribution(claim)}</span> <span class="small muted">({claim.confidence_source})</span></dd></div>
-      <div><dt>Direction</dt><dd>{frame}</dd></div>
-      <div><dt>Tier</dt><dd>{claim.tier}</dd></div>
-      {typeof claim.base_rate === 'number' && <div><dt>Base rate</dt><dd>{Math.round(claim.base_rate * 100)}%</dd></div>}
-      <div><dt>Registered</dt><dd>{claim.registered_at?.replace('T', ' ').replace('Z', ' UTC')}</dd></div>
-      <div><dt>Resolve by</dt><dd>{claim.resolve_by}</dd></div>
-      {brier !== null && <div><dt>Brier contribution</dt><dd>{brier.toFixed(3)}</dd></div>}
-    </dl>
+    <div class="rec-grid">
+      <div>
+        <div class="terminal barscope" style="margin-bottom:30px">
+          <div class="thead"><span class="cdot r"></span><span class="cdot y"></span><span class="cdot g"></span><span class="fname">ledger — {claim.id}</span><span class="tlive" style={`color:${st === 'open' ? 'var(--term-amb)' : st === 'hit' ? 'var(--term-grn)' : st === 'miss' ? 'var(--term-red)' : 'var(--term-dim)'}`}><span class={`stt ${st}`}>{stLabel}</span></span></div>
+          <div class="tbody"><span class="c"># registered {fmtDate(claim.registered_at)} · {claim.tier} · {claim.committed_by}</span>
+<span class="k">resolves</span>: <span class="s">{claim.resolve_by}</span>
+<span class="k">falsifier</span>: <span class="r">"{claim.update_test}"</span>
+<div class="tbar"><span class="lab">probability</span><span class="track"><i style={`width:${p}%`}></i></span><span class="pv">{claim.confidence?.toFixed(2)}</span></div>{claim.status === 'resolved' && scored && (<span><span class="k">outcome</span>: <span class={outcomeBinary(claim) === 0 ? 'r' : 'g'}>{(claim.resolution?.outcome || 'resolved').toUpperCase()}</span></span>)}{isInvalid(claim) && (<span><span class="k">outcome</span>: <span class="c">VOID · not scored</span></span>)}</div>
+        </div>
 
-    {claim.confidence_rationale && (
-      <>
-        <h2>Why this probability</h2>
-        <p>{claim.confidence_rationale}</p>
-      </>
-    )}
+        <div class="prose">
+          {claim.confidence_rationale && (<><h2>Why this probability</h2><p>{claim.confidence_rationale}</p></>)}
+          {claim.grounding && (<><h2>Grounding</h2><p>{claim.grounding}</p></>)}
+          {isInvalid(claim) && claim.validity?.reason && (<><h2>Why it was invalidated</h2><p>{claim.validity.reason}</p></>)}
+          {claim.status === 'resolved' && scored && claim.resolution && (
+            <>
+              <h2>Resolution</h2>
+              <p><b>{(claim.resolution.outcome || 'resolved').toUpperCase()}</b>{claim.resolution.date && <span> · {fmtDate(claim.resolution.date)}</span>}</p>
+              {claim.resolution.note && <p>{claim.resolution.note}</p>}
+            </>
+          )}
+          {Array.isArray(claim.evidence) && claim.evidence.length > 0 && (
+            <>
+              <h2>Evidence history</h2>
+              {claim.evidence.map((e) => {
+                const url = sanitizeUrl(e.source_url);
+                return (
+                  <p><span class="mono" style="color:var(--accent)">{fmtDate(e.date)} · {e.direction}</span><br />{e.note}{url && (<><br /><a href={url}>{url}</a></>)}</p>
+                );
+              })}
+            </>
+          )}
+          {Array.isArray(claim.corrections) && claim.corrections.length > 0 && (
+            <>
+              <h2>Corrections</h2>
+              {claim.corrections.map((c) => (<p><span class="mono" style="color:var(--accent)">{fmtDate(c.date)} · {c.target}</span><br />{c.note}</p>))}
+            </>
+          )}
+          {claim.prereg_audit && (
+            <>
+              <h2>Pre-registration audit</h2>
+              <p class="mono" style="font-size:13px">{fmtDate(claim.prereg_audit.date)} · auditor: {claim.prereg_audit.auditor} · outcome already known: {String(claim.prereg_audit.outcome_already_known)}</p>
+              {claim.prereg_audit.note && <p>{claim.prereg_audit.note}</p>}
+            </>
+          )}
+          {Array.isArray(claim.related_to) && claim.related_to.length > 0 && (
+            <>
+              <h2>Related claims</h2>
+              <ul>{claim.related_to.map((r) => (<li><a href={`/ledger/${r.id}`}>{r.id}</a> · {r.relation}{r.note && <span> — {r.note}</span>}</li>))}</ul>
+            </>
+          )}
+          <hr />
+          <p class="mono" style="font-size:12px;color:var(--dim)">Machine-readable: <a href="https://github.com/chiKeka/ledger/blob/main/ledger.json">ledger.json</a>{source && (<> · rendered from <a href={source.url}>chiKeka/ledger@{source.commit_short}</a></>)}</p>
+        </div>
+      </div>
 
-    <h2>What would disconfirm it</h2>
-    <p>{claim.update_test}</p>
-
-    {claim.grounding && (
-      <>
-        <h2>Grounding</h2>
-        <p class="muted">{claim.grounding}</p>
-      </>
-    )}
-
-    {Array.isArray(claim.frameworks) && claim.frameworks.length > 0 && (
-      <>
-        <h2>Frameworks</h2>
-        <ul class="tagrow">{claim.frameworks.map((f) => <li class="tag">{f}</li>)}</ul>
-      </>
-    )}
-
-    {Array.isArray(claim.evidence) && claim.evidence.length > 0 && (
-      <>
-        <h2>Evidence history</h2>
-        <ul class="list">
-          {claim.evidence.map((e) => {
-            const url = sanitizeUrl(e.source_url);
-            return (
-              <li>
-                <div class="small muted">{fmtDate(e.date)} · <span class="dir">{e.direction}</span></div>
-                <p style="margin:.2rem 0 .3rem">{e.note}</p>
-                {url && <a class="small" href={url}>{url}</a>}
-              </li>
-            );
-          })}
-        </ul>
-      </>
-    )}
-
-    {isInvalid(claim) && claim.validity?.reason && (
-      <>
-        <h2>Why it was invalidated</h2>
-        <p>{claim.validity.reason}</p>
-      </>
-    )}
-
-    {claim.status === 'resolved' && claim.resolution && (
-      <>
-        <h2>Resolution</h2>
-        <p>
-          <span class="tag warn">{claim.resolution.outcome}</span>
-          {claim.resolution.date && <span class="small muted"> · {fmtDate(claim.resolution.date)}</span>}
-        </p>
-        {claim.resolution.note && <p class="muted">{claim.resolution.note}</p>}
-      </>
-    )}
-
-    {Array.isArray(claim.corrections) && claim.corrections.length > 0 && (
-      <>
-        <h2>Corrections</h2>
-        <ul class="list">
-          {claim.corrections.map((c) => (
-            <li>
-              <div class="small muted">{fmtDate(c.date)} · {c.target}</div>
-              <p style="margin:.2rem 0 0">{c.note}</p>
-            </li>
-          ))}
-        </ul>
-      </>
-    )}
-
-    {claim.prereg_audit && (
-      <>
-        <h2>Pre-registration audit</h2>
-        <p class="small muted">
-          {fmtDate(claim.prereg_audit.date)} · auditor: {claim.prereg_audit.auditor} · outcome already known:
-          {' '}{String(claim.prereg_audit.outcome_already_known)}
-        </p>
-        {claim.prereg_audit.note && <p class="muted">{claim.prereg_audit.note}</p>}
-      </>
-    )}
-
-    {Array.isArray(claim.related_to) && claim.related_to.length > 0 && (
-      <>
-        <h2>Related claims</h2>
-        <ul class="list">
-          {claim.related_to.map((r) => (
-            <li class="small">
-              <a href={`/ledger/${r.id}`}>{r.id}</a> · {r.relation}{r.note && <span class="muted"> — {r.note}</span>}
-            </li>
-          ))}
-        </ul>
-      </>
-    )}
-
-    <hr />
-    <p class="small muted">
-      Machine-readable record:
-      <a href="https://github.com/chiKeka/ledger/blob/main/ledger.json">ledger.json</a>{source && (
-        <> · this view rendered from <a href={source.url}>chiKeka/ledger@{source.commit_short}</a></>
-      )}.
-    </p>
-    <p><a href="/ledger">← All claims</a></p>
-  </article>
+      <aside class="facts">
+        <div class="card">
+          <div class="h">Record</div>
+          <div class="row"><span>Status</span><b>{stLabel}</b></div>
+          <div class="row"><span>Locked probability</span><b style="color:var(--accent)">{p}%</b></div>
+          <div class="row"><span>Committed by</span><b>{attribution(claim)}</b></div>
+          <div class="row"><span>Direction</span><b>{frame}</b></div>
+          <div class="row"><span>Tier</span><b>{claim.tier}</b></div>
+          {typeof claim.base_rate === 'number' && <div class="row"><span>Base rate</span><b>{Math.round(claim.base_rate * 100)}%</b></div>}
+          <div class="row"><span>Registered</span><b>{fmtDate(claim.registered_at)}</b></div>
+          <div class="row"><span>Resolve by</span><b>{claim.resolve_by}</b></div>
+          {brier !== null && scored && <div class="row"><span>Brier contribution</span><b>{brier.toFixed(3)}</b></div>}
+        </div>
+        {Array.isArray(claim.frameworks) && claim.frameworks.length > 0 && (
+          <div class="fwtags"><div class="h">Frameworks</div>{claim.frameworks.map((f) => <span class="tag">{f}</span>)}</div>
+        )}
+        <a class="btn line" href="/ledger" style="width:100%;text-align:center">← All records</a>
+      </aside>
+    </div>
+  </div>
 </Base>
 
 <style>
-  .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: .75rem 1.25rem; margin: 1.25rem 0; padding: 1rem 1.1rem; background: var(--card); border: 1px solid var(--line); border-radius: 8px; }
-  .facts dt { font-size: .72rem; text-transform: uppercase; letter-spacing: .04em; color: var(--faint); }
-  .facts dd { margin: .15rem 0 0; font-weight: 500; }
-  .facts .conf { font-family: var(--serif); font-size: 1.3rem; color: var(--accent); }
-  .tagrow { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: .4rem; }
-  .dir { text-transform: capitalize; }
+  .rec-grid{display:grid;grid-template-columns:1fr 320px;gap:48px;padding:40px 0 56px;align-items:start}
+  @media(max-width:880px){.rec-grid{grid-template-columns:1fr;gap:30px}}
+  .facts{display:flex;flex-direction:column;gap:18px;position:sticky;top:210px}
+  .facts .card{border:1.5px solid var(--ink);padding:20px}
+  .facts .h{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);border-bottom:1px solid var(--rule);padding-bottom:10px;margin-bottom:8px}
+  .facts .row{display:flex;justify-content:space-between;gap:12px;font-family:var(--mono);font-size:12px;color:var(--ink2);padding:7px 0;border-bottom:1px dashed var(--rule)}
+  .facts .row:last-child{border-bottom:none}
+  .facts .row b{color:var(--ink);text-align:right}
+  .fwtags{border:1.5px solid var(--ink);padding:20px;display:flex;flex-wrap:wrap;gap:7px}
+  .fwtags .h{width:100%}
+  .stt{display:inline-block;font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:2px 7px;border:1px solid;border-radius:3px}
+  .stt.open{color:var(--term-amb);border-color:var(--term-amb)}
+  .stt.hit{color:var(--term-grn);border-color:var(--term-grn)}
+  .stt.miss{color:var(--term-red);border-color:var(--term-red)}
+  .stt.invalid,.stt.withdrawn{color:var(--term-dim);border-color:var(--term-dim)}
 </style>

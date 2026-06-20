@@ -8,6 +8,9 @@ export default defineConfig({
   // Match the no-trailing-slash canonical URLs (and vercel.json cleanUrls) so the
   // sitemap and <link rel="canonical"> agree on every route.
   trailingSlash: 'never',
+  // The terminal readouts rely on literal newlines + white-space:pre-wrap; HTML
+  // compression collapses those newlines into spaces, so keep it off.
+  compressHTML: false,
   integrations: [sitemap()],
   // Output a fully static site (Vercel/Netlify/GitHub Pages friendly).
 });

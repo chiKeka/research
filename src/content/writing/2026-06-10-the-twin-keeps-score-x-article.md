@@ -3,7 +3,7 @@ title: "The Twin That Keeps Score - loop engineering's missing primitives and th
 date: "2026-06-11"
 platform: "x"
 external_url: "https://x.com/Chikeka/status/2065031482629116233"
-summary: " The Twin That Keeps Score"
+summary: "Loop engineering's missing primitives — convergence and verifier liveness — and the public epistemic ledger that ends each loop in a scored claim instead of a plausible artifact."
 published: true
 ---
 
