@@ -45,6 +45,7 @@ body::before{
 }
 ::selection{background:var(--accent);color:var(--paper)}
 a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .wrap{max-width:1200px;margin:0 auto;padding:0 36px;position:relative;z-index:2}
 .mono{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
 .accent{color:var(--accent)}
@@ -83,6 +84,7 @@ section.blk{padding:54px 0;border-bottom:1px solid var(--rule)}
 .sec-rule .ln{flex:1;height:2px;background:var(--ink)}
 .sec-rule .more{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);white-space:nowrap;transition:.15s}
 .sec-rule .more:hover{color:var(--ink)}
+@media(max-width:430px){.sec-rule{flex-wrap:wrap}.sec-rule h2,.sec-rule .more{white-space:normal}.sec-rule .ln{min-width:24px}}
 
 /* ---------- buttons / tags ---------- */
 .btn{font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.1em;padding:13px 20px;border:1.5px solid var(--ink);transition:.16s;cursor:pointer;display:inline-block}

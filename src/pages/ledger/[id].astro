@@ -1,7 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import ledger from '../../data/ledger.json';
-import { isInvalid, isWithdrawn, attribution, brierContribution, outcomeBinary } from '../../lib/ledger-stats.mjs';
+import { isInvalid, isWithdrawn, attribution, brierContribution, outcomeBinary, truncate } from '../../lib/ledger-stats.mjs';
 import { sanitizeUrl } from '../../../scripts/lib/prep-transforms.mjs';
 
 export function getStaticPaths() {
@@ -18,9 +18,10 @@ const brier = brierContribution(claim);
 const frame = claim.frame === 'in' ? 'will happen' : claim.frame === 'out' ? 'will not happen' : claim.frame;
 const fmtDate = (d) => (d ? d.slice(0, 10) : '');
 const desc = claim.claim.length > 155 ? claim.claim.slice(0, 152) + '…' : claim.claim;
+const scored = !isInvalid(claim) && !isWithdrawn(claim);
 ---
 
-<Base title={`Claim ${claim.id}`} description={desc} tagline="● One record · no edits, no deletes">
+<Base title={truncate(claim.claim, 70)} description={desc} tagline="● One record · no edits, no deletes">
   <div class="wrap">
     <section class="page-intro" style="padding-bottom:30px">
       <div class="kicker"><a class="accent" href="/ledger">← The prediction ledger</a></div>
@@ -34,14 +35,14 @@ const desc = claim.claim.length > 155 ? claim.claim.slice(0, 152) + '…' : clai
           <div class="tbody"><span class="c"># registered {fmtDate(claim.registered_at)} · {claim.tier} · {claim.committed_by}</span>
 <span class="k">resolves</span>: <span class="s">{claim.resolve_by}</span>
 <span class="k">falsifier</span>: <span class="r">"{claim.update_test}"</span>
-<div class="tbar"><span class="lab">probability</span><span class="track"><i style={`width:${p}%`}></i></span><span class="pv">{claim.confidence?.toFixed(2)}</span></div>{claim.status === 'resolved' && (<span><span class="k">outcome</span>: <span class={outcomeBinary(claim) === 0 ? 'r' : 'g'}>{(claim.resolution?.outcome || 'resolved').toUpperCase()}</span></span>)}</div>
+<div class="tbar"><span class="lab">probability</span><span class="track"><i style={`width:${p}%`}></i></span><span class="pv">{claim.confidence?.toFixed(2)}</span></div>{claim.status === 'resolved' && scored && (<span><span class="k">outcome</span>: <span class={outcomeBinary(claim) === 0 ? 'r' : 'g'}>{(claim.resolution?.outcome || 'resolved').toUpperCase()}</span></span>)}{isInvalid(claim) && (<span><span class="k">outcome</span>: <span class="c">VOID · not scored</span></span>)}</div>
         </div>
 
         <div class="prose">
           {claim.confidence_rationale && (<><h2>Why this probability</h2><p>{claim.confidence_rationale}</p></>)}
           {claim.grounding && (<><h2>Grounding</h2><p>{claim.grounding}</p></>)}
           {isInvalid(claim) && claim.validity?.reason && (<><h2>Why it was invalidated</h2><p>{claim.validity.reason}</p></>)}
-          {claim.status === 'resolved' && claim.resolution && (
+          {claim.status === 'resolved' && scored && claim.resolution && (
             <>
               <h2>Resolution</h2>
               <p><b>{(claim.resolution.outcome || 'resolved').toUpperCase()}</b>{claim.resolution.date && <span> · {fmtDate(claim.resolution.date)}</span>}</p>
@@ -94,7 +95,7 @@ const desc = claim.claim.length > 155 ? claim.claim.slice(0, 152) + '…' : clai
           {typeof claim.base_rate === 'number' && <div class="row"><span>Base rate</span><b>{Math.round(claim.base_rate * 100)}%</b></div>}
           <div class="row"><span>Registered</span><b>{fmtDate(claim.registered_at)}</b></div>
           <div class="row"><span>Resolve by</span><b>{claim.resolve_by}</b></div>
-          {brier !== null && <div class="row"><span>Brier contribution</span><b>{brier.toFixed(3)}</b></div>}
+          {brier !== null && scored && <div class="row"><span>Brier contribution</span><b>{brier.toFixed(3)}</b></div>}
         </div>
         {Array.isArray(claim.frameworks) && claim.frameworks.length > 0 && (
           <div class="fwtags"><div class="h">Frameworks</div>{claim.frameworks.map((f) => <span class="tag">{f}</span>)}</div>
@@ -108,7 +109,7 @@ const desc = claim.claim.length > 155 ? claim.claim.slice(0, 152) + '…' : clai
 <style>
   .rec-grid{display:grid;grid-template-columns:1fr 320px;gap:48px;padding:40px 0 56px;align-items:start}
   @media(max-width:880px){.rec-grid{grid-template-columns:1fr;gap:30px}}
-  .facts{display:flex;flex-direction:column;gap:18px;position:sticky;top:160px}
+  .facts{display:flex;flex-direction:column;gap:18px;position:sticky;top:210px}
   .facts .card{border:1.5px solid var(--ink);padding:20px}
   .facts .h{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);border-bottom:1px solid var(--rule);padding-bottom:10px;margin-bottom:8px}
   .facts .row{display:flex;justify-content:space-between;gap:12px;font-family:var(--mono);font-size:12px;color:var(--ink2);padding:7px 0;border-bottom:1px dashed var(--rule)}

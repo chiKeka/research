@@ -6,8 +6,7 @@ import ledger from '../data/ledger.json';
 import { classify, truncate } from '../lib/ledger-stats.mjs';
 
 const claims = ledger.claims ?? [];
-const { open, resolved } = classify(claims);
-const liveCount = open.length + resolved.length;
+const { open } = classify(claims);
 const sample = open[0];
 const sampleP = Math.round((sample?.confidence ?? 0) * 100);
 
@@ -65,7 +64,7 @@ const platformLabel = (p) => (p === 'x' ? 'X' : p === 'linkedin' ? 'LinkedIn' : 
           <p class="pull">Analysis usually ends in a confident take that nobody can check later. This practice ends in a commitment you can.</p>
           <p>Every prediction is registered with a probability that <b>locks the moment it is stated</b> and a written test for what would prove it wrong — then it is scored when reality lands.</p>
           <p><b>Nothing is edited; nothing is quietly deleted.</b> The frameworks are named so they can be argued with — and, when they fail, retired in public.</p>
-          <a class="btn line" href="/ledger" style="margin-top:6px">Browse all {liveCount} records</a>
+          <a class="btn line" href="/ledger" style="margin-top:6px">Browse all {claims.length} records</a>
         </div>
         {sample && (
           <a class="terminal barscope tlink" href={`/ledger/${sample.id}`}>

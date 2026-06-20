@@ -33,7 +33,6 @@ const recs = [...claims]
     date: (c.registered_at || c.date || '').slice(0, 10),
     tier: c.tier || 'claim',
   }));
-const liveCount = open.length + resolved.length;
 ---
 
 <Base title="Prediction Ledger" tagline="● Predictions locked & scored in public"
@@ -70,7 +69,7 @@ const liveCount = open.length + resolved.length;
     </section>
 
     <section class="blk" style="border-bottom:none">
-      <div class="sec-rule"><h2>Records</h2><div class="ln"></div><span class="more">{liveCount} live · newest first</span></div>
+      <div class="sec-rule"><h2>Records</h2><div class="ln"></div><span class="more">{claims.length} records · newest first</span></div>
       <div class="filters">
         <button class="fbtn on" data-f="all">All</button>
         <button class="fbtn" data-f="open">Open</button>
@@ -89,7 +88,7 @@ const liveCount = open.length + resolved.length;
 <span class="k">claim</span>: <span class="s">"{truncate(c.claim, 96)}"</span>
 <span class="k">resolves</span>: <span class="s">{c.resolve_by}</span>
 <span class="k">falsifier</span>: <span class="r">"{truncate(c.update_test, 72)}"</span>
-<div class="tbar"><span class="lab">probability</span><span class="track"><i style={`width:${p}%`}></i></span><span class="pv">{c.confidence?.toFixed(2)}</span></div>{c.status === 'resolved' && (<span><span class="k">outcome</span>: <span class={outcomeBinary(c) === 0 ? 'r' : 'g'}>{(c.resolution?.outcome || 'resolved').toUpperCase()}</span></span>)}</div>
+<div class="tbar"><span class="lab">probability</span><span class="track"><i style={`width:${p}%`}></i></span><span class="pv">{c.confidence?.toFixed(2)}</span></div>{c.status === 'resolved' && !isInvalid(c) && !isWithdrawn(c) && (<span><span class="k">outcome</span>: <span class={outcomeBinary(c) === 0 ? 'r' : 'g'}>{(c.resolution?.outcome || 'resolved').toUpperCase()}</span></span>)}{isInvalid(c) && (<span><span class="k">outcome</span>: <span class="c">VOID · not scored</span></span>)}</div>
           </a>
         ))}
       </div>

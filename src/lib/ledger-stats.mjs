@@ -102,7 +102,13 @@ export function horizonByMonth(claims = []) {
 // Display helpers (kept here so the page and tests agree on formatting).
 export const pct = (c) =>
   typeof c?.confidence === 'number' ? Math.round(c.confidence * 100) + '%' : '—';
-export const truncate = (s, n) => (s && s.length > n ? s.slice(0, n - 1).trimEnd() + '…' : s);
+export const truncate = (s, n) => {
+  if (!s || s.length <= n) return s;
+  const cut = s.slice(0, n - 1);
+  // Trim back to the last word boundary so we never cut mid-word.
+  const atSpace = cut.replace(/\s+\S*$/, '');
+  return (atSpace.length > n * 0.6 ? atSpace : cut).trimEnd() + '…';
+};
 // Attribution reads committed_by (twin | bruno). The previous view keyed on
 // confidence_source === 'bruno-stated', which never matches the data and so
 // always showed "twin"; committed_by is the correct field.

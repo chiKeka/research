@@ -6,14 +6,15 @@ const humanize = (s) => (s || 'general').replace(/_/g, ' ').replace(/\b\w/g, (c)
 const firstSentence = (s) => {
   if (!s) return '';
   const m = s.match(/^(.*?[.!?])(\s|$)/);
-  return (m ? m[1] : s).slice(0, 160);
+  const out = m ? m[1] : s;
+  if (out.length <= 160) return out;
+  return out.slice(0, 159).replace(/\s+\S*$/, '') + '…';
 };
-const fw = frameworks.map((f) => ({
-  name: f.name,
-  line: humanize(f.domain),
-  one: firstSentence(f.description),
-  def: f.description || '',
-}));
+const fw = frameworks.map((f) => {
+  const def = f.description || '';
+  const one = firstSentence(def);
+  return { name: f.name, line: humanize(f.domain), one, def, expandable: Boolean(def) && def !== one };
+});
 ---
 
 <Base title="Frameworks" tagline="● Named so they can be argued with"
@@ -33,14 +34,14 @@ const fw = frameworks.map((f) => ({
       </div>
       <div class="fw-list">
         {fw.map((f, i) => (
-          <div class="fw">
+          <div class={f.expandable ? 'fw' : 'fw static'} role={f.expandable ? 'button' : undefined} tabindex={f.expandable ? 0 : undefined} aria-expanded={f.expandable ? 'false' : undefined}>
             <div class="idx">{String(i + 1).padStart(2, '0')}</div>
             <div class="main">
               <h3>{f.name}</h3>
               <div class="one">{f.one}</div>
-              {f.def && f.def !== f.one && <div class="def">{f.def}</div>}
+              {f.expandable && <div class="def">{f.def}</div>}
             </div>
-            <div class="side">{f.line}<br /><span class="stt live">Live</span><div class="exp">+</div></div>
+            <div class="side">{f.line}<br /><span class="stt live">Live</span>{f.expandable && <div class="exp">+</div>}</div>
           </div>
         ))}
       </div>
@@ -49,7 +50,16 @@ const fw = frameworks.map((f) => ({
   </div>
 
   <script is:inline>
-    document.querySelectorAll('.fw').forEach((row) => row.addEventListener('click', () => row.classList.toggle('open')));
+    document.querySelectorAll('.fw:not(.static)').forEach((row) => {
+      const toggle = () => {
+        const open = row.classList.toggle('open');
+        row.setAttribute('aria-expanded', open ? 'true' : 'false');
+      };
+      row.addEventListener('click', toggle);
+      row.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
+      });
+    });
   </script>
 </Base>
 
@@ -60,6 +70,8 @@ const fw = frameworks.map((f) => ({
   .fw-list{border-top:2px solid var(--ink);margin-top:14px}
   .fw{display:grid;grid-template-columns:64px 1fr 160px;gap:32px;align-items:start;padding:30px 0;border-bottom:1px solid var(--rule);cursor:pointer;transition:.18s}
   .fw:hover{background:var(--paper2);padding-left:12px;padding-right:12px}
+  .fw.static{cursor:default}
+  .fw:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
   .fw .idx{font-family:var(--mono);font-size:13px;color:var(--accent);letter-spacing:.06em;padding-top:8px}
   .fw .main h3{font-family:var(--serif);font-size:clamp(24px,2.8vw,34px);line-height:1.06;letter-spacing:-.01em}
   .fw:hover h3{color:var(--accent)}

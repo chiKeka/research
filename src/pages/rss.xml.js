@@ -11,6 +11,7 @@ export async function GET(context) {
     description:
       'Essays and posts on AI infrastructure, agentic systems, governance, and public epistemics.',
     site: context.site,
+    trailingSlash: false,
     items: posts.map((p) => ({
       title: p.data.title,
       pubDate: p.data.date ? new Date(p.data.date) : undefined,
