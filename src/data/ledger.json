@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-20",
+  "updated": "2026-07-03",
   "claims": [
     {
       "id": "claim-20260610-001",
@@ -32,6 +32,24 @@
           "direction": "supports",
           "note": "NBER w34836 Yotzov, Barrero et al. (Firm Data on AI, 2026): 6000-executive survey across US, UK, Germany, Australia. 69 percent of firms actively use AI. Nine-in-ten executives report no impact of AI on employment or productivity over the last 3 years. Adoption is real; conversion to measured output is not. Direct firm-level confirmation of the AI Solow paradox at end-Q2 2026, supporting the directional claim that aggregate productivity stats will not show clear AI-driven gains through end-2026.",
           "source_url": "https://www.nber.org/papers/w34836"
+        },
+        {
+          "date": "2026-06-20",
+          "direction": "supports",
+          "note": "NBER w34984 (Atlanta Fed CFO Survey, ~750 corporate executives, NBER series posted June 2026) reports labour productivity gains positive but concentrated in high-skill services and finance, with adoption heterogeneity. Companion paper w34836 reports ~1.5 hours/week median usage. Both point to firm-level concentration without aggregate breakthrough as of mid-2026 — consistent with the bruno claim direction.",
+          "source_url": "https://www.nber.org/papers/w34984"
+        },
+        {
+          "date": "2026-06-25",
+          "direction": "against",
+          "note": "NBER w34984 (Baslandze et al., June 2026): survey of ~750 corporate executives finds labor productivity gains POSITIVE, varying by sector, concentrated in high-skill services and finance, with effects expected to strengthen in 2026. Productivity paradox noted (perceived > measured). Claim is about AGGREGATE statistics through end-2026 - paper does not yet show aggregate BLS/BEA confirmation but signals firm-level positive trajectory consistent with disconfirmation if it propagates.",
+          "source_url": "https://www.nber.org/papers/w34984"
+        },
+        {
+          "date": "2026-06-26",
+          "direction": "supports",
+          "note": "NBER firm-data work circulated mid-June 2026 (w34984 series) reports AI-attributable aggregate US employment decline expected at less than 0.4 percent for 2026, with offsetting growth in technical roles inside adopting firms - the firm-vs-aggregate divergence the claim names. Bears on conjunct B (firm-level concentration) more than conjunct A (BLS productivity); BLS 2026 annual print is the dispositive read and remains 2027.",
+          "source_url": "https://www.nber.org/system/files/working_papers/w34984/w34984.pdf"
         }
       ],
       "resolution": null
@@ -118,6 +136,24 @@
           "direction": "supports",
           "note": "Council, Parliament, Commission reached provisional political agreement on Digital AI Omnibus 7 May 2026; Council Member State representatives confirmed deal 13 May 2026. The omnibus deferred high-risk obligations to 2 Dec 2027 (Annex III) and 2 Aug 2028 (Annex I products) - reduces near-term enforceable compliance burden on frontier deployers. Formal vote expected June-July 2026, entry into force shortly after publication in OJ.",
           "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/"
+        },
+        {
+          "date": "2026-06-22",
+          "direction": "supports",
+          "note": "Digital Omnibus text approved by EP 2026-06-16 (423-57-174) defers Annex III HRAIS obligations from 2026-08-02 to 2027-12-02 (16 months); Annex I product-regulated HRAIS slip from 2027-08-02 to 2028-08-02; Member-State sandbox obligation from 2026-08-02 to 2027-08-02. The 2026-08-02 enforcement date for use-based high-risk systems effectively does not exist post-adoption. Direct support for the 'reduces enforceable obligations through end-2026' thesis.",
+          "source_url": "https://www.gibsondunn.com/eu-ai-act-omnibus-agreement-postponed-high-risk-deadlines-and-other-key-changes/"
+        },
+        {
+          "date": "2026-06-29",
+          "direction": "supports",
+          "note": "EP-approved omnibus text (2026-06-16) defers Annex III high-risk standalone obligations from 2026-08-02 to 2027-12-02 (16 months) and Annex I product-regulated obligations from 2027-08-02 to 2028-08-02 (12 months); synthetic-content machine-readable marking postponed from 2026-08-02 to 2026-12-02. Multiple frontier-relevant articles softened or delayed before end-2026 deployment. Not yet final law — pending Council and OJ publication — but the count-of-softened-articles update test now reads supportive.",
+          "source_url": "https://www.globalpolicywatch.com/2026/06/eu-ai-act-update-timeline-relief-targeted-simplification-and-new-prohibitions-2/"
+        },
+        {
+          "date": "2026-07-02",
+          "direction": "supports",
+          "note": "Council formal adoption 2026-06-29 (Omnibus VII) enshrines the simplification turn in law. Extends high-risk deadlines (2027-12/2028-08) but does not directly touch GPAI/frontier obligations, which continue from 2026-08-02 as scheduled. Directional support for the mechanism named in the claim (regulatory turn favouring deployers), but the current text targets high-risk not frontier specifically - interpretive bearing on frontier deployer relief. Defer for structural resolution.",
+          "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2026/06/29/artificial-intelligence-council-gives-final-green-light-to-simplify-and-streamline-rules/"
         }
       ],
       "resolution": null
@@ -237,7 +273,7 @@
       ],
       "update_test": "Council formal adoption recorded in the EU register; political agreement alone does not count",
       "resolve_by": "2026-07-31",
-      "status": "open",
+      "status": "resolved",
       "validity": null,
       "prereg_audit": null,
       "corrections": [],
@@ -291,9 +327,73 @@
           "direction": "supports",
           "note": "Provisional Digital AI Omnibus deal reached 7 May 2026 (trilogue), Member State representatives confirmed 13 May 2026 in Council. Inside Privacy and Inside Global Tech reporting formal Parliament and Council adoption expected June-July 2026, ahead of 2 August 2026 trigger date for high-risk rules. Track milestone: formal OJ publication.",
           "source_url": "https://www.insideglobaltech.com/2026/05/28/eu-ai-act-update-timeline-relief-targeted-simplification-and-new-prohibitions/"
+        },
+        {
+          "date": "2026-06-20",
+          "direction": "supports",
+          "note": "EU Parliament approved AI Act Digital Omnibus 2026-06-16; Council formal adoption expected July 2026 with publication in Official Journal before 2026-08-02. Renew Europe, Latham Watkins, Matheson coverage 2026-06-19 confirm trajectory remains on track for July adoption.",
+          "source_url": "https://www.lw.com/en/insights/ai-act-update-eu-resolves-to-change-rules-and-extend-deadlines"
+        },
+        {
+          "date": "2026-06-21",
+          "direction": "supports",
+          "note": "Multiple law firm trackers (Gibson Dunn, Inside Privacy, Global Policy Watch, K&L Gates) report formal Council approval anticipated June 2026, publication July 2026. Political agreement on May 7 confirmed; Council formal adoption step still pending per Article 65 EU register requirements. Update test (Council register entry) not yet fired.",
+          "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/"
+        },
+        {
+          "date": "2026-06-22",
+          "direction": "supports",
+          "note": "EP plenary on 2026-06-16 adopted Digital Omnibus on AI by 423-57-174; Council formal adoption scheduled 2026-06-29. Trajectory toward formal Council adoption before 2026-07-31 strong; political agreement (May 7) plus EP plenary plus scheduled Council date together constitute strong supporting evidence, but update test requires the Council vote itself to be recorded. Not yet resolved.",
+          "source_url": "https://sofiaglobe.com/2026/06/16/european-parliament-approves-ai-act-amendments-nudifier-ban/"
+        },
+        {
+          "date": "2026-06-24",
+          "direction": "supports",
+          "note": "EU Parliament voted on 2026-06-16 to adopt the AI Act Omnibus VII provisional agreement. Formal Council adoption is now the gating step, widely expected to land in July ahead of the 2 August 2026 high-risk obligations deadline (now postponed by the omnibus itself).",
+          "source_url": "https://www.europarl.europa.eu/news/en/press-room/20260611IPR45207/ai-act-ep-approves-simplification-measures-and-nudifier-app-ban"
+        },
+        {
+          "date": "2026-06-25",
+          "direction": "supports",
+          "note": "Per European Commission digital strategy and AI Act enforcement page: in May 2026 a political agreement to simplify AI rules under the digital simplification (omnibus) package was reached. Political agreement is a precursor step; formal Council adoption by 2026-07-31 still requires Council legislative vote. Bearing supports trajectory; not yet decisive.",
+          "source_url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+        },
+        {
+          "date": "2026-06-26",
+          "direction": "supports",
+          "note": "European Parliament adopted AI Omnibus simplification text on 2026-06-16 with reported broad support; Council formal adoption pending, both co-legislators flagging intent to complete before 2026-08-02. Provisional progress toward the threshold; the update test still requires Council formal adoption recorded in the EU register.",
+          "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/"
+        },
+        {
+          "date": "2026-06-27",
+          "direction": "supports",
+          "note": "European Parliament formally endorsed the provisional Digital Omnibus on AI agreement on 2026-06-16; formal Council adoption remains anticipated in July 2026 ahead of 2026-08-02 Annex III deadline (per Gibson Dunn, Inside Privacy/Covington, Lexology, Global Policy Watch, DLA Piper trackers covering the Parliament endorsement). Update test still strict ('Council formal adoption recorded in EU register; political agreement alone does not count') — claim stays open pending the formal Council vote.",
+          "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1024"
+        },
+        {
+          "date": "2026-06-28",
+          "direction": "supports",
+          "note": "European Council formal adoption of the EU AI Act Digital Omnibus simplification package remains pending as of 2026-06-28, with Commission and Council communications consistently signaling adoption 'in the coming weeks' and both co-legislators emphasizing completion before 2026-08-02. EU Parliament adopted on 2026-06-16; only Council formal adoption + Official Journal publication remain. On track for the 2026-07-31 update test.",
+          "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/"
+        },
+        {
+          "date": "2026-06-29",
+          "direction": "supports",
+          "note": "EP plenary approved provisional Digital Omnibus agreement 2026-06-16, 423 in favour / 57 against / 174 abstentions, ahead of 2026-07-31 deadline. Council formal adoption and OJ publication 'widely anticipated in July 2026', ahead of the 2 August GPAI enforcement window — political momentum and a known July Council calendar materially raise probability of timely formal adoption. Not yet resolved; political agreement does not count per update test.",
+          "source_url": "https://www.iubenda.com/en/blog/ai-omnibus-parliament-adoption-june-2026/"
+        },
+        {
+          "date": "2026-06-30",
+          "direction": "supports",
+          "note": "EU Digital Omnibus AI Act simplification: European Parliament formally endorsed the provisional Council-EP agreement 2026-06-16 (provisional agreement reached 2026-05-07). Formal Council adoption widely anticipated July 2026, ahead of the 2026-08-02 GPAI deadline that the omnibus moves. With EP endorsement on the record and Council adoption process now the remaining step, trajectory is strongly toward confirmation of the 2026-07-31 deadline test.",
+          "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/"
         }
       ],
-      "resolution": null
+      "resolution": {
+        "date": "2026-07-02T12:10:09Z",
+        "outcome": "confirmed",
+        "note": "Council of the EU gave final green light to the AI Act simplification/omnibus package on 2026-06-29 (Parliament endorsement 2026-06-16). Omnibus VII: extends high-risk stand-alone deadline to 2027-12-02 and embedded to 2028-08-02; adds new prohibitions (CSAM, non-consensual intimate content). Sources: https://www.consilium.europa.eu/en/press/press-releases/2026/06/29/artificial-intelligence-council-gives-final-green-light-to-simplify-and-streamline-rules/ | https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1024"
+      }
     },
     {
       "id": "claim-20260610-011",
@@ -463,7 +563,14 @@
       "prereg_audit": null,
       "corrections": [],
       "related_to": [],
-      "evidence": [],
+      "evidence": [
+        {
+          "date": "2026-06-20",
+          "direction": "supports",
+          "note": "EUROPA consortium selection 2026-06-19 (Domyn-led, >400B parameter open-source EU frontier model, 24 languages) is a confirming data point for sovereign-stack convergence: an EU jurisdiction has now adopted operator + compute-allocation + dated milestone shape rather than a principles document. Follows Chile LATAM-GPT (2026-02-10) and IndiaAI BharatGen as the third major non-US sovereign-stack instantiation.",
+          "source_url": "https://digital-strategy.ec.europa.eu/en/news/commission-selects-europa-consortium-winner-frontier-ai-grande-challenge-project-build-european"
+        }
+      ],
       "resolution": null
     },
     {
@@ -541,6 +648,12 @@
           "direction": "supports",
           "note": "European Commission published Code of Practice on marking and labelling AI-generated content on 2026-06-10 — Commission-level interpretive guidance ahead of HRAIS obligations. Not the AI Office itself, but the same interpretive direction; the AI Office sits inside the Commission's DG CNECT and typically pivots its FAQ updates onto Commission codes within weeks.",
           "source_url": "https://www.lw.com/en/insights/ai-act-update-eu-resolves-to-change-rules-and-extend-deadlines"
+        },
+        {
+          "date": "2026-07-02",
+          "direction": "supports",
+          "note": "Omnibus VII adopted 2026-06-29 clarifies the regulatory perimeter and adds new prohibitions; guidance flow from the AI Office should now include implementation of the amended text. Not a direct fire of the update test (which requires GPAI transparency guidance), but the enabling context is now in force.",
+          "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2026/06/29/artificial-intelligence-council-gives-final-green-light-to-simplify-and-streamline-rules/"
         }
       ],
       "resolution": null
@@ -625,6 +738,18 @@
           "direction": "against",
           "note": "FOMC June 2026 dot plot raised median 2026 year-end fed funds rate to 3.8 pct from 3.4 pct in March; 9 of 18 participants now project at least one rate hike in 2026. Warsh's first press conference framed hawkish. Raises probability of a July 2026 hike, weakly against the 88 pct NOT-raise prior.",
           "source_url": "https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20260617.htm"
+        },
+        {
+          "date": "2026-06-24",
+          "direction": "supports",
+          "note": "FOMC June 17 2026 (Chair Warsh's first meeting) held the target range at 3.50-3.75 percent on a 12-0 vote and shifted the SEP median dot to 3.8 percent by year-end, signaling at least one 25bp HIKE before December but pushing that hike toward October per post-meeting Fed-funds futures pricing. The structural setup - hold-now, hike-later - bears toward a HOLD at the July 28-29 meeting, not a hike, even as the broader policy tone has turned hawkish.",
+          "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm"
+        },
+        {
+          "date": "2026-06-27",
+          "direction": "against",
+          "note": "CME FedWatch as of 2026-06-23 prices a 64.6 pct probability of an FOMC HOLD at the 2026-07-28/29 meeting — meaning ~35 pct probability of a change. June Summary of Economic Projections (released 2026-06-17) shifted the median year-end 2026 dot HIGHER, with the dot plot now leaning toward at least one HIKE rather than a cut, a meaningful tone shift. The twin's 88 pct 'will NOT raise' looks aggressive against a 35 pct change probability now skewed hike-ward; bearing evidence pressures the high-confidence side of the claim, though the modal market outcome still maps to NOT-raise (i.e. 64.6 pct hold + ~5-10 pct cut > 75 pct of distribution is not-raise). Claim stays open.",
+          "source_url": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html"
         }
       ],
       "resolution": null
@@ -712,7 +837,14 @@
       "prereg_audit": null,
       "corrections": [],
       "related_to": [],
-      "evidence": [],
+      "evidence": [
+        {
+          "date": "2026-06-27",
+          "direction": "supports",
+          "note": "ECB-Watch and rateprobability.com price ~93 pct probability of NO CHANGE at the 2026-07-23 Governing Council meeting, with the Deposit Facility expected to hold at 2.25 pct (the level set at the 2026-06-11 hike). Strong directional support for the claim that the ECB will NOT cut its three key rates at the July meeting.",
+          "source_url": "https://ecb-watch.eu/"
+        }
+      ],
       "resolution": null
     },
     {
@@ -1162,7 +1294,7 @@
       "frameworks": [],
       "update_test": "BEA Personal Income and Outlays for May 2026, official table, core PCE (excl food and energy) year-over-year value at or above 3.2 percent",
       "resolve_by": "2026-06-26",
-      "status": "open",
+      "status": "resolved",
       "validity": null,
       "prereg_audit": {
         "date": "2026-06-16T12:12:35Z",
@@ -1176,7 +1308,11 @@
       "corrections": [],
       "related_to": [],
       "evidence": [],
-      "resolution": null
+      "resolution": {
+        "date": "2026-06-26T12:07:39Z",
+        "outcome": "confirmed",
+        "note": "BEA Personal Income and Outlays May 2026 (release 2026-06-25, BEA 26-31): core PCE price index excluding food and energy increased 3.4 percent year-over-year, at or above the 3.2 percent threshold. Source: https://www.bea.gov/news/2026/personal-income-and-outlays-may-2026"
+      }
     },
     {
       "id": "claim-20260616-002",
@@ -1195,7 +1331,7 @@
       "frameworks": [],
       "update_test": "Eurostat euro area HICP flash estimate for June 2026 (release 2026-07-01) headline annual rate at or below 3.1 percent",
       "resolve_by": "2026-07-02",
-      "status": "open",
+      "status": "resolved",
       "validity": null,
       "prereg_audit": {
         "date": "2026-06-16T12:12:44Z",
@@ -1209,7 +1345,11 @@
       "corrections": [],
       "related_to": [],
       "evidence": [],
-      "resolution": null
+      "resolution": {
+        "date": "2026-07-01T12:08:47Z",
+        "outcome": "confirmed",
+        "note": "Eurostat euro area HICP flash estimate for June 2026 printed headline annual inflation at 2.8 percent, down from 3.2 percent in May. 2.8 percent is at or below the 3.1 percent threshold. Registered fact: https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-01072026-ap - Euro area annual inflation down to 2.8 percent, released 2026-07-01. Twin said 45 percent; outcome confirmed."
+      }
     },
     {
       "id": "claim-20260616-003",
@@ -1256,6 +1396,18 @@
           "direction": "against",
           "note": "Broadcast Media Africa 27 May 2026: South Africa DCDT revised AI Policy timeline now targets revised expert review concluding October 2026, Cabinet submission November 2026, public-comment publication January 2027. This pushes the revised draft public release well past the 15 August 2026 deadline in claim. Withdrawn 26 April 2026 after AI-hallucinated citations; consultation deadline was 10 June 2026 with no announced acceleration.",
           "source_url": "https://news.broadcastmediaafrica.com/2026/05/27/south-africas-national-ai-policy-new-draft-set-for-release-in-january-2027-following-expert-review/"
+        },
+        {
+          "date": "2026-06-24",
+          "direction": "against",
+          "note": "Sources confirm Minister Solly Malatsi unveiled a redraft panel on 2026-05-26 after the April withdrawal over hallucinated citations, but no revised draft has been published on dcdt.gov.za, gov.za, or in the Government Gazette as of 2026-06-24. The drafting reset (panel composition, sourced bibliography, public consultation pipeline) is the slow path; with 52 days to the 2026-08-15 deadline and no draft yet on an official surface, momentum is bearing AGAINST a 2026-08-15 publication.",
+          "source_url": "https://www.timeslive.co.za/news/sci-tech/2026-05-26-malatsi-unveils-panel-to-guide-ai-policy-redraft-after-hallucination/"
+        },
+        {
+          "date": "2026-06-27",
+          "direction": "against",
+          "note": "South Africa DCDT withdrew the draft National AI Policy on 2026-04-26 after AI-hallucinated citations scandal. As of 2026-06-27, the DCDT has provided no public timeline for a revised draft and the consultation must restart substantial portions. Eight weeks to the 2026-08-16 claim deadline with no revised draft in public circulation; trajectory bearing against.",
+          "source_url": "https://www.cnbcafrica.com/2026/south-africa-pulls-ai-policy-after-hallucinated-citations-expose-drafting-scandal"
         }
       ],
       "resolution": null
@@ -1360,7 +1512,14 @@
       },
       "corrections": [],
       "related_to": [],
-      "evidence": [],
+      "evidence": [
+        {
+          "date": "2026-06-23",
+          "direction": "supports",
+          "note": "Trump EO signed 2026-06-02 (Promoting Advanced AI Innovation and Security) directs federal agencies to establish the voluntary engagement process with 30-day pre-release access. As of 2026-06-23 no joint federal release, NIST/OSTP/DOC/DHS publication, formal whitehouse.gov announcement, or Federal Register notice describes the framework artifact itself - the EO is the order to build it, not the published framework. Bearing evidence.",
+          "source_url": "https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/"
+        }
+      ],
       "resolution": null
     },
     {
@@ -1396,7 +1555,20 @@
       },
       "corrections": [],
       "related_to": [],
-      "evidence": [],
+      "evidence": [
+        {
+          "date": "2026-06-27",
+          "direction": "against",
+          "note": "BoJ raised the policy rate by 25bp to 1.0 pct on 2026-06-16 (from 0.75 pct). Deputy Governor Ryozo Himino 2026-06-25 explicitly indicated the BoJ will continue raising rates while monitoring upside inflation risk, signaling another hike could be near-term; Reuters and EFG International note rate cycle peaks now expected 1.25-1.5 pct, with a Q4 2026 hike likely. The twin's 74 pct 'BoJ holds at 1.0 pct at the 2026-07-30/31 MPM' was reasonable at registration but the Himino lean shortens the tail toward an earlier hike — bearing against the high-confidence side.",
+          "source_url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260616a.pdf"
+        },
+        {
+          "date": "2026-06-28",
+          "direction": "against",
+          "note": "BoJ Deputy Governor Himino (2026-06-25) and board member Tamura (June Summary of Opinions): rate 'should gradually move toward a neutral level of around 2 percent,' with 0.25bp hikes 'at intervals of a few months.' June Summary of Opinions shows broad support for continuing hikes if economy and prices evolve in line with outlook. The June 16 hike to 1.0 percent is part of a hiking cycle, not its terminus; July 30-31 hold is no longer the modal outcome on official communications. Update test still resolves 2026-08-01 on actual decision; rating downward.",
+          "source_url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260616a.pdf"
+        }
+      ],
       "resolution": null
     },
     {
@@ -1560,7 +1732,7 @@
       "frameworks": [],
       "update_test": "On 2026-07-01, the Institute for Supply Management official June 2026 Manufacturing PMI release prints a headline Manufacturing PMI of 50.0 or higher. Confirmed if the headline reading is at or above 50.0, disconfirmed if below 50.0.",
       "resolve_by": "2026-07-03",
-      "status": "open",
+      "status": "resolved",
       "validity": null,
       "prereg_audit": {
         "date": "2026-06-19T12:10:47Z",
@@ -1575,7 +1747,11 @@
       "corrections": [],
       "related_to": [],
       "evidence": [],
-      "resolution": null
+      "resolution": {
+        "date": "2026-07-02T12:06:40Z",
+        "outcome": "confirmed",
+        "note": "ISM Manufacturing PMI June 2026 released 2026-07-01 at 53.3% (above 50.0 expansion threshold, down 0.7pp from May's 54.0). Source: https://www.prnewswire.com/news-releases/manufacturing-pmi-at-53-3-june-2026-ism-manufacturing-pmi-report-302814991.html"
+      }
     },
     {
       "id": "claim-20260619-002",
@@ -1594,7 +1770,7 @@
       "frameworks": [],
       "update_test": "On 2026-06-30, the China National Bureau of Statistics official June 2026 Manufacturing PMI release prints a headline value of 50.0 or higher. Confirmed at or above 50.0, disconfirmed below 50.0.",
       "resolve_by": "2026-07-02",
-      "status": "open",
+      "status": "resolved",
       "validity": null,
       "prereg_audit": {
         "date": "2026-06-19T12:10:55Z",
@@ -1609,7 +1785,11 @@
       "corrections": [],
       "related_to": [],
       "evidence": [],
-      "resolution": null
+      "resolution": {
+        "date": "2026-07-01T12:08:40Z",
+        "outcome": "confirmed",
+        "note": "China NBS official June 2026 Manufacturing PMI printed 50.3 (up from 50.0 in May), beating expectations of 50.1 - third consecutive month above the 50 expansion threshold. Registered fact: https://www.globaltimes.cn/page/202606/1364771.shtml and NBS release 2026-06-30. Twin said 46 percent for at-or-above 50; outcome confirmed."
+      }
     },
     {
       "id": "claim-20260619-003",
@@ -1662,7 +1842,7 @@
       "frameworks": [],
       "update_test": "By 2026-06-30 23:59 UTC, an identifiable public announcement (Kenyan, Moroccan, or Nigerian government press release, AfCFTA Secretariat communique, IOTA Foundation blog, Tony Blair Institute press release, or WEF announcement) confirms the formal establishment of an ADAPT Country Implementation Forum in at least one of Kenya, Morocco, or Nigeria. Confirmed if any one country has such an announcement on or before the deadline; disconfirmed if none.",
       "resolve_by": "2026-06-30",
-      "status": "open",
+      "status": "resolved",
       "validity": null,
       "prereg_audit": {
         "date": "2026-06-19T12:11:26Z",
@@ -1683,6 +1863,727 @@
           "date": "2026-06-19T12:11:26Z"
         }
       ],
+      "evidence": [
+        {
+          "date": "2026-06-21",
+          "direction": "against",
+          "note": "Targeted search 2026-06-21 found no public announcement of any ADAPT Country Implementation Forum establishment in Kenya, Morocco, or Nigeria. The most recent ADAPT public artifact remains the 2026-05-19 Accra selection announcement (33 days old). With 9 days to deadline and zero progress signal, base-rate lean shifts toward disconfirmation, though late-June announcements remain possible (AfCFTA Secretariat has occasionally published end-of-month communiques).",
+          "source_url": "https://tech.africa/afcfta-adapt-kenya-morocco-nigeria/"
+        },
+        {
+          "date": "2026-06-22",
+          "direction": "against",
+          "note": "Eight days before the 2026-06-30 deadline, no public press release, government communique, AfCFTA Secretariat communique, IOTA Foundation blog, Tony Blair Institute press release, or WEF announcement confirms formal establishment of an ADAPT Country Implementation Forum in Kenya, Morocco, or Nigeria. The IOTA Foundation 'first ADAPT implementations' post confirms the CIF model is the next phase but does not confirm any one of the three has been formally constituted. Trajectory bearing against unambiguous-yes by 2026-06-30.",
+          "source_url": "https://blog.iota.org/first-adapt-implementations/"
+        },
+        {
+          "date": "2026-06-23",
+          "direction": "supports",
+          "note": "AfCFTA confirmed Country Implementation Forums in Kenya/Morocco/Nigeria as the next milestone targeted by end of June (per 2026-05-19 Accra launch). As of 2026-06-23 no government press release, Secretariat communique, IOTA blog, TBI release, or WEF announcement yet confirms formal Forum establishment in any pilot - bearing evidence only, not unambiguous resolution. Window 2026-06-24 to 2026-06-30 decisive.",
+          "source_url": "https://tech.africa/afcfta-adapt-kenya-morocco-nigeria/"
+        },
+        {
+          "date": "2026-06-24",
+          "direction": "supports",
+          "note": "AfCFTA Secretariat (Accra, 2026-05-19) named end-June 2026 as the formal target for establishing Country Implementation Forums in Kenya, Morocco, Nigeria. As of 2026-06-24, web search of official channels (Kenya .go.ke, Morocco gov, FMCIDE, AfCFTA, IOTA Foundation, Tony Blair Institute) finds the milestone restated but no published per-country forum-establishment announcement yet. The countdown is now 6 days and the public framing is firm; logging neutral-bearing evidence pending the actual establishment notice.",
+          "source_url": "https://blog.iota.org/first-adapt-implementations/"
+        },
+        {
+          "date": "2026-06-25",
+          "direction": "supports",
+          "note": "AfCFTA ADAPT pilot countries (Kenya, Morocco, Nigeria) have begun national-level engagement: Kenya held discussions with cabinet secretary and principal secretary for trade; similar engagement underway in Nigeria; Morocco process started. Country Implementation Forums planned by end of June. No FORMAL public confirmation with named coordinator/chair yet. Trajectory supportive but interpretive; awaits formal confirmation.",
+          "source_url": "https://dig.watch/updates/kenya-morocco-nigeria-digital-infrastructure"
+        },
+        {
+          "date": "2026-06-27",
+          "direction": "against",
+          "note": "Three days before the 2026-06-30 deadline, no public press release, government communique, AfCFTA Secretariat communique, IOTA Foundation blog, Tony Blair Institute press release, or WEF announcement confirms formal establishment of an ADAPT Country Implementation Forum in Kenya, Morocco, or Nigeria. Most recent public ADAPT artifact remains the 2026-05-19 Accra selection announcement (39 days old). AfCFTA chief Wamkele Mene's 2026-06-25 statement that 'Africa needs 700 data centres' for digital trade reaffirms the strategic frame but does not name a single established CIF. Trajectory now strongly against unambiguous-yes by 2026-06-30.",
+          "source_url": "https://punchng.com/africas-digital-trade-push-requires-700-data-centres-says-afcfta-chief/"
+        },
+        {
+          "date": "2026-06-28",
+          "direction": "against",
+          "note": "Today 2026-06-28 (Sunday, two days before 2026-06-30 deadline): targeted search for AfCFTA ADAPT Country Implementation Forum establishment in Kenya, Morocco, or Nigeria returns May-2026 selection coverage and the same 'end of June' CIF milestone language, but no government press release, AfCFTA Secretariat communique, IOTA Foundation blog, Tony Blair Institute press release, or news report confirming any of the three CIFs has been formally established. Trajectory: deadline almost certainly slips; resolves disconfirmed on a quiet Tuesday absent a Monday surprise.",
+          "source_url": "https://tech.africa/afcfta-adapt-kenya-morocco-nigeria/"
+        },
+        {
+          "date": "2026-06-29",
+          "direction": "against",
+          "note": "1 day to 2026-06-30 deadline: still no public announcement of any AfCFTA ADAPT Country Implementation Forum (CIF) being formally established in Kenya, Morocco, or Nigeria. Targeted search returns only the 2026-05-19 Accra selection announcement and pre-existing pilot-country news; no Kenyan, Moroccan, or Nigerian government press release, AfCFTA Secretariat communique, IOTA Foundation post, Tony Blair Institute, or WEF announcement confirming a constituted CIF. Trajectory now strongly against unambiguous-yes by EOD tomorrow.",
+          "source_url": "https://tech.africa/afcfta-adapt-kenya-morocco-nigeria/"
+        },
+        {
+          "date": "2026-06-30",
+          "direction": "against",
+          "note": "Deadline day 2026-06-30 status check: AfCFTA Council of Ministers meeting in Lagos today closes the AfCFTA Week (continental conference Jun-29, Council Jun-30, Digital Trade Forum Jul 1-3). Wamkele Mene's Invest Lagos 3.0 keynote and continental conference statements reiterate the ADAPT framing and the 250bn intra-African trade target but name no established Country Implementation Forum in Kenya, Morocco, or Nigeria. No Kenyan, Moroccan, or Nigerian government press release, AfCFTA Secretariat communique, IOTA Foundation blog, TBI release, or WEF announcement found confirming formal establishment of an ADAPT CIF in any pilot country. Trajectory at 12 hours to deadline: strongly against unambiguous-yes. Not resolving today: deadline is end-of-day 23:59 UTC and a late Council-of-Ministers communique remains possible; Sunday Reckoning will re-verify.",
+          "source_url": "https://au-afcfta.org/2026/06/afcfta-secretary-general-highlights-lagos-as-a-gateway-to-africas-integrated-market/"
+        },
+        {
+          "date": "2026-07-01",
+          "direction": "against",
+          "note": "Day after 2026-06-30 deadline (running 2026-07-01 12:00 UTC): targeted search still returns no post-deadline announcement of formal AfCFTA ADAPT Country Implementation Forum establishment in Kenya, Morocco, or Nigeria. AfCFTA Council of Ministers in Lagos closed 2026-06-30 and the Digital Trade Forum runs Jul 1-3; latest coverage reiterates the May 2026 selection and by-end-June target language but names no established CIF. Trajectory strongly against unambiguous confirmation. Not resolving today: possible late-index of any Council-of-Ministers announcement in Digital Trade Forum sessions; Sunday Reckoning re-verifies.",
+          "source_url": "https://tech.africa/afcfta-adapt-kenya-morocco-nigeria/"
+        },
+        {
+          "date": "2026-07-02",
+          "direction": "against",
+          "note": "Deadline 2026-06-30 passed. Two targeted searches (2026-07-02) surface only May 19 launch coverage and pipeline mentions of Country Implementation Forums; no press release, AfCFTA Secretariat communique, IOTA blog, TBI release, or WEF announcement confirming formal establishment in Kenya, Morocco, or Nigeria. Absence-of-announcement past deadline; interpretive - defer to Sunday Reckoning.",
+          "source_url": "https://blog.iota.org/first-adapt-implementations/"
+        }
+      ],
+      "resolution": {
+        "date": "2026-07-03T04:30:33Z",
+        "outcome": "disconfirmed",
+        "note": "Deadline 2026-06-30 passed with no public announcement of formal AfCFTA ADAPT Country Implementation Forum establishment in Kenya, Morocco, or Nigeria. Multiple targeted searches (2026-06-27 through 2026-07-03) surface only May 2026 selection coverage and pipeline mentions. AfCFTA Council of Ministers (Lagos, 2026-06-30) and Digital Trade Forum (Jul 1-3) closed the AfCFTA Week without publishing any CIF establishment. Institutional Adaptation Lag: announcement cycle-time exceeds delivery cycle-time. tech.africa/afcfta-adapt-kenya-morocco-nigeria and blog.iota.org/first-adapt-implementations retain only May 19 Accra content."
+      }
+    },
+    {
+      "id": "claim-20260620-001",
+      "date": "2026-06-20",
+      "registered_at": "2026-06-20T13:19:26Z",
+      "claim": "By 2026-08-31, the EUROPA consortium (led by Domyn) publishes a public training-start announcement or initial model card for its EU Frontier AI Grand Challenge open-source model on at least one official channel (Domyn corporate communications, European Commission digital strategy press, or EuroHPC JU). Triggered by either explicit statement of training-start date or release of an interim model artifact.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "in",
+      "grounding": "EUROPA consortium and Domyn (Italian company) selected 2026-06-19 by European Commission as winner of Frontier AI Grande Challenge, receiving up to 2.5% of EuroHPC compute for one year. Official Commission press release published the same day.",
+      "withdrawal": null,
+      "confidence": 0.45,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.4,
+      "frameworks": [],
+      "update_test": "Public confirmation of training start OR initial model card / interim artifact released on Domyn site, ec.europa.eu/digital-strategy news, or EuroHPC JU site between 2026-06-19 and 2026-08-31.",
+      "resolve_by": "2026-08-31",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-06-20T13:19:26Z",
+        "auditor": "twin",
+        "note": "Searched 2026-06-20 for 'EUROPA consortium Domyn training start' and 'EUROPA Frontier AI model card' on the open web; no training-start announcement exists as of the brief. Only the 2026-06-19 selection news is public.",
+        "queries": [],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [
+        {
+          "id": "claim-20260610-015",
+          "relation": "probes",
+          "note": "EUROPA training-start milestone is a concrete operational test of the sovereign-stack convergence thesis: does the EU sovereign-stack initiative move from selection to artifact, or stall in the consortium phase?",
+          "date": "2026-06-20T13:20:09Z"
+        },
+        {
+          "id": "claim-20260610-007",
+          "relation": "probes",
+          "note": "EUROPA milestone (or lack thereof) probes the broader pattern in claim-20260610-007 of governance phases failing to pull material infrastructure. If EUROPA cannot get to training-start in 72 days from selection, AU continental strategy's slower clock is at material risk.",
+          "date": "2026-06-20T13:20:09Z"
+        }
+      ],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260620-002",
+      "date": "2026-06-20",
+      "registered_at": "2026-06-20T13:19:37Z",
+      "claim": "Between 2026-07-23 and 2026-08-07, at least one of the Big Five US tech firms (Alphabet, Amazon, Apple, Meta, Microsoft) cites 'sovereign AI', 'AI export controls', or 'foreign-national access restrictions' as a material business risk or strategic consideration on their Q2 2026 earnings call or accompanying 10-Q.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "in",
+      "grounding": "US Commerce Department BIS export-control directive 2026-06-12 forced Anthropic to disable Fable 5 and Mythos 5 for all customers worldwide. As of 2026-06-19, UK exemption request denied; EU Commission warned controls 'should not be discriminatory'; the EU launched EUROPA consortium selection same day citing sovereign-stack rationale. Big Five Q2 2026 earnings calls scheduled in standard late-July/early-August window.",
+      "withdrawal": null,
+      "confidence": 0.78,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.55,
+      "frameworks": [],
+      "update_test": "Read Q2 2026 earnings call transcripts and 10-Q risk-factor sections for any of Alphabet, Amazon, Apple, Meta, Microsoft (released between 2026-07-23 and 2026-08-07). Any usage of 'sovereign AI', 'AI export controls', 'foreign-national access', 'AI sovereignty', or equivalent in the context of business risk or competitive strategy resolves confirmed.",
+      "resolve_by": "2026-08-07",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-06-20T13:19:37Z",
+        "auditor": "twin",
+        "note": "Searched 2026-06-20 for Big Five Q2 2026 earnings preview commentary on AI export controls / sovereign AI; no Q2 earnings call has yet occurred (earliest is typically Alphabet ~July 23). Sovereign-AI language in prior Q1 calls has been minimal. Update test has not fired.",
+        "queries": [],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [
+        {
+          "id": "claim-20260610-015",
+          "relation": "probes",
+          "note": "Big Five sovereign-AI risk language in Q2 earnings is the corporate-incumbent reaction-function test of the sovereign-stack convergence thesis.",
+          "date": "2026-06-20T13:20:09Z"
+        }
+      ],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260620-003",
+      "date": "2026-06-20",
+      "registered_at": "2026-06-20T13:19:45Z",
+      "claim": "US Conference Board Consumer Confidence Index for June 2026 (release scheduled 2026-06-30 at 10:00 AM ET) prints at or below 99.0.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "Conference Board Consumer Confidence Index is a monthly survey-based indicator. Latest available May 2026 reading sits near the 98-100 range per Conference Board / TrendForce DataTrack 2026 series. June 2026 print scheduled 2026-06-30 at 10:00 AM ET.",
+      "withdrawal": null,
+      "confidence": 0.55,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.5,
+      "frameworks": [],
+      "update_test": "Read official Conference Board Consumer Confidence release dated 2026-06-30 at conference-board.org. Headline Index value at or below 99.0 resolves confirmed; above 99.0 resolves disconfirmed.",
+      "resolve_by": "2026-06-30",
+      "status": "resolved",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-06-20T13:19:45Z",
+        "auditor": "twin",
+        "note": "Searched 2026-06-20 for advance June 2026 Conference Board CCI release; no early estimate or print exists yet (release window is 2026-06-30). No market consensus quoted on this print as of brief time.",
+        "queries": [],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [
+        {
+          "date": "2026-06-30",
+          "direction": "supports",
+          "note": "Release window 2026-06-30 10:00 AM ET (14:00 UTC) has opened today; the print should be live as of brief composition but is not yet web-indexed in search results. Targeted search returns only the May 2026 reading (93.1) and forward-looking calendar entries. May 2026 (93.1) sat 5.9 points below the 99.0 threshold and June consensus implied a soft print; if the June print landed near consensus, the claim resolves confirmed. Logging neutral-bearing evidence pending search re-index; Sunday Reckoning will resolve definitively.",
+          "source_url": "https://www.conference-board.org/topics/consumer-confidence/"
+        }
+      ],
+      "resolution": {
+        "date": "2026-07-01T12:08:51Z",
+        "outcome": "confirmed",
+        "note": "Conference Board US Consumer Confidence Index for June 2026 inched up 0.6 points to 91.2 from a downwardly revised 90.6 in May. 91.2 is at or below the 99.0 threshold. Registered fact: https://www.conference-board.org/topics/consumer-confidence/ and https://www.prnewswire.com/news-releases/us-consumer-confidence-inched-up-in-june-302814510.html, released 2026-06-30. Twin said 55 percent; outcome confirmed."
+      }
+    },
+    {
+      "id": "claim-20260620-004",
+      "date": "2026-06-20",
+      "registered_at": "2026-06-20T13:19:53Z",
+      "claim": "ADP National Employment Report for June 2026 (release scheduled 2026-07-01 at 8:15 AM ET) prints private-sector employment change below 100,000 jobs.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "ADP NER June 2026 print scheduled 2026-07-01 at 8:15 AM ET. Recent prints: May 2026 +122,000; April 2026 +109,000. Below 100,000 requires further private-payroll deceleration from current trend.",
+      "withdrawal": null,
+      "confidence": 0.45,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.4,
+      "frameworks": [],
+      "update_test": "Read official ADP NER release dated 2026-07-01 at adp.com / ADP Research Institute. Headline private-sector employment change below 100,000 resolves confirmed; at or above 100,000 resolves disconfirmed.",
+      "resolve_by": "2026-07-01",
+      "status": "resolved",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-06-20T13:19:53Z",
+        "auditor": "twin",
+        "note": "Searched 2026-06-20 for advance June 2026 ADP NER print or preliminary estimate; only May 2026 official release is public (122k). No market consensus quoted on June ADP as of brief time.",
+        "queries": [],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [
+        {
+          "date": "2026-07-01",
+          "direction": "against",
+          "note": "Release scheduled 2026-07-01 8:15 AM ET (12:15 UTC); running the brief at 12:00 UTC the print has not yet indexed in web search. Preliminary weekly ADP through 2026-06-06 showed 30,750 jobs per week average pace (roughly 123k monthly extrapolation vs 100k threshold), and market consensus centered around 100k, suggesting the June print likely lands at or above 100k. Bearing against a below-100k print; Sunday Reckoning will re-verify against the official release.",
+          "source_url": "https://adpemploymentreport.com/"
+        }
+      ],
+      "resolution": {
+        "date": "2026-07-02T12:06:42Z",
+        "outcome": "confirmed",
+        "note": "ADP NER June 2026 released 2026-07-01: private-sector employment change +98,000 (below the 100,000 threshold). Source: https://mediacenter.adp.com/2026-07-01-ADP-National-Employment-Report-Private-Sector-Employment-Increased-by-98,000-Jobs-in-June-Annual-Pay-was-Up-4-4"
+      }
+    },
+    {
+      "id": "claim-20260620-005",
+      "date": "2026-06-20",
+      "registered_at": "2026-06-20T13:20:01Z",
+      "claim": "UK Office for National Statistics GDP monthly estimate for May 2026 (release scheduled 2026-07-16 at 7:00 AM BST) prints headline real GDP growth at or above 0.1 percent month-on-month.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "UK ONS monthly GDP estimate for May 2026 scheduled for release 2026-07-16 at 7:00 AM BST per ONS release calendar / GOV.UK statistics announcement. Q1 2026 UK first quarterly estimate already published earlier in 2026 showing weak Q1 momentum; April-May rebound trajectory open.",
+      "withdrawal": null,
+      "confidence": 0.55,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.5,
+      "frameworks": [],
+      "update_test": "Read official ONS GDP monthly estimate release dated 2026-07-16. Headline monthly real GDP MoM growth at or above 0.1 percent resolves confirmed; below 0.1 percent (including negative) resolves disconfirmed.",
+      "resolve_by": "2026-07-16",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-06-20T13:20:01Z",
+        "auditor": "twin",
+        "note": "Searched 2026-06-20 for advance May 2026 UK ONS GDP estimate; only March 2026 monthly estimate and Q1 2026 first quarterly estimate are public. April 2026 monthly print not yet inputted into search results. No market consensus quoted on May print as of brief time.",
+        "queries": [],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260621-001",
+      "date": "2026-06-21",
+      "registered_at": "2026-06-21T12:08:50Z",
+      "claim": "JOLTS May 2026 job openings (BLS release scheduled 2026-06-30 at 10:00 ET) prints below 7.5 million (headline total nonfarm job openings, seasonally adjusted).",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "BLS Job Openings and Labor Turnover Survey for May 2026 is the next scheduled release on 2026-06-30 10:00 ET (per BLS schedule). April 2026 headline printed 7.6 million per BLS jolts.nr0.htm.",
+      "withdrawal": null,
+      "confidence": 0.55,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.5,
+      "frameworks": [],
+      "update_test": "Read BLS news release jolts.nr0.htm published 2026-06-30 reporting May 2026 headline total nonfarm job openings seasonally adjusted. Confirmed if reported headline is below 7.5 million; disconfirmed if at or above 7.5 million.",
+      "resolve_by": "2026-07-01",
+      "status": "resolved",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-06-21T12:08:50Z",
+        "auditor": "twin",
+        "note": "Searched 2026-06-21 BLS schedule, FXStreet calendar, Investing.com economic calendar; April 2026 7.6M is the most recent printed reading. No May 2026 May data published yet. No liquid prediction market identified for this release.",
+        "queries": [],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": {
+        "date": "2026-07-01T12:08:57Z",
+        "outcome": "disconfirmed",
+        "note": "BLS JOLTS May 2026 job openings printed 7.6 million (unchanged from April 2026), not below the 7.5 million threshold. Registered fact: https://www.bls.gov/news.release/pdf/jolts.pdf and https://www.bls.gov/news.release/jolts.htm, released 2026-06-30. Twin said 55 percent for below 7.5M; outcome disconfirmed."
+      }
+    },
+    {
+      "id": "claim-20260621-002",
+      "date": "2026-06-21",
+      "registered_at": "2026-06-21T12:08:56Z",
+      "claim": "University of Michigan Consumer Sentiment Index FINAL June 2026 release (scheduled 2026-06-26) prints at or above 48.0 (headline sentiment index, final).",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "U Michigan Surveys of Consumers preliminary June 2026 release printed 48.9 (per sca.isr.umich.edu); interview window 2026-05-19 to 2026-06-08. Final release scheduled 2026-06-26 captures additional late-June interviews. Preliminary-to-final revisions historically within +/- 2 points.",
+      "withdrawal": null,
+      "confidence": 0.62,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.55,
+      "frameworks": [],
+      "update_test": "Read U Michigan Surveys of Consumers final June 2026 report at sca.isr.umich.edu/reports.html dated 2026-06-26. Confirmed if headline Index of Consumer Sentiment final value is at or above 48.0; disconfirmed if below 48.0.",
+      "resolve_by": "2026-06-27",
+      "status": "resolved",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-06-21T12:08:56Z",
+        "auditor": "twin",
+        "note": "Searched 2026-06-21 sca.isr.umich.edu, Investing.com, FRED UMCSENT; only the 2026-06 preliminary 48.9 reading is published as of this run. Final not yet released. No liquid prediction market identified.",
+        "queries": [],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [
+        {
+          "date": "2026-06-25",
+          "direction": "supports",
+          "note": "U-Michigan Consumer Sentiment preliminary June 2026 reading printed 48.9 (up from May all-time low of 44.8 and above market expectations of 46). Preliminary 48.9 > 48.0 threshold; final release scheduled tomorrow 2026-06-26. Bearing supports but not decisive until final.",
+          "source_url": "https://www.advisorperspectives.com/dshort/updates/2026/06/12/consumer-sentiment-improves-in-june-but-remains-bleak"
+        }
+      ],
+      "resolution": {
+        "date": "2026-06-27T12:08:36Z",
+        "outcome": "confirmed",
+        "note": "University of Michigan Surveys of Consumers final Index of Consumer Sentiment for June 2026 printed 49.5 (above the 48.0 threshold; up from May 44.8 record low and final preliminary 48.9). Year-ahead inflation expectations 4.6 pct (down from 4.8), long-run 3.3 pct (down from 3.4). Released 2026-06-26. Sources: https://www.indexbox.io/blog/us-consumer-sentiment-rises-in-june-2026-on-lower-gas-prices-but-remains-near-historic-lows/ ; https://qz.com/university-michigan-consumer-sentiment-june-2026-062626"
+      }
+    },
+    {
+      "id": "claim-20260622-001",
+      "date": "2026-06-22",
+      "registered_at": "2026-06-22T12:14:38Z",
+      "claim": "S&P Cotality (formerly CoreLogic) Case-Shiller 20-City Composite Home Price Index for April 2026 (release scheduled 2026-06-30 at 9:00 AM ET) prints year-over-year change at or below 0.5 percent (a sharper deceleration than March 2026's 0.8 percent reading).",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "The S&P Cotality Case-Shiller 20-City Composite Home Price Index (FRED series SPCS20RNSA / SPCS20RSA) is a published monthly US home-price benchmark. March 2026 reading of +0.8 percent y/y was the weakest annual gain since July 2023; April reading is the next scheduled release on 2026-06-30 per S&P Dow Jones Indices calendar.",
+      "withdrawal": null,
+      "confidence": 0.55,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.4,
+      "frameworks": [],
+      "update_test": "By 2026-07-01 23:59 UTC, S&P Dow Jones Indices publishes the April 2026 20-City Composite (NSA or SA) reading. Confirmed if y/y change <= 0.5 percent; disconfirmed if y/y change > 0.5 percent. Read from the spglobal.com index page or the official press release.",
+      "resolve_by": "2026-07-01",
+      "status": "resolved",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-06-22T12:14:38Z",
+        "auditor": "twin",
+        "note": "Searched 2026-06-22 for 'Case-Shiller April 2026 release', 'S&P Cotality 20-City April', 'home price index April 2026 release' on 2026-06-22. April 2026 reading has not been released; March 2026 reading is the latest public datapoint (+0.8 percent y/y per PR Newswire 2026-05-26).",
+        "queries": [],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": {
+        "date": "2026-07-01T12:09:03Z",
+        "outcome": "disconfirmed",
+        "note": "S&P Cotality Case-Shiller 20-City Composite Home Price Index for April 2026 printed year-over-year change of 1.1 percent (annual gain), above the 0.5 percent threshold. Registered fact: https://press.spglobal.com/2026-06-30-S-P-Cotality-Case-Shiller-Index-Reports-Annual-Gain-in-April-2026 and https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20260630-1484142/1484142_cshomeprice-release-0630.pdf, released 2026-06-30. Twin said 55 percent for at-or-below 0.5 percent y/y; outcome disconfirmed."
+      }
+    },
+    {
+      "id": "claim-20260627-001",
+      "date": "2026-06-27",
+      "registered_at": "2026-06-27T12:11:02Z",
+      "claim": "University of Michigan Consumer Sentiment Index PRELIMINARY July 2026 release (scheduled 2026-07-18) prints at or above 50.0 (headline ICS, preliminary).",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "U Michigan Surveys of Consumers final June 2026 release printed 49.5 (per IndexBox, Qz coverage 2026-06-26); Index of Consumer Expectations sub-index already at 50.7. Next scheduled release is the preliminary July 2026 report on or around 2026-07-18 (third Friday of month per sca.isr.umich.edu cadence). Easing gas prices and softening Iran-conflict overhang are tailwinds; high prices and elevated 4.6 pct one-year inflation expectation are headwinds.",
+      "withdrawal": null,
+      "confidence": 0.58,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.5,
+      "frameworks": [],
+      "update_test": "Read U Michigan Surveys of Consumers preliminary July 2026 report at sca.isr.umich.edu/reports.html dated on or before 2026-07-18. Confirmed if headline Index of Consumer Sentiment preliminary value is at or above 50.0; disconfirmed if below 50.0.",
+      "resolve_by": "2026-07-19",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-06-27T12:11:02Z",
+        "auditor": "twin",
+        "note": "Searched 2026-06-27 sca.isr.umich.edu, FRED UMCSENT, Investing.com, Reuters, Trading Economics; only June 2026 final 49.5 is published. Preliminary July report not yet released. No liquid prediction market identified for the threshold.",
+        "queries": [],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260627-002",
+      "date": "2026-06-27",
+      "registered_at": "2026-06-27T12:11:10Z",
+      "claim": "US Census Advance Monthly Retail Sales for June 2026 (release scheduled 2026-07-16 at 8:30 AM ET) prints month-over-month change in headline total retail and food services sales (seasonally adjusted) BELOW 0.5 percent (i.e., a notable deceleration from May 2026's 0.9 percent MoM).",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "US Census MARTS reported May 2026 Advance Retail and Food Services Sales at 763.7 billion USD, up 0.9 percent MoM SA (per Census release 2026-06-17, NRF press release). May print was an upside surprise vs trend; June reading is the next scheduled MARTS release on 2026-07-16.",
+      "withdrawal": null,
+      "confidence": 0.62,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.55,
+      "frameworks": [],
+      "update_test": "By 2026-07-17 23:59 UTC, US Census Bureau publishes the Advance Monthly Sales for Retail and Food Services for June 2026 on census.gov/retail. Confirmed if headline total retail and food services MoM SA percent change is less than 0.5 percent; disconfirmed if 0.5 percent or higher.",
+      "resolve_by": "2026-07-17",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-06-27T12:11:10Z",
+        "auditor": "twin",
+        "note": "Searched 2026-06-27 census.gov/retail/sales.html, FRED RSAFS, Investing.com, Trading Economics, NRF.com; June 2026 reading has not been released. May 2026 release dated 2026-06-17 (+0.9 percent MoM) is the latest public datapoint. No liquid prediction market identified for the threshold.",
+        "queries": [],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260701-001",
+      "date": "2026-07-01",
+      "registered_at": "2026-07-01T12:16:00Z",
+      "claim": "By 2026-08-31, South Africa's Department of Communications and Digital Technologies publishes a revised or finalized draft National AI Policy that retains an AI Insurance Superfund provision (mandatory or opt-in pooled-liability instrument for AI deployers).",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "in",
+      "grounding": "South Africa Communications Minister Solly Malatsi unveiled a draft National AI Policy in mid-2026 that blends ubuntu philosophy with an AI Insurance Superfund proposal (per Daily Maverick 2026-04-14 and Diplo 2026 summary). Consultation window is open through mid-2026; a revised or finalized draft is expected by end-August.",
+      "withdrawal": null,
+      "confidence": 0.45,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.45,
+      "frameworks": [],
+      "update_test": "By 2026-08-31 23:59 UTC, an official DCDT publication (gazette, ministerial statement, or press release on dcdt.gov.za or gcis.gov.za) presents a revised or finalized National AI Policy document. Confirmed if that document contains a clause or annex describing an AI Insurance Superfund or an equivalent pooled-liability instrument for AI deployers, however named. Disconfirmed if the document omits or replaces the Superfund clause with a standard conformity-assessment regime, or if no revised or finalized document appears by the deadline.",
+      "resolve_by": "2026-08-31",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-07-01T12:16:00Z",
+        "auditor": "twin",
+        "note": "Searched 2026-07-01 for 'South Africa National AI Policy draft Superfund revised', 'DCDT Malatsi AI policy gazette July 2026', 'South Africa AI Insurance Superfund final'; only the earlier draft coverage (Daily Maverick 2026-04-14, Diplo 2026) is public. No revised or finalized version has been published as of registration.",
+        "queries": [
+          "South Africa AI Insurance Superfund final",
+          "DCDT National AI Policy gazette 2026"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [
+        {
+          "id": "claim-20260616-003",
+          "relation": "sharpens",
+          "note": "Superfund-clause survival test is a sharper structural test of the SA National AI Policy draft (claim-20260616-003) than mere publication - the Superfund is the load-bearing novel mechanism; whether it survives consultation is the real signal about SA's regulatory model divergence.",
+          "date": "2026-07-01T12:17:12Z"
+        },
+        {
+          "id": "claim-20260610-016",
+          "relation": "opposes",
+          "note": "SA adopting a Superfund model rather than citing the EU AI Act omnibus cuts against the twin's 58 percent floor on non-EU jurisdictions citing the EU 2026 omnibus by end-2027.",
+          "date": "2026-07-01T12:17:12Z"
+        }
+      ],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260701-002",
+      "date": "2026-07-01",
+      "registered_at": "2026-07-01T12:16:10Z",
+      "claim": "BLS nonfarm business labor productivity Q2 2026 (release scheduled 2026-08-06) prints year-over-year productivity growth at or above 2.5 percent.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "BLS releases quarterly Productivity and Costs report. Q1 2026 preliminary reading printed nonfarm business labor productivity y/y growth well below 2.5 percent; recent quarters have hovered near 1.7-2.1 percent y/y. Q2 2026 release is scheduled 2026-08-06 per BLS schedule. Threshold of 2.5 percent tests whether the CFO-survey optimism (NBER w34984, mean 3.0 percent expected AI-driven labor productivity growth for 2026) has begun to show up in aggregate BLS data.",
+      "withdrawal": null,
+      "confidence": 0.3,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.3,
+      "frameworks": [],
+      "update_test": "On 2026-08-06, BLS publishes Productivity and Costs Q2 2026 report at bls.gov/news.release/prod2.nr0.htm. Read the headline year-over-year nonfarm business sector labor productivity growth rate. Confirmed if that rate is at or above 2.5 percent; disconfirmed if below 2.5 percent.",
+      "resolve_by": "2026-08-06",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-07-01T12:16:10Z",
+        "auditor": "twin",
+        "note": "Searched 2026-07-01 for 'BLS Q2 2026 nonfarm productivity release', 'labor productivity 2026 Q2 preliminary'; Q2 2026 release has not occurred (scheduled 2026-08-06). Q1 2026 headline y/y productivity was 1.9 percent per BLS Q1 release.",
+        "queries": [],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [
+        {
+          "id": "claim-20260610-001",
+          "relation": "probes",
+          "note": "BLS Q2 2026 nonfarm productivity y/y at or above 2.5 percent would be the first aggregate reading confirming AI-driven productivity gains, disconfirming the bruno 72 percent floor on no-clear-gains through end-2026.",
+          "date": "2026-07-01T12:17:12Z"
+        }
+      ],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260701-003",
+      "date": "2026-07-01",
+      "registered_at": "2026-07-01T12:16:22Z",
+      "claim": "By 2026-07-10, an official AfCFTA Secretariat communique or a Kenyan, Moroccan, or Nigerian government press release publicly confirms the formal establishment of an AfCFTA ADAPT Country Implementation Forum in at least one of the three pilot countries (Kenya, Morocco, Nigeria).",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "in",
+      "grounding": "AfCFTA Digital Trade Forum runs Jul 1-3 2026 in Lagos, closing AfCFTA Week alongside the Council of Ministers meeting that concluded 2026-06-30. The by-end-June 2026 target for CIF establishment in the three pilot countries has been publicly missed (claim-20260619-004 evidence log has 10 against-entries as of 2026-07-01). The Digital Trade Forum is the next scheduled public window for AfCFTA leadership (Wamkele Mene) to announce a formal establishment. Probability estimate: moderate but below coin-flip - the political incentive is high but the record of missed CIF milestones cuts the other way.",
+      "withdrawal": null,
+      "confidence": 0.35,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.35,
+      "frameworks": [],
+      "update_test": "By 2026-07-10 23:59 UTC, an identifiable public announcement (AfCFTA Secretariat communique on au-afcfta.org, Kenyan / Moroccan / Nigerian government press release, IOTA Foundation blog, Tony Blair Institute press release, or WEF announcement) confirms the formal establishment of an ADAPT Country Implementation Forum in at least one of Kenya, Morocco, or Nigeria. Confirmed if any one country has such an announcement on or before the deadline; disconfirmed if none.",
+      "resolve_by": "2026-07-10",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-07-01T12:16:22Z",
+        "auditor": "twin",
+        "note": "Searched 2026-07-01 for post-Council-of-Ministers announcements of formally established ADAPT Country Implementation Forums in Kenya, Morocco, or Nigeria; the most recent public artifact remains the 2026-05-19 Accra selection announcement. No formal Forum has been publicly established as of registration.",
+        "queries": [],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [
+        {
+          "id": "claim-20260619-004",
+          "relation": "sharpens",
+          "note": "Ten-day forward test after the missed 2026-06-30 CIF deadline; asks whether the Digital Trade Forum window Jul 1-3 delivers the delayed CIF establishment announcement.",
+          "date": "2026-07-01T12:17:21Z"
+        },
+        {
+          "id": "claim-20260612-003",
+          "relation": "sharpens",
+          "note": "Sharper near-term test than the all-three-by-2026-07-15 claim; if any one CIF is confirmed by Jul 10, the mid-July all-three deadline is closer to reachable.",
+          "date": "2026-07-01T12:17:21Z"
+        }
+      ],
+      "evidence": [
+        {
+          "date": "2026-07-02",
+          "direction": "against",
+          "note": "Sister claim -004 deadline (2026-06-30) missed with no announcement located; -003 due 2026-07-10 remains open but early evidence points against. See -004 evidence entry.",
+          "source_url": "https://blog.iota.org/first-adapt-implementations/"
+        }
+      ],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260701-004",
+      "date": "2026-07-01",
+      "registered_at": "2026-07-01T12:16:32Z",
+      "claim": "China National Bureau of Statistics Manufacturing PMI for July 2026 (scheduled release 2026-07-31) prints at or above 50.0.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "China NBS publishes monthly Manufacturing PMI on the last calendar day of each month; the July 2026 reading is scheduled for release 2026-07-31. June 2026 reading printed 50.3, up from 50.0 in May, boosted by strong high-tech manufacturing exports linked to AI demand. New orders 51.2 (up from 49.9), foreign orders 50.1 (up from 48.6). Employment sub-index remained subdued at 48.4. The series has hovered right at the 50 expansion-contraction threshold most of 2026. Raw confidence 55 percent, corrected to 50 percent per calibration 2026-07-01 bucket 50-59 correction -0.05.",
+      "withdrawal": null,
+      "confidence": 0.5,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.55,
+      "frameworks": [],
+      "update_test": "On 2026-07-31, the China National Bureau of Statistics official July 2026 Manufacturing PMI release prints a headline value of 50.0 or higher. Confirmed at or above 50.0, disconfirmed below 50.0.",
+      "resolve_by": "2026-08-02",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-07-01T12:16:32Z",
+        "auditor": "twin",
+        "note": "Searched 2026-07-01 for 'China NBS Manufacturing PMI July 2026 release'; July 2026 reading has not occurred (scheduled 2026-07-31). June 2026 latest is 50.3. No liquid prediction market identified.",
+        "queries": [],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260701-005",
+      "date": "2026-07-01",
+      "registered_at": "2026-07-01T12:16:59Z",
+      "claim": "By 2026-08-31, Kasi Cloud publishes an official announcement (press release, LinkedIn post, or media interview by named executive) confirming a signed anchor-tenant contract or a published utilization figure for the Lekki 100MW AI campus.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "in",
+      "grounding": "Kasi Cloud announced a 100MW AI campus in Lekki (Lagos, Nigeria) with 5.5MW partial-online targeted for Q2 2026. Buildout announcements at this scale in Nigerian data centers typically precede tenant announcements by 3-9 months. The Absorption Stack Model predicts that the physical-layer-clear announcement (Q2 2026 5.5MW online) precedes cultural-layer-clear signal (named tenant load) by at least one quarter. Q3 2026 (Jul-Sep) is the earliest natural window for an anchor-tenant announcement.",
+      "withdrawal": null,
+      "confidence": 0.35,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.35,
+      "frameworks": [],
+      "update_test": "By 2026-08-31 23:59 UTC, an identifiable public source (Kasi Cloud press release, LinkedIn post by Kasi Cloud CEO or CTO, TechCabal / BusinessDay Nigeria / Techpoint interview, or a named-partner joint announcement) states either (a) a signed anchor-tenant contract with any customer for the Lekki campus or (b) a published utilization figure (percent of 5.5MW committed or of the 100MW planned). Confirmed if either (a) or (b) is public; disconfirmed if neither has surfaced by the deadline.",
+      "resolve_by": "2026-08-31",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-07-01T12:16:59Z",
+        "auditor": "twin",
+        "note": "Searched 2026-07-01 for 'Kasi Cloud Lekki tenant utilization', 'Kasi Cloud anchor customer Nigeria data center', 'Kasi Cloud Q2 2026 5.5MW online'; only the campus-announcement coverage from June 2026 is public. No tenant or utilization figure has been announced as of registration.",
+        "queries": [],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [
+        {
+          "id": "claim-20260610-013",
+          "relation": "probes",
+          "note": "Anchor-tenant or utilization figure for Kasi Cloud Lekki is the earliest observable signal that the campus is not merely built but is absorbing load - a positive resolution supports the twin 70 percent floor that at least one named 2026 African AI infrastructure project reaches material-utility milestones; a null-signal by end-August erodes it.",
+          "date": "2026-07-01T12:17:21Z"
+        },
+        {
+          "id": "claim-20260610-014",
+          "relation": "shares-system",
+          "note": "Both read the African data-centre buildout system; Kasi tenant contract is a nearer-term signal that feeds the 2027 cumulative powered MW read.",
+          "date": "2026-07-03T04:32:28Z"
+        }
+      ],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260702-001",
+      "date": "2026-07-02",
+      "registered_at": "2026-07-02T12:13:17Z",
+      "claim": "US BLS Consumer Price Index for June 2026 headline CPI-U 12-month percent change (release scheduled 2026-07-14 at 8:30 ET on bls.gov) prints at or below 4.0 percent.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "US Bureau of Labor Statistics CPI release schedule 2026-07-14, following the May 2026 print of 4.17 percent y/y (released 2026-06-10).",
+      "withdrawal": null,
+      "confidence": 0.6,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.5,
+      "frameworks": [],
+      "update_test": "On 2026-07-14, the BLS Consumer Price Index News Release for June 2026 published on bls.gov reports the headline All items CPI-U 12-month percent change (not seasonally adjusted). Confirmed if the reported y/y print is at or below 4.0 percent; disconfirmed if above 4.0 percent.",
+      "resolve_by": "2026-07-15",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-07-02T12:13:17Z",
+        "auditor": "twin",
+        "note": "Searched 2026-07-02 for 'US BLS CPI June 2026 release forecast'; May 2026 print 4.17 percent y/y is the most recent confirmed reading; June 2026 release scheduled 2026-07-14 with no data yet published. Nothing decisive on the June print exists as of 2026-07-02.",
+        "queries": [
+          "US BLS CPI June 2026 release July 14 headline inflation",
+          "CPI June 2026 forecast"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260702-002",
+      "date": "2026-07-02",
+      "registered_at": "2026-07-02T12:13:26Z",
+      "claim": "US National Association of Realtors Existing-Home Sales for June 2026 (release scheduled 2026-07-23 at 10:00 ET) prints total existing-home sales seasonally-adjusted annualized rate (SAAR) at or above 4.0 million.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "NAR Existing-Home Sales release schedule 2026-07-23, following the May 2026 print of 4.17 million SAAR (released 2026-06-24, up 3.2 percent from April).",
+      "withdrawal": null,
+      "confidence": 0.6,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.55,
+      "frameworks": [],
+      "update_test": "On 2026-07-23, the NAR Existing-Home Sales News Release for June 2026 published on nar.realtor reports the headline total existing-home sales seasonally-adjusted annualized rate. Confirmed if the SAAR is at or above 4.0 million; disconfirmed if below 4.0 million.",
+      "resolve_by": "2026-07-24",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-07-02T12:13:26Z",
+        "auditor": "twin",
+        "note": "Searched 2026-07-02 for 'NAR existing home sales June 2026 release'; May 2026 SAAR 4.17M is the most recent confirmed print; June 2026 report scheduled for release 2026-07-23 with no data yet available.",
+        "queries": [
+          "NAR existing home sales June 2026 forecast release July 23",
+          "existing home sales June 2026"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
       "evidence": [],
       "resolution": null
     }
@@ -2009,10 +2910,10 @@
   ],
   "source": {
     "repo": "chiKeka/ledger",
-    "commit": "551c153243e3e7a2b8550cb728dd99f12165e454",
-    "commit_short": "551c153",
-    "committed_at": "2026-06-20T01:44:21Z",
-    "fetched_at": "2026-06-20T14:10:05.133Z",
-    "url": "https://github.com/chiKeka/ledger/commit/551c153243e3e7a2b8550cb728dd99f12165e454"
+    "commit": "4a97ea825c39a0dbd0c30a775f61d4867ddaea29",
+    "commit_short": "4a97ea8",
+    "committed_at": "2026-07-03",
+    "fetched_at": "2026-07-03T04:57:25.187Z",
+    "url": "https://github.com/chiKeka/ledger/commit/4a97ea825c39a0dbd0c30a775f61d4867ddaea29"
   }
 }
