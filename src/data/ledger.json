@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03",
+  "updated": "2026-07-06",
   "claims": [
     {
       "id": "claim-20260610-001",
@@ -994,6 +994,12 @@
           "direction": "against",
           "note": "Today is 2026-06-14, 16 days before the 2026-07-15 deadline; no public announcement of Country Implementation Forum establishment from Kenya, Morocco, or Nigeria has surfaced in scans. AfCFTA Secretariat 2026-05-19 Accra communique remains the most recent operational milestone.",
           "source_url": "https://idtechwire.com/kenya-morocco-and-nigeria-selected-for-adapt-african-digital-trade-pilots/"
+        },
+        {
+          "date": "2026-07-03",
+          "direction": "against",
+          "note": "AfCFTA ADAPT initiative announced Accra 2026-05-19 with Country Implementation Forums slated for end of June, but as of 2026-07-03 no clean dated public establishment announcement identified for any of Kenya, Morocco, or Nigeria. If the pattern holds through 2026-07-15 the claim disconfirms. Deadline 12 days out.",
+          "source_url": "https://tech.africa/afcfta-adapt-kenya-morocco-nigeria/"
         }
       ],
       "resolution": null
@@ -1408,6 +1414,18 @@
           "direction": "against",
           "note": "South Africa DCDT withdrew the draft National AI Policy on 2026-04-26 after AI-hallucinated citations scandal. As of 2026-06-27, the DCDT has provided no public timeline for a revised draft and the consultation must restart substantial portions. Eight weeks to the 2026-08-16 claim deadline with no revised draft in public circulation; trajectory bearing against.",
           "source_url": "https://www.cnbcafrica.com/2026/south-africa-pulls-ai-policy-after-hallucinated-citations-expose-drafting-scandal"
+        },
+        {
+          "date": "2026-07-04",
+          "direction": "against",
+          "note": "CNBC Africa reports the revised SA National AI Policy is now expected to go to Cabinet by November 2026 for approval before public release in January 2027. That puts the revised draft publication after the 2026-08-15 deadline in this claim's update test - direct timeline slippage evidence, though not yet a formal disconfirmation because the DCDT could still gazette a revised draft ahead of Cabinet approval.",
+          "source_url": "https://www.cnbcafrica.com/2026/south-africa-pulls-ai-policy-after-hallucinated-citations-expose-drafting-scandal"
+        },
+        {
+          "date": "2026-07-05",
+          "direction": "against",
+          "note": "CNBC Africa 2026-07-04: SA National AI Policy revised draft now expected at Cabinet November 2026, public release January 2027. Publicly-reported timeline overshoots the 2026-08-16 deadline by ~3 months. Signal: data/discovery/signals/2026-07-04-sa-ai-policy-cabinet-november-slippage.md.",
+          "source_url": "https://www.cnbcafrica.com/2026/south-africa-pulls-ai-policy-after-hallucinated-citations-expose-drafting-scandal"
         }
       ],
       "resolution": null
@@ -1429,7 +1447,7 @@
       "frameworks": [],
       "update_test": "BLS Employment Situation press release for June 2026 published on bls.gov on or about 2026-07-03 at 8:30 ET: confirmed if the reported headline unemployment rate (seasonally adjusted) is at or below 4.4 percent; disconfirmed if the reported headline unemployment rate is above 4.4 percent.",
       "resolve_by": "2026-07-04",
-      "status": "open",
+      "status": "resolved",
       "validity": null,
       "prereg_audit": {
         "date": "2026-06-17T12:14:30Z",
@@ -1444,7 +1462,11 @@
       "corrections": [],
       "related_to": [],
       "evidence": [],
-      "resolution": null
+      "resolution": {
+        "date": "2026-07-03T12:07:07Z",
+        "outcome": "confirmed",
+        "note": "BLS Employment Situation June 2026 (released 2026-07-02, moved one day early due to July 4 holiday): headline unemployment rate 4.2 percent (seasonally adjusted). 4.2 <= 4.4 confirms. Source: https://www.bls.gov/news.release/empsit.nr0.htm ; secondary https://www.cnbc.com/2026/07/02/jobs-report-june-2026-.html"
+      }
     },
     {
       "id": "claim-20260617-002",
@@ -1463,7 +1485,7 @@
       "frameworks": [],
       "update_test": "BLS Employment Situation press release for June 2026 published on bls.gov on or about 2026-07-03 at 8:30 ET: confirmed if the reported total nonfarm payroll change (seasonally adjusted, initial release figure, not later revisions) is at or above +100,000; disconfirmed if the figure is below +100,000.",
       "resolve_by": "2026-07-04",
-      "status": "open",
+      "status": "resolved",
       "validity": null,
       "prereg_audit": {
         "date": "2026-06-17T12:14:36Z",
@@ -1477,7 +1499,11 @@
       "corrections": [],
       "related_to": [],
       "evidence": [],
-      "resolution": null
+      "resolution": {
+        "date": "2026-07-03T12:07:12Z",
+        "outcome": "disconfirmed",
+        "note": "BLS Employment Situation June 2026 (released 2026-07-02): total nonfarm payroll change +57,000 (seasonally adjusted, initial release). 57k < 100k disconfirms. Source: https://www.bls.gov/news.release/empsit.nr0.htm ; secondary https://www.cnbc.com/2026/07/02/jobs-report-june-2026-.html"
+      }
     },
     {
       "id": "claim-20260617-003",
@@ -1808,7 +1834,7 @@
       "frameworks": [],
       "update_test": "On 2026-07-03 (one-day early due to Independence Day), the US Department of Labor weekly unemployment insurance claims release reports seasonally adjusted initial claims of fewer than 240,000 for the week ending 2026-06-27. Confirmed if printed value is below 240,000, disconfirmed if at or above 240,000.",
       "resolve_by": "2026-07-07",
-      "status": "open",
+      "status": "resolved",
       "validity": null,
       "prereg_audit": {
         "date": "2026-06-19T12:11:11Z",
@@ -1823,7 +1849,11 @@
       "corrections": [],
       "related_to": [],
       "evidence": [],
-      "resolution": null
+      "resolution": {
+        "date": "2026-07-03T12:07:14Z",
+        "outcome": "confirmed",
+        "note": "DOL weekly initial unemployment insurance claims for the week ending 2026-06-27 (released 2026-07-02, one day early due to July 4 holiday): seasonally adjusted initial claims 215,000, down 1,000 from prior week's revised level. 215k < 240k confirms. Source: https://www.dol.gov/ui/data.pdf"
+      }
     },
     {
       "id": "claim-20260619-004",
@@ -2352,7 +2382,20 @@
           "date": "2026-07-01T12:17:12Z"
         }
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "date": "2026-07-04",
+          "direction": "against",
+          "note": "CNBC Africa reports the revised SA National AI Policy is now expected to go to Cabinet by November 2026 for approval before public release in January 2027 - past this claim's 2026-08-31 update-test deadline. The Superfund clause survival question becomes moot if no revised policy exists by end-August. Timeline slippage documented; not disconfirmation yet because DCDT could still gazette a draft ahead of Cabinet.",
+          "source_url": "https://www.cnbcafrica.com/2026/south-africa-pulls-ai-policy-after-hallucinated-citations-expose-drafting-scandal"
+        },
+        {
+          "date": "2026-07-05",
+          "direction": "against",
+          "note": "CNBC Africa 2026-07-04: SA National AI Policy revised or finalized draft not expected before Cabinet November 2026, public release January 2027. Publicly-reported timeline overshoots the 2026-08-31 deadline by ~2 months. Signal: data/discovery/signals/2026-07-04-sa-ai-policy-cabinet-november-slippage.md.",
+          "source_url": "https://www.cnbcafrica.com/2026/south-africa-pulls-ai-policy-after-hallucinated-citations-expose-drafting-scandal"
+        }
+      ],
       "resolution": null
     },
     {
@@ -2439,6 +2482,18 @@
           "date": "2026-07-02",
           "direction": "against",
           "note": "Sister claim -004 deadline (2026-06-30) missed with no announcement located; -003 due 2026-07-10 remains open but early evidence points against. See -004 evidence entry.",
+          "source_url": "https://blog.iota.org/first-adapt-implementations/"
+        },
+        {
+          "date": "2026-07-03",
+          "direction": "supports",
+          "note": "AfCFTA ADAPT initiative announced Accra 2026-05-19: Kenya, Morocco, Nigeria named as first three implementers. Sources describe Country Implementation Forum establishment as an early-phase milestone but coverage as of 2026-07-03 does not identify a dated formal establishment announcement for any of the three pilots. Ambiguous; wait for Sunday Reckoning.",
+          "source_url": "https://tech.africa/afcfta-adapt-kenya-morocco-nigeria/"
+        },
+        {
+          "date": "2026-07-04",
+          "direction": "against",
+          "note": "AfCFTA Digital Trade Forum ran Jul 1-3 in Lagos as the primary public window for a formal CIF establishment; no AfCFTA Secretariat communique on au-afcfta.org, no Kenyan/Moroccan/Nigerian government press release, and no IOTA/Tony Blair Institute/WEF post has surfaced a formal Country Implementation Forum establishment for any of the three pilots. Six days remain before the 2026-07-10 deadline. Evidence against but not yet disconfirming - a late release before deadline is still possible.",
           "source_url": "https://blog.iota.org/first-adapt-implementations/"
         }
       ],
@@ -2584,6 +2639,308 @@
       },
       "corrections": [],
       "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260703-001",
+      "date": "2026-07-03",
+      "registered_at": "2026-07-03T12:14:00Z",
+      "claim": "By 2026-08-31, at least one of Meta, Apple, or Alphabet publicly announces a forward-deployed AI implementation unit with a committed capital budget of at least USD 500 million or at least 2,000 forward-deployed engineers, structurally comparable to Microsoft Frontier Company (2026-07-02, USD 2.5 billion + 6,000 engineers) or Amazon's 2026-06-30 USD 1 billion analog.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "in",
+      "grounding": "Meta, Apple, and Alphabet each have existing enterprise AI product lines and consulting-adjacent partner networks; the Frontier Company / Amazon 2026 announcements are on the public record and the shape has now been adopted by four of the six dominant frontier providers (Microsoft, Amazon, OpenAI, Anthropic).",
+      "withdrawal": null,
+      "confidence": 0.6,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.5,
+      "frameworks": [],
+      "update_test": "By 2026-08-31 23:59 UTC, a public press release, official blog post, or SEC 8-K from Meta, Apple, or Alphabet announcing a named organizational unit for forward-deployed AI implementation engineering with either (a) a stated committed capital budget of USD 500 million or more, or (b) a stated headcount target of 2,000 forward-deployed engineers or more. Confirmed on the first such announcement from any of the three; disconfirmed if none by the deadline.",
+      "resolve_by": "2026-08-31",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-07-03T12:14:00Z",
+        "auditor": "twin",
+        "note": "As of 2026-07-03 no public announcement from Meta, Apple, or Alphabet of a Frontier-Company-comparable forward-deployment unit; searched CNBC, TechCrunch, official investor relations pages 2026-07-03.",
+        "queries": [
+          "Meta forward-deployed engineers AI unit 2026",
+          "Apple AI implementation consulting July 2026",
+          "Alphabet Google AI deployment unit 2026-07"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [
+        {
+          "id": "claim-20260610-011",
+          "relation": "shares-system",
+          "note": "Big Five forward-deployed integrator arms and the AI capex guidance re-raise both read the same commitment channel: providers signaling scale by publicly booking headcount and capital.",
+          "date": "2026-07-03T12:14:45Z"
+        }
+      ],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260703-002",
+      "date": "2026-07-03",
+      "registered_at": "2026-07-03T12:14:15Z",
+      "claim": "By 2026-08-30, the European Commission AI Office publishes at least one Article 55 general-purpose AI (GPAI) guidance document, FAQ update, or interpretive note that explicitly cites by name the Independent International Scientific Panel on AI's preliminary report (released 2026-07-01).",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "in",
+      "grounding": "The Independent Scientific Panel report is public (2026-07-01), the EU AI Office begins Article 55 GPAI enforcement 2026-08-02, and Commission staff typically publish first-guidance material within the first month of enforcement start (see 2024 AI Act code-of-practice cadence). Whether the Panel report is cited by name vs. drawn on without attribution is the observable.",
+      "withdrawal": null,
+      "confidence": 0.35,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.3,
+      "frameworks": [],
+      "update_test": "By 2026-08-30 23:59 UTC, at least one document published on digital-strategy.ec.europa.eu or ai-act-service-desk.ec.europa.eu labeled as GPAI/Article 55 guidance, FAQ, or interpretive note contains an explicit textual citation naming the UN Independent International Scientific Panel on AI preliminary report of 2026-07-01. Confirmed if at least one such document exists with a named citation; disconfirmed if no such document is published or none contains a named citation.",
+      "resolve_by": "2026-08-30",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-07-03T12:14:15Z",
+        "auditor": "twin",
+        "note": "As of 2026-07-03, EU AI Office GPAI Article 55 guidance has not yet been published; enforcement powers only enter application 2026-08-02. Checked digital-strategy.ec.europa.eu and ai-act-service-desk.ec.europa.eu 2026-07-03.",
+        "queries": [
+          "EU AI Office Article 55 guidance 2026",
+          "EU Commission UN Scientific Panel AI citation",
+          "ai-act-service-desk.ec.europa.eu GPAI July 2026"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [
+        {
+          "id": "claim-20260618-005",
+          "relation": "probes",
+          "note": "AI Panel citation is one measurable observable inside the broader Article 55 GPAI guidance publication test.",
+          "date": "2026-07-03T12:14:45Z"
+        }
+      ],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260703-003",
+      "date": "2026-07-03",
+      "registered_at": "2026-07-03T12:14:23Z",
+      "claim": "The Institute for Supply Management Manufacturing PMI headline composite index for July 2026 (release scheduled 2026-08-01 at 10:00 ET on ismworld.org) prints at or above 50.0 (signaling expansion).",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "ISM Manufacturing PMI has been running near the 50 threshold in recent monthly prints (Q2 2026 range typically 48-51 based on standard economic tracking); July release is on a fixed monthly calendar.",
+      "withdrawal": null,
+      "confidence": 0.45,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.5,
+      "frameworks": [],
+      "update_test": "ISM Manufacturing PMI July 2026 report published 2026-08-01 approximately 10:00 ET on ismworld.org: confirmed if the headline composite index prints at or above 50.0; disconfirmed if it prints below 50.0.",
+      "resolve_by": "2026-08-05",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-07-03T12:14:23Z",
+        "auditor": "twin",
+        "note": "As of 2026-07-03, July 2026 ISM Manufacturing PMI report has not been released (release scheduled 2026-08-01). June 2026 print, if available, does not decide July. Checked ismworld.org 2026-07-03.",
+        "queries": [
+          "ISM Manufacturing PMI July 2026 release",
+          "ISM Manufacturing PMI June 2026 preview"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260703-004",
+      "date": "2026-07-03",
+      "registered_at": "2026-07-03T12:14:32Z",
+      "claim": "The University of Michigan Consumer Sentiment Index FINAL July 2026 release (scheduled 2026-07-25 at 10:00 ET) prints at a value LOWER than the July 2026 PRELIMINARY release (scheduled 2026-07-18 at 10:00 ET).",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "Michigan Consumer Sentiment publishes a preliminary and a final print each month on a fixed calendar; historically the final can revise up or down against the preliminary, with recent 2026 monthly revisions running slightly downward on net.",
+      "withdrawal": null,
+      "confidence": 0.42,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.5,
+      "frameworks": [],
+      "update_test": "Michigan Consumer Sentiment Index FINAL July 2026 release published 2026-07-25 approximately 10:00 ET at data.sca.isr.umich.edu (or Bloomberg/Reuters mirror). Confirmed if the reported FINAL headline Sentiment index value is strictly less than the PRELIMINARY July 2026 headline value; disconfirmed if the FINAL is greater than or equal to the PRELIMINARY.",
+      "resolve_by": "2026-07-30",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-07-03T12:14:32Z",
+        "auditor": "twin",
+        "note": "As of 2026-07-03, neither the July 2026 preliminary (release 2026-07-18) nor the July 2026 final (release 2026-07-25) has been published. Checked data.sca.isr.umich.edu 2026-07-03.",
+        "queries": [
+          "Michigan Consumer Sentiment July 2026 preliminary",
+          "Michigan Consumer Sentiment July final release date"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260704-001",
+      "date": "2026-07-04",
+      "registered_at": "2026-07-04T12:11:38Z",
+      "claim": "By 2026-09-15, an identifiable public document (AfCFTA Secretariat announcement on au-afcfta.org, government gazette, or press release from the Ministry of Trade/Industry in Kenya, Morocco, or Nigeria) uses the specific phrase 'Country Implementation Forum' or 'CIF' as a proper name AND names either a chairperson, a member roster, or terms of reference for the AfCFTA ADAPT CIF in at least one pilot country.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "AfCFTA Secretariat named Kenya, Morocco, Nigeria as ADAPT pilots on 2026-05-19 in Accra. By-end-June 2026 CIF establishment milestone publicly missed. AfCFTA Digital Trade Forum Jul 1-3 2026 in Lagos closed without a formal CIF establishment announcement. Existing claim-20260701-003 (due 2026-07-10) and claim-20260612-003 (due 2026-07-15) currently carry against-evidence.",
+      "withdrawal": null,
+      "confidence": 0.42,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.4,
+      "frameworks": [],
+      "update_test": "By 2026-09-15 23:59 UTC, at least one identifiable public document from au-afcfta.org, a Kenyan/Moroccan/Nigerian government gazette or ministry press release page, the IOTA Foundation blog, the Tony Blair Institute press page, or a WEF release contains the phrase 'Country Implementation Forum' or 'CIF' as a proper name AND lists at least one of: chairperson, member roster, or terms of reference for the AfCFTA ADAPT CIF in Kenya, Morocco, or Nigeria. Confirmed if such a document exists on or before the deadline; disconfirmed if none.",
+      "resolve_by": "2026-09-15",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-07-04T12:11:38Z",
+        "auditor": "twin",
+        "note": "Searched 2026-07-04 across au-afcfta.org, IOTA Foundation blog, and general news (Nigerian, Kenyan, Moroccan trade press) for the phrases 'Country Implementation Forum' or 'CIF' with confirmed member/roster/chair. Nothing decisive found as of 2026-07-04.",
+        "queries": [
+          "site:au-afcfta.org 'Country Implementation Forum'",
+          "'Country Implementation Forum' AfCFTA ADAPT Nigeria Kenya Morocco July 2026 announcement establishment",
+          "AfCFTA ADAPT pilot Kenya Morocco Nigeria implementation forum July 2026 confirmation"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [
+        {
+          "id": "claim-20260701-003",
+          "relation": "probes",
+          "note": "The Sep 15 CIF-with-roster test is a stricter, later version of the Jul 10 CIF establishment test - if the Jul 10 window closes without an establishment, the Sep 15 roster-level version becomes correspondingly less likely.",
+          "date": "2026-07-04T12:11:45Z"
+        },
+        {
+          "id": "claim-20260612-003",
+          "relation": "probes",
+          "note": "The Sep 15 roster-level test probes the same AfCFTA CIF pipeline as the Jul 15 all-three-countries version, at a later checkpoint and lower bar (any one pilot country rather than all three).",
+          "date": "2026-07-04T12:11:45Z"
+        },
+        {
+          "id": "claim-20260612-003",
+          "relation": "sharpens",
+          "note": "704-001 (by 2026-09-15, one country publishes a formal document) is a more measurable near-term restatement of 612-003 (all-three publicly confirm establishment by 2026-07-15). Independently scored.",
+          "date": "2026-07-05T14:16:37Z"
+        }
+      ],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260705-001",
+      "date": "2026-07-05",
+      "registered_at": "2026-07-05T14:15:42Z",
+      "claim": "By 2029-12-31, a named public consumer survey (Pew Research Center, Deloitte AI State of Play, Anthropic Economic Index, McKinsey State of AI, or equivalent recognised methodology) reports that at least 15% of respondents who use large language models at least weekly primarily use a locally-hosted model (Ollama, LM Studio, Apple Intelligence on-device, or a vendor-labeled fully-on-device runtime) rather than a cloud service for their most-frequent daily task.",
+      "committed_by": "twin",
+      "tier": "structural",
+      "frame": "out",
+      "grounding": "Ollama installer telemetry (~5M active devices reported publicly mid-2026); Apple Intelligence on-device shipping across iPhone 16/M-series Macs; open frontier releases (GLM-5.2 mid-June 2026, Meta Llama 4, Mistral) closing the frontier gap within months of release; Pew Research 'AI in Daily Life' April 2026 reports ~3-5% local-only use among daily LLM users.",
+      "withdrawal": null,
+      "confidence": 0.4,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": "Base rate for consumer-tech transition hitting a named 15% share within 3.5 years is roughly 0.30 (mobile app categories, cloud storage adoption). Twin sets 0.40 raw, above base rate, reflecting the rapid open-frontier trajectory (GLM-5.2 within-months gap) and shipped on-device runtimes but conditioning on the historical pattern that decentralization narratives tend to lose to centralized ecosystems in the economics layer (record industry, web platforms). Calibration.json version is None; 40-49 bucket carries a correction of +0.547 but with n=3 all-confirmed - treated as insufficient data, correction NOT applied.",
+      "base_rate": 0.3,
+      "frameworks": [],
+      "update_test": "By 2029-12-31, a named public consumer survey (Pew, Deloitte, Anthropic Economic Index, McKinsey, or equivalent) publishes a report showing >=15% primary-use local-model share among frequent-LLM-users, with methodology (sample size, definition of 'primary use', on-device criterion) named. Confirmed on publication meeting the threshold; disconfirmed if no such report by deadline.",
+      "resolve_by": "2029-12-31",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-07-05T14:15:42Z",
+        "auditor": "twin",
+        "note": "Latest Pew AI-adoption survey (April 2026) reports ~3-5% local-only use; Anthropic Economic Index 2026 does not break out local-model share; Deloitte AI State of Play 2026 reports cloud-service dominance. Threshold of 15% is far above current measurements. Deadline 2029-12-31 does not fire until then. Update test cannot have already fired.",
+        "queries": [
+          "Pew Research 'AI in Daily Life' 2026",
+          "Deloitte AI State of Play 2026 local model",
+          "Anthropic Economic Index 2026 on-device",
+          "McKinsey State of AI 2026 local model adoption"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [
+        {
+          "id": "claim-20260610-013",
+          "relation": "shares-system",
+          "note": "Both bear on the near-term geography of AI capacity. 013 tracks whether named African AI-infrastructure projects deliver on schedule (centralization proxy); 001 tracks whether local-model consumer adoption crosses 15% by 2029 (decentralization proxy). Same underlying pull: does capacity concentrate in centralized cloud or distribute to the edge.",
+          "date": "2026-07-05T14:16:37Z"
+        }
+      ],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260705-002",
+      "date": "2026-07-05",
+      "registered_at": "2026-07-05T14:16:10Z",
+      "claim": "By 2029-12-31, no OECD member state's binding legislation or subordinate regulation grants a formal civil-society, public-interest, or citizen-representation channel (with voting or veto rights, not merely consultation) over the training or deployment decisions of general-purpose AI systems trained at or above 1e26 FLOPs (or that jurisdiction's equivalent frontier threshold). Enforceable government review boards without civil-society representation do NOT satisfy this test.",
+      "committed_by": "twin",
+      "tier": "structural",
+      "frame": "in",
+      "grounding": "EU AI Act 2026 omnibus text (final 2026-06-29 Council adoption per claim-20260610-010 resolution): creates AI Office enforcement, not civil-society representation over frontier training. US NSPM-11 (Trump EO June 2026 per signals corpus): codifies national-security review, not public-interest oversight. UK AI Bill (first reading 2026): government-only oversight. Canadian AIDA: stalled. Australia AI safety framework 2026: agency-only. Japan METI AI guidelines 2026: soft-law industry consultation.",
+      "withdrawal": null,
+      "confidence": 0.72,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": "Base rate: constitutional-scale new representation channels for a specific technology within 3.5 years across OECD is roughly 0.60 (rare - see biotech, nuclear precedents where civil-society got consultation, not veto). Twin raises to 0.72 (raw), citing Institutional Adaptation Lag: capture-race dynamics (Anthropic Fable export block, GLM-5.2 open release, NSPM-11 national-security posture) push governments toward containment-of-adversary framings rather than domestic-democracy-of-technology framings. Applying calibration.json version 2026-07-03 bucket 70-79 correction (+0.084, n=5) is possible but the correction pushes toward 0.80 which the twin considers overreach given the 3.5-year horizon leaves room for a shock catalyst (a Cambridge Analytica-scale AI incident). Held at 0.72 raw.",
+      "base_rate": 0.6,
+      "frameworks": [
+        "Institutional Adaptation Lag"
+      ],
+      "update_test": "By 2029-12-31, if any OECD member state's binding legislation or regulation creates a body with civil-society voting or veto rights over frontier-tier AI training or deployment decisions (threshold: model training compute >=1e26 FLOPs or equivalent), the claim is disconfirmed. Consultation-only bodies do not satisfy the update test. Confirmed if deadline passes with no such body enacted anywhere in the OECD.",
+      "resolve_by": "2029-12-31",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-07-05T14:16:10Z",
+        "auditor": "twin",
+        "note": "Reviewed EU AI Act omnibus (Council-adopted 2026-06-29 per resolved claim-20260610-010): AI Office structure is regulator-led, not civil-society. US NSPM-11: national-security review, not civilian. UK AI Bill (first reading 2026), Australian AI framework 2026, Japan METI 2026 all confirm agency-only or consultation-only channels. No OECD member has yet enacted a binding civil-society-voting channel over frontier training decisions. Update test fires at 2029-12-31; cannot have already fired.",
+        "queries": [
+          "OECD AI regulation civil society representation frontier",
+          "EU AI Act omnibus public interest board",
+          "US NSPM-11 civil society",
+          "UK AI Bill 2026 civil society representation",
+          "Canada AIDA 2026 status",
+          "Japan METI AI guidelines 2026 civil society"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [
+        {
+          "id": "claim-20260610-015",
+          "relation": "shares-system",
+          "note": "Both about the emerging global regulatory topology for AI. 015 asks whether jurisdictions outside the EU adopt AI-Act-lite copies; 002 asks whether ANY OECD state builds a civil-society channel over frontier training. Same underlying system: how democracies (or non-democracies) integrate frontier AI oversight. Independently scored.",
+          "date": "2026-07-05T14:16:37Z"
+        },
+        {
+          "id": "claim-20260610-004",
+          "relation": "shares-system",
+          "note": "Both about the EU AI Act omnibus regulatory posture. 004 asks whether omnibus text reduces enforceable obligations vs 2024 text; 002 asks whether the resulting oversight includes civil-society representation over frontier training. Same system - the omnibus arithmetic - measured from opposite angles.",
+          "date": "2026-07-05T14:16:37Z"
+        }
+      ],
       "evidence": [],
       "resolution": null
     }
@@ -2910,10 +3267,10 @@
   ],
   "source": {
     "repo": "chiKeka/ledger",
-    "commit": "4a97ea825c39a0dbd0c30a775f61d4867ddaea29",
-    "commit_short": "4a97ea8",
-    "committed_at": "2026-07-03",
-    "fetched_at": "2026-07-03T04:57:25.187Z",
-    "url": "https://github.com/chiKeka/ledger/commit/4a97ea825c39a0dbd0c30a775f61d4867ddaea29"
+    "commit": "766e009e3fec5d64eaf8a44954a6b0d7d0988c5d",
+    "commit_short": "766e009",
+    "committed_at": "2026-07-06",
+    "fetched_at": "2026-07-06T03:11:52.727Z",
+    "url": "https://github.com/chiKeka/ledger/commit/766e009e3fec5d64eaf8a44954a6b0d7d0988c5d"
   }
 }
