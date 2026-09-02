@@ -25,14 +25,24 @@
     "description": "The closer you are to a technology, the more you see nuance. The further away, the more you see magic or threat."
   },
   {
+    "name": "Epistemic Ledger",
+    "domain": "epistemics",
+    "description": "A mechanism for training forecasting judgment under qualitative uncertainty by making prediction accountable. Every claim enters with a stated probability that LOCKS at registration and is never edited; each carries an observable resolving test, a resolve-by deadline, and a base rate it must beat. When the world answers, the outcome is scored against the locked probability, the running tally is public, and misses stay on the board. The record recalibrates future confidence from past error - converting soft, qualitative signals (political will, institutional commitment, the hedging in a risk register) into a scored, self-correcting track record instead of letting judgment evaporate through serial rebaselining."
+  },
+  {
     "name": "Infrastructure Stack Model",
     "domain": "infrastructure_systems",
-    "description": "Physical → Digital → Cognitive infrastructure layers. Each layer produces compounding leverage effects across systems — investments at lower layers unlock capacity at higher layers. The stack is also a harmonic series with each layer oscillating at different temporal frequencies."
+    "description": "Physical → Digital → Cognitive infrastructure layers. Each layer produces compounding leverage effects across systems — investments at lower layers unlock capacity at higher layers. The stack is also a harmonic series with each layer oscillating at different temporal frequencies. Refinement (2026-07-10): the stack has a topology dimension — stratified (horizontal layer completion, the North Atlantic case) vs columnar (vertical enclave completion, the dominant African case). A layer completes horizontally only where demand topology is dispersed and financing tenor matches the layer's natural period; otherwise capability completes in vertical enclave columns, and a relational substrate (people as infrastructure, Simone 2004) carries load between the columns."
   },
   {
     "name": "Universal Basic Compute",
     "domain": "infrastructure_systems",
     "description": "Three-layer compute access model: Raw Compute, Usable Compute, Effective Compute. Framework for democratizing AI access."
+  },
+  {
+    "name": "Consensus Floor",
+    "domain": "institutional_systems",
+    "description": "A position holds or collapses as a step function of whether it clears a minimum floor: below the floor it is cheap to reverse, at or above it the position is sticky even under pressure. Bruno-ratified 2026-07-06 as DUAL-USE. (1) As a framework for thought: the minimum BREADTH of institutional/political consensus a decision must clear to become self-sustaining - thin or contested margins leave it reversible by a mild trigger, clear cross-chamber margins make it near-irreversible (e.g. the EU AI Act Digital Omnibus clearing the EP 423-57-174 with Council adoption set = the deregulation arc passing its consensus floor). (2) As a tool for the ledger: the discipline of always maintaining a floor of open STRUCTURAL claims on the public board (config#epistemic.board.floor_open_structural) so the scoreboard cannot be quietly drained to a flattering, cherry-picked record. Same structural shape - a floor below which the thing cannot be sustained - across two domains."
   },
   {
     "name": "Consent Horizon Model",
