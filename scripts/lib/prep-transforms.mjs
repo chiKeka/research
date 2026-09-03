@@ -84,7 +84,7 @@ export function validateLedger(obj) {
       if (typeof c.claim !== 'string') errors.push(`claims[${i}].claim not a string`);
       if (typeof c.confidence !== 'number' || c.confidence < 0 || c.confidence > 1)
         errors.push(`claims[${i}].confidence out of [0,1]`);
-      if (!['open', 'resolved'].includes(c.status))
+      if (!['open', 'resolved', 'withdrawn'].includes(c.status))
         errors.push(`claims[${i}].status invalid: ${c.status}`);
     });
     // Duplicate ids would collide in getStaticPaths and break the build.
