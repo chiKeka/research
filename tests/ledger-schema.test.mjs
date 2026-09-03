@@ -18,7 +18,7 @@ test('every claim has the fields the pages rely on', () => {
     assert.equal(typeof c.id, 'string');
     assert.equal(typeof c.claim, 'string');
     assert.ok(typeof c.confidence === 'number' && c.confidence >= 0 && c.confidence <= 1, `bad confidence on ${c.id}`);
-    assert.ok(['open', 'resolved'].includes(c.status), `bad status on ${c.id}`);
+    assert.ok(['open', 'resolved', 'withdrawn'].includes(c.status), `bad status on ${c.id}`);
     assert.ok(['twin', 'bruno'].includes(c.committed_by), `bad committed_by on ${c.id}`);
     assert.equal(typeof c.resolve_by, 'string');
   }
