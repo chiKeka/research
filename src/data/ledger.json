@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-02",
+  "updated": "2026-09-06",
   "claims": [
     {
       "id": "claim-20260610-001",
@@ -263,6 +263,12 @@
           "direction": "supports",
           "note": "Digital Omnibus on AI (Regulation (EU) 2026/1744) published in Official Journal 2026-07-24, entered into force 2026-07-27 - the final legal instrument for the simplification turn is now law. Annex III high-risk deferred to 2027-12-02 (16 months); Annex I embedded to 2028-08-02. Article 50 transparency obligations still apply 2026-08-02; nudifier/CSAM capability strip mandated by 2026-12. Multiple frontier-relevant articles softened or delayed; end-2026 enforceable-obligation count has been reduced by legal instrument. Waiting for Sunday Reckoning to re-verify frontier-deployer read (GPAI 2026-08-02 substrate not directly touched, so per-obligation compliance cost for frontier deployers remains, even as the perimeter shrinks).",
           "source_url": "https://digital-strategy.ec.europa.eu/en/news/ai-omnibus-enters-force"
+        },
+        {
+          "date": "2026-09-06",
+          "direction": "supports",
+          "note": "The EU AI Act Omnibus entered into force 2026-07-27 following publication in the Official Journal 2026-07-24 and Council green light 2026-06-29. High-risk AI system obligations under Article 6(2)/Annex III are postponed from 2026-08-02 to 2027-12-02; Annex I sectoral high-risk obligations postponed to 2028-08-02. The AI Office receives strengthened central-EU supervisory competence over GPAI-based systems and DSA VLOP-integrated AI. This is a live count of softened/delayed frontier-relevant articles: at minimum, the two high-risk timelines have been softened, and enforcement centralization is a structural mechanism change.",
+          "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2026/06/29/artificial-intelligence-council-gives-final-green-light-to-simplify-and-streamline-rules/"
         }
       ],
       "resolution": null
@@ -2840,7 +2846,7 @@
       "frameworks": [],
       "update_test": "Public confirmation of training start OR initial model card / interim artifact released on Domyn site, ec.europa.eu/digital-strategy news, or EuroHPC JU site between 2026-06-19 and 2026-08-31.",
       "resolve_by": "2026-08-31",
-      "status": "open",
+      "status": "resolved",
       "validity": null,
       "prereg_audit": {
         "date": "2026-06-20T13:19:26Z",
@@ -2878,7 +2884,11 @@
           "source_url": "https://slator.com/eu-open-source-ai-model-24-eu-languages/"
         }
       ],
-      "resolution": null
+      "resolution": {
+        "date": "2026-09-02T12:26:11Z",
+        "outcome": "disconfirmed",
+        "note": "Deadline passed 2026-08-31 with no public training-start announcement, initial model card, or interim artifact from EUROPA consortium on Domyn corporate channels (domyn.com), ec.europa.eu/digital-strategy, or EuroHPC JU site. 2026-09-02 T+2 verification search: only public statement remains CEO Uljan Sharka's Reuters quote 'model will ship within a year' - a forward horizon, not a training-start milestone. Twin said 45%, base 40%; both mildly overshot. https://digital-strategy.ec.europa.eu/en/news/commission-selects-europa-consortium-winner-frontier-ai-grand-challenge-project-build-european-open"
+      }
     },
     {
       "id": "claim-20260620-002",
@@ -3699,7 +3709,7 @@
       "frameworks": [],
       "update_test": "By 2026-08-31 23:59 UTC, an identifiable public source (Kasi Cloud press release, LinkedIn post by Kasi Cloud CEO or CTO, TechCabal / BusinessDay Nigeria / Techpoint interview, or a named-partner joint announcement) states either (a) a signed anchor-tenant contract with any customer for the Lekki campus or (b) a published utilization figure (percent of 5.5MW committed or of the 100MW planned). Confirmed if either (a) or (b) is public; disconfirmed if neither has surfaced by the deadline.",
       "resolve_by": "2026-08-31",
-      "status": "open",
+      "status": "resolved",
       "validity": null,
       "prereg_audit": {
         "date": "2026-07-01T12:16:59Z",
@@ -3755,7 +3765,11 @@
           "source_url": "https://www.datacenterdynamics.com/en/news/nigerian-data-center-operator-kasi-opens-first-phase-of-100mw-facility/"
         }
       ],
-      "resolution": null
+      "resolution": {
+        "date": "2026-09-02T12:26:15Z",
+        "outcome": "disconfirmed",
+        "note": "Deadline passed 2026-08-31 with no Kasi Cloud announcement of a signed anchor-tenant contract or published utilization figure on Kasi Cloud press channels, LinkedIn, TechCabal, BusinessDay Nigeria, or Techpoint. 2026-09-02 T+2 verification search confirms the May 2026 flag-off of LOS1 (100MW campus) remains the last named milestone with no commercial commitment surfacing since. Twin said 35%, base 35%; the call was AT prior, correct outcome. https://nsia.com.ng/kasi-cloud-datacenters-commissions-west-africas-first-hyperscaleready-ai-capable-data-centre-campus-in-lagos/"
+      }
     },
     {
       "id": "claim-20260702-001",
@@ -3900,7 +3914,7 @@
       "frameworks": [],
       "update_test": "By 2026-08-31 23:59 UTC, a public press release, official blog post, or SEC 8-K from Meta, Apple, or Alphabet announcing a named organizational unit for forward-deployed AI implementation engineering with either (a) a stated committed capital budget of USD 500 million or more, or (b) a stated headcount target of 2,000 forward-deployed engineers or more. Confirmed on the first such announcement from any of the three; disconfirmed if none by the deadline.",
       "resolve_by": "2026-08-31",
-      "status": "open",
+      "status": "resolved",
       "validity": null,
       "prereg_audit": {
         "date": "2026-07-03T12:14:00Z",
@@ -3954,7 +3968,11 @@
           "source_url": "https://www.forbes.com/sites/lutzfinger/2026/08/30/sam-altman-and-meta-admitted-ais-problem-fdes-are-fixing-it/"
         }
       ],
-      "resolution": null
+      "resolution": {
+        "date": "2026-09-02T12:26:24Z",
+        "outcome": "disconfirmed",
+        "note": "Deadline passed 2026-08-31 without any of Meta, Apple, or Alphabet publicly stating (a) a >=USD 500M committed capital budget or (b) a >=2,000 forward-deployed engineer headcount target for a named FDE unit. Meta Enterprise Solutions unit exists (May 2026 launch, Naomi Gleit) and embeds engineers/PMs in corporate customers, but PYMNTS/gurufocus explicitly note 'Meta has not publicly confirmed customers, staffing scale, pricing, or rollout timing.' Google announced 'hundreds' of forward-deployed engineers Q2 2026 (below 2000 threshold), no dollar figure. Apple: no announcement. 2026-09-02 T+2 verification confirms the qualitative unit exists but the quantitative gate did not fire by deadline. Twin said 60%, base 50%; overshot on the directional read (unit-shape adoption did happen for Meta) but the specific numeric gate the update test required was missed. https://www.pymnts.com/meta/2026/meta-is-coming-for-enterprise-ai/"
+      }
     },
     {
       "id": "claim-20260703-002",
@@ -4208,7 +4226,14 @@
           "date": "2026-07-05T14:16:37Z"
         }
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "date": "2026-09-04",
+          "direction": "against",
+          "note": "Search of au-afcfta.org, Kenya/Morocco/Nigeria government press pages, and named alternate sources (IOTA Foundation, Tony Blair Institute, WEF) as of 2026-09-04 returns no public document using 'Country Implementation Forum' or 'CIF' as a proper name for the AfCFTA ADAPT programme with a named chair, roster, or ToR. Eleven days remain before 2026-09-15 deadline. Trending toward disconfirm; Reckoning to re-verify.",
+          "source_url": null
+        }
+      ],
       "resolution": null
     },
     {
@@ -4421,6 +4446,12 @@
           "direction": "against",
           "note": "EU AI Office ran Aug 2-30 as unpublished technical compliance dialogues (Taylor Wessing, Wilson Sonsini, DLA Piper converge on this reading), not formal enforcement. Zero in-window guidance published; zero first-formal-enforcement action against any GPAI provider. The DG COMP-style private-first posture, if it holds, pushes back the expected first-formal-enforcement date past 2027-08-02. Twin 32 pct still looks defensible but the direction of recent evidence is against; four weeks in and no publication cadence.",
           "source_url": "https://www.taylorwessing.com/en/insights-and-events/insights/2026/08/gpai-obligations-under-the-eu-ai-act"
+        },
+        {
+          "date": "2026-09-06",
+          "direction": "supports",
+          "note": "EU AI Office (Executive VP Henna Virkkunen) publicly confirmed 2026-08-29 that formal Requests for Information have been issued under Article 55 provider-obligations basis to OpenAI, Anthropic, and Google DeepMind - precursor step to any first formal enforcement action within the 2027-08-02 window. Signal: 2026-08-31 first-wave article-55 rfis.",
+          "source_url": "https://data/discovery/signals/2026-08-31-eu-ai-office-first-wave-article-55-rfis-openai-anthropic-google-bifurcated-posture-confirmed.md"
         }
       ],
       "resolution": null
@@ -4995,6 +5026,12 @@
           "direction": "supports",
           "note": "Chinese Foreign Minister Wang Yi (aug 12 2026) states WAICO has grown to 38 founding member countries, up from 29 signed at Shanghai 2026-07-16. Reported by Chinadaily.com.cn (official Chinese state English-language) 2026-08-12 and echoed by SCMP / TheNextWeb / ChinaTechNews 2026-08-19. This exceeds the 33-member threshold. Update test specifically enumerates english.news.cn, english.www.gov.cn, or an official WAICO communication - chinadaily is state-English but not on the enumerated list, so recording as bearing evidence not resolution. Watch english.news.cn / gov.cn for the same figure before 2026-09-15.",
           "source_url": "https://www.chinadaily.com.cn/a/202608/12/WS6a7be5eda310986e2b46a565.html"
+        },
+        {
+          "date": "2026-09-04",
+          "direction": "against",
+          "note": "As of 2026-09-04, no official Chinese English-language government publication (english.news.cn, english.www.gov.cn) or WAICO communication reports a signatory or member count of 33 or greater. Current publicly retrievable count remains in the 29-32 band per the last WAICO communication. Eleven days remain before the 2026-09-15 deadline. Trending toward disconfirm at the 62% claim.",
+          "source_url": null
         }
       ],
       "resolution": null
@@ -5395,6 +5432,18 @@
           "direction": "against",
           "note": "DCDT AI Policy rewrite: revised policy targeted for submission to Cabinet by November 2026, public comment target January 2027. Formal Cabinet adoption by 2026-10-24 is highly unlikely on this timeline.",
           "source_url": "https://www.itweb.co.za/article/government-sets-target-for-revised-ai-policy/lwrKxv3Y2QyMmg1o"
+        },
+        {
+          "date": "2026-09-06",
+          "direction": "against",
+          "note": "SA Communications Minister Solly Malatsi withdrew the draft National AI Policy Framework in April 2026 after News24 exposed fabricated (AI-generated hallucinated) citations. Government's own revised timeline now targets November 2026 Cabinet consideration and January 2027 public release. This is the disconfirmation condition (Cabinet statement defers adoption past 2026-10-24 deadline) but logged as evidence rather than early-resolved because the deadline is 7 weeks out and a Cabinet override cannot be strictly ruled out; Sunday Reckoning re-verifies.",
+          "source_url": "https://techcentral.co.za/malatsi-withdraws-ai-policy-after-fictitious-sources-scandal/280674/"
+        },
+        {
+          "date": "2026-09-06",
+          "direction": "against",
+          "note": "DCDT publicly formalized 2026-08-31 that the revised National AI Policy will be submitted to Cabinet in November 2026 (post-10-24 window) with public comment in January 2027, following Minister Malatsi's April 2026 withdrawal. As of 2026-09-06 the November timing is reaffirmed by Fasken and Bowmans policy trackers. The 2026-10-24 threshold now requires a schedule surprise; base rate for such surprises on multi-quarter policy processes is low.",
+          "source_url": "https://data/discovery/signals/2026-09-06-south-africa-national-ai-policy-withdrawn-hallucinated-citations-november-cabinet-january-release-institutional-diffusion-friction.md"
         }
       ],
       "resolution": null
@@ -5474,6 +5523,12 @@
           "direction": "against",
           "note": "Kenya's Draft AI and Emerging Technologies Policy 2026 (State Department for ICT and the Digital Economy, ict.go.ke) public-comment window closed 2026-08-04. Coverage (CIO Africa, Techweez, ITLawCo) describes proposed instruments including a national emerging-technologies council, risk-based classifications, mandatory registration for high-risk systems, and a sovereign cloud strategy - all still at draft-policy status. No Kenya Gazette notice, State Department release, or ICTA publication observed as of 2026-08-23 naming a sovereign cloud / compute council with chair, named members, or terms of reference. Path is now Cabinet consideration then possible gazettement - the Ministry's stated timeline points to FY26/27 finalization, which puts institutional stand-up (not just policy adoption) uncertain within the 2026-10-24 window. Bearing-against so far; watch ict.go.ke / kenyalaw.org / icta.go.ke through end-October.",
           "source_url": "https://ict.go.ke/sites/default/files/AI%20Policy%20Doc/draft-kenya-ai-and-emerging-technologies-policy-2026.pdf"
+        },
+        {
+          "date": "2026-09-06",
+          "direction": "supports",
+          "note": "Kenya Ministry of ICT published the Kenya Cloud Policy (2025) Implementation Guidelines in June 2026 (ict.go.ke), providing a comprehensive framework for public sector transition to a coordinated cloud-first approach with data-sovereignty provisions. iXAfrica Data Centres and Baobab Cloud Services launched a sovereign public cloud platform in Kenya in May 2026. These bear on institutional stand-up direction but do not yet name a sovereign cloud/compute council with listed chair, members, or terms of reference under the AI & Emerging Technologies Policy specifically — the update-test's stricter institutional requirement is not yet met. Draft AI Policy consultation closed 2026-08-04; awaiting revised text.",
+          "source_url": "https://www.ict.go.ke/sites/default/files/2026-07/Final%20%20Kenya%20Cloud%20Policy%202025%20Implementation%20Guidelines.pdf"
         }
       ],
       "resolution": null
@@ -5606,7 +5661,14 @@
           "date": "2026-08-02T14:20:07Z"
         }
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "date": "2026-09-04",
+          "direction": "against",
+          "note": "Public consultation on the Draft Kenya AI and Emerging Technologies Policy 2026 closed 2026-08-04. No revised draft or gazette notice has been published by ict.go.ke or kenyalaw.org as of 2026-09-04 (11 days before the resolve-by deadline). No public statement naming a specific compute figure (GPU count, teraflop/petaflop capacity, or dollar/shilling commitment) for the National AI Compute Access Programme has surfaced in Ministry press. Trending toward disconfirm; Reckoning to re-verify.",
+          "source_url": "https://ict.go.ke/sites/default/files/AI%20Policy%20Doc/draft-kenya-ai-and-emerging-technologies-policy-2026.pdf"
+        }
+      ],
       "resolution": null
     },
     {
@@ -5724,7 +5786,7 @@
       "frameworks": [],
       "update_test": "On 2026-09-05, the US Bureau of Labor Statistics Employment Situation release for August 2026 reports total nonfarm payroll employment change of 100,000 or higher (seasonally adjusted, first release headline number). Confirmed at 100k or higher, disconfirmed below 100k.",
       "resolve_by": "2026-09-08",
-      "status": "open",
+      "status": "resolved",
       "validity": null,
       "prereg_audit": {
         "date": "2026-07-31T12:14:35Z",
@@ -5739,7 +5801,11 @@
       "corrections": [],
       "related_to": [],
       "evidence": [],
-      "resolution": null
+      "resolution": {
+        "date": "2026-09-05T12:11:20Z",
+        "outcome": "confirmed",
+        "note": "BLS Employment Situation for August 2026 released 2026-09-04 (one day earlier than the claim's scheduled 2026-09-05, but the same August 2026 print). Total nonfarm payroll employment increased by 162,000, comfortably above the 100k threshold; consensus had been 53k. Sources: https://www.bls.gov/news.release/empsit.nr0.htm and https://www.cnbc.com/2026/09/04/jobs-report-august-2026.html"
+      }
     },
     {
       "id": "claim-20260731-003",
@@ -6782,7 +6848,7 @@
       "frameworks": [],
       "update_test": "On 2026-09-04, BLS publishes Employment Situation for August 2026. Confirmed if the headline U-3 unemployment rate is 4.2 percent or higher (rounded to one decimal as reported by BLS); disconfirmed if strictly below 4.2 percent.",
       "resolve_by": "2026-09-05",
-      "status": "open",
+      "status": "resolved",
       "validity": null,
       "prereg_audit": {
         "date": "2026-08-15T12:19:31Z",
@@ -6796,7 +6862,11 @@
       "corrections": [],
       "related_to": [],
       "evidence": [],
-      "resolution": null
+      "resolution": {
+        "date": "2026-09-05T12:11:26Z",
+        "outcome": "disconfirmed",
+        "note": "BLS Employment Situation for August 2026 released 2026-09-04. Headline U-3 unemployment rate held at 4.1 percent, strictly below the 4.2 percent threshold. Disconfirms the coherent-cooling edge thesis. Sources: https://www.bls.gov/news.release/empsit.nr0.htm and https://www.cnbc.com/2026/09/04/jobs-report-august-2026.html"
+      }
     },
     {
       "id": "claim-20260816-001",
@@ -6864,7 +6934,7 @@
       "frameworks": [],
       "update_test": "By 2026-10-15 23:59 UTC, at least one official announcement (openai.com, anthropic.com, deepmind.google, ai.meta.com) posted between 2026-08-16 and 2026-10-15 announces a new frontier or flagship model with claimed SOTA on MMLU-Pro, GPQA-Diamond, or SWE-Bench-Verified",
       "resolve_by": "2026-10-15",
-      "status": "open",
+      "status": "resolved",
       "validity": null,
       "prereg_audit": {
         "date": "2026-08-16T12:24:46Z",
@@ -6880,8 +6950,19 @@
       },
       "corrections": [],
       "related_to": [],
-      "evidence": [],
-      "resolution": null
+      "evidence": [
+        {
+          "date": "2026-09-04",
+          "direction": "supports",
+          "note": "OpenAI announced GPT-6 Astra on 2026-09-03 (official announcement openai.com/index/gpt-6-astra/). Reports 96.0% on GPQA Diamond ('reaches a new high of 96.0%' - highest published across available models). Registered fact - dated milestone publicly confirmed on the official channel named in the update test. Update test unambiguously fires: SOTA claim on GPQA-Diamond from an openai.com announcement posted 2026-08-16 to 2026-10-15.",
+          "source_url": "https://openai.com/index/gpt-6-astra/"
+        }
+      ],
+      "resolution": {
+        "date": "2026-09-04T12:28:46Z",
+        "outcome": "confirmed",
+        "note": "GPT-6 Astra announced 2026-09-03 via openai.com/index/gpt-6-astra/. GPQA Diamond 96.0% claimed as new high across available published scores. Official OpenAI channel named in the update test, dated milestone, unambiguous fire. Twin confidence 62% (base rate 65%), outcome CONFIRMED. Note: registered with frameworks:[] - no post-hoc framework credit permitted per rule 8b."
+      }
     },
     {
       "id": "claim-20260816-003",
@@ -6996,7 +7077,7 @@
       "frameworks": [],
       "update_test": "On 2026-09-02, ISM publishes the August 2026 Manufacturing PMI headline number. Confirmed if headline is strictly less than 50.0; disconfirmed if 50.0 or higher.",
       "resolve_by": "2026-09-03",
-      "status": "open",
+      "status": "resolved",
       "validity": null,
       "prereg_audit": {
         "date": "2026-08-19T12:13:36Z",
@@ -7015,7 +7096,11 @@
         }
       ],
       "evidence": [],
-      "resolution": null
+      "resolution": {
+        "date": "2026-09-03T12:23:02Z",
+        "outcome": "disconfirmed",
+        "note": "ISM Manufacturing PMI for August 2026 released 2026-09-02 at 10:00 ET, headline 54.6 percent, expansion for the eighth consecutive month. Threshold was <50.0, actual 54.6 - disconfirmed. Evidence: https://www.prnewswire.com/news-releases/manufacturing-pmi-at-54-6-august-2026-ism-manufacturing-pmi-report-302865127.html"
+      }
     },
     {
       "id": "claim-20260821-001",
@@ -7293,6 +7378,12 @@
           "relation": "shares-system",
           "note": "Shares the underlying system with the 2027-08-02 Article 55 systemic-risk claim (claim-20260711-002).",
           "date": "2026-08-31T12:38:19Z"
+        },
+        {
+          "id": "claim-20260711-002",
+          "relation": "sharpens",
+          "note": "831-001 asks whether at least one ADDITIONAL formal enforcement action fires by 2026-10-30 following the Article 55 RFI wave; 711-002 asks whether a first formal enforcement action fires by 2027-08-02. Both test the same EU AI Office enforcement pipeline; 831-001 is the sharper short-window read that discriminates 'RFI cascade actually escalates' from 'RFIs stay procedural.'",
+          "date": "2026-09-06T14:16:06Z"
         }
       ],
       "evidence": [],
@@ -7478,7 +7569,7 @@
       "frameworks": [],
       "update_test": "On 2026-09-04, ISM publishes the August 2026 Services PMI headline number. Confirmed if headline is 52.0 or higher; disconfirmed if below 52.0.",
       "resolve_by": "2026-09-04",
-      "status": "open",
+      "status": "resolved",
       "validity": null,
       "prereg_audit": {
         "date": "2026-09-01T12:42:29Z",
@@ -7493,7 +7584,11 @@
       "corrections": [],
       "related_to": [],
       "evidence": [],
-      "resolution": null
+      "resolution": {
+        "date": "2026-09-04T07:50:07Z",
+        "outcome": "confirmed",
+        "note": "ISM Services PMI August 2026 headline 55.4 (July 54.1), published 2026-09-03 10:00 ET (third business day; the claim's 'scheduled 2026-09-04' was a registration date error, the update test's threshold is unaffected). 55.4 >= 52.0. Source: ISM press release via PR Newswire 302868046, dateline TEMPE Sept. 3, 2026."
+      }
     },
     {
       "id": "claim-20260901-003",
@@ -7528,6 +7623,378 @@
           "site:domyn.com training announcement",
           "site:eurohpc-ju.europa.eu EUROPA",
           "site:digital-strategy.ec.europa.eu EUROPA Domyn"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [
+        {
+          "id": "claim-20260610-016",
+          "relation": "shares-system",
+          "note": "901-003 tracks EUROPA (Domyn) training-start signal by 2026-10-31; 610-016 tracks non-EU jurisdictions citing the EU AI Act omnibus by end-2027. Both read the EU regulatory-industrial complex's operational credibility: 901-003 measures whether EU-anchored sovereign compute reaches operational milestones, 610-016 measures whether the EU regulatory model itself is exported. Divergence would test whether infrastructure momentum and regulatory diffusion move together or apart.",
+          "date": "2026-09-06T14:16:16Z"
+        }
+      ],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260902-001",
+      "date": "2026-09-02",
+      "registered_at": "2026-09-02T12:29:56Z",
+      "claim": "By 2026-10-31, at least one of the 2026 African hyperscale-ready data centre commissionings (Kasi Cloud LOS1 Lekki 100MW, MTN Africa Data Hub Holding Nigeria+South Africa 150MW, Cassava/Africa Data Centres Cape Town expansion, or Rack Centre LGS2 Lagos 12MW) publicly names an anchor tenant via specialist trade press (TechCabal, Capacity, ConnectingAfrica, BusinessDay Nigeria) or an official press release from the operator.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "in",
+      "grounding": "Kasi Cloud LOS1 was commissioned 2026-05-19 in Lekki, Lagos (100MW planned, 5.5MW critical IT at launch); MTN Digital Infrastructure formed Africa Data Hub Holding with UAE-based partner targeting 150MW Nigeria+South Africa in 2026; Cassava Technologies expanded Africa Data Centres capacity in Cape Town in 2026; Rack Centre LGS2 was commissioned 2025 as a 12MW hyperscale-ready campus. All four are on the public record with commissioned physical infrastructure - the update test is about whether announcement channels disclose the commercial anchor conversation that follows.",
+      "withdrawal": null,
+      "confidence": 0.2,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": "Today's Kasi disconfirmation postmortem (lesson-2026-09-02-postmortem-claim-20260701-005) established that African hyperscale campuses show 105+ day commissioning-to-tenant-announcement lags in the announcement channel, even where signed contracts likely exist under confidentiality. Applying that lesson: raw 20 vs base 35 = -15 pts below base, direction bearish. Bucket 20-29 has n=2, correction null - keep raw. Signal-ahead-of-market bias: this is un-priced and un-consensus, exactly the calibration case we want (no market on African data-centre commercial closes).",
+      "base_rate": 0.35,
+      "base_rate_source": "Public commissioning-to-anchor-tenant announcement rate for African hyperscale-ready campuses commissioned 2024-2026, from trade press review (TechCabal, Capacity, ConnectingAfrica, DataCenterMap listings): approximately 3 named tenant announcements across ~8 commissioned campuses within 6 months of commissioning = 37.5%; rounded to 35%. As of 2026-09-02.",
+      "market": null,
+      "bruno_confidence": null,
+      "bruno_confidence_at": null,
+      "frameworks": [],
+      "update_test": "By 2026-10-31 23:59 UTC, an identifiable public source (specialist African tech trade press or operator press release) names an anchor tenant with either (a) a stated MW commitment or (b) a named enterprise / government customer for one of the four specified 2026-commissioned campuses. Confirmed on first such announcement; disconfirmed if none by the deadline.",
+      "resolve_by": "2026-10-31",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-09-02T12:29:56Z",
+        "auditor": "twin",
+        "note": "Searched 2026-09-02 for Africa hyperscale anchor tenant announcements September 2026 across TechCabal, Capacity, ConnectingAfrica, BusinessDay Nigeria, and DataCenterMap: no named anchor tenant announcement found for any of the four specified campuses since the today-resolved 2026-07-01-005 Kasi disconfirmation on 2026-08-31. Update test has not fired.",
+        "queries": [
+          "africa hyperscale data center anchor tenant announcement september 2026 rack centre mtn cassava",
+          "kasi cloud anchor tenant nigeria 2026",
+          "african data centre commercial commitment 2026"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [
+        {
+          "id": "claim-20260610-014",
+          "relation": "probes",
+          "note": "African hyperscale anchor-tenant announcement rate is the transfer-evidence gate for the structural claim about cumulative African data-centre MW through end-2027 - if commercial closes don't announce, physical capacity may exist but not read as productive infrastructure.",
+          "date": "2026-09-02T12:31:09Z"
+        },
+        {
+          "id": "claim-20260610-013",
+          "relation": "probes",
+          "note": "902-001 asks whether at least one 2026 African hyperscale-ready campus reaches commissioning by 2026-10-31; 610-013 is the structural longer-window bet on the same named African data-centre projects hitting operational milestones by 2027-03-31. 902-001 is the short-horizon probe of whether the long-window read holds.",
+          "date": "2026-09-06T14:16:16Z"
+        }
+      ],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260902-002",
+      "date": "2026-09-02",
+      "registered_at": "2026-09-02T12:30:19Z",
+      "claim": "By 2026-10-31, Meta publicly discloses at least one specific quantitative parameter of its Enterprise Solutions unit (customer count, dedicated staffing headcount, dedicated capital allocation, or named-partner list) via an SEC filing, official investor communication, official blog post, or CEO/executive on-the-record press interview.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "in",
+      "grounding": "Meta Enterprise Solutions unit was publicly established in May 2026 (Naomi Gleit internal memo, The Information exclusive, PYMNTS coverage, DigitalToday, Forbes 2026-05-28 coverage), embeds product managers and forward-deployed engineers inside corporate customers. The unit exists and is on the public record. What is at issue is whether Meta will EVER quantitatively disclose the unit's specifics or continue to bundle it silently within its 130-145B USD 2026 capex. Meta Q3 2026 earnings will land in late October 2026, providing a natural disclosure window.",
+      "withdrawal": null,
+      "confidence": 0.22,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": "Today's FDE disconfirmation postmortem (lesson-2026-09-02-postmortem-claim-20260703-001) established that frontier providers treat FDE headcount and dedicated capital as competitive intelligence and disclose in aggregate capex, not per-unit. Applying to Meta's specific 60-day forward window with Q3 earnings as a natural disclosure trigger: raw 22 vs base 40 = -18 pts below base, direction bearish, informed by the just-disconfirmed prior case where Meta explicitly declined to state numbers. Bucket 20-29 has n=2, correction null - keep raw at 22.",
+      "base_rate": 0.4,
+      "base_rate_source": "Frontier-provider named-enterprise-unit specific quantitative disclosure rate within 90 days of launch, from public announcement review of Microsoft Frontier Company (USD 2.5B and 6000 engineers disclosed at 2026-07-02 launch), Amazon (USD 1B disclosed at 2026-06-30 launch), OpenAI Deployment Company (USD 1.5B disclosed within 60 days), Anthropic FDE program (not yet disclosed): approximately 3 of 4 disclosed quantitatively within 90 days = 75%. Meta is the specific negative case here (declined disclosure through 2026-08-31 despite unit launch May 2026), so base adjusted DOWN from 75% to 40% for the Meta-specific 60-day forward window given its established silence pattern. As of 2026-09-02.",
+      "market": null,
+      "bruno_confidence": null,
+      "bruno_confidence_at": null,
+      "frameworks": [],
+      "update_test": "By 2026-10-31 23:59 UTC, a Meta SEC filing (10-Q, 10-K, 8-K), Meta investor relations page, Meta official blog, or on-the-record executive press interview publicly states any specific quantitative attribute of the Enterprise Solutions unit: a customer count, a dedicated headcount for the unit, a dedicated capital allocation, or a named partner. Confirmed on the first such disclosure; disconfirmed if none by the deadline.",
+      "resolve_by": "2026-10-31",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-09-02T12:30:19Z",
+        "auditor": "twin",
+        "note": "Searched 2026-09-02 for Meta Enterprise Solutions unit customers, staffing size, capital allocation, or partner list across CNBC, PYMNTS, Forbes, The Information secondary reporting, DigitalToday, and Meta Q2 2026 earnings call transcript: only qualitative unit-existence reporting; no quantitative attribute publicly stated. Meta Q2 2026 earnings call did not mention the unit by name. Update test has not fired.",
+        "queries": [
+          "meta enterprise solutions unit customers staffing size disclosure september 2026 headcount capex",
+          "meta forward-deployed engineers 2026 dollar figure",
+          "meta enterprise ai unit budget scale"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [
+        {
+          "id": "claim-20260610-008",
+          "relation": "probes",
+          "note": "Meta Enterprise Solutions unit disclosure is a specific FDE-tier signal that reads on whether Big Five AI capex is transitioning from GPU-heavy training to enterprise-deployment mix. The disclosure decision itself is the signal, independent of the underlying number.",
+          "date": "2026-09-02T12:31:09Z"
+        }
+      ],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260902-003",
+      "date": "2026-09-02",
+      "registered_at": "2026-09-02T12:30:37Z",
+      "claim": "US Bureau of Labor Statistics Employment Situation for September 2026 (release scheduled 2026-10-03 at 8:30 ET) reports total nonfarm payrolls monthly change less than or equal to +100,000 jobs.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "US Bureau of Labor Statistics releases the Employment Situation report on a scheduled monthly cadence; the September 2026 reference-period release is scheduled 2026-10-03 at 8:30 ET on bls.gov, with the headline monthly nonfarm payroll change reported in the first paragraph.",
+      "withdrawal": null,
+      "confidence": 0.55,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": "Twin at 55 vs base 42 = +13 pts above base, direction bearish on labor market. Reflects 2026 softening trend: ADP private payrolls have run below BLS by ~50k for 3 months, initial claims trending higher, Fed dot-plot pricing 3-4 cuts through year-end. Bucket 50-59 has n=26, correction -0.003 - effectively neutral, keep 55. Un-priced-ahead-of-market: NFP is heavily consensus-forecasted but the twin's specific 100k threshold call is not identical to any liquid market position.",
+      "base_rate": 0.42,
+      "base_rate_source": "US BLS Employment Situation monthly total nonfarm payrolls prints less than or equal to +100k over the trailing 12 months (2025-08 through 2026-07), from BLS.gov release history: approximately 5 of 12 months = 42%. As of 2026-09-02.",
+      "market": null,
+      "bruno_confidence": null,
+      "bruno_confidence_at": null,
+      "frameworks": [],
+      "update_test": "By 2026-10-03 08:30 ET or shortly thereafter, the BLS Employment Situation release for September 2026 (available at bls.gov/news.release/empsit.htm and bls.gov/schedule/news_release/empsit.htm) reports a total nonfarm payroll monthly change of +100,000 or less. Confirmed if headline monthly change is less than or equal to +100,000; disconfirmed if strictly greater than +100,000.",
+      "resolve_by": "2026-10-03",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-09-02T12:30:37Z",
+        "auditor": "twin",
+        "note": "Verified 2026-09-02 that BLS September 2026 Employment Situation release has not yet occurred (scheduled 2026-10-03); the August 2026 print (release 2026-09-04 and 2026-09-05, currently open as claim-20260731-002 and claim-20260815-004) is not yet public. Update test cannot have fired. Also verified BLS 2026 schedule page confirms 2026-10-03 08:30 ET as the September release date.",
+        "queries": [
+          "US BLS Employment Situation September 2026 release date",
+          "US nonfarm payrolls September 2026 forecast",
+          "BLS September 2026 schedule empsit"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260902-004",
+      "date": "2026-09-02",
+      "registered_at": "2026-09-02T12:30:55Z",
+      "claim": "US Census Bureau Advance Monthly Sales for Retail and Food Services for August 2026 (release scheduled 2026-09-16 at 8:30 ET) reports month-over-month change in total retail sales of +0.2 percent or greater.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "The US Census Bureau releases Advance Monthly Sales for Retail and Food Services on a scheduled cadence approximately mid-month for the prior month's data; August 2026 release is scheduled 2026-09-16 at 8:30 ET on census.gov/retail. The July 2026 print was minus 0.6 percent (large downside miss driven by nonstore retailers minus 2.2 percent, reflecting Amazon Prime Day timing shift into June).",
+      "withdrawal": null,
+      "confidence": 0.47,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": "Twin at 47 vs base 50 = -3 pts below base, direction mildly bearish. July print of minus 0.6 percent was driven by a specific timing effect (Amazon Prime Day moved to June from July), which should REVERSE in August as base-period distortion unwinds and pull-forward normalizes. Argument for +0.2% or better: base-period-effect reversal. Argument against: broader labor-market softening and consumer credit stress. Bucket 40-49 has n=10, correction +0.026 - applied: raw 47 gets +2.6 to 49-50. Kept at 47 to stay under 50 pivot given labor softening tilts against pure base-effect reversal. Un-priced: no liquid market on the specific print threshold.",
+      "base_rate": 0.5,
+      "base_rate_source": "US Census Advance Monthly Retail Trade Survey month-over-month change of +0.2 percent or greater over trailing 12 months (2025-08 through 2026-07), from census.gov/retail MARTS release history: approximately 6 of 12 months = 50%. As of 2026-09-02.",
+      "market": null,
+      "bruno_confidence": null,
+      "bruno_confidence_at": null,
+      "frameworks": [],
+      "update_test": "By 2026-09-16 08:30 ET or shortly thereafter, the Census Bureau Advance Monthly Retail Trade Survey release for August 2026 (available at census.gov/retail/marts/www/marts_current.pdf and census.gov/retail) reports a headline total retail sales month-over-month change of +0.2 percent or greater. Confirmed if strictly greater than or equal to +0.2 percent; disconfirmed if less than +0.2 percent.",
+      "resolve_by": "2026-09-16",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-09-02T12:30:55Z",
+        "auditor": "twin",
+        "note": "Verified 2026-09-02 that Census August 2026 Advance Retail Sales release has not yet occurred (scheduled 2026-09-16). July 2026 print of minus 0.6 percent is the most recent available. Update test cannot have fired. Also verified census.gov/retail confirms 2026-09-16 08:30 ET as the August release date.",
+        "queries": [
+          "US Advance Retail Sales August 2026 release September 16 forecast",
+          "census.gov MARTS August 2026 release date",
+          "US retail sales August 2026 month-over-month"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260903-001",
+      "date": "2026-09-03",
+      "registered_at": "2026-09-03T12:28:04Z",
+      "claim": "US Bureau of Labor Statistics Consumer Price Index for August 2026 (release scheduled 2026-09-11 at 08:30 ET on bls.gov) reports headline all-items CPI year-over-year change at or above 3.0 percent.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "US BLS Consumer Price Index for All Urban Consumers, headline all-items series, monthly release at bls.gov/cpi. August 2026 release is scheduled 2026-09-11.",
+      "withdrawal": null,
+      "confidence": 0.22,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.28,
+      "base_rate_source": "US CPI headline y/y monthly prints April 2026 through July 2026: 2.6, 2.7, 2.7, 2.7 (BLS CPI news release archive at bls.gov/cpi). Share of months in the recent regime at or above 3.0 percent is 0 of 4 immediate; broader rolling 12-month share approximately 25-30 percent. Anchor: BLS CPI monthly frequency 2025-08 through 2026-07, as of 2026-09-03.",
+      "market": {
+        "price": 0.28,
+        "source": "Kalshi and Polymarket price the CPI 3.0-plus threshold in the 0.25-0.35 range, dependent on wording; not tightly pinned, roughly at base rate."
+      },
+      "bruno_confidence": null,
+      "bruno_confidence_at": null,
+      "frameworks": [],
+      "update_test": "On 2026-09-11, BLS publishes the August 2026 CPI. Confirmed if the headline all-items CPI y/y (seasonally adjusted, first release) is 3.0 percent or higher; disconfirmed if strictly below 3.0 percent.",
+      "resolve_by": "2026-09-11",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-09-03T12:28:04Z",
+        "auditor": "twin",
+        "note": "Searched Morningstar, Reuters, and Finance Calendar 2026-09-03 for August 2026 CPI y/y forecasts; Reuters consensus is 2.9 percent, Ameriprise chief econ sees hotter 0.4 percent MoM which lifts y/y risk. No print is public; release is 2026-09-11.",
+        "queries": [],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260904-001",
+      "date": "2026-09-04",
+      "registered_at": "2026-09-04T12:34:37Z",
+      "claim": "The Federal Reserve FOMC at its 2026-09-15/16 meeting keeps the target federal funds rate range unchanged at 3.50-3.75 percent.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "FOMC target range currently 3.50-3.75 percent since July 2026 meeting (held 9-3). Next meeting 2026-09-15/16 with rate decision announced 2026-09-16 at 14:00 ET. Chair Kevin Warsh gave hawkish Jackson Hole remarks. August 2026 employment scheduled 2026-09-04 (today, unreleased at run time); consensus 53-65k payrolls and unemployment 4.1-4.2 percent.",
+      "withdrawal": null,
+      "confidence": 0.62,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": "Frame out. Bucket 60-69 (n=17) hit rate 0.529 vs mean 0.632 gives correction -0.065 on raw 0.62 (suggested 0.555). I hold at 0.62 rather than push down to 0.555 because the edge thesis is not statistical: the Warsh-hawkish tilt makes a September hike a live tail risk (~15-20 percent) but the weak jobs data pipeline (ADP -44k July, ADP 38k August below 47k expected, and today's payrolls consensus 53-65k) makes hikes into deteriorating labor data historically rare - the Fed almost never hikes when non-farm payrolls have deteriorated month-over-month for two consecutive prints. Cut probability is capped by hawkish Chair. Hold is the residual and it is the fat-middle outcome. Market 57 percent hold vs my 62 percent = 5 pt edge, above the 7 pt ingestion-bias cutoff barely on the ballast side. Rationale: the market is under-weighting the 'hawkish Chair vs deteriorating jobs' cancels-out logic. If jobs print stronger than 65k today the edge shrinks; if weaker the edge grows.",
+      "base_rate": 0.66,
+      "base_rate_source": "Rolling share of FOMC meetings that held rates unchanged 2024-01 through 2026-07: 8 of last 12 scheduled meetings held (per federalreserve.gov FOMC statement archive). As-of 2026-09-04.",
+      "market": {
+        "price": 0.57,
+        "source": "Kalshi kxfeddecision-26sep 'no change' contract at 57 cents 2026-09-04; Polymarket adjacent contract close to 57 percent"
+      },
+      "bruno_confidence": null,
+      "bruno_confidence_at": null,
+      "frameworks": [],
+      "update_test": "On 2026-09-16 at 14:00 ET, the FOMC publishes its policy statement on federalreserve.gov. Confirmed if the announced target range for the federal funds rate is 3.50-3.75 percent (unchanged from the current range); disconfirmed if any other range is announced (a cut, a hike, or any modification).",
+      "resolve_by": "2026-09-17",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-09-04T12:34:37Z",
+        "auditor": "twin",
+        "note": "Searched 2026-09-04 12:00 UTC for FOMC September 2026 rate decision leaks or definitive early moves. No decision, no leaked minutes; Kalshi and Polymarket pricing show hold at ~57 percent. Outcome not already known.",
+        "queries": [
+          "Fed FOMC September 2026 rate cut probability expected consensus market"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260904-002",
+      "date": "2026-09-04",
+      "registered_at": "2026-09-04T12:34:55Z",
+      "claim": "The UK ONS Consumer Price Inflation bulletin for August 2026 (release scheduled 2026-09-16 07:00 BST on ons.gov.uk) reports the headline CPI 12-month rate at 3.0 percent or higher.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "UK July 2026 headline CPI printed 2.9 percent year-on-year, up from 2.6 percent in June, driven by Ofgem quarterly price cap rising 13 percent in July which pushed gas prices up 14.7 percent in one month. Core CPI unchanged at 2.6 percent in July. The energy pass-through continues into August (Ofgem cap effect is not instantaneous month-of; it flows through the CPI basket over the following quarter). BoE Monetary Policy Report July 2026 flagged near-term inflation surprise from energy.",
+      "withdrawal": null,
+      "confidence": 0.55,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": "Frame out. Bucket 50-59 (n=28) hit rate 0.536 vs mean 0.545 gives correction -0.007 on raw 0.55 (suggested 0.543). Hold at 0.55. Base rate 0.17 anchors on the pre-Ofgem-cap-shift regime; the July print (2.9) surprised nobody who was tracking the cap, but the energy pass-through continues into August. The Ofgem July cap rise of 13 percent flows through the CPI weighting over roughly one to two months, so the August print should register more of the same energy-driven upward pressure than July did. My 0.55 vs base 0.17 = 38 pt edge is a structural read on the July step-change becoming an August continuation, not a direction call on the base rate itself. Ingestion-bias risk: no easily accessed prediction market on this precise threshold at run time; the ONS release is primary source ahead. Passes the un-priced test.",
+      "base_rate": 0.17,
+      "base_rate_source": "Rolling six-month share of UK ONS headline CPI 12-month prints at 3.0 percent or higher (Feb-Jul 2026): 1 of 6 prints (only July at 2.9 percent, still below 3.0; the ONS bulletin archive shows 2.4, 2.5, 2.5, 2.6, 2.6, 2.9 for Feb-Jul). As-of 2026-09-04.",
+      "market": null,
+      "bruno_confidence": null,
+      "bruno_confidence_at": null,
+      "frameworks": [],
+      "update_test": "On 2026-09-16 at 07:00 BST, the UK Office for National Statistics publishes the Consumer Price Inflation bulletin for August 2026 on ons.gov.uk. Confirmed if the headline CPI (CPIH excluded; CPI is the ONS headline figure) 12-month rate is 3.0 percent or higher; disconfirmed if strictly below 3.0 percent.",
+      "resolve_by": "2026-09-17",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-09-04T12:34:55Z",
+        "auditor": "twin",
+        "note": "Searched 2026-09-04 12:05 UTC for August 2026 UK CPI forecasts or leaks. No leaks; consensus forecasts not yet published (typically arrive days before release). Outcome not already known.",
+        "queries": [
+          "UK CPI August 2026 release date September consensus forecast headline inflation"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260905-001",
+      "date": "2026-09-05",
+      "registered_at": "2026-09-05T12:13:34Z",
+      "claim": "By 2026-10-05, the Riksbank publicly announces on riksbank.se the outcome of its September 2026 monetary policy meeting as a hold at 1.75 percent policy rate (unchanged from the prior meeting), decision applying from 2026-09-30.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "Sveriges Riksbank Executive Board September 2026 monetary policy meeting; policy rate published on riksbank.se and taking effect 2026-09-30. Current policy rate 1.75 percent per Riksbank Executive Board August 2026 assessment.",
+      "withdrawal": null,
+      "confidence": 0.65,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.6,
+      "base_rate_source": "Riksbank policy-rate history 2024-01 through 2026-08 shows 8 hold decisions out of 13 monetary policy meetings (approx 62 percent). Anchor: riksbank.se policy-rate history and 2026 monetary policy calendar, as of 2026-09-05.",
+      "market": null,
+      "bruno_confidence": null,
+      "bruno_confidence_at": null,
+      "frameworks": [],
+      "update_test": "By 2026-10-05, riksbank.se publishes the Executive Board decision from the September 2026 monetary policy meeting as a hold at 1.75 percent unchanged. Confirmed if the published decision is a hold at 1.75 percent; disconfirmed if the policy rate changes (cut or hike) or if the meeting output is not published by 2026-10-05.",
+      "resolve_by": "2026-10-05",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-09-05T12:13:34Z",
+        "auditor": "twin",
+        "note": "Searched 2026-09-05 for Riksbank September 2026 policy rate decision; the decision is scheduled to be published with the September Monetary Policy Report and no leaked figure is public. Kalshi/Polymarket have no direct market on the specific decision as of the search.",
+        "queries": [
+          "Riksbank Sveriges Riksbank policy rate September 2026 decision"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260905-002",
+      "date": "2026-09-05",
+      "registered_at": "2026-09-05T12:13:45Z",
+      "claim": "The Bank of Canada at its scheduled 2026-10-28 policy interest rate announcement holds the target for the overnight rate at 2.25 percent (unchanged from the 2026-09-02 announcement).",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "Bank of Canada scheduled policy rate announcement 2026-10-28 per Bank of Canada 2026 calendar. Current target rate 2.25 percent per 2026-09-02 announcement, seventh consecutive hold, with the Bank flagging upside risk to inflation from US tariffs and Middle East energy shock.",
+      "withdrawal": null,
+      "confidence": 0.75,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.7,
+      "base_rate_source": "Bank of Canada policy rate history 2025-01 through 2026-09 shows 7 consecutive holds after the earlier cutting cycle ended, per bankofcanada.ca announcements. Trailing eight meetings: 7 holds out of 8 (approx 0.88 conditional), broader 12-month rolling hold share approx 0.70. Anchor as of 2026-09-05.",
+      "market": null,
+      "bruno_confidence": null,
+      "bruno_confidence_at": null,
+      "frameworks": [],
+      "update_test": "On 2026-10-28, the Bank of Canada publishes at 10:00 ET on bankofcanada.ca the policy interest rate announcement stating the target for the overnight rate is 2.25 percent, unchanged. Confirmed if the announcement holds at 2.25 percent; disconfirmed if there is a cut or hike.",
+      "resolve_by": "2026-10-30",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-09-05T12:13:45Z",
+        "auditor": "twin",
+        "note": "Searched 2026-09-05 for Bank of Canada October 2026 rate decision. The announcement is scheduled 2026-10-28 and no decision is published. Market pricing and major bank forecasts (per RBC, TD, BMO September commentary) point to a hold for the rest of 2026, so this call is close to consensus rather than an edge; register as acknowledged ballast.",
+        "queries": [
+          "Bank of Canada October 2026 policy rate decision"
         ],
         "outcome_already_known": false
       },
@@ -8027,7 +8494,16 @@
     "claim-20260831-004": 139,
     "claim-20260901-001": 140,
     "claim-20260901-002": 141,
-    "claim-20260901-003": 142
+    "claim-20260901-003": 142,
+    "claim-20260902-001": 143,
+    "claim-20260902-002": 144,
+    "claim-20260902-003": 145,
+    "claim-20260902-004": 146,
+    "claim-20260903-001": 147,
+    "claim-20260904-001": 148,
+    "claim-20260904-002": 149,
+    "claim-20260905-001": 150,
+    "claim-20260905-002": 151
   },
   "stats": {
     "committers": {
@@ -8038,20 +8514,20 @@
         "skill_vs_coinflip": null
       },
       "twin": {
-        "n": 80,
-        "hit_rate": 0.5625,
-        "brier": 0.218,
-        "skill_vs_coinflip": 0.032
+        "n": 88,
+        "hit_rate": 0.5455,
+        "brier": 0.2178,
+        "skill_vs_coinflip": 0.0322
       }
     },
     "bruno_committed_twin_numbered": 0,
-    "brier": 0.218,
-    "skill_vs_coinflip": 0.032,
+    "brier": 0.2178,
+    "skill_vs_coinflip": 0.0322,
     "base_rate": {
-      "n": 80,
-      "brier_base": 0.2252,
-      "brier_twin": 0.218,
-      "skill": 0.0072
+      "n": 88,
+      "brier_base": 0.2223,
+      "brier_twin": 0.2178,
+      "skill": 0.0045
     },
     "market": {
       "n": 8,
@@ -8060,14 +8536,14 @@
       "skill": -0.0338
     },
     "non_echo": {
-      "n": 25,
+      "n": 28,
       "floor": 30,
-      "brier": 0.2444,
-      "skill_vs_base": 0.0022
+      "brier": 0.2441,
+      "skill_vs_base": -0.0049
     },
     "clusters": {
-      "effective_n": 59,
-      "brier_cluster_collapsed": 0.2153
+      "effective_n": 65,
+      "brier_cluster_collapsed": 0.2124
     },
     "paired": {
       "n": 0,
@@ -8077,13 +8553,13 @@
     },
     "ci": {
       "skill_vs_coinflip": {
-        "lo": -0.0025,
-        "hi": 0.0627,
-        "distinguishable": false
+        "lo": 0.0009,
+        "hi": 0.062,
+        "distinguishable": true
       },
       "skill_vs_base_rate": {
-        "lo": -0.0112,
-        "hi": 0.0263,
+        "lo": -0.0132,
+        "hi": 0.0217,
         "distinguishable": false
       },
       "skill_vs_market": {
@@ -8092,13 +8568,5 @@
         "distinguishable": true
       }
     }
-  },
-  "source": {
-    "repo": "chiKeka/ledger",
-    "commit": "83638d4f5ac0047bcb1f996690bd0f5825c270b1",
-    "commit_short": "83638d4",
-    "committed_at": "2026-09-02",
-    "fetched_at": "2026-09-02T11:45:27.683Z",
-    "url": "https://github.com/chiKeka/ledger/commit/83638d4f5ac0047bcb1f996690bd0f5825c270b1"
   }
 }
