@@ -8,7 +8,7 @@ import {
 
 const claims = ledger.claims ?? [];
 const { open, resolved, invalid, withdrawn } = classify(claims);
-const source = ledger.source ?? null;
+const source = (ledger as { source?: { url: string; commit_short: string } }).source ?? null;
 
 // Calibration (real numbers).
 const brier = brierScore(claims);
