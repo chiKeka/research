@@ -10,7 +10,7 @@ export function getStaticPaths() {
 }
 
 const { claim } = Astro.props;
-const source = ledger.source ?? null;
+const source = (ledger as { source?: { url: string; commit_short: string } }).source ?? null;
 const st = isInvalid(claim) ? 'invalid' : isWithdrawn(claim) ? 'withdrawn' : claim.status === 'resolved' ? (outcomeBinary(claim) === 0 ? 'miss' : 'hit') : 'open';
 const stLabel = { open: 'Open', hit: 'Resolved · hit', miss: 'Resolved · miss', invalid: 'Invalidated', withdrawn: 'Withdrawn' }[st];
 const p = Math.round((claim.confidence ?? 0) * 100);
