@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-06",
+  "updated": "2026-09-13",
   "claims": [
     {
       "id": "claim-20260610-001",
@@ -269,6 +269,12 @@
           "direction": "supports",
           "note": "The EU AI Act Omnibus entered into force 2026-07-27 following publication in the Official Journal 2026-07-24 and Council green light 2026-06-29. High-risk AI system obligations under Article 6(2)/Annex III are postponed from 2026-08-02 to 2027-12-02; Annex I sectoral high-risk obligations postponed to 2028-08-02. The AI Office receives strengthened central-EU supervisory competence over GPAI-based systems and DSA VLOP-integrated AI. This is a live count of softened/delayed frontier-relevant articles: at minimum, the two high-risk timelines have been softened, and enforcement centralization is a structural mechanism change.",
           "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2026/06/29/artificial-intelligence-council-gives-final-green-light-to-simplify-and-streamline-rules/"
+        },
+        {
+          "date": "2026-09-10",
+          "direction": "supports",
+          "note": "EU Digital Omnibus adopted as Regulation (EU) 2026/1744 on 2026-07-27, deferring Annex III high-risk system obligations from 2026-08-02 to 2027-12-02 and embedded-system obligations to 2028-08-02, a ~16-month deferral of the substantive enforceable deployer obligations even as GPAI transparency obligations went live 2026-08-02 with fines up to EUR 15M or 3% of turnover.",
+          "source_url": "https://knowledge.dlapiper.com/dlapiperknowledge/globalemploymentlatestdevelopments/2026/The-Digital-AI-Omnibus-Proposed-deferral-of-high-risk-AI-obligations-under-the-AI-Act"
         }
       ],
       "resolution": null
@@ -786,6 +792,12 @@
           "direction": "supports",
           "note": "MTN Group H1 2026 results (published 2026-08-24) unveil Africa Data Hub Holding Limited (partnership with UAE-backed investor) to build 150MW AI-enabled data centre capacity across Nigeria and South Africa. Not yet powered, but concretizes the pipeline behind the tracked capacity aggregate — MTN moves from AI-DC exploration to a dedicated JV with named MW target.",
           "source_url": "https://www.itweb.co.za/article/mtn-advances-ai-ready-data-centre-strategy/4r1ly7R9aWAvpmda"
+        },
+        {
+          "date": "2026-09-13",
+          "direction": "against",
+          "note": "Nigeria's ITW Data Cloud Africa 2026 positioning (Nairobi 2026-09-08 to 09-10) bifurcates the continental capital pool: state-anchor-tenant demand-first (Nigeria) vs risk-classification governance-first (Kenya). Hedgers Ghana/Rwanda/Egypt sit between and get less capacity than either extreme. Bifurcation pattern lowers expected cumulative powered MW at end-2027 across the named projects since the split reduces topology convergence and slows shared enabling infrastructure. Bears against the 25pct+ commissioning threshold.",
+          "source_url": "https://allafrica.com/stories/202609100269.html"
         }
       ],
       "resolution": null
@@ -4232,6 +4244,12 @@
           "direction": "against",
           "note": "Search of au-afcfta.org, Kenya/Morocco/Nigeria government press pages, and named alternate sources (IOTA Foundation, Tony Blair Institute, WEF) as of 2026-09-04 returns no public document using 'Country Implementation Forum' or 'CIF' as a proper name for the AfCFTA ADAPT programme with a named chair, roster, or ToR. Eleven days remain before 2026-09-15 deadline. Trending toward disconfirm; Reckoning to re-verify.",
           "source_url": null
+        },
+        {
+          "date": "2026-09-07",
+          "direction": "supports",
+          "note": "AfCFTA ADAPT first-implementations announcement (IOTA Foundation blog + partner press) confirms Kenya/Morocco/Nigeria pilot moving from policy ambition to operational rollout, aligned with claim substance. Source hosts (IOTA Foundation blog, Tony Blair Institute, WEF, AfCFTA Secretariat) are listed in the update test; egress blocked from reading the IOTA post directly to verify the strict 'Country Implementation Forum'/'CIF' proper-noun clause plus chairperson/roster/ToR. Bearing supports the claim substance but the strict verification pending; leave for Sunday Reckoning.",
+          "source_url": "https://tech.africa/afcfta-adapt-kenya-morocco-nigeria/"
         }
       ],
       "resolution": null
@@ -5032,6 +5050,18 @@
           "direction": "against",
           "note": "As of 2026-09-04, no official Chinese English-language government publication (english.news.cn, english.www.gov.cn) or WAICO communication reports a signatory or member count of 33 or greater. Current publicly retrievable count remains in the 29-32 band per the last WAICO communication. Eleven days remain before the 2026-09-15 deadline. Trending toward disconfirm at the 62% claim.",
           "source_url": null
+        },
+        {
+          "date": "2026-09-07",
+          "direction": "supports",
+          "note": "Multiple non-Xinhua sources (Wikipedia WAICO article, Diplomat, TheNextWeb) report the count rose from the founding 29 (Shanghai 2026-07-16) to ~37 by end-July 2026 with additional accessions incl. Iran and Mozambique. However, the update test requires english.news.cn / english.www.gov.cn / WAICO official communication; those primary sources so far only confirm 29. Egress blocked from re-verifying english.news.cn directly. Bearing supports the claim but does not satisfy the strict source clause; wait for Sunday Reckoning.",
+          "source_url": "https://clubofmozambique.com/news/mozambique-becomes-founding-member-of-world-ai-cooperation-organization-waico/"
+        },
+        {
+          "date": "2026-09-10",
+          "direction": "against",
+          "note": "As of 2026-09-10, WAICO count remains at 29 founding signatories per CGTN and Wikipedia; no official Chinese-government English-language source (english.news.cn, english.www.gov.cn, WAICO communication) publishes a count of 33 or greater. Deadline 2026-09-15.",
+          "source_url": "https://news.cgtn.com/news/2026-07-18/29-countries-join-World-AI-Cooperation-Organization-in-Shanghai-1OSeZzywfx6/p.html"
         }
       ],
       "resolution": null
@@ -5180,7 +5210,14 @@
           "date": "2026-07-26T14:21:19Z"
         }
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "date": "2026-09-07",
+          "direction": "against",
+          "note": "MTN Nigeria Sifiso Dabengwa Data Centre Phase 1 (4.5MW IT load, 780 racks) operational; Phase 2 (adding second 4.5MW, targeting Tier IV) still under construction, expected H2 2026 completion. No mtnonline.com / MTN Group investor / LinkedIn announcement dated 2026-07-23 or later confirms full AI-ready capacity above 4.5MW at Sifiso Dabengwa specifically. Trending disconfirmation with 13 days remaining.",
+          "source_url": "https://guardian.ng/technology/mtn-invests-240m-in-9mw-lagos-data-hub-targets-ai-cloud-growth/"
+        }
+      ],
       "resolution": null
     },
     {
@@ -5400,6 +5437,12 @@
           "relation": "shares-system",
           "note": "SA National AI Policy Framework adoption sits in the same African-state institutional-consolidation system as data-centre critical-infrastructure designation; SA moving through Cabinet is the same governance-capacity signal read at a different endpoint. Timeline slip is disconfirming evidence for both.",
           "date": "2026-08-09T17:54:49Z"
+        },
+        {
+          "id": "claim-20260726-003",
+          "relation": "shares-system",
+          "note": "Both structural claims read African state-institutional AI-policy adoption capacity at the same 2026-10-24 endpoint, but from opposite state postures: SA slipping (Malatsi withdrawal, DCDT Nov Cabinet slip = 12pct twin) vs Kenya accelerating (draft consultation closed on time, sovereign cloud stack progressing = 58pct twin). Divergence between them is the structural signal - two African states hitting the same institutional gate with different capacity readouts on the same governance substrate.",
+          "date": "2026-09-13T14:15:15Z"
         }
       ],
       "evidence": [
@@ -5529,6 +5572,12 @@
           "direction": "supports",
           "note": "Kenya Ministry of ICT published the Kenya Cloud Policy (2025) Implementation Guidelines in June 2026 (ict.go.ke), providing a comprehensive framework for public sector transition to a coordinated cloud-first approach with data-sovereignty provisions. iXAfrica Data Centres and Baobab Cloud Services launched a sovereign public cloud platform in Kenya in May 2026. These bear on institutional stand-up direction but do not yet name a sovereign cloud/compute council with listed chair, members, or terms of reference under the AI & Emerging Technologies Policy specifically — the update-test's stricter institutional requirement is not yet met. Draft AI Policy consultation closed 2026-08-04; awaiting revised text.",
           "source_url": "https://www.ict.go.ke/sites/default/files/2026-07/Final%20%20Kenya%20Cloud%20Policy%202025%20Implementation%20Guidelines.pdf"
+        },
+        {
+          "date": "2026-09-13",
+          "direction": "supports",
+          "note": "Kenya sequenced hub stack visible 2026-09-08 to 09-10: Servernah sovereign cloud (May 2026), Oracle anchor tenant announcement, ITW+Datacloud Africa Nairobi 09-08 (1800 delegates) - three-layer stack contested vs South Africa and Nigeria positioning. Sovereign compute council institutional plumbing accreted alongside the physical stack; supports operational-launch trajectory by 2026-10-24.",
+          "source_url": "https://scholarmedia.africa/africa/kenya-eyes-digital-infrastructure-hub-status-as-itw-datacloud-africa-open-in-nairobi/"
         }
       ],
       "resolution": null
@@ -5667,6 +5716,18 @@
           "direction": "against",
           "note": "Public consultation on the Draft Kenya AI and Emerging Technologies Policy 2026 closed 2026-08-04. No revised draft or gazette notice has been published by ict.go.ke or kenyalaw.org as of 2026-09-04 (11 days before the resolve-by deadline). No public statement naming a specific compute figure (GPU count, teraflop/petaflop capacity, or dollar/shilling commitment) for the National AI Compute Access Programme has surfaced in Ministry press. Trending toward disconfirm; Reckoning to re-verify.",
           "source_url": "https://ict.go.ke/sites/default/files/AI%20Policy%20Doc/draft-kenya-ai-and-emerging-technologies-policy-2026.pdf"
+        },
+        {
+          "date": "2026-09-07",
+          "direction": "against",
+          "note": "Ministry published Draft AI and Emerging Technologies Policy July 2026 with public comment closing 2026-08-04; no revised draft, gazette notice, or final published version has appeared on ict.go.ke between 2026-08-05 and today (2026-09-07). Only 8 days remain before deadline. Trending disconfirmation.",
+          "source_url": "https://ict.go.ke/index.php/call-comments-draft-kenya-artificial-intelligence-and-other-emerging-technologies-policy-july-2026"
+        },
+        {
+          "date": "2026-09-10",
+          "direction": "against",
+          "note": "As of 2026-09-10, no revised draft, gazette notice, or final published version of the Kenya AI and Emerging Technologies Policy has surfaced on ict.go.ke naming a specific pledged compute figure (GPU count, teraflop capacity, or dollar-denominated commitment) for the National AI Compute Access Programme. July 2026 draft describes compute in capacity-vague terms only. Deadline 2026-09-15.",
+          "source_url": "https://ict.go.ke/call-comments-draft-kenya-artificial-intelligence-and-other-emerging-technologies-policy-july-2026"
         }
       ],
       "resolution": null
@@ -5692,7 +5753,7 @@
       "frameworks": [],
       "update_test": "Read BLS CPI release published on or about 2026-09-11 at 8:30 ET. Confirmed if headline All Items CPI 12-month percent change (unadjusted) reported for August 2026 is 3.5 percent or higher; disconfirmed if less than 3.5 percent.",
       "resolve_by": "2026-09-15",
-      "status": "open",
+      "status": "resolved",
       "validity": null,
       "prereg_audit": {
         "date": "2026-07-30T12:24:18Z",
@@ -5713,8 +5774,19 @@
           "date": "2026-08-02T14:20:07Z"
         }
       ],
-      "evidence": [],
-      "resolution": null
+      "evidence": [
+        {
+          "date": "2026-09-11",
+          "direction": "against",
+          "note": "US CPI August 2026 release scheduled 2026-09-11 08:30 ET on bls.gov. Consensus 3.4 pct headline y/y per Reuters and CNBC pre-release preview (2026-09-10); Nowflation forecast 3.34 pct. July 2026 print was 3.4 pct. Actual August print not yet indexed by search at 12:00 UTC (release is 12:30 UTC). Consensus at 3.4 pct is below the 3.5 pct threshold on this claim; if consensus proves correct the claim resolves disconfirmed. Log-only per interpretive-cases rule; Sunday Reckoning re-verifies against the actual BLS release.",
+          "source_url": "https://www.cnbc.com/2026/09/10/fridays-cpi-inflation-report-is-even-more-important-than-usual-heres-what-to-expect.html"
+        }
+      ],
+      "resolution": {
+        "date": "2026-09-13T12:09:30Z",
+        "outcome": "disconfirmed",
+        "note": "BLS CPI August 2026 released 2026-09-11 08:30 ET printed headline All Items CPI 12-month percent change at 3.4 percent, below the 3.5 percent threshold. Unambiguous fire: guidance figure published; disconfirmed. Consensus (3.4) matched actual; the July 2026 pre-registration correctly flagged the trajectory as flat-to-down but the twin's +15pp-over-base-rate lean on Ofgem/oil transient pass-through did not materialize into an August y/y overshoot. Source: bls.gov/news.release/cpi.nr0.htm (2026 M08)."
+      }
     },
     {
       "id": "claim-20260731-001",
@@ -5842,7 +5914,14 @@
       },
       "corrections": [],
       "related_to": [],
-      "evidence": [],
+      "evidence": [
+        {
+          "date": "2026-09-07",
+          "direction": "against",
+          "note": "PBOC 7-day reverse repo rate remains at 1.40% through 2026-09-07 despite operational volume reductions (zero rollovers 11-Aug through early-Sep periods, shift to 3-month tools). No rate cut announcement on pbc.gov.cn in the window 2026-08-01 to 2026-09-07. Eight days remaining to deadline 2026-09-15; window is tight.",
+          "source_url": "https://tradingeconomics.com/china/reverse-repo-rate/news/486175"
+        }
+      ],
       "resolution": null
     },
     {
@@ -7262,7 +7341,7 @@
       "frameworks": [],
       "update_test": "On or before 2026-09-11, the ECB publishes on ecb.europa.eu a monetary policy statement from the Sept 10-11 meeting. Confirmed if the deposit facility rate is retained at 2.00 percent. Disconfirmed if the deposit facility rate is changed (raised or cut) from 2.00 percent.",
       "resolve_by": "2026-09-11",
-      "status": "open",
+      "status": "resolved",
       "validity": null,
       "prereg_audit": {
         "date": "2026-08-27T12:38:32Z",
@@ -7276,8 +7355,19 @@
       },
       "corrections": [],
       "related_to": [],
-      "evidence": [],
-      "resolution": null
+      "evidence": [
+        {
+          "date": "2026-09-09",
+          "direction": "against",
+          "note": "Market pricing 2026-09-09 ahead of ECB 09-10/11 meeting: 99% probability of 25bp deposit rate hike to 2.50% per skilling.com aggregation; ECB Watch tool similar. Not the meeting outcome (meeting still to happen), but decisive shift in expectations vs the twin's 58% hold. Sunday Reckoning re-verifies.",
+          "source_url": "https://skilling.com/eu/en/blog/trading-strategies/ecb-rates/"
+        }
+      ],
+      "resolution": {
+        "date": "2026-09-11T12:22:53Z",
+        "outcome": "disconfirmed",
+        "note": "ECB Governing Council at 2026-09-10/11 meeting raised the three key ECB interest rates by 25 basis points; deposit facility rate to 2.50 percent, main refinancing operations to 2.65 percent, marginal lending facility to 2.90 percent, effective 2026-09-16. ECB staff projections revised headline inflation up (3.0 pct 2026, 2.5 pct 2027, 2.1 pct 2028); Middle East conflict cited as continuing inflationary pressure. Twin held 58 pct probability of unchanged 2.00 pct; outcome disconfirms. Evidence: https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.hu.html (ECB monetary policy decisions press release, 2026-09-11)"
+      }
     },
     {
       "id": "claim-20260828-001",
@@ -7838,7 +7928,7 @@
       "frameworks": [],
       "update_test": "On 2026-09-11, BLS publishes the August 2026 CPI. Confirmed if the headline all-items CPI y/y (seasonally adjusted, first release) is 3.0 percent or higher; disconfirmed if strictly below 3.0 percent.",
       "resolve_by": "2026-09-11",
-      "status": "open",
+      "status": "resolved",
       "validity": null,
       "prereg_audit": {
         "date": "2026-09-03T12:28:04Z",
@@ -7849,8 +7939,25 @@
       },
       "corrections": [],
       "related_to": [],
-      "evidence": [],
-      "resolution": null
+      "evidence": [
+        {
+          "date": "2026-09-11",
+          "direction": "supports",
+          "note": "US CPI August 2026 release scheduled 2026-09-11 08:30 ET on bls.gov. Consensus 3.4 pct headline y/y per Reuters and CNBC pre-release preview (2026-09-10); Nowflation forecast 3.34 pct. July 2026 print was 3.4 pct. Actual August print not yet indexed by search at 12:00 UTC (release is 12:30 UTC). Consensus at 3.4 pct is well above the 3.0 pct threshold; if consensus proves correct the claim resolves confirmed. Log-only per interpretive-cases rule; Sunday Reckoning re-verifies against the actual BLS release.",
+          "source_url": "https://www.cnbc.com/2026/09/10/fridays-cpi-inflation-report-is-even-more-important-than-usual-heres-what-to-expect.html"
+        },
+        {
+          "date": "2026-09-11",
+          "direction": "supports",
+          "note": "One-shot resolution routine ran 2026-09-11T12:47Z. BLS release page unreachable from environment (egress proxy blocks bls.gov; WebFetch on cpi.nr0.htm returned EGRESS_BLOCKED). Fallback WebSearch: bls.gov live URLs (cpi.nr0.htm, cpi.htm, cpi.toc.htm, cpi.pdf) all still labeled 'Consumer Price Index News Release - 2026 M07 Results' in the search index at 08:47 ET (17 minutes past scheduled 08:30 ET drop). One search summary reported 'CPI-U increased 3.4 percent over the last 12 months to an index level of 333.918; for the month, the index was unchanged prior to seasonal adjustment' as of today's release, and separate coverage cited a 3.4 pct headline vs 3.4 pct consensus, which would resolve confirmed if verified — but I cannot read that figure from the primary BLS release from this environment. Not resolving; leaving open for Sunday Reckoning re-verification against the actual BLS release.",
+          "source_url": "https://www.bls.gov/news.release/cpi.nr0.htm"
+        }
+      ],
+      "resolution": {
+        "date": "2026-09-12T12:06:07Z",
+        "outcome": "confirmed",
+        "note": "BLS released August 2026 CPI on 2026-09-11 at 08:30 ET. Headline all-items CPI-U y/y = 3.4 percent (unchanged from July 2026). Update-test threshold: 3.0 percent or higher = confirmed. Search-index snapshot confirms M08 release live (BLS URLs cpi.nr0.htm and cpi.htm now titled 'Consumer Price Index News Release - 2026 M08 Results'; M07 moved to /archives/cpi_08122026.htm). Cross-confirmed by Reuters, CNBC, Kiplinger, Fox Business, and usinflationcalculator.com coverage of the same release. Confidence at registration 22 pct against a base rate of 28 pct with market at 28 pct - miss on the disinflation-inertia side (2026 US CPI is stickier at ~3.4 pct than the recent-print anchor suggested)."
+      }
     },
     {
       "id": "claim-20260904-001",
@@ -7889,7 +7996,14 @@
       },
       "corrections": [],
       "related_to": [],
-      "evidence": [],
+      "evidence": [
+        {
+          "date": "2026-09-12",
+          "direction": "against",
+          "note": "Bearing evidence 2026-09-12 12:15 UTC. CME FedWatch pricing 60-69 pct probability of a 25 bp HIKE at 2026-09-16 FOMC (Yahoo Finance/CNBC/Forbes tracking, 2026-09-11 snapshot). Kalshi at 57 pct hike, Polymarket 49 pct hike per FXStreet cross-venue comparison. Median lean is HIKE, not hold. Twin claim quantified 62 pct HOLD - the market has now diverged materially from the claim. Postmortem-priming: this repeats the ECB claim-20260827-002 pattern (twin logged high-conviction market pricing 2 days pre-decision and did not re-quantify). NOT resolving; the actual decision is 2026-09-16 14:00 ET. Interpretive/pre-fact; the Sunday Reckoning re-verifies the actual print.",
+          "source_url": "https://www.cnbc.com/2026/08/28/-september-fed-decision-now-a-coin-flip-as-rate-hike-odds-increase.html"
+        }
+      ],
       "resolution": null
     },
     {
@@ -8514,36 +8628,36 @@
         "skill_vs_coinflip": null
       },
       "twin": {
-        "n": 88,
-        "hit_rate": 0.5455,
-        "brier": 0.2178,
-        "skill_vs_coinflip": 0.0322
+        "n": 91,
+        "hit_rate": 0.5385,
+        "brier": 0.2244,
+        "skill_vs_coinflip": 0.0256
       }
     },
     "bruno_committed_twin_numbered": 0,
-    "brier": 0.2178,
-    "skill_vs_coinflip": 0.0322,
+    "brier": 0.2244,
+    "skill_vs_coinflip": 0.0256,
     "base_rate": {
-      "n": 88,
-      "brier_base": 0.2223,
-      "brier_twin": 0.2178,
-      "skill": 0.0045
+      "n": 91,
+      "brier_base": 0.2258,
+      "brier_twin": 0.2244,
+      "skill": 0.0014
     },
     "market": {
-      "n": 8,
-      "brier_market": 0.1281,
-      "brier_twin": 0.1619,
-      "skill": -0.0338
+      "n": 9,
+      "brier_market": 0.1715,
+      "brier_twin": 0.2115,
+      "skill": -0.0401
     },
     "non_echo": {
-      "n": 28,
+      "n": 29,
       "floor": 30,
-      "brier": 0.2441,
-      "skill_vs_base": -0.0049
+      "brier": 0.2461,
+      "skill_vs_base": -0.0097
     },
     "clusters": {
-      "effective_n": 65,
-      "brier_cluster_collapsed": 0.2124
+      "effective_n": 67,
+      "brier_cluster_collapsed": 0.2206
     },
     "paired": {
       "n": 0,
@@ -8553,18 +8667,18 @@
     },
     "ci": {
       "skill_vs_coinflip": {
-        "lo": 0.0009,
-        "hi": 0.062,
-        "distinguishable": true
+        "lo": -0.0055,
+        "hi": 0.0537,
+        "distinguishable": false
       },
       "skill_vs_base_rate": {
-        "lo": -0.0132,
-        "hi": 0.0217,
+        "lo": -0.0157,
+        "hi": 0.0189,
         "distinguishable": false
       },
       "skill_vs_market": {
-        "lo": -0.0622,
-        "hi": -0.01,
+        "lo": -0.0677,
+        "hi": -0.0164,
         "distinguishable": true
       }
     }
