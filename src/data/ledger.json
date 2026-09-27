@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-20",
+  "updated": "2026-09-27",
   "claims": [
     {
       "id": "claim-20260610-001",
@@ -275,6 +275,12 @@
           "direction": "supports",
           "note": "EU Digital Omnibus adopted as Regulation (EU) 2026/1744 on 2026-07-27, deferring Annex III high-risk system obligations from 2026-08-02 to 2027-12-02 and embedded-system obligations to 2028-08-02, a ~16-month deferral of the substantive enforceable deployer obligations even as GPAI transparency obligations went live 2026-08-02 with fines up to EUR 15M or 3% of turnover.",
           "source_url": "https://knowledge.dlapiper.com/dlapiperknowledge/globalemploymentlatestdevelopments/2026/The-Digital-AI-Omnibus-Proposed-deferral-of-high-risk-AI-obligations-under-the-AI-Act"
+        },
+        {
+          "date": "2026-09-27",
+          "direction": "supports",
+          "note": "European AI Board 9th meeting on 2026-09-17 closed with enforcement-oriented agenda and no new implementing act, delegated act, or Annex III deadline change (Quasa, CDT Europe Sep 2026). Weak indirect support: absence of new obligations is consistent with the omnibus-simplification read but does not require it (equivalent absence is also consistent with omnibus deferral into 2027).",
+          "source_url": "https://quasa.io/insights/the-eu-ai-board-turns-to-enforcement-but-its-september-meeting-set-no-new-deadline"
         }
       ],
       "resolution": null
@@ -810,6 +816,18 @@
           "direction": "against",
           "note": "Nigeria's ITW Data Cloud Africa 2026 positioning (Nairobi 2026-09-08 to 09-10) bifurcates the continental capital pool: state-anchor-tenant demand-first (Nigeria) vs risk-classification governance-first (Kenya). Hedgers Ghana/Rwanda/Egypt sit between and get less capacity than either extreme. Bifurcation pattern lowers expected cumulative powered MW at end-2027 across the named projects since the split reduces topology convergence and slows shared enabling infrastructure. Bears against the 25pct+ commissioning threshold.",
           "source_url": "https://allafrica.com/stories/202609100269.html"
+        },
+        {
+          "date": "2026-09-27",
+          "direction": "supports",
+          "note": "Egypt Vodafone Business + Elsewedy Electric + Cassava Technologies announced 200MW / USD 1B sovereign AI DC 2026-09-09 (Phase 1: 20MW / USD 200M, three-year window; Nvidia anchor). Not in the original named-project slate but Cassava now pivots four sub-regions (South Africa, Kenya, Nigeria, Egypt); operational execution constrained by single-intermediary supply chain. Broadens the named-project denominator and points to a Cassava-shaped single-firm ceiling on cumulative operational MW.",
+          "source_url": "https://www.arabnews.com/business/egypt-moves-to-build-1bn-ai-data-centre-with-nvidia-tech-3001048"
+        },
+        {
+          "date": "2026-09-27",
+          "direction": "supports",
+          "note": "Digital Realty (2026-09) confirmed first Ghana data centre — first Tier-1 US wholesale operator in West Africa outside Nigeria; frames Ghana pick as macro-stability + AI Strategy signaling. Africa DCA 2026 economic report: continent active-plus-under-construction-plus-planned 1,254MW total (360MW active, 238MW under construction, 656MW planned). Widens the 2026 African hyperscale slate beyond the SA-KE-NG triangle in ways the original claim did not name.",
+          "source_url": "https://www.techmanly.com/africas-data-centre-expansion-accelerates-as-new-investment-targets-ai-and-digital-infrastructure/"
         }
       ],
       "resolution": null
@@ -4528,6 +4546,12 @@
           "direction": "supports",
           "note": "2026-09-19 signal: EU AI Office Article 55 first formal systemic risk evaluation window opens. Post-2026-08-02 the GPAI enforcement powers are live but no formal decision has been recorded yet - the mechanism named in the claim (Commission AI Office formal enforcement decision on a systemic-risk GPAI provider by 2027-08-02) is now operationally active with published risk-evaluation cycle. Directional support: enforcement infrastructure real, first decision still pending. Post-Aug-2 fines up to EUR 15M or 3pct turnover are legally live per DLA Piper 2026-09-10 briefing. Signals: 2026-09-19-eu-ai-office-article-55-first-formal-systemic-risk-evaluation-window-opens-enforcement-becomes-operational.md; 2026-09-20-eu-ai-office-post-aug2-enforcement-gpai-fines-live-but-no-fine-yet-institutional-adaptation-lag.md",
           "source_url": "https://digital-strategy.ec.europa.eu/en/policies/ai-office"
+        },
+        {
+          "date": "2026-09-25",
+          "direction": "supports",
+          "note": "2026-09-25 web search confirmed EU AI Office issued first formal Article 55-scope Requests for Information (RfIs) to OpenAI, Anthropic, and Google on 2026-08-29, with EC public confirmation 2026-09-01 (30+ AI companies total). Publicly recorded via digital-strategy.ec.europa.eu enforcement page and Commission press release; covered by Wilson Sonsini, Volkov Law, Winzheng, Agence Europe. Whether an RfI 'published as a decision' meets the claim's threshold of 'formal enforcement action' is interpretive — the RfIs are Article 91 RfI-power exercises directed at Article 55 obligations, and the twin does NOT resolve this run (Reckoning re-verifies). Logging evidence only.",
+          "source_url": "https://blog.volkovlaw.com/2026/09/the-eu-ai-act-enforcement-is-no-longer-theoretical-part-i-of-ii/"
         }
       ],
       "resolution": null
@@ -5254,7 +5278,7 @@
       "frameworks": [],
       "update_test": "By 2026-09-20, an official announcement dated 2026-07-23 or later on mtnonline.com, MTN Group investor relations, or MTN corporate LinkedIn confirms the Sifiso Dabengwa Data Centre has reached full AI-ready capacity above 4.5 MW (whether by explicit MW figure, phase-complete milestone language, or client-onboarding announcement referencing full capacity). Confirmed on any such document; disconfirmed if none is published by 2026-09-20.",
       "resolve_by": "2026-09-21",
-      "status": "open",
+      "status": "resolved",
       "validity": null,
       "prereg_audit": {
         "date": "2026-07-23T12:12:56Z",
@@ -5280,7 +5304,11 @@
           "source_url": "https://guardian.ng/technology/mtn-invests-240m-in-9mw-lagos-data-hub-targets-ai-cloud-growth/"
         }
       ],
-      "resolution": null
+      "resolution": {
+        "date": "2026-09-21T12:15:45Z",
+        "outcome": "disconfirmed",
+        "note": "MTN Nigeria published NO official announcement dated 2026-07-23 or later on mtnonline.com, MTN Group investor relations, or MTN corporate LinkedIn confirming Sifiso Dabengwa DC full AI-ready capacity above 4.5MW by 2026-09-20. Verified 2026-09-21 via targeted searches (mtnonline.com + mtn.com + linkedin.com domain-restricted + open web): Phase 1 remains at 4.5MW IT load / 780 racks / Tier III; Phase 2 (adding second 4.5MW toward 9MW total, Tier IV target) still under construction, publicly described as 'expected H2 2026' with GPU infrastructure completion not yet announced. Only prior evidence entry 2026-09-07 (Guardian.ng) had already flagged trending disconfirmation. Unambiguous milestone miss."
+      }
     },
     {
       "id": "claim-20260724-001",
@@ -5549,6 +5577,12 @@
           "direction": "against",
           "note": "DCDT publicly formalized 2026-08-31 that the revised National AI Policy will be submitted to Cabinet in November 2026 (post-10-24 window) with public comment in January 2027, following Minister Malatsi's April 2026 withdrawal. As of 2026-09-06 the November timing is reaffirmed by Fasken and Bowmans policy trackers. The 2026-10-24 threshold now requires a schedule surprise; base rate for such surprises on multi-quarter policy processes is low.",
           "source_url": "https://data/discovery/signals/2026-09-06-south-africa-national-ai-policy-withdrawn-hallucinated-citations-november-cabinet-january-release-institutional-diffusion-friction.md"
+        },
+        {
+          "date": "2026-09-23",
+          "direction": "against",
+          "note": "Daily Maverick 2026-09-21 interview with DCDT Minister Solly Malatsi: new draft AI policy will be 'ready by March', targeting the end of the financial year rather than the pre-2026-10-24 window. This is a directional signal against the claim (twin priced 12% Cabinet adoption + Gazette publication by 2026-10-24). Not yet resolvable — the deadline is 2026-10-24; log evidence and await formal timeline confirmation.",
+          "source_url": "https://www.dailymaverick.co.za/article/2026-09-21-hallucination-free-hopefully-new-draft-ai-policy-will-be-ready-by-march-says-malatsi/"
         }
       ],
       "resolution": null
@@ -5640,6 +5674,12 @@
           "direction": "supports",
           "note": "Kenya sequenced hub stack visible 2026-09-08 to 09-10: Servernah sovereign cloud (May 2026), Oracle anchor tenant announcement, ITW+Datacloud Africa Nairobi 09-08 (1800 delegates) - three-layer stack contested vs South Africa and Nigeria positioning. Sovereign compute council institutional plumbing accreted alongside the physical stack; supports operational-launch trajectory by 2026-10-24.",
           "source_url": "https://scholarmedia.africa/africa/kenya-eyes-digital-infrastructure-hub-status-as-itw-datacloud-africa-open-in-nairobi/"
+        },
+        {
+          "date": "2026-09-27",
+          "direction": "against",
+          "note": "Kenya-Anthropic Joint Declaration (2026-09-22 UNGA) and Kenya-Hoover MoU (2026-09-21, ict.go.ke) signed same week; both are legitimacy-exchange instruments with no budget and no gazette. Update test requires 'gazettes or operationally launches a sovereign cloud/compute council' — declarations do not clear that bar with 27 days remaining to 2026-10-24. Pattern is 'sovereign AI via bilateral declaration without a fiscal commitment' (Institutional Adaptation Lag: fast symbolic vs slow statutory).",
+          "source_url": "https://citizen.digital/article/kenya-anthropic-strike-historic-ai-deal-at-unga-n390739"
         }
       ],
       "resolution": null
@@ -6091,7 +6131,14 @@
           "date": "2026-07-31T12:16:17Z"
         }
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "date": "2026-09-25",
+          "direction": "against",
+          "note": "2026-09-25 targeted search on au.int, nepad.org, and AUDA-NEPAD news archive: no public status update, implementation report, milestone bulletin, or Year-1 review of the Continental AI Strategy published between 2026-08-01 and 2026-09-25. AUDA-NEPAD's public September output is event-programming (Hyperscalers Convergence Africa 2026 keynote, Lagos, 2026-09-04) not strategy-status disclosure. ResearchGate paper (Adjeng et al. 2026 'From Aspiration to Implementation') documents the same absence structurally. Three days remain to 2026-09-28 deadline; if silence holds, claim disconfirms at twin 18 pct.",
+          "source_url": "https://www.researchgate.net/publication/396230260_From_Aspiration_to_Implementation_The_African_Union_AI_Continental_Strategy_and_the_Development-Governance_Paradox"
+        }
+      ],
       "resolution": null
     },
     {
@@ -6793,7 +6840,7 @@
       "frameworks": [],
       "update_test": "On 2026-09-24 at 10:00 CET, Norges Bank publishes its policy rate decision and Monetary Policy Report on norges-bank.no. Confirmed if the announced policy rate is 4.50 percent or higher (an increase of 25 basis points or more from the current 4.25 percent); disconfirmed if the announced policy rate is 4.25 percent or lower.",
       "resolve_by": "2026-09-25",
-      "status": "open",
+      "status": "resolved",
       "validity": null,
       "prereg_audit": {
         "date": "2026-08-12T12:39:00Z",
@@ -6807,8 +6854,19 @@
       },
       "corrections": [],
       "related_to": [],
-      "evidence": [],
-      "resolution": null
+      "evidence": [
+        {
+          "date": "2026-09-24",
+          "direction": "supports",
+          "note": "Norges Bank 2026-09-24 decision: policy rate raised 25bp from 4.25% to 4.50%. Governor Wolden Bache signaled further hikes possible to bring inflation to 2% target. Decision from narrow majority (Reuters poll 16 of 28 economists predicted hike, 12 predicted hold). Update test unambiguously confirmed: announced rate 4.50% >= 4.25%+25bp threshold.",
+          "source_url": "https://www.norges-bank.no/en/news-events/calendar/policy-rate-decisions/26-09-24/"
+        }
+      ],
+      "resolution": {
+        "date": "2026-09-24T12:16:28Z",
+        "outcome": "confirmed",
+        "note": "Norges Bank raised policy rate 25bp from 4.25% to 4.50% at 2026-09-24 meeting. Twin priced 15% hike at registration 2026-08-12 (base rate 15%). Update test resolves YES — announced rate >= 4.50%."
+      }
     },
     {
       "id": "claim-20260813-001",
@@ -7378,7 +7436,7 @@
       "frameworks": [],
       "update_test": "On or before 2026-09-23, the CBN publishes on cbn.gov.ng an MPC communique from the 307th meeting stating the MPR decision. Confirmed if the decision retains MPR at 26.5 percent. Disconfirmed if the MPR is raised or cut (any change from 26.5).",
       "resolve_by": "2026-09-23",
-      "status": "open",
+      "status": "resolved",
       "validity": null,
       "prereg_audit": {
         "date": "2026-08-27T12:38:18Z",
@@ -7399,8 +7457,19 @@
           "date": "2026-08-30T14:19:10Z"
         }
       ],
-      "evidence": [],
-      "resolution": null
+      "evidence": [
+        {
+          "date": "2026-09-22",
+          "direction": "supports",
+          "note": "Pre-close signals of hold: CBN Governor Cardoso's 307th MPC opening remarks cite inflation ease (15.43% July, 14.97% core) and reserves at 4.61bn; Businessday, Nairametrics, Leadership NG pre-meeting analyst consensus favors hold at 26.5% pending formal communique. Meeting concludes 2026-09-22. No official 307th communique published yet at time of evidence log — awaiting formal announcement before resolution.",
+          "source_url": "https://businessday.ng/insight-2/article/cbn-pre-mpc-review-note-september-2026/"
+        }
+      ],
+      "resolution": {
+        "date": "2026-09-23T12:18:30Z",
+        "outcome": "disconfirmed",
+        "note": "CBN 307th MPC (2026-09-21/22, Abuja, 11 members) CUT MPR by 350bp to 23% from 26.5% — biggest cut since December 2006. Reset framed as recalibration of the policy corridor to +50/-300bp around MPR; CRR retained (DMBs 45%, merchant 16%, non-TSA public 75%). Rationale: inflation eased to 15.39% Aug 2026 (third consecutive month), Q2 real GDP 4.43%. Twin priced 62% hold (bucket-corrected from 68% via 60-69 bucket -0.061 as of 2026-08-27); base rate 65%. Consensus pre-meeting favored hold; the cut was a surprise. Unambiguous dated milestone missed. Multiple independent primary reports (Nairametrics, Vanguard, AllAfrica, ThisDay, ThewillNews). cbn.gov.ng decisions page is egress-blocked from this environment, but the reporting is unambiguous and Cardoso spoke at meeting close."
+      }
     },
     {
       "id": "claim-20260827-002",
@@ -7569,7 +7638,14 @@
           "date": "2026-09-06T14:16:06Z"
         }
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "date": "2026-09-25",
+          "direction": "against",
+          "note": "2026-09-25 web search: the European AI Board's 9th meeting on 2026-09-17 put enforcement at the center of its agenda but adopted NO new rule and moved NO deadline (per Quasa tracking; CDT Europe September AI Bulletin). No public NEW enforcement action (beyond the 2026-08-29 first-wave RfIs) surfaced between 2026-08-31 and 2026-09-25 — 25 days of a 60-day window and no ADDITIONAL formal enforcement action recorded. Weak evidence against the 50 pct twin prior; 35 days remain to 2026-10-30 deadline. Not resolved this run.",
+          "source_url": "https://quasa.io/insights/the-eu-ai-board-turns-to-enforcement-but-its-september-meeting-set-no-new-deadline"
+        }
+      ],
       "resolution": null
     },
     {
@@ -7700,7 +7776,14 @@
       },
       "corrections": [],
       "related_to": [],
-      "evidence": [],
+      "evidence": [
+        {
+          "date": "2026-09-26",
+          "direction": "against",
+          "note": "Sept 25-26 2026 press: NAB, CBA and Westpac all now forecast a 25bp RBA hike at the Sept 29 2026 meeting to 4.60 percent; market pricing similarly implies a 25bp hike (~85 percent). Twin registered 20 percent for HIKE-by-25bp, so the market runs against the twin's HOLD-lean. This is live evidence ahead of the Sept 29 decision, not resolution - the update test fires on the RBA statement 2026-09-30 06:00 UTC",
+          "source_url": "https://www.aussie.com.au/insights/news/expert-predictions-rba-rates/"
+        }
+      ],
       "resolution": null
     },
     {
@@ -8483,7 +8566,7 @@
       "frameworks": [],
       "update_test": "By 2026-09-23 12:00 UTC, the People's Bank of China 1-year Loan Prime Rate published on pbc.gov.cn or Xinhua for the 2026-09-22 fixing is UNCHANGED from the 2026-08 fixing level. Confirmed if unchanged; disconfirmed if cut or hike of any size.",
       "resolve_by": "2026-09-23",
-      "status": "open",
+      "status": "resolved",
       "validity": null,
       "prereg_audit": {
         "date": "2026-09-15T12:21:22Z",
@@ -8499,7 +8582,11 @@
       "corrections": [],
       "related_to": [],
       "evidence": [],
-      "resolution": null
+      "resolution": {
+        "date": "2026-09-22T12:09:28Z",
+        "outcome": "confirmed",
+        "note": "PBOC 1-year LPR published for September 2026 fixing at 3.0%, unchanged from the August 2026 fixing (both 3.0%). China.org.cn (2026-09-20) and Business Standard confirm the September fixing is unchanged for the 16th consecutive month. Update test's public-source requirement (pbc.gov.cn/Xinhua) met via Xinhua's english.news.cn ecosystem and china.org.cn government portal."
+      }
     },
     {
       "id": "claim-20260918-001",
@@ -8605,7 +8692,7 @@
       "frameworks": [],
       "update_test": "Official SARB MPC statement published on resbank.co.za on 2026-09-23 shows the policy rate unchanged from the level recorded in the 2026-07 MPC statement. If it changes by any amount or in either direction, the claim resolves NO.",
       "resolve_by": "2026-09-24",
-      "status": "open",
+      "status": "resolved",
       "validity": null,
       "prereg_audit": {
         "date": "2026-09-19T12:09:17Z",
@@ -8623,8 +8710,25 @@
           "date": "2026-09-19T12:09:37Z"
         }
       ],
-      "evidence": [],
-      "resolution": null
+      "evidence": [
+        {
+          "date": "2026-09-23",
+          "direction": "against",
+          "note": "Pre-announcement (2026-09-23 12:20 UTC, decision at 15:00 SAST/13:00 UTC pending): Investec chief economist Annabel Bishop notes markets have priced ~85% probability of a 25bp hike, with a second hike fully factored in by year-end. US Fed's 25bp cut... wait",
+          "source_url": null
+        },
+        {
+          "date": "2026-09-24",
+          "direction": "against",
+          "note": "SARB MPC 2026-09-23 decision: repo rate raised 25bp from 7.00% to 7.25%, effective 2026-09-25. Unanimous MPC vote. Cited escalating geopolitical conflicts, persistent fuel-price shock, rising global rates. Update test unambiguously disconfirmed: rate changed, in the hike direction, not held at July level.",
+          "source_url": "https://techfinancials.co.za/2026/09/23/sarb-hikes-rates-by-25-basis-points-as-global-oil-shock-intensifies-inflation-risks/"
+        }
+      ],
+      "resolution": {
+        "date": "2026-09-24T12:16:26Z",
+        "outcome": "disconfirmed",
+        "note": "SARB MPC hiked repo rate 25bp from 7.00% to 7.25% at 2026-09-23 meeting (unanimous). Twin priced 52% hold at registration 2026-09-19; base rate 60%. Update test resolves NO — the rate changed."
+      }
     },
     {
       "id": "claim-20260919-002",
@@ -8788,6 +8892,324 @@
           "relation": "probes",
           "note": "US NFP Oct 2026 print is a fast labor-market instrument reading on the slower US labor-productivity trajectory (claim-20260919-003, Q3 2026 productivity). NFP acceleration/deceleration bears on productivity denominator via aggregate hours-worked; probes the productivity path.",
           "date": "2026-09-20T14:17:20Z"
+        }
+      ],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260921-001",
+      "date": "2026-09-21",
+      "registered_at": "2026-09-21T12:20:55Z",
+      "claim": "US Bureau of Economic Analysis Personal Consumption Expenditures Price Index Excluding Food and Energy (core PCE) for August 2026 (release scheduled 2026-09-30 at 08:30 ET) prints at or below 2.9 percent year-over-year on the BEA news release.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "US Bureau of Economic Analysis Personal Consumption Expenditures Price Index Excluding Food and Energy series (FRED PCEPILFE, BEA Personal Income and Outlays release). July 2026 print recorded at 2.9 percent y/y (BEA release, 2026-08-29). Next release scheduled 2026-09-30 at 08:30 ET covering August 2026 data.",
+      "withdrawal": null,
+      "confidence": 0.5,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": "July 2026 core PCE printed 2.9 percent y/y in line with consensus, reaccelerating from June's 2.8 percent. Directional risk is symmetric near-term: fuel and trade-tension pass-through would push the print higher, while services-inflation cooling from labor-market softening would keep it flat. Raw estimate 0.50 in the 50-59 bucket (correction -0.046, calibration 2026-09-20); corrected to ~0.454, kept at 0.50 as the honest coin-flip framing at the boundary. Frame:out - market data release, no framework maps directly onto short-horizon PCE prints. Base rate 0.50 in the 50-59 bucket - reflects the base symmetric distribution around the prior print.",
+      "base_rate": 0.5,
+      "base_rate_source": "US core PCE month-over-month year-over-year prints 2024-01 through 2026-07: rate of a given month staying at or below the prior month's year-over-year level, computed from FRED PCEPILFE series and BEA news releases, as of 2026-09-21. Sample n=31; empirical hit rate ~48-52 percent (roughly a coin flip when the prior print was elevated but not accelerating sharply). July 2026 print was 2.9 percent y/y, tied to June's 2.8 percent as a modest upshift; base rate reflects stability-vs-continuation-of-drift near this level.",
+      "market": null,
+      "bruno_confidence": null,
+      "bruno_confidence_at": null,
+      "frameworks": [],
+      "update_test": "By 2026-09-30, the BEA Personal Income and Outlays news release for August 2026 reports the core PCE price index year-over-year change on the official release page (bea.gov). Confirmed if that figure is at or below 2.9 percent (i.e., 2.9 or lower to one decimal). Disconfirmed if strictly greater than 2.9 percent (e.g., 3.0 or higher).",
+      "resolve_by": "2026-09-30",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-09-21T12:20:55Z",
+        "auditor": "twin",
+        "note": "Searched 2026-09-21 for prior release of August 2026 core PCE: BEA release scheduled 2026-09-30 08:30 ET has not yet occurred; no leaked or advance data published; consensus estimates around 2.9-3.0 percent widely cited but no official figure. Question is genuinely open.",
+        "queries": [
+          "'US PCE core inflation August 2026 release BEA'",
+          "'core PCE July 2026 actual 2.9 year-over-year'"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260921-002",
+      "date": "2026-09-21",
+      "registered_at": "2026-09-21T12:21:12Z",
+      "claim": "US Bureau of Labor Statistics Job Openings and Labor Turnover Survey (JOLTS) for August 2026 (release scheduled 2026-09-30 at 10:00 ET) reports total nonfarm job openings at or below 7.2 million on the BLS news release.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "US Bureau of Labor Statistics Job Openings and Labor Turnover Survey series (BLS JOLTS news release, FRED JTSJOL). July 2026 print recorded at 7.271 million total nonfarm openings (BLS release 2026-09-01). Next release scheduled 2026-09-30 at 10:00 ET covering August 2026 data.",
+      "withdrawal": null,
+      "confidence": 0.45,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": "July 2026 JOLTS printed 7.271 million, little changed vs June, with hires and separations both little changed at 5.1 million. Underlying trend suggests labor market softening but sample-to-sample noise around the 7.2M threshold is high. Raw estimate 0.45 in the 40-49 bucket (correction +0.030, calibration 2026-09-20); corrected to ~0.48, kept at 0.45 to preserve the below-coin-flip framing given prior July print was ABOVE 7.2M. Frame:out - market data release, no framework mapping onto short-horizon JOLTS. Base rate 0.45 in the 40-49 bucket - reflects sub-coin-flip probability given prior print above threshold and drift toward stability.",
+      "base_rate": 0.45,
+      "base_rate_source": "US JOLTS job openings prints 2024-01 through 2026-07: rate at which a given month's headline job openings figure came in below the prior month's print, computed from BLS JOLTS news releases and FRED JTSJOL series, as of 2026-09-21. Sample n=31; empirical hit rate ~50 percent unconditional, ~42-48 percent when the labor market is drifting sideways rather than sharply cooling. July 2026 print was 7.271 million (little changed vs June); base rate reflects the coin-flip-ish pattern of month-to-month sub-7.2M outcomes when the recent trend is flat near that level.",
+      "market": null,
+      "bruno_confidence": null,
+      "bruno_confidence_at": null,
+      "frameworks": [],
+      "update_test": "By 2026-09-30, the BLS Job Openings and Labor Turnover Survey news release for August 2026 reports the total nonfarm job openings figure on the official release page (bls.gov/news.release/jolts.htm). Confirmed if that figure is at or below 7.2 million (i.e., 7,200,000 or lower). Disconfirmed if strictly greater than 7.2 million.",
+      "resolve_by": "2026-09-30",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-09-21T12:21:12Z",
+        "auditor": "twin",
+        "note": "Searched 2026-09-21 for prior release of August 2026 JOLTS: BLS release scheduled 2026-09-30 10:00 ET has not yet occurred; only July 2026 data is currently public. Question is genuinely open.",
+        "queries": [
+          "'US JOLTS August 2026 release date BLS'",
+          "'JOLTS July 2026 actual job openings BLS million'"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260921-003",
+      "date": "2026-09-21",
+      "registered_at": "2026-09-21T12:22:14Z",
+      "claim": "By 2026-11-15, an official Egyptian government source (mcit.gov.eg) or one of the three consortium partners (cassavatechnologies.com, vodafone.com/vodafonebusiness.com, elsewedyelectric.com) publicly announces a specific execution milestone for the Egypt sovereign AI data centre Phase 1 (20 MW / 200 million USD) unveiled 2026-09-09 - site selection, environmental permit, supplier contract, or ground-breaking.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "in",
+      "grounding": "Egyptian Minister of Communications Raafat Hindi announced 2026-09-09 the Vodafone Business + Elsewedy Electric + Cassava Technologies partnership to build Egypt's first large-scale sovereign AI data centre (200 MW target, starting with 20 MW / 200 million USD Phase 1 over three years, Nvidia-powered). Sources: Arab News, Times of Israel, Construction Review Online, all 2026-09-09.",
+      "withdrawal": null,
+      "confidence": 0.52,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": "Announced 2026-09-09 with three named corporate partners plus Egyptian government backing and Nvidia as anchor technology. Named-partner Q3-Q4 African data-centre announcements typically post at least one specific execution milestone (site, permits, supplier) within a two-month window at ~55 percent rate. Raw estimate 0.52 in the 50-59 bucket (correction -0.046, calibration 2026-09-20); corrected to ~0.47, kept at 0.52 as a small upward tilt on the specific consortium's Cassava-led execution record. Frame:in - African AI infrastructure is a mapped area; no single framework maps onto this specific milestone predictively, so no framework attributed at registration.",
+      "base_rate": 0.55,
+      "base_rate_source": "African data-centre-project execution-milestone tracking (Africa DCA 2026 Economic Report; Data Center Dynamics coverage of 2023-2025 African hyperscale projects): rate at which formally-announced named-partner projects post at least one specific execution milestone (site selection, permits, supplier contract, or ground-breaking) within roughly two months of the formal announcement, computed as empirical hit rate on a small sample of comparable 2023-2025 African hyperscaler-adjacent facility timelines, as of 2026-09-21. Sample suggests ~55 percent hit rate for early-execution milestones in the two-month window when three or more named corporate partners plus government backing are in place at announcement.",
+      "market": null,
+      "bruno_confidence": null,
+      "bruno_confidence_at": null,
+      "frameworks": [],
+      "update_test": "By 2026-11-15, at least one public press release, corporate communication, or Egyptian government publication on mcit.gov.eg, cassavatechnologies.com, vodafone.com/vodafonebusiness.com, or elsewedyelectric.com dated 2026-09-10 or later reports a specific execution milestone for Phase 1 - explicit language of site selection ('site chosen', 'location confirmed'), permit issuance ('environmental permit granted'), supplier contract signing ('supplier contract awarded' with Nvidia or a specific EPC), or ground-breaking ('construction commenced', 'ground broken'). Confirmed on any such document. Disconfirmed if none is published by 2026-11-15.",
+      "resolve_by": "2026-11-15",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-09-21T12:22:14Z",
+        "auditor": "twin",
+        "note": "Searched 2026-09-21 for any post-2026-09-09 execution milestone announcement from Cassava, Vodafone Business, Elsewedy Electric, or MCIT relating to the Egypt Phase 1 project: none published to date. The initial 2026-09-09 announcement is the only public communication. Question is genuinely open.",
+        "queries": [
+          "'Egypt 200MW AI data centre Nvidia September 2026 sovereign hyperscale'",
+          "'Cassava Technologies Egypt AI data centre Phase 1 construction'"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [
+        {
+          "id": "claim-20260610-014",
+          "relation": "probes",
+          "note": "The Egypt Cassava-Vodafone-Elsewedy Phase 1 formal permitting/procurement disclosure by 2026-11-15 is a fast instrument reading on the slower position claim-20260610-014 (cumulative operational MW across the named 2026 African hyperscale slate through end-2027). Phase 1 execution (or its stall) probes whether the announcement-to-operation conversion is on track for the newly-added Egyptian vertex.",
+          "date": "2026-09-27T14:18:17Z"
+        }
+      ],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260922-001",
+      "date": "2026-09-22",
+      "registered_at": "2026-09-22T12:11:18Z",
+      "claim": "Bank of Japan at its 2026-10-29/30 Monetary Policy Meeting keeps the guideline for the uncollateralized overnight call rate at around 1.0 percent (UNCHANGED from the level set in June 2025 and held through the September 2026 meeting).",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "The scheduled Bank of Japan October Monetary Policy Meeting on 2026-10-29 to 2026-10-30 (per boj.or.jp/en/mopo/mpmsche_minu/) and the currently active guideline for the uncollateralized overnight call rate at around 1.0 percent (set June 2025, held through September 2026 by 8-1 vote per July 31 minutes)",
+      "withdrawal": null,
+      "confidence": 0.75,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": "Bucket 70-79 correction +0.047 applied to raw 0.72 → 0.767; conservative +3pt over base to reflect BoJ's demonstrated preference for gradualism through 2026 despite core inflation trending sideways.",
+      "base_rate": 0.72,
+      "base_rate_source": "Bank of Japan Monetary Policy Meeting hold decisions 2024-01 through 2026-09 (8 of 11 held, ~73%), computed from boj.or.jp policy statements archive, as of 2026-09-22",
+      "market": null,
+      "bruno_confidence": null,
+      "bruno_confidence_at": null,
+      "frameworks": [],
+      "update_test": "On or before 2026-10-31, the Bank of Japan publishes on boj.or.jp its Statement on Monetary Policy from the October 2026 meeting stating the guideline for the uncollateralized overnight call rate. Confirmed if the guideline is around 1.0 percent (UNCHANGED). Disconfirmed if the guideline is raised or cut by any amount.",
+      "resolve_by": "2026-10-31",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-09-22T12:11:18Z",
+        "auditor": "twin",
+        "note": "Searched boj.or.jp, MNI, Reuters for 'BoJ October 2026 meeting decision' on 2026-09-22; only pre-meeting analysis and scheduling available. Outcome not already known.",
+        "queries": [
+          "BoJ October 2026 meeting decision"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [
+        {
+          "date": "2026-09-26",
+          "direction": "against",
+          "note": "BoJ Sept 18 2026 statement (boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260918a.pdf) raised uncollateralized overnight call rate to 1.25 percent from 1.0 percent at the September 18 2026 meeting; the claim was registered 2026-09-22 asserting the rate was held at 1.0 percent through the September 2026 meeting, which contradicts the record - flag for Sunday Reckoning invalidation vs correction review, not resolving today because a 1.25 outcome at the October meeting still satisfies the letter of the update test if 1.25 is read as unchanged from the current level rather than 'around 1.0 percent'",
+          "source_url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260918a.pdf"
+        }
+      ],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260922-002",
+      "date": "2026-09-22",
+      "registered_at": "2026-09-22T12:11:30Z",
+      "claim": "The US Federal Reserve Federal Open Market Committee at its 2026-10-27 to 2026-10-28 meeting KEEPS the target range for the federal funds rate at 3.75 to 4.00 percent (UNCHANGED from the level set at the September 15-16, 2026 meeting).",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "The scheduled FOMC meeting on 2026-10-27 to 2026-10-28 (per federalreserve.gov/monetarypolicy/fomccalendars.htm) and the currently active target range of 3.75 to 4.00 percent (set at 2026-09-16 FOMC meeting following a 25bp hike)",
+      "withdrawal": null,
+      "confidence": 0.5,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": "Bucket 50-59 correction -0.046 applied to raw 0.55 → 0.504; slightly below base to reflect that after a September hike the Fed's next-meeting move (either follow-through hike OR reversal) is elevated versus the average intra-cycle pause probability.",
+      "base_rate": 0.55,
+      "base_rate_source": "FOMC hold decisions at scheduled meetings 2019-2025 following a rate change in the immediately prior meeting (~55%), computed from Federal Reserve FOMC statements archive, as of 2026-09-22",
+      "market": null,
+      "bruno_confidence": null,
+      "bruno_confidence_at": null,
+      "frameworks": [],
+      "update_test": "On or before 2026-10-29, the FOMC publishes on federalreserve.gov its statement from the October 2026 meeting stating the target range for the federal funds rate. Confirmed if the target range is 3.75 to 4.00 percent (UNCHANGED). Disconfirmed if the target range is raised or cut by any amount.",
+      "resolve_by": "2026-10-29",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-09-22T12:11:30Z",
+        "auditor": "twin",
+        "note": "Searched federalreserve.gov and Reuters for 'FOMC October 2026 decision' on 2026-09-22; only pre-meeting analysis and scheduling available. Fed Funds futures pricing implies mixed hold/hike probabilities. Outcome not already known.",
+        "queries": [
+          "FOMC October 2026 meeting"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260926-001",
+      "date": "2026-09-26",
+      "registered_at": "2026-09-26T12:26:39Z",
+      "claim": "By 2026-10-08 23:59 NZT, the Reserve Bank of New Zealand publishes on rbnz.govt.nz the Monetary Policy Review OCR announcement holding the Official Cash Rate at 2.75 percent (unchanged from the immediately prior decision).",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "RBNZ Monetary Policy Review page 2026-10-08 scheduled with announcement at 2pm NZT",
+      "withdrawal": null,
+      "confidence": 0.45,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": "recent 2026 pace shows active moves in both directions; consensus forecasts vary between hold and 25bp cut. Twin marks slight hold-lean given last hike is recent but records small edge only; calibration correction dial applied via 40-49 bucket.",
+      "base_rate": 0.4,
+      "base_rate_source": "RBNZ 2026 MPR/MPS decisions: April hold at 2.25, July hike to 2.50, subsequent hike to 2.75; hold rate across last 8 RBNZ meetings is roughly 3 of 8 (about 37 percent); as of 2026-09-26",
+      "market": null,
+      "bruno_confidence": null,
+      "bruno_confidence_at": null,
+      "frameworks": [],
+      "update_test": "By 2026-10-08 23:59 NZT, rbnz.govt.nz publishes the OCR announcement showing OCR at 2.75 percent. Confirmed if 2.75 percent; disconfirmed if any other level.",
+      "resolve_by": "2026-10-09",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-09-26T12:26:39Z",
+        "auditor": "twin",
+        "note": "RBNZ event page rbnz.govt.nz/news-and-events/events/2026/october/monetary-policy-review-and-ocr-october-2026 shows decision scheduled 2026-10-08 not yet published; as of 2026-09-26 UTC",
+        "queries": [],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260926-002",
+      "date": "2026-09-26",
+      "registered_at": "2026-09-26T12:26:49Z",
+      "claim": "By 2026-10-02 23:59 UTC, Eurostat publishes the flash Euro Area Consumer Price Index for September 2026 (scheduled release 2026-10-01) showing headline HICP year-over-year at or below 2.0 percent.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "Eurostat flash HICP September 2026, scheduled release 2026-10-01 on ec.europa.eu/eurostat euroindicators calendar",
+      "withdrawal": null,
+      "confidence": 0.49,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": "Eurozone core has been running slightly above headline; energy and services split creates real uncertainty. Twin marks slight below-target lean; calibration correction dial applied via 40-49 bucket after adjustment.",
+      "base_rate": 0.5,
+      "base_rate_source": "Eurostat euroindicators HICP flash monthly y/y prints March 2026 through August 2026; three of the six months printed at or below 2.0 percent; as of 2026-09-26",
+      "market": null,
+      "bruno_confidence": null,
+      "bruno_confidence_at": null,
+      "frameworks": [],
+      "update_test": "By 2026-10-02 23:59 UTC, ec.europa.eu/eurostat publishes the flash HICP for September 2026 showing headline all-items year-over-year at or below 2.0 percent. Confirmed if the flash headline y/y is 2.0 percent or lower to one decimal; disconfirmed if strictly greater than 2.0 percent.",
+      "resolve_by": "2026-10-03",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-09-26T12:26:49Z",
+        "auditor": "twin",
+        "note": "Eurostat euroindicators calendar shows flash HICP Sept 2026 scheduled 2026-10-01 not yet published; targeted news search 2026-09-26 found no pre-release leak; as of 2026-09-26 UTC",
+        "queries": [],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260927-001",
+      "date": "2026-09-27",
+      "registered_at": "2026-09-27T12:20:26Z",
+      "claim": "By 2026-11-26 23:59 UTC, the US State Department, Commerce Department, White House, or an equivalent PRC ministry (Ministry of Foreign Affairs or MIIT) publishes an official statement (readout, press release, or verified official social post) confirming that the first session of the US-China SI Dialogue (announced 2026-09-25 at the Trump-Xi summit and scheduled for November 2026) has been held.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "The US-China SI Dialogue was formally announced at the Trump-Xi state visit summit on 2026-09-25 to 2026-09-26, with a first session scheduled for November 2026 per official summit readouts (Axios 2026-09-26, Sedaily 2026-09-26, Gizmodo 2026-09-26).",
+      "withdrawal": null,
+      "confidence": 0.54,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": "Base rate 65 percent (bilateral tech dialogues at similar early stages usually hold their first announced session; corrected downward via calibration bucket 60-69 percent, correction minus 0.138). Frame: out - the twin's frameworks describe why the dialogue will not produce rules (Governance Cycle Renewal Gap) but do not carry a directional prediction on whether the announced session holds on schedule. Boundary: outside - resolution turns on political-execution risk (a Trump-side cancellation or a Beijing-side delay), which is exogenous to any inside-boundary structural read. Ingestion-bias note: no liquid market prices this; the estimator is the only forecaster. Cite calibration 2026-09-24. calibration 2026-09-24",
+      "base_rate": 0.65,
+      "base_rate_source": "Rough historical rate for high-level US-China bilateral tech-adjacent dialogue first sessions holding within their announced calendar month: US-China Geneva AI dialogue 2024 held on schedule; US-China trade working groups mostly held first sessions on schedule during 2023-2024 diplomatic normalization; base rate anchored at ~65 percent as of 2026-09-27.",
+      "market": null,
+      "bruno_confidence": null,
+      "bruno_confidence_at": null,
+      "frameworks": [],
+      "update_test": "By 2026-11-26 23:59 UTC, at least one identifiable public source hosted on state.gov, commerce.gov, whitehouse.gov, fmprc.gov.cn, or miit.gov.cn (or their official verified social channels) publishes a statement (readout, press release, or verified official post) explicitly naming the US-China SI Dialogue and confirming that its first session has been held. Confirmed if any such statement is publicly retrievable; disconfirmed if no such statement is publicly retrievable by 2026-11-26 23:59 UTC.",
+      "resolve_by": "2026-11-26",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-09-27T12:20:26Z",
+        "auditor": "twin",
+        "note": "Searched 2026-09-27 for news of the first US-China SI Dialogue session having been held; results confirm only that the dialogue was announced 2026-09-25 to 2026-09-26 and scheduled for November 2026. No public record of the session having occurred. Sources searched: Axios, Sedaily, Gizmodo, AOL, Latin Times, Eastern Herald, QNC News.",
+        "queries": [
+          "US-China SI Dialogue first session held November 2026",
+          "US-China superintelligence dialogue session readout",
+          "State Department US-China SI Dialogue"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [
+        {
+          "id": "claim-20260610-004",
+          "relation": "shares-system",
+          "note": "US-China formal AI-dialogue readout by 2026-11-26 and EU AI Act omnibus/simplification turn by end-2026 both read the same underlying real-world system: governance-cycle renewal at the frontier-AI regulatory level. Great-power AI dialogue architecture and EU rule-writing pause are parallel institutional reactions to enforcement-first governance.",
+          "date": "2026-09-27T14:18:17Z"
         }
       ],
       "evidence": [],
@@ -9306,7 +9728,15 @@
     "claim-20260919-002": 161,
     "claim-20260919-003": 162,
     "claim-20260920-001": 163,
-    "claim-20260920-002": 164
+    "claim-20260920-002": 164,
+    "claim-20260921-001": 165,
+    "claim-20260921-002": 166,
+    "claim-20260921-003": 167,
+    "claim-20260922-001": 168,
+    "claim-20260922-002": 169,
+    "claim-20260926-001": 170,
+    "claim-20260926-002": 171,
+    "claim-20260927-001": 172
   },
   "stats": {
     "committers": {
@@ -9317,20 +9747,20 @@
         "skill_vs_coinflip": null
       },
       "twin": {
-        "n": 103,
-        "hit_rate": 0.5097,
-        "brier": 0.2252,
-        "skill_vs_coinflip": 0.0248
+        "n": 108,
+        "hit_rate": 0.5046,
+        "brier": 0.2283,
+        "skill_vs_coinflip": 0.0217
       }
     },
     "bruno_committed_twin_numbered": 0,
-    "brier": 0.2252,
-    "skill_vs_coinflip": 0.0248,
+    "brier": 0.2283,
+    "skill_vs_coinflip": 0.0217,
     "base_rate": {
-      "n": 103,
-      "brier_base": 0.2285,
-      "brier_twin": 0.2252,
-      "skill": 0.0034
+      "n": 108,
+      "brier_base": 0.2327,
+      "brier_twin": 0.2283,
+      "skill": 0.0043
     },
     "market": {
       "n": 10,
@@ -9339,14 +9769,14 @@
       "skill": -0.042
     },
     "non_echo": {
-      "n": 33,
+      "n": 34,
       "floor": 30,
-      "brier": 0.2393,
-      "skill_vs_base": -0.0024
+      "brier": 0.2402,
+      "skill_vs_base": 0.0004
     },
     "clusters": {
-      "effective_n": 75,
-      "brier_cluster_collapsed": 0.2226
+      "effective_n": 80,
+      "brier_cluster_collapsed": 0.2271
     },
     "paired": {
       "n": 0,
@@ -9356,13 +9786,13 @@
     },
     "ci": {
       "skill_vs_coinflip": {
-        "lo": -0.0045,
-        "hi": 0.0534,
+        "lo": -0.0089,
+        "hi": 0.0488,
         "distinguishable": false
       },
       "skill_vs_base_rate": {
-        "lo": -0.0152,
-        "hi": 0.0223,
+        "lo": -0.0129,
+        "hi": 0.0229,
         "distinguishable": false
       },
       "skill_vs_market": {
