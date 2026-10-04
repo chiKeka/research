@@ -1,20 +1,7 @@
-// prep-data.mjs — generate self-contained site data.
-//
-// Two modes:
-//  * Inside bruno-twin-private (../data present): the Weekly Reckoning mirror runs
-//    here. The public ledger is rendered by scripts/render-scoreboard.py (the
-//    renderer owns sanitization — never raw ledger.jsonl), frameworks are the
-//    active set, writing respects the activity-log publish gate. The committed
-//    snapshots are refreshed from source.
-//  * Standalone (../data absent — e.g. Vercel building this repo alone): the
-//    ledger is FETCHED at build time from the PUBLIC chiKeka/ledger repo, pinned
-//    to a commit SHA, schema-validated, and stamped with provenance. If the fetch
-//    fails (e.g. an unauthenticated GitHub API rate-limit), the committed snapshot
-//    is shipped — the weekly mirror keeps it fresh and CI flags drift. The build
-//    only FAILS when there is no usable snapshot at all. Set GITHUB_TOKEN in the
-//    build env to lift the 60 req/hr unauthenticated API limit.
+// Generate ledger data only from a pinned canonical PUBLIC ledger snapshot.
+// Parent/source mode requires that fetch to succeed; standalone builds may use
+// a previously content-verified public snapshot. Framework/writing gates remain.
 
-import { execFileSync } from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -24,10 +11,10 @@ import {
   deriveSummary,
   buildFrameworks,
   collectPublished,
-  validateLedger,
   isStale,
   ageInDays,
 } from './lib/prep-transforms.mjs';
+import { fetchPublicLedger, validatePublicSnapshot } from './lib/public-ledger.mjs';
 
 const PROJECT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const REPO = path.resolve(PROJECT, '..');
@@ -36,7 +23,6 @@ const OUT_DATA = path.join(PROJECT, 'src', 'data');
 const OUT_WRITING = path.join(PROJECT, 'src', 'content', 'writing');
 
 const LEDGER_REPO = 'chiKeka/ledger';
-const LEDGER_FILE = 'ledger.json';
 const STALE_DAYS = 14; // build fails if an offline snapshot is older than this
 
 fs.mkdirSync(OUT_DATA, { recursive: true });
@@ -50,117 +36,34 @@ const ghHeaders = () => {
   return h;
 };
 
-// Fetch the authoritative ledger from the public repo, pinned to its latest
-// commit SHA. Returns { ledger, source } or throws.
-async function fetchAuthoritativeLedger() {
-  const commitsUrl = `https://api.github.com/repos/${LEDGER_REPO}/commits?path=${LEDGER_FILE}&per_page=1`;
-  const cRes = await fetch(commitsUrl, { headers: ghHeaders() });
-  if (!cRes.ok) throw new Error(`commits API ${cRes.status}`);
-  const commits = await cRes.json();
-  const sha = commits?.[0]?.sha;
-  const committed_at = commits?.[0]?.commit?.committer?.date || commits?.[0]?.commit?.author?.date;
-  if (!sha) throw new Error('no commit sha for ledger.json');
-
-  const rawUrl = `https://raw.githubusercontent.com/${LEDGER_REPO}/${sha}/${LEDGER_FILE}`;
-  const rRes = await fetch(rawUrl, { headers: { 'User-Agent': 'research-prep-data' } });
-  if (!rRes.ok) throw new Error(`raw fetch ${rRes.status}`);
-  const ledger = await rRes.json();
-
-  const { ok, errors } = validateLedger(ledger);
-  if (!ok) throw new Error(`schema validation failed: ${errors.slice(0, 3).join('; ')}`);
-
-  ledger.source = {
-    repo: LEDGER_REPO,
-    commit: sha,
-    commit_short: sha.slice(0, 7),
-    committed_at: committed_at || null,
-    fetched_at: new Date().toISOString(),
-    url: `https://github.com/${LEDGER_REPO}/commit/${sha}`,
-  };
-  return ledger;
-}
-
 const haveSource = fs.existsSync(DATA);
-
-if (!haveSource) {
-  // ---- Standalone build: fetch live, fall back to snapshot, fail if stale ----
+try {
+  const ledger = await fetchPublicLedger({ headers: ghHeaders() });
+  fs.writeFileSync(LEDGER_OUT, JSON.stringify(ledger, null, 2));
+  console.log(`[prep] ledger.json: ${ledger.claims.length} claims pinned to ${LEDGER_REPO}@${ledger.source.commit_short}.`);
+} catch (e) {
+  if (haveSource) throw new Error(`public ledger unavailable; source mirror blocked: ${e.message}`);
+  let snapshot;
   try {
-    const ledger = await fetchAuthoritativeLedger();
-    fs.writeFileSync(LEDGER_OUT, JSON.stringify(ledger, null, 2));
-    console.log(
-      `[prep] ledger.json: fetched ${ledger.claims.length} claims from ${LEDGER_REPO}@${ledger.source.commit_short} (live).`,
-    );
-  } catch (e) {
-    let snapshot = null;
-    try {
-      snapshot = JSON.parse(fs.readFileSync(LEDGER_OUT, 'utf8'));
-    } catch {
-      /* no snapshot */
-    }
-    // A static deploy shipping the last-good snapshot beats a failed deploy, so we
-    // never hard-fail when a snapshot exists — only when there is no data at all.
-    if (!snapshot) {
-      console.error(
-        `[prep] FATAL: could not fetch ${LEDGER_REPO} ledger (${e.message}) and no committed snapshot exists.`,
-      );
-      process.exit(1);
-    }
-    const stamp = snapshot.source?.committed_at || snapshot.updated;
-    const staleNote = isStale(snapshot, STALE_DAYS)
-      ? ` — snapshot is ~${Math.round(ageInDays(stamp))}d old; the weekly mirror may be paused (CI freshness check flags real drift)`
-      : '';
-    console.warn(
-      `[prep] ledger fetch failed (${e.message}); shipping committed snapshot from ${stamp}${staleNote}.`,
-    );
+    snapshot = JSON.parse(fs.readFileSync(LEDGER_OUT, 'utf8'));
+    validatePublicSnapshot(snapshot);
+  } catch (invalid) {
+    throw new Error(`public ledger unavailable (${e.message}); no verified fallback: ${invalid.message}`);
   }
+  const stamp = snapshot.source.committed_at;
+  const staleNote = isStale(snapshot, STALE_DAYS)
+    ? ` — snapshot is ~${Math.round(ageInDays(stamp))}d old; CI freshness check flags drift`
+    : '';
+  console.warn(`[prep] fetch failed (${e.message}); using verified public snapshot ${snapshot.source.commit_short} from ${stamp}${staleNote}.`);
+}
+if (!haveSource) {
   console.log('[prep] standalone mode — frameworks & writing use committed snapshots.');
   process.exit(0);
 }
-
-// ---- In-repo build (Weekly Reckoning mirror): render from source ----------
 const readJsonl = (p) =>
   fs.existsSync(p)
     ? fs.readFileSync(p, 'utf8').split('\n').filter(Boolean).map((l) => JSON.parse(l))
     : [];
-
-// 1) Public ledger — from the renderer's sanitized output only, stamped with the
-//    public-repo commit SHA when reachable (provenance for the detail pages).
-let tmp;
-try {
-  tmp = fs.mkdtempSync(path.join('/tmp', 'hub-sb-'));
-  execFileSync('python3', ['scripts/render-scoreboard.py', '--out', tmp], {
-    cwd: REPO,
-    stdio: 'ignore',
-  });
-  const ledger = JSON.parse(fs.readFileSync(path.join(tmp, 'ledger.json'), 'utf8'));
-  try {
-    const commitsUrl = `https://api.github.com/repos/${LEDGER_REPO}/commits?path=${LEDGER_FILE}&per_page=1`;
-    const cRes = await fetch(commitsUrl, { headers: ghHeaders() });
-    if (cRes.ok) {
-      const sha = (await cRes.json())?.[0]?.sha;
-      if (sha) {
-        ledger.source = {
-          repo: LEDGER_REPO,
-          commit: sha,
-          commit_short: sha.slice(0, 7),
-          committed_at: ledger.updated || null,
-          fetched_at: new Date().toISOString(),
-          url: `https://github.com/${LEDGER_REPO}/commit/${sha}`,
-        };
-      }
-    }
-  } catch {
-    /* provenance stamp is best-effort in source mode */
-  }
-  fs.writeFileSync(LEDGER_OUT, JSON.stringify(ledger, null, 2));
-  console.log(`[prep] ledger.json: ${ledger.claims?.length ?? 0} public claims (sanitized via renderer).`);
-} catch (e) {
-  console.warn('[prep] render-scoreboard failed; keeping existing ledger.json snapshot.', e.message);
-} finally {
-  // Always remove the scratch dir — otherwise every source-mode run (the weekly
-  // mirror, local parent-repo builds) leaks a /tmp/hub-sb-* directory.
-  if (tmp) fs.rmSync(tmp, { recursive: true, force: true });
-}
 
 // 2) Frameworks — active only, public-facing fields.
 try {

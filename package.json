@@ -6,11 +6,12 @@
   "scripts": {
     "prep": "node scripts/prep-data.mjs",
     "dev": "node scripts/prep-data.mjs && astro dev",
-    "build": "node scripts/prep-data.mjs && astro build",
+    "build": "node scripts/prep-data.mjs && node scripts/verify-ledger-provenance.mjs && astro build",
     "preview": "astro preview",
     "check": "astro check",
     "test": "node --test",
-    "ledger:fresh": "node scripts/check-ledger-fresh.mjs"
+    "ledger:fresh": "node scripts/check-ledger-fresh.mjs",
+    "ledger:provenance": "node scripts/verify-ledger-provenance.mjs"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.18",
