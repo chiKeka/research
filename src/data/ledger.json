@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-27",
+  "updated": "2026-10-04",
   "claims": [
     {
       "id": "claim-20260610-001",
@@ -5583,6 +5583,12 @@
           "direction": "against",
           "note": "Daily Maverick 2026-09-21 interview with DCDT Minister Solly Malatsi: new draft AI policy will be 'ready by March', targeting the end of the financial year rather than the pre-2026-10-24 window. This is a directional signal against the claim (twin priced 12% Cabinet adoption + Gazette publication by 2026-10-24). Not yet resolvable — the deadline is 2026-10-24; log evidence and await formal timeline confirmation.",
           "source_url": "https://www.dailymaverick.co.za/article/2026-09-21-hallucination-free-hopefully-new-draft-ai-policy-will-be-ready-by-march-says-malatsi/"
+        },
+        {
+          "date": "2026-10-03",
+          "direction": "against",
+          "note": "South Africa Draft National AI Policy was withdrawn by Minister Solly Malatsi on 2026-04-26 after AI-hallucinated citations were discovered; independent panel of experts commissioned 2026-05-26 with revised policy targeting Cabinet approval in November 2026 and public comment in January 2027 (Engineering News / Polity / Creamer Media 2026-05-26; techcabal). Cabinet adoption by 2026-10-24 is now foreclosed by the published timeline — adoption deferred to late-2026/2027 track. Interpretive (not an unambiguous fire of the update test wording of 'defers adoption'); logging evidence, defer resolution to the Sunday Reckoning per resolution_watch.early_resolution=unambiguous_only.",
+          "source_url": "https://www.engineeringnews.co.za/article/south-africa-targets-january-2027-for-revised-ai-policy-after-earlier-withdrawal-2026-05-26"
         }
       ],
       "resolution": null
@@ -5630,6 +5636,12 @@
           "relation": "shares-system",
           "note": "Kenya sovereign cloud council is upstream institutional plumbing for the Kenya cluster of the named African AI infrastructure projects; the same East Africa compute-buildout system feeds both.",
           "date": "2026-07-26T14:21:19Z"
+        },
+        {
+          "id": "claim-20260610-002",
+          "relation": "shares-system",
+          "note": "Both read the same underlying real-world system: African sovereign-digital institution-building. Kenya gazetting a sovereign cloud/compute council under its AI/ETs Policy and 2+ African states formally designating data centres as critical infrastructure are parallel institutional-upgrade signals - different texts, same cadence pressure (consultation-to-gazette lag at the publication boundary).",
+          "date": "2026-10-04T14:22:53Z"
         }
       ],
       "evidence": [
@@ -5680,6 +5692,12 @@
           "direction": "against",
           "note": "Kenya-Anthropic Joint Declaration (2026-09-22 UNGA) and Kenya-Hoover MoU (2026-09-21, ict.go.ke) signed same week; both are legitimacy-exchange instruments with no budget and no gazette. Update test requires 'gazettes or operationally launches a sovereign cloud/compute council' — declarations do not clear that bar with 27 days remaining to 2026-10-24. Pattern is 'sovereign AI via bilateral declaration without a fiscal commitment' (Institutional Adaptation Lag: fast symbolic vs slow statutory).",
           "source_url": "https://citizen.digital/article/kenya-anthropic-strike-historic-ai-deal-at-unga-n390739"
+        },
+        {
+          "date": "2026-10-04",
+          "direction": "against",
+          "note": "Kenya Draft AI and Emerging Technologies Policy 2026 public participation closed 2026-08-04; as of 2026-10-04 (20 days before claim resolve-by 2026-10-24), no revised or finalized AI/ETs Policy document is indexed on ict.go.ke, no Kenya Gazette notice naming a sovereign cloud/compute council has been published, and no ICT Authority publication names such a council with chair/members/ToR. Secondary trackers (Bowmans Law, OECD AI Policy Dashboard) still cite the 2025-2030 National AI Strategy as the active instrument. Institutional Adaptation Lag: pattern repeats across SA/Nigeria/Kenya.",
+          "source_url": "https://capitalfm.africa/govt-opens-public-participation-on-kenyas-ai-policy/"
         }
       ],
       "resolution": null
@@ -6110,7 +6128,7 @@
       ],
       "update_test": "By 2026-09-28, at least one of au.int, nepad.org, or the official AU/AUDA-NEPAD social accounts publishes a document, bulletin, press release, or public post explicitly identifying itself as a Continental AI Strategy implementation status, progress update, milestone bulletin, or Year-1 review. Confirmed if any such document is publicly available and dated 2026-08-01 through 2026-09-28; disconfirmed if no such document is publicly available by 2026-09-28.",
       "resolve_by": "2026-09-29",
-      "status": "open",
+      "status": "resolved",
       "validity": null,
       "prereg_audit": {
         "date": "2026-07-31T12:16:03Z",
@@ -6137,9 +6155,19 @@
           "direction": "against",
           "note": "2026-09-25 targeted search on au.int, nepad.org, and AUDA-NEPAD news archive: no public status update, implementation report, milestone bulletin, or Year-1 review of the Continental AI Strategy published between 2026-08-01 and 2026-09-25. AUDA-NEPAD's public September output is event-programming (Hyperscalers Convergence Africa 2026 keynote, Lagos, 2026-09-04) not strategy-status disclosure. ResearchGate paper (Adjeng et al. 2026 'From Aspiration to Implementation') documents the same absence structurally. Three days remain to 2026-09-28 deadline; if silence holds, claim disconfirms at twin 18 pct.",
           "source_url": "https://www.researchgate.net/publication/396230260_From_Aspiration_to_Implementation_The_African_Union_AI_Continental_Strategy_and_the_Development-Governance_Paradox"
+        },
+        {
+          "date": "2026-09-29",
+          "direction": "against",
+          "note": "2026-09-29 targeted resolution sweep confirmed the 2026-09-25 finding. Fresh searches of AU/AUDA-NEPAD channels (au.int and nepad.org) between 2026-08-01 and 2026-09-28 return no Continental AI Strategy Year-1 implementation status document, milestone bulletin, progress report, or Year-1 review; the most recent AU AI outputs remain the July 2024 adoption text, February 2025 roadmap, May 2025 High-Level Policy Dialogue press release, and February 2026 Addis Summit dialogue. AUDA-NEPAD September output on the strategy is event-programming (Hyperscalers Convergence Africa 2026 keynote 2026-09-04) not strategy-status disclosure. Deadline 2026-09-28 has passed; milestone was publicly missed. Unambiguous disconfirmation.",
+          "source_url": "https://au.int/en/documents/20240809/continental-artificial-intelligence-strategy"
         }
       ],
-      "resolution": null
+      "resolution": {
+        "date": "2026-09-29T12:22:06Z",
+        "outcome": "disconfirmed",
+        "note": "Deadline 2026-09-28 passed with no AU/AUDA-NEPAD Continental AI Strategy Year-1 implementation status update, progress report, or milestone bulletin published on au.int, nepad.org, or official social channels within the 2026-08-01 to 2026-09-28 window. Update test dated-milestone-missed condition fires. Twin priced 18 percent below base rate 25 percent, framework Institutional Adaptation Lag attributed at registration with direction down; disconfirmation matches framework prediction. Confirmatory reference: AU Continental AI Strategy adoption text (July 2024, au.int) with no subsequent Year-1 implementation document; ResearchGate 2026 paper Adjeng et al. From Aspiration to Implementation documents the same absence structurally."
+      }
     },
     {
       "id": "claim-20260801-001",
@@ -6771,7 +6799,26 @@
           "date": "2026-08-10T12:40:18Z"
         }
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "date": "2026-10-02",
+          "direction": "against",
+          "note": "2026-10-02 fixture-run sweep: no finalized or revised Kenya AI and Emerging Technologies Policy on ict.go.ke or Kenya Gazette as of today; DigitalPolicyAlert change 19229 still lists status 'processing consultation'; Bowmans and CIPESA commentary still reference the draft only. Seven days to resolve-by, claim priced 0.25 against 0.28 base rate.",
+          "source_url": "https://digitalpolicyalert.org/change/19229-artificial-intelligence-and-emerging-technologies-policy"
+        },
+        {
+          "date": "2026-10-03",
+          "direction": "against",
+          "note": "Kenya MICDE draft Artificial Intelligence and Emerging Technologies Policy 2026 consultation closed 2026-08-04 as expected. Digital Policy Alert shows status 'processing consultation' as of today (event #41999); techweez / Bowmans Law coverage dated 2026-07-28 — no revised or finalised version on ict.go.ke dated 2026-08-05 through 2026-10-03. Six days remain before the 2026-10-09 deadline but with the draft still in processing status and no scheduled publication date announced, confirmation unlikely. Interpretive, not an unambiguous fire; evidence logged, defer resolution to Sunday Reckoning.",
+          "source_url": "https://digitalpolicyalert.org/event/41999-ministry-of-information-communications-and-the-digital-economy-closes-consultation-on-draft-kenya-artificial-intelligence-and-other-emerging-technologies-policy-2026"
+        },
+        {
+          "date": "2026-10-04",
+          "direction": "against",
+          "note": "Draft Kenya Artificial Intelligence and Other Emerging Technologies Policy public participation closed 2026-08-04. As of today 2026-10-04 (five days from the 2026-10-09 resolve-by), no revised or finalized document is publicly indexed on ict.go.ke or the Kenya Gazette dated 2026-08-05 or later. OECD AI Policy Dashboard still cites the active instrument as the National AI Strategy 2025-2030; Bowmans Law tracker references the 2026 draft as in process. Secondary-source confirmation only; cross-checked three independent review sources. Deferring to Sunday Reckoning per unambiguous-only rule - a confirming primary-source gazette publication within five days remains possible, though no cabinet-signature or ministerial announcement foreshadows it.",
+          "source_url": "https://bowmanslaw.com/insights/kenya-ai-governance-framework-continues-to-take-shape-draft-artificial-intelligence-and-emerging-technologies-policy-2026/"
+        }
+      ],
       "resolution": null
     },
     {
@@ -6889,7 +6936,7 @@
       "frameworks": [],
       "update_test": "On or before 2026-10-12, an Executive Order or Presidential Memorandum with AI as a named subject (title, subject line, or first paragraph explicitly names AI, artificial intelligence, or a specific AI system class such as GPAI or frontier models) is published on whitehouse.gov/presidential-actions or in the Federal Register with a signature date between 2026-08-13 and 2026-10-12 inclusive. Confirmed if such an action is published; disconfirmed if none appears in either surface by 2026-10-12.",
       "resolve_by": "2026-10-12",
-      "status": "open",
+      "status": "resolved",
       "validity": null,
       "prereg_audit": {
         "date": "2026-08-13T12:23:15Z",
@@ -6900,8 +6947,19 @@
       },
       "corrections": [],
       "related_to": [],
-      "evidence": [],
-      "resolution": null
+      "evidence": [
+        {
+          "date": "2026-10-01",
+          "direction": "supports",
+          "note": "President Trump signed Executive Order on 2026-09-29 titled 'Inaugurating The Era of Super Intelligence' which establishes executive-branch policy to rename AI/Artificial Intelligence as Super Intelligence/SI in official correspondence, public communications, websites, reports, and policy documents. The order explicitly names AI/artificial intelligence as subject (title phrase and first paragraph both center on the AI->SI terminology shift and reference the capabilities of frontier systems). Order is published on whitehouse.gov/presidential-actions and accompanied by a WH fact sheet. Also triggers 60-day legislative-language proposal for defining SI.",
+          "source_url": "https://www.whitehouse.gov/fact-sheets/2026/09/fact-sheet-president-donald-j-trump-inaugurates-the-era-of-super-intelligence/"
+        }
+      ],
+      "resolution": {
+        "date": "2026-10-01T12:19:47Z",
+        "outcome": "confirmed",
+        "note": "Trump signed Executive Order 'Inaugurating The Era of Super Intelligence' on 2026-09-29, published at whitehouse.gov/presidential-actions with accompanying fact sheet (whitehouse.gov/fact-sheets/2026/09/...). The EO's title and first paragraph explicitly name AI/artificial intelligence as subject (the policy mandates renaming AI->Super Intelligence in official executive-branch usage and references the capabilities of frontier systems). This satisfies the update test's AI-as-named-subject requirement without interpretation. The order also triggers a 60-day legislative-language proposal via the assistant to the president for science and technology. Resolves CONFIRMED well before the 2026-10-12 resolve-by. Twin registered 0.45 at base rate 0.45; frame:out, calibration tier — zero shading, zero skill contribution despite the correct direction. Evidence URLs: https://www.whitehouse.gov/fact-sheets/2026/09/fact-sheet-president-donald-j-trump-inaugurates-the-era-of-super-intelligence/ and https://en.wikipedia.org/wiki/Executive_Order_14355"
+      }
     },
     {
       "id": "claim-20260815-001",
@@ -7268,7 +7326,14 @@
           "date": "2026-08-17T13:01:31Z"
         }
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "date": "2026-10-02",
+          "direction": "supports",
+          "note": "Senegal, a listed second-wave AU state, signed WAICO as a founding member on 2026-07-16 (Minister of Telecommunications and Digital Technology, Shanghai signing). osiris.sn (semi-official regulator ArTP observatory) reported the signing; however the update test requires publication on a national .gov country-code domain or an official ministry site - osiris.sn is a regulator observatory, not clearly a ministry site. Logging evidence only; interpretive on whether the publication requirement is met. Reckoning should re-verify.",
+          "source_url": "https://www.osiris.sn/gouvernance-mondiale-de-l-ia-le-senegal-devient-membre-fondateur-de-la-nouvelle.html"
+        }
+      ],
       "resolution": null
     },
     {
@@ -7761,7 +7826,7 @@
       "frameworks": [],
       "update_test": "By 2026-09-30 06:00 UTC, RBA post-meeting statement (published to rba.gov.au) records the cash rate target at 4.60 percent or higher following the 2026-09-29 meeting decision. Confirmed if the announced rate is 4.60 percent or higher. Disconfirmed if it is 4.35 percent (hold) or lower (cut) or if the meeting is postponed past resolve-by.",
       "resolve_by": "2026-09-30",
-      "status": "open",
+      "status": "resolved",
       "validity": null,
       "prereg_audit": {
         "date": "2026-08-31T12:41:29Z",
@@ -7782,9 +7847,19 @@
           "direction": "against",
           "note": "Sept 25-26 2026 press: NAB, CBA and Westpac all now forecast a 25bp RBA hike at the Sept 29 2026 meeting to 4.60 percent; market pricing similarly implies a 25bp hike (~85 percent). Twin registered 20 percent for HIKE-by-25bp, so the market runs against the twin's HOLD-lean. This is live evidence ahead of the Sept 29 decision, not resolution - the update test fires on the RBA statement 2026-09-30 06:00 UTC",
           "source_url": "https://www.aussie.com.au/insights/news/expert-predictions-rba-rates/"
+        },
+        {
+          "date": "2026-09-28",
+          "direction": "supports",
+          "note": "Money markets fully pricing 25bp RBA hike ahead of the 2026-09-29 meeting per Newsquawk preview and SBS reporting 2026-09-28; all big four Australian banks calling for a hike. Preview evidence, does not resolve — the meeting is tomorrow and the outcome could still be a hold. Bearing directionally supports the claim (hike-by-25bp).",
+          "source_url": "https://www.newsquawk.com/headlines/preview-rba-rate-decision-scheduled-on-tuesday-29th-september-2026-at-0530bst0030edt"
         }
       ],
-      "resolution": null
+      "resolution": {
+        "date": "2026-09-30T12:17:52Z",
+        "outcome": "confirmed",
+        "note": "RBA hiked 25bp to 4.60% at the 2026-09-29 monetary policy meeting - unanimous decision, fourth rate rise of 2026, highest cash rate in 15 years. RBA statement mr-26-27 published 2026-09-29 confirms the move. Twin registered 0.20 for HIKE (frame:out); market/consensus at ~85%. Twin significantly UNDERWEIGHTED the hike - correct claim framing, poor calibration. Sources: https://www.rba.gov.au/media-releases/2026/mr-26-27.html ; https://www.abc.net.au/news/2026-09-29/asx-markets-business-news-live-updates-tuesday-29-september/107206212 ; https://www.commbank.com.au/articles/newsroom/2026/09/rba-official-cash-rate-decision-september-2026.html"
+      }
     },
     {
       "id": "claim-20260901-001",
@@ -7807,7 +7882,7 @@
       "frameworks": [],
       "update_test": "On 2026-09-30, China NBS official Manufacturing PMI release for September 2026 prints headline value of 50.0 or higher. Confirmed at or above 50.0; disconfirmed below 50.0.",
       "resolve_by": "2026-09-30",
-      "status": "open",
+      "status": "resolved",
       "validity": null,
       "prereg_audit": {
         "date": "2026-09-01T12:42:28Z",
@@ -7823,7 +7898,11 @@
       "corrections": [],
       "related_to": [],
       "evidence": [],
-      "resolution": null
+      "resolution": {
+        "date": "2026-09-30T12:18:01Z",
+        "outcome": "confirmed",
+        "note": "China NBS official Manufacturing PMI for September 2026 printed 50.1, up 0.3 percentage points from August 49.8 and back into expansion territory. Released 2026-09-30 by the NBS Service Industry Survey Center and China Federation of Logistics and Purchasing. Matched Reuters poll forecast; sub-indices: new orders 50.5, production 51.7. Twin registered 0.48 for at-or-above-50 (frame:out); confirmed. Reasonable calibration (bucket 40-49% correction had pushed suggestion to 0.506). Sources: https://www.fxstreet.com/news/china-nbs-manufacturing-pmi-meets-forecasts-501-in-september-202609300131 ; https://news.metal.com/newscontent/104140341-nbs-manufacturing-pmi-at-501-in-september-with-broader-improvement-across-the-manufacturing-sector ; https://chinaglobalsouth.com/2026/09/30/china-manufacturing-pmi-september-growth/"
+      }
     },
     {
       "id": "claim-20260901-002",
@@ -8034,7 +8113,7 @@
       "frameworks": [],
       "update_test": "By 2026-10-03 08:30 ET or shortly thereafter, the BLS Employment Situation release for September 2026 (available at bls.gov/news.release/empsit.htm and bls.gov/schedule/news_release/empsit.htm) reports a total nonfarm payroll monthly change of +100,000 or less. Confirmed if headline monthly change is less than or equal to +100,000; disconfirmed if strictly greater than +100,000.",
       "resolve_by": "2026-10-03",
-      "status": "open",
+      "status": "resolved",
       "validity": null,
       "prereg_audit": {
         "date": "2026-09-02T12:30:37Z",
@@ -8047,10 +8126,38 @@
         ],
         "outcome_already_known": false
       },
-      "corrections": [],
+      "corrections": [
+        {
+          "date": "2026-10-03T16:08:44Z",
+          "target": "evidence[0]",
+          "note": "The 2026-10-03 evidence incorrectly applied a November 14, 2025 PYMNTS article about September 2025 shutdown-delayed data to September 2026. It does not establish a November 20, 2026 delay. BLS published September 2026 Employment Situation on October 2, 2026 at 08:30 ET, reporting total nonfarm payroll employment +29,000: https://www.bls.gov/news.release/archives/empsit_10022026.htm . The headline exists and meets the registered <= +100,000 test; the original against-evidence and deferral are superseded by this correction, preserved for audit."
+        },
+        {
+          "date": "2026-10-03T16:08:44Z",
+          "target": "claim, grounding, update_test, prereg_audit.note",
+          "note": "The recorded October 3, 2026 08:30 ET scheduled release date was a registration error, already acknowledged in data/config.json automation.schedule.seldon_payrolls_oneshot_2026_10_02. Actual BLS release: October 2, 2026 08:30 ET, September 2026 Employment Situation, https://www.bls.gov/news.release/archives/empsit_10022026.htm . Registration September 2, 2026 12:30:37Z precedes the October 2 release. The original text, dates, probability and <= +100,000 threshold remain unchanged; the release occurred before the written deadline."
+        }
+      ],
       "related_to": [],
-      "evidence": [],
-      "resolution": null
+      "evidence": [
+        {
+          "date": "2026-10-03",
+          "direction": "against",
+          "note": "US federal government entered a funding lapse on 2026-10-01; the BLS Employment Situation release for September 2026 scheduled 2026-10-03 at 08:30 ET did not occur. BLS announced the September release rescheduled to 2026-11-20 pending shutdown resolution; the household survey for October was not collected and the October Employment Situation will likely merge into the November print without a standalone October release. The update test is a scheduled-release conditional: with no release today the headline figure does not exist to compare against the <=+100k threshold. This is NOT an unambiguous update-test fire for either direction — it is a procedural failure of the referent itself. Logging as against-evidence because the resolve_by of 2026-10-03 has passed without the referent being produced on schedule; defer resolution to the Sunday Reckoning to decide between withdraw (data not produced on original schedule, horizon violated) vs stretched-resolution (wait for the 2026-11-20 release).",
+          "source_url": "https://www.pymnts.com/economy/2025/bls-to-release-september-employment-data-on-nov-20/"
+        },
+        {
+          "date": "2026-10-03",
+          "direction": "supports",
+          "note": "BLS September 2026 Employment Situation, published October 2, 2026 at 08:30 ET (12:30 UTC), headline and establishment-survey section: total nonfarm payroll employment +29,000. This is the September 2026 reference period; +29,000 <= +100,000 meets the registered confirmation test before its October 3 deadline. Publication postdates September 2 registration.",
+          "source_url": "https://www.bls.gov/news.release/archives/empsit_10022026.htm"
+        }
+      ],
+      "resolution": {
+        "date": "2026-10-03T16:08:44Z",
+        "outcome": "confirmed",
+        "note": "CONFIRMED by evidence[1]: official BLS September 2026 Employment Situation released October 2, 2026 08:30 ET, https://www.bls.gov/news.release/archives/empsit_10022026.htm , reports +29,000 total nonfarm payroll jobs, satisfying the unchanged <= +100,000 update test before the written October 3 deadline. Decisive evidence postdates September 2, 2026 12:30:37Z registration. Corrections supersede evidence[0] (2025 shutdown article misapplied to 2026) and document the original release-date registration error; no withdrawal or deferral is warranted."
+      }
     },
     {
       "id": "claim-20260902-004",
@@ -8275,7 +8382,7 @@
       "frameworks": [],
       "update_test": "By 2026-10-05, riksbank.se publishes the Executive Board decision from the September 2026 monetary policy meeting as a hold at 1.75 percent unchanged. Confirmed if the published decision is a hold at 1.75 percent; disconfirmed if the policy rate changes (cut or hike) or if the meeting output is not published by 2026-10-05.",
       "resolve_by": "2026-10-05",
-      "status": "open",
+      "status": "resolved",
       "validity": null,
       "prereg_audit": {
         "date": "2026-09-05T12:13:34Z",
@@ -8288,8 +8395,19 @@
       },
       "corrections": [],
       "related_to": [],
-      "evidence": [],
-      "resolution": null
+      "evidence": [
+        {
+          "date": "2026-10-01",
+          "direction": "supports",
+          "note": "Riksbank Executive Board decision from the 2026-09-23 monetary policy meeting published on riksbank.se: policy rate HELD unchanged at 1.75 percent, decision applying from 2026-10-01. Forward guidance signals possible Q4 rise, Riksbank MPR Sep 2026 average policy rate forecast 1.85 pct in Q4 2026 and 2.07 pct in Q1 2027. Matches update test's hold-at-1.75 percent confirmation condition.",
+          "source_url": "https://www.riksbank.se/en-gb/press-and-published/notices-and-press-releases/press-releases/2026/policy-rate-unchanged-at-16.75-per-cent"
+        }
+      ],
+      "resolution": {
+        "date": "2026-10-01T12:19:33Z",
+        "outcome": "confirmed",
+        "note": "Riksbank Executive Board at its 2026-09-23 monetary policy meeting held the policy rate unchanged at 1.75 percent, decision applying from 2026-10-01. Published on riksbank.se with the September 2026 Monetary Policy Report. The update test required a hold at 1.75 percent for confirmation; hold at 1.75 percent delivered. Resolves CONFIRMED. Twin registered 0.65 against a 0.60 base rate; frame:out, calibration tier. Only mild shading above the base rate — modest calibration contribution. Forward guidance hawkish (Riksbank MPR projects 1.85 percent average Q4 policy rate), a non-material deviation from the registered test. Evidence URLs: https://www.riksbank.se/en-gb/press-and-published/notices-and-press-releases/press-releases/2026/policy-rate-unchanged-at-16.75-per-cent and https://www.riksbank.se/globalassets/media/rapporter/ppr/penningpolitiska-rapporter-och-uppdateringar/engelska/2026/monetary-policy-report-september-2026.pdf"
+      }
     },
     {
       "id": "claim-20260905-002",
@@ -8630,7 +8748,14 @@
           "date": "2026-09-20T14:17:20Z"
         }
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "date": "2026-10-04",
+          "direction": "against",
+          "note": "BLS announced September 2026 CPI-U release postponed from scheduled 2026-10-15 08:30 ET to 2026-10-24 under federal funding lapse that began 2026-10-01. Staff recalled specifically to meet Social Security COLA statutory deadline (SSA release 2026-10-24). All other BLS/BEA scheduled releases suspended for duration of lapse. The claim's update test fires on a 2026-10-15 release that will not occur; the actual Oct 24 release is past the Oct 16 deadline so the test cannot be confirmed within the registered window. Referent-availability failure, structurally identical to claim-20260902-003. Deferring to Sunday Reckoning for pending-review treatment.",
+          "source_url": "https://www.aol.com/articles/us-publish-september-cpi-report-163218127.html"
+        }
+      ],
       "resolution": null
     },
     {
@@ -8918,7 +9043,7 @@
       "frameworks": [],
       "update_test": "By 2026-09-30, the BEA Personal Income and Outlays news release for August 2026 reports the core PCE price index year-over-year change on the official release page (bea.gov). Confirmed if that figure is at or below 2.9 percent (i.e., 2.9 or lower to one decimal). Disconfirmed if strictly greater than 2.9 percent (e.g., 3.0 or higher).",
       "resolve_by": "2026-09-30",
-      "status": "open",
+      "status": "resolved",
       "validity": null,
       "prereg_audit": {
         "date": "2026-09-21T12:20:55Z",
@@ -8932,8 +9057,25 @@
       },
       "corrections": [],
       "related_to": [],
-      "evidence": [],
-      "resolution": null
+      "evidence": [
+        {
+          "date": "2026-09-30",
+          "direction": "against",
+          "note": "BEA Personal Income and Outlays release for August 2026 scheduled 2026-09-30 08:30 ET (12:30 UTC); brief fires at 12:14 UTC - release is imminent but not yet public at scan time. Consensus economist forecasts run 3.4% y/y for core PCE (vs July's 3.3%), well above the twin's 2.9% threshold. If consensus fires, claim disconfirms. Sunday Reckoning re-verifies with the actual BEA print. Source: https://stockmarkethours.org/events/us-pce-release ; https://www.fxstreet.com/news/us-core-pce-inflation-set-to-rise-in-august-pressuring-the-federal-reserve-202609300830",
+          "source_url": "https://stockmarkethours.org/events/us-pce-release"
+        },
+        {
+          "date": "2026-10-01",
+          "direction": "against",
+          "note": "US BEA Personal Income and Outlays release for August 2026 (published 2026-09-30) reports core PCE price index year-over-year at 3.0 percent on bea.gov. Monthly change 0.2 percent. Headline PCE y/y 3.4 percent. Update test required ≤2.9 percent for confirmation; 3.0 percent is strictly greater than 2.9 percent so DISCONFIRMATION gates fire.",
+          "source_url": "https://www.bea.gov/news/2026/personal-income-and-outlays-august-2026"
+        }
+      ],
+      "resolution": {
+        "date": "2026-10-01T12:19:19Z",
+        "outcome": "disconfirmed",
+        "note": "BEA Personal Income and Outlays for August 2026 (released 2026-09-30 at 08:30 ET on bea.gov) reports core PCE y/y at 3.0 percent, strictly greater than the 2.9 percent confirmation ceiling defined in the update test. Monthly change 0.2 percent; both figures came in cooler than the consensus (0.3 percent m/m, 3.3 percent y/y). The claim resolves DISCONFIRMED on the registered test; twin was committed at 0.50 confidence against a 0.50 base rate — essentially coin-flip with no shading. Frame:out, calibration tier. Evidence URL: https://www.bea.gov/news/2026/personal-income-and-outlays-august-2026"
+      }
     },
     {
       "id": "claim-20260921-002",
@@ -8956,7 +9098,7 @@
       "frameworks": [],
       "update_test": "By 2026-09-30, the BLS Job Openings and Labor Turnover Survey news release for August 2026 reports the total nonfarm job openings figure on the official release page (bls.gov/news.release/jolts.htm). Confirmed if that figure is at or below 7.2 million (i.e., 7,200,000 or lower). Disconfirmed if strictly greater than 7.2 million.",
       "resolve_by": "2026-09-30",
-      "status": "open",
+      "status": "resolved",
       "validity": null,
       "prereg_audit": {
         "date": "2026-09-21T12:21:12Z",
@@ -8971,7 +9113,11 @@
       "corrections": [],
       "related_to": [],
       "evidence": [],
-      "resolution": null
+      "resolution": {
+        "date": "2026-09-30T12:18:09Z",
+        "outcome": "confirmed",
+        "note": "BLS JOLTS report for August 2026 released 2026-09-29 (within resolve-by 2026-09-30) reports total nonfarm job openings at 7.079 million (rounded 7.1M by BLS release), DOWN from July's revised 7.335M. Hires little changed at 5.2M; separations unchanged at 5.1M; quits unchanged at 3.1M. 7.079M is at or below the 7.2M threshold - confirmed. Twin registered 0.45 for at-or-below-7.2M (frame:out); correct lean, decent calibration in the 40-49 bucket. Sources: https://www.bls.gov/news.release/jolts.nr0.htm ; https://www.bls.gov/news.release/jolts.htm"
+      }
     },
     {
       "id": "claim-20260921-003",
@@ -9096,7 +9242,14 @@
       },
       "corrections": [],
       "related_to": [],
-      "evidence": [],
+      "evidence": [
+        {
+          "date": "2026-09-30",
+          "direction": "against",
+          "note": "Post-FOMC-2026-09-16 hike to 3.75-4.00 percent plus FOMC July minutes (released 2026-09-17) flagging tariff passthrough as persistent inflation risk. Nine-day pricing shift: markets that priced hold at 65 percent on 2026-09-22 (registration day, twin at 0.50 for KEEP) now price HIKE at 2026-10-27/28 meeting at approximately 60 percent. This is not a resolution - the meeting is 27 days out - but is the same shape that produced the three consecutive scheduled-CB misses in the seven days ending 2026-09-30 (SARB 2026-09-23, Norges Bank 2026-09-24, RBA 2026-09-29). Twin's KEEP call at 0.50 sits closer to base rate than to the flipped market pricing without a NAMED contrarian thesis. Bearing directionally against the KEEP claim.",
+          "source_url": "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html"
+        }
+      ],
       "resolution": null
     },
     {
@@ -9131,7 +9284,14 @@
       },
       "corrections": [],
       "related_to": [],
-      "evidence": [],
+      "evidence": [
+        {
+          "date": "2026-10-04",
+          "direction": "against",
+          "note": "RBNZ 2026 Monetary Policy calendar (rbnz.govt.nz hub/news, published 2025-10) has three remaining 2026 decisions: Sep 2 (MPS), Oct 28 (MPR), Dec 9 (MPS). No Oct 8 decision exists on the RBNZ calendar - the registered referent does not materialize. Logging against-evidence rather than resolving: this is a referent-does-not-exist case requiring pending-review treatment at Sunday Reckoning (parallel to claim-20260902-003 BLS Sept Employment shutdown delay).",
+          "source_url": "https://www.rbnz.govt.nz/hub/news/2025/10/monetary-policy-and-financial-stability-report-dates-august-2026-to-february-2027"
+        }
+      ],
       "resolution": null
     },
     {
@@ -9155,7 +9315,7 @@
       "frameworks": [],
       "update_test": "By 2026-10-02 23:59 UTC, ec.europa.eu/eurostat publishes the flash HICP for September 2026 showing headline all-items year-over-year at or below 2.0 percent. Confirmed if the flash headline y/y is 2.0 percent or lower to one decimal; disconfirmed if strictly greater than 2.0 percent.",
       "resolve_by": "2026-10-03",
-      "status": "open",
+      "status": "resolved",
       "validity": null,
       "prereg_audit": {
         "date": "2026-09-26T12:26:49Z",
@@ -9167,7 +9327,11 @@
       "corrections": [],
       "related_to": [],
       "evidence": [],
-      "resolution": null
+      "resolution": {
+        "date": "2026-10-02T12:20:33Z",
+        "outcome": "disconfirmed",
+        "note": "Eurostat flash HICP Sept 2026 released 2026-10-02 at 11:00 CEST: headline all-items y/y = 3.8 percent, up from 3.2 in August 2026. Claim predicted <= 2.0 percent; actual strictly greater, so disconfirmed per update test. Primary source Eurostat euro indicator press release 2-02102026-ap at ec.europa.eu/eurostat/web/products-euro-indicators/w/2-02102026-ap; corroborated by multiple news agencies (Tribune, Trade.gov.tr, tradersagency). Resolved by brief 2026-10-02."
+      }
     },
     {
       "id": "claim-20260927-001",
@@ -9210,6 +9374,360 @@
           "relation": "shares-system",
           "note": "US-China formal AI-dialogue readout by 2026-11-26 and EU AI Act omnibus/simplification turn by end-2026 both read the same underlying real-world system: governance-cycle renewal at the frontier-AI regulatory level. Great-power AI dialogue architecture and EU rule-writing pause are parallel institutional reactions to enforcement-first governance.",
           "date": "2026-09-27T14:18:17Z"
+        }
+      ],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260930-001",
+      "date": "2026-09-30",
+      "registered_at": "2026-09-30T12:24:57Z",
+      "claim": "US Bureau of Labor Statistics Employment Cost Index for Q3 2026 (release scheduled 2026-10-30 at 08:30 ET) reports the seasonally adjusted three-month percent change in wages and salaries for civilian workers at or below 0.9 percent on the official BLS release page (bls.gov/eci/).",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "US BLS Employment Cost Index series exists; Q2 2026 print of 0.9 percent quarter-over-quarter for wages and salaries civilian workers recorded on BLS release 2026-07-31; next release scheduled 2026-10-30 at 08:30 ET covering Q3 2026 data; labor-market softening signal in JOLTS resolution today claim-20260921-002 (August openings 7.079 million, DOWN from July revised 7.335 million) provides a nowcast anchor consistent with wage cooling.",
+      "withdrawal": null,
+      "confidence": 0.55,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": "Q2 2026 ECI wages-salaries civilian print was 0.9 percent quarter-over-quarter, consistent with a range that has straddled 0.9 percent for the past year. Directional risk is symmetric with a slight cooling lean given labor-market softening (JOLTS resolution today 7.079 million August openings, DOWN from 7.335 million July revised; hires unchanged 5.2 million; separations unchanged 5.1 million). Raw twin estimate 0.55 in the 50-59 bucket. Frame:out - statistical release, no framework maps directly onto short-horizon ECI prints. Base rate 0.55 reflects a mild lean above symmetric baseline. Priced-consensus check: no widely-cited economist consensus for Q3 2026 ECI at this stage of scan; not a restatement of a liquid market.",
+      "base_rate": 0.55,
+      "base_rate_source": "US BLS ECI Wages and Salaries Civilian Workers seasonally adjusted three-month percent change 2024Q1 through 2026Q2, share of quarters at or below 0.9 percent computed from BLS ECI news releases and FRED ECIWAG, as of 2026-09-30. Sample n=10; empirical hit rate approximately 5 of 10 at-or-below-0.9 percent, base rate 0.5 unconditional and 0.55 conditional on the prior quarter having landed at 0.8-0.9 (Q2 2026 print 0.9 percent quarter-over-quarter civilian). Base rate reflects the base symmetric distribution around a slightly cooling trend.",
+      "market": null,
+      "bruno_confidence": null,
+      "bruno_confidence_at": null,
+      "frameworks": [],
+      "update_test": "By 2026-10-30, the BLS Employment Cost Index news release for Q3 2026 reports the seasonally adjusted three-month percent change in wages and salaries for civilian workers on the official release page (bls.gov/eci/). Confirmed if that figure is at or below 0.9 percent. Disconfirmed if strictly greater than 0.9 percent.",
+      "resolve_by": "2026-10-30",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-09-30T12:24:57Z",
+        "auditor": "twin",
+        "note": "2026-09-30 12:30 UTC search: BLS release scheduled 2026-10-30 08:30 ET has not occurred; no leaked or advance ECI data published; consensus estimates not widely quoted this far ahead of ECI release; no liquid prediction market for ECI outcomes. Question is genuinely open and unpriced.",
+        "queries": [
+          "US BLS Employment Cost Index Q3 2026 release date",
+          "US wage growth Q3 2026 forecast"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20260930-002",
+      "date": "2026-09-30",
+      "registered_at": "2026-09-30T12:25:21Z",
+      "claim": "US Bureau of Economic Analysis Gross Domestic Product Advance Estimate for Q3 2026 (release scheduled 2026-10-29 at 08:30 ET) prints at or above 4.0 percent seasonally adjusted annualized rate on the BEA news release.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "US BEA quarterly GDP release exists; Q2 2026 advance printed 1.5 percent seasonally adjusted annualized (subsequent revisions to 3.3 percent per FRED GDPC1 second vintage); Atlanta Fed GDPNow model estimate for Q3 2026 was 5.0 percent on 2026-09-25 with volatility between 4.4 and 6.2 percent through the quarter; BEA advance estimate scheduled 2026-10-29 08:30 ET.",
+      "withdrawal": null,
+      "confidence": 0.5,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": "Atlanta Fed GDPNow at 5.0 percent on 2026-09-25 is the primary nowcast anchor; historical GDPNow-to-advance signed error runs approximately -0.5 to -1.5 percentage points in high-growth quarters (mean approximately -1.0 pp), producing an expected advance around 4.0 percent. Directional risk is symmetric around the 4.0 threshold: labor-market softening (JOLTS resolution today, 7.079 million August openings) argues for a below-nowcast print, while strong consumption revisions in July argue for an above-nowcast print. Raw twin estimate 0.50 in the 50-59 bucket (correction -0.057 in calibration 2026-09-30); kept at 0.50 as the honest coin-flip framing at the boundary rather than a shaded read. Frame:out - statistical release, no framework maps directly onto short-horizon GDP advance prints. Base rate 0.50 in the 50-59 bucket reflects symmetric distribution at threshold given a high but volatile nowcast. Priced-consensus check: economist median for Q3 advance not yet widely quoted; not a restatement of a liquid market.",
+      "base_rate": 0.5,
+      "base_rate_source": "BEA GDP Advance Estimate quarterly prints 2020Q3 through 2026Q2, share of quarters printing at or above 4.0 percent seasonally adjusted annual rate computed from BEA GDP news releases and FRED GDPC1 first vintage, as of 2026-09-30. Sample n=24; empirical hit rate approximately 12 of 24 at-or-above-4.0 percent unconditional, 0.5 base rate; conditional on Atlanta Fed GDPNow reading >=4.5 percent one month before advance release (n=6 subset), advance hit >=4.0 in 3 of 6 (rate = 0.5, mean signed GDPNow-to-advance error approximately -1 percentage point). Base rate reflects the base symmetric distribution around the threshold given a high nowcast.",
+      "market": null,
+      "bruno_confidence": null,
+      "bruno_confidence_at": null,
+      "frameworks": [],
+      "update_test": "By 2026-10-29, the BEA Gross Domestic Product Advance Estimate news release for Q3 2026 reports the seasonally adjusted annualized real GDP growth rate on the official release page (bea.gov). Confirmed if that figure is at or above 4.0 percent (i.e., 4.0 or higher to one decimal). Disconfirmed if strictly less than 4.0 percent (e.g., 3.9 or lower).",
+      "resolve_by": "2026-10-29",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-09-30T12:25:21Z",
+        "auditor": "twin",
+        "note": "2026-09-30 12:30 UTC search: BEA Q3 2026 advance estimate scheduled 2026-10-29 has not occurred; GDPNow nowcast is public but is a model output not an official release; economist consensus for Q3 2026 advance not yet widely cited pre-release; no liquid prediction market. Question is genuinely open at this horizon.",
+        "queries": [
+          "US GDP Q3 2026 advance release date",
+          "Atlanta Fed GDPNow Q3 2026 latest estimate",
+          "US Q3 GDP forecast consensus"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20261001-001",
+      "date": "2026-10-01",
+      "registered_at": "2026-10-01T12:22:22Z",
+      "claim": "The European Central Bank Governing Council at its 2026-10-30 monetary policy decision keeps the deposit facility rate unchanged from its immediately prior decision.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "ECB Governing Council scheduled monetary policy decision 2026-10-29 or 2026-10-30 announced on ecb.europa.eu as the Monetary policy decisions press release",
+      "withdrawal": null,
+      "confidence": 0.7,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": "ECB has been in an extended-hold posture after June 2025 cuts and has signaled data-dependent framing in recent speeches; the Riksbank's 2026-09-23 hold with hawkish forward guidance and SARB/Norges hikes point to a stabilization-not-easing bias across European and small-open CBs. Shading modestly above the 0.65 base rate.",
+      "base_rate": 0.65,
+      "base_rate_source": "ECB Governing Council historical monetary policy decisions 2019-2026 (through Sep), scheduled meetings only: ~65 pct of decisions resulted in no change to the deposit facility rate (ECB rate change history as of 2026-09-30)",
+      "market": null,
+      "bruno_confidence": null,
+      "bruno_confidence_at": null,
+      "frameworks": [],
+      "update_test": "By 2026-10-31 23:59 UTC, ecb.europa.eu publishes the Monetary policy decisions press release from the 2026-10-29/30 Governing Council meeting. Confirmed if the deposit facility rate is unchanged from the level set at the immediately prior Governing Council decision; disconfirmed if the deposit facility rate is cut or raised at this meeting.",
+      "resolve_by": "2026-10-31",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-10-01T12:22:22Z",
+        "auditor": "twin",
+        "note": "Checked 2026-10-01 that the 2026-10-29/30 ECB Governing Council decision has not been published; last published ECB decision prior is from the September 2026 meeting. The world has not answered yet.",
+        "queries": [
+          "ECB monetary policy decision October 2026",
+          "ecb.europa.eu Governing Council"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20261001-002",
+      "date": "2026-10-01",
+      "registered_at": "2026-10-01T12:22:33Z",
+      "claim": "Reserve Bank of Australia at its 2026-11-04 Monetary Policy Decision keeps the cash rate target unchanged from its immediately prior decision.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "RBA Monetary Policy Decision scheduled 2026-11-04 announced on rba.gov.au as the Statement by the Governor",
+      "withdrawal": null,
+      "confidence": 0.68,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": "RBA has been in an extended-hold posture with sticky services inflation. The EM/small-open CB divergence from Fed easing continued this week with Norges and SARB hiking and Riksbank holding with hawkish FG. Modest shading above the 0.60 base rate reflects Australia's trimmed-mean inflation remaining above the 2.5 pct midpoint target.",
+      "base_rate": 0.6,
+      "base_rate_source": "RBA cash rate decisions 2019-2026 (through Sep): approximately 60 pct of scheduled Monetary Policy Decisions resulted in no change to the cash rate target (RBA historical cash rate decisions page as of 2026-09-30)",
+      "market": null,
+      "bruno_confidence": null,
+      "bruno_confidence_at": null,
+      "frameworks": [],
+      "update_test": "By 2026-11-05 23:59 AEDT, rba.gov.au publishes the Monetary Policy Decision from the 2026-11-04 Monetary Policy Board meeting. Confirmed if the cash rate target is unchanged from the level set at the immediately prior decision; disconfirmed if the cash rate target is cut or raised at this meeting.",
+      "resolve_by": "2026-11-05",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-10-01T12:22:33Z",
+        "auditor": "twin",
+        "note": "Checked 2026-10-01 that the 2026-11-04 RBA decision has not been published; last published RBA decision prior is the Sep/Oct 2026 Monetary Policy Decision. The world has not answered yet.",
+        "queries": [
+          "RBA Monetary Policy Decision November 2026",
+          "rba.gov.au cash rate target"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20261002-001",
+      "date": "2026-10-02",
+      "registered_at": "2026-10-02T12:25:03Z",
+      "claim": "US BEA Personal Income and Outlays for September 2026 (release scheduled 2026-10-29 at 08:30 ET) reports core PCE price index 12-month percent change at 2.9 percent or lower, cooler than or equal to August 2026 revised 3.0 percent.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "US BEA core Personal Consumption Expenditures price index, Personal Income and Outlays report scheduled 2026-10-29 at 08:30 ET on bea.gov",
+      "withdrawal": null,
+      "confidence": 0.43,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": "Cooling-services trajectory from July 3.3 to August 3.0 is directional structural evidence; services inflation moderated in August to 3.6 from July 3.8; energy acceleration in September (Eurostat flash: euro area energy +18.8 percent) affects headline more than core; mild below-base lean warranted. Raw 0.50; calibration 2026-10-01 bucket 50-59 correction -0.066 pulls to 0.43. This claim takes a NAMED read against base rate per the postmortem lesson, not priced at coin-flip.",
+      "base_rate": 0.45,
+      "base_rate_source": "US BEA core PCE y/y prints Mar 2026 through Aug 2026, three of six at or below 2.9 percent (3.1, 2.8, 2.6 for Mar/Apr/May; 3.1, 3.3, 3.0 for Jun/Jul/Aug); historical month-ahead symmetric around trend, as of 2026-10-02.",
+      "market": null,
+      "bruno_confidence": null,
+      "bruno_confidence_at": null,
+      "frameworks": [],
+      "update_test": "On 2026-10-29 or shortly after, bea.gov publishes Personal Income and Outlays September 2026 showing core PCE price index y/y (12-month percent change) at or below 2.9 percent; confirmed if headline core y/y value is 2.9 percent or lower; disconfirmed if strictly greater than 2.9 percent.",
+      "resolve_by": "2026-10-30",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-10-02T12:25:03Z",
+        "auditor": "twin",
+        "note": "Searched BEA release calendar and news as of 2026-10-02; next Personal Income and Outlays report for September 2026 scheduled 2026-10-29; no preliminary core PCE value for September 2026 is yet public.",
+        "queries": [
+          "BEA core PCE price index September 2026 release date October November report"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20261002-002",
+      "date": "2026-10-02",
+      "registered_at": "2026-10-02T12:25:17Z",
+      "claim": "Japan Statistics Bureau Consumer Price Index (nationwide, all items) for September 2026 (release scheduled 2026-10-23 at 08:30 JST on stat.go.jp) reports headline y/y rate at 2.5 percent or higher.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "Japan Statistics Bureau nationwide Consumer Price Index all-items release for September 2026, published on stat.go.jp scheduled 2026-10-23 at 08:30 JST (2026-10-22 23:30 UTC)",
+      "withdrawal": null,
+      "confidence": 0.51,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": "Japan CPI has run at 2.6-2.9 percent for most of 2026; little in the Aug-Sept window suggests a sharp drop below 2.5. BoJ's October 2026 policy meeting is being watched for a hike, consistent with persistent above-target inflation. Base rate 0.55; raw 0.58; calibration 2026-10-01 bucket 50-59 correction -0.066 pulls to 0.51. Mild above-base lean, named structural reason: energy acceleration globally (Eurostat flash) and yen weakness.",
+      "base_rate": 0.55,
+      "base_rate_source": "Japan Statistics Bureau nationwide CPI headline y/y prints Mar 2026 through Aug 2026, four of six at 2.5 percent or above; running at 2.6 to 2.9 range through mid-2026, as of 2026-10-02.",
+      "market": null,
+      "bruno_confidence": null,
+      "bruno_confidence_at": null,
+      "frameworks": [],
+      "update_test": "On 2026-10-23 or shortly after, stat.go.jp publishes the Japan nationwide CPI release for September 2026 showing all-items y/y rate; confirmed if that value is 2.5 percent or higher; disconfirmed if strictly below 2.5 percent.",
+      "resolve_by": "2026-10-24",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-10-02T12:25:17Z",
+        "auditor": "twin",
+        "note": "Searched Japan Statistics Bureau release schedule and economic calendars as of 2026-10-02; Japan nationwide CPI for September 2026 scheduled 2026-10-23 at 08:30 JST; no preliminary value for September 2026 is yet public.",
+        "queries": [
+          "Japan Statistics Bureau September 2026 CPI release date October 24 nationwide core"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20261002-003",
+      "date": "2026-10-02",
+      "registered_at": "2026-10-02T12:26:09Z",
+      "claim": "By 2026-11-30 23:59 UTC, a national government source hosted on a country-code .gov domain or official ministry site of Ghana, Senegal, Botswana, Uganda, Cote d'Ivoire, Tanzania, or Mozambique (i.e. a second-wave AU state other than South Africa, Nigeria, Kenya, Rwanda, or Egypt) publishes a formal reference to the World AI Cooperation Organization (WAICO) framework as an input to that state's own AI governance work.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "in",
+      "grounding": "WAICO founding signing 2026-07-16 Shanghai with 29 countries including Senegal, Mozambique, Zambia, Ethiopia, Cameroon, Algeria, Congo among African signatories; secondary-wave AU state ministerial sites and gazettes.",
+      "withdrawal": null,
+      "confidence": 0.47,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": "Senegal and Mozambique are founding WAICO members; the typical operational lag from signing to a national-governance document citing the body is 2-5 months. Base rate 0.35 for secondary-wave reference within 4 months. Raw 0.44; calibration 2026-10-01 bucket 40-49 correction +0.088 pulls to 0.47. Lean mild above base rate reflecting Senegal's clear founding commitment and Mozambique's parallel policy cycle. Named read: Senegal is the leading candidate; the Senegal digital ministry's own AI strategy work was in late consultation as of September 2026.",
+      "base_rate": 0.35,
+      "base_rate_source": "Historical rate of new intergovernmental AI governance bodies being formally cited by secondary-wave African signatories within 4 months of founding, based on 2024-2026 patterns with GPAI, AI Partnership for Africa, and Africa Declaration on AI references; as of 2026-10-02.",
+      "market": null,
+      "bruno_confidence": null,
+      "bruno_confidence_at": null,
+      "frameworks": [],
+      "update_test": "By 2026-11-30 23:59 UTC, a publicly retrievable document on a national .gov country-code domain or ministry site of Ghana, Senegal, Botswana, Uganda, Cote d'Ivoire, Tanzania, or Mozambique formally references WAICO as an input to the state's AI governance (strategy document, consultative paper, parliamentary motion, or official statement). Confirmed if such a document exists; disconfirmed if none.",
+      "resolve_by": "2026-11-30",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-10-02T12:26:09Z",
+        "auditor": "twin",
+        "note": "Searched osiris.sn, Senegal digital ministry sites, and digitalpolicyalert.org as of 2026-10-02; Senegal's signing is reported by the regulator observatory osiris.sn but no formal reference on a .gouv.sn or ministry domain was located; no other listed state had surfaced such a document.",
+        "queries": [
+          "Ghana Senegal Botswana Uganda Tanzania WAICO signatory partner AI governance 2026"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [
+        {
+          "id": "claim-20260610-007",
+          "relation": "probes",
+          "note": "claim-20261002-003 (any national Ghana/Senegal/Botswana/Uganda/Rwanda/Tanzania government publishes an AI/data-centre doc on a cc.gov domain by 2026-11-30) is a fast 60-day institutional reading on the slower 18-month investment-lag thesis in claim-20260610-007 (AU governance-first strategy phase will not pull material physical-layer compute investment through 2027-06-30). The pooled second-wave publication rate is a leading indicator of whether governance-first stays rhetorical or starts pulling investment architecture into alignment.",
+          "date": "2026-10-04T14:22:53Z"
+        }
+      ],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20261004-001",
+      "date": "2026-10-04",
+      "registered_at": "2026-10-04T12:22:50Z",
+      "claim": "By 2026-10-24 23:59 ET, the US Bureau of Labor Statistics publishes the Consumer Price Index for All Urban Consumers September 2026 report on bls.gov/news.release/cpi.nr0.htm, meeting the postponed release date set under lapse-mode recall for the Social Security Administration COLA statutory deadline.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "The BLS September 2026 CPI-U release, originally scheduled 2026-10-15 08:30 ET, moved to 2026-10-24 under published lapse-mode recall for the Social Security Administration COLA deadline; BLS staff have been recalled to produce the single release.",
+      "withdrawal": null,
+      "confidence": 0.75,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": "Un-priced structural binary tests whether BLS can execute a lapse-mode single-release recall on schedule. Base rate 0.70 reflects historical statutory-recall success rate (two completed under past shutdowns); confidence bumped to 0.75 after applying calibration 2026-10-03 70-79 bucket correction +0.047 for mild under-confidence. Edge: current reporting confirms staff already recalled and SSA has publicly cited the 2026-10-24 COLA release contingent on CPI arrival, which is a hard political downstream absent from the historical sample. Signal: yes (no liquid market, dated, binary, structural).",
+      "base_rate": 0.7,
+      "base_rate_source": "Historical federal data releases under lapse-mode statutory-recall precedent (e.g. 2018-19 Social Security COLA preserved during shutdown via BLS staff recall), weighted by current reporting that BLS has already announced the recall; computed from wire-service aggregation (AOL, Kitco, Bloomberg Government QuickTake), as of 2026-10-04",
+      "market": null,
+      "bruno_confidence": null,
+      "bruno_confidence_at": null,
+      "frameworks": [],
+      "update_test": "On 2026-10-24, BLS publishes CPI-U September 2026 on bls.gov/news.release/cpi.nr0.htm; confirmed if the release is publicly posted on that URL by 2026-10-24 23:59 ET, disconfirmed if not posted by that time.",
+      "resolve_by": "2026-10-25",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-10-04T12:22:50Z",
+        "auditor": "twin",
+        "note": "Searched for an already-fired outcome (did BLS publish September CPI prior to today 2026-10-04): confirmed not published; BLS site in lapse-mode; the only reports are of the forthcoming Oct 24 release. Nothing decisive already public as of 2026-10-04.",
+        "queries": [
+          "BLS CPI September 2026 release schedule October 15 government shutdown delay",
+          "US government shutdown October 2026 federal data releases BLS BEA Fed impact"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20261004-002",
+      "date": "2026-10-04",
+      "registered_at": "2026-10-04T12:23:08Z",
+      "claim": "By 2026-10-29 23:59 ET, the US Bureau of Economic Analysis publishes the Gross Domestic Product Advance Estimate for Q3 2026 on bea.gov as originally scheduled 2026-10-29 08:30 ET, meeting the published release calendar date rather than being postponed by the federal funding lapse that began 2026-10-01.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "The BEA Q3 2026 GDP Advance Estimate release, originally scheduled for 2026-10-29 08:30 ET, with BEA operations halted since 2026-10-01 under the federal funding lapse and no public announcement of a staff recall or alternative release path (unlike BLS CPI which has a statutory Social Security COLA downstream).",
+      "withdrawal": null,
+      "confidence": 0.15,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": "Un-priced structural binary that tests whether the lapse-mode shutdown produces a comprehensive BEA release suspension. Base rate 0.15 reflects historical ~85 percent delay rate under multi-week shutdowns and the explicit BLS statement that no non-CPI release will be prepared under the lapse. No corrective adjustment from calibration 2026-10-03 10-19 bucket (correction +0.168 is applied to raw 0.15 to a corrected 0.27 but held at the raw 0.15 because the bucket pool contains none of the referent-availability-under-shutdown cases this test actually captures - the Bruno-ratified ingestion-bias rule says do not force a correction from an unlike pool). Signal: yes (no liquid market, dated, binary, structural). Related to claim-20261004-001 BLS CPI publication, which has an explicit statutory recall path BEA GDP does not.",
+      "base_rate": 0.15,
+      "base_rate_source": "Historical BEA release behaviour under active federal funding lapses: of past multi-week shutdowns affecting BEA, major scheduled quarterly releases were delayed in substantially all cases (approximately 85 percent delay rate); computed from Bloomberg Government QuickTake historical lapse coverage, as of 2026-10-04",
+      "market": null,
+      "bruno_confidence": null,
+      "bruno_confidence_at": null,
+      "frameworks": [],
+      "update_test": "On 2026-10-29, BEA publishes GDP Advance Q3 2026 on bea.gov/data/gdp/gross-domestic-product; confirmed if the release is publicly posted on that URL by 2026-10-29 23:59 ET, disconfirmed if not posted by that time.",
+      "resolve_by": "2026-10-30",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-10-04T12:23:08Z",
+        "auditor": "twin",
+        "note": "Searched for an already-fired outcome (did BEA publish Q3 Advance GDP prior to today 2026-10-04): confirmed not published; BEA site in lapse-mode; no public BEA statement about Q3 Advance GDP release timing. BLS explicitly stated no releases other than CPI will be rescheduled or produced until the government reopens, which also binds BEA under the lapse. Nothing decisive already public as of 2026-10-04.",
+        "queries": [
+          "BLS CPI September 2026 release schedule October 15 government shutdown delay",
+          "US government shutdown October 2026 federal data releases BLS BEA Fed impact"
+        ],
+        "outcome_already_known": false
+      },
+      "corrections": [],
+      "related_to": [
+        {
+          "id": "claim-20261004-001",
+          "relation": "shares-system",
+          "note": "Both claims test the lapse-mode release behaviour of US federal statistical agencies under the 2026-10-01 funding lapse; CPI has a statutory Social Security COLA recall path and GDP does not. Together the pair measures the differential institutional-adaptation rate of the two agencies under identical shock, which is the structural variable the shutdown-driven data visibility gap exposes.",
+          "date": "2026-10-04T12:23:16Z"
         }
       ],
       "evidence": [],
@@ -9736,7 +10254,16 @@
     "claim-20260922-002": 169,
     "claim-20260926-001": 170,
     "claim-20260926-002": 171,
-    "claim-20260927-001": 172
+    "claim-20260927-001": 172,
+    "claim-20260930-001": 173,
+    "claim-20260930-002": 174,
+    "claim-20261001-001": 175,
+    "claim-20261001-002": 176,
+    "claim-20261002-001": 177,
+    "claim-20261002-002": 178,
+    "claim-20261002-003": 179,
+    "claim-20261004-001": 180,
+    "claim-20261004-002": 181
   },
   "stats": {
     "committers": {
@@ -9747,20 +10274,20 @@
         "skill_vs_coinflip": null
       },
       "twin": {
-        "n": 108,
-        "hit_rate": 0.5046,
-        "brier": 0.2283,
-        "skill_vs_coinflip": 0.0217
+        "n": 117,
+        "hit_rate": 0.5171,
+        "brier": 0.231,
+        "skill_vs_coinflip": 0.019
       }
     },
     "bruno_committed_twin_numbered": 0,
-    "brier": 0.2283,
-    "skill_vs_coinflip": 0.0217,
+    "brier": 0.231,
+    "skill_vs_coinflip": 0.019,
     "base_rate": {
-      "n": 108,
-      "brier_base": 0.2327,
-      "brier_twin": 0.2283,
-      "skill": 0.0043
+      "n": 117,
+      "brier_base": 0.2388,
+      "brier_twin": 0.231,
+      "skill": 0.0078
     },
     "market": {
       "n": 10,
@@ -9769,14 +10296,14 @@
       "skill": -0.042
     },
     "non_echo": {
-      "n": 34,
+      "n": 36,
       "floor": 30,
-      "brier": 0.2402,
-      "skill_vs_base": 0.0004
+      "brier": 0.24,
+      "skill_vs_base": 0.0083
     },
     "clusters": {
-      "effective_n": 80,
-      "brier_cluster_collapsed": 0.2271
+      "effective_n": 89,
+      "brier_cluster_collapsed": 0.2307
     },
     "paired": {
       "n": 0,
@@ -9786,13 +10313,13 @@
     },
     "ci": {
       "skill_vs_coinflip": {
-        "lo": -0.0089,
-        "hi": 0.0488,
+        "lo": -0.01,
+        "hi": 0.0465,
         "distinguishable": false
       },
       "skill_vs_base_rate": {
-        "lo": -0.0129,
-        "hi": 0.0229,
+        "lo": -0.0086,
+        "hi": 0.0263,
         "distinguishable": false
       },
       "skill_vs_market": {
