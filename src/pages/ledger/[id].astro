@@ -69,7 +69,7 @@ const scored = !isInvalid(claim) && !isWithdrawn(claim);
           {claim.prereg_audit && (
             <>
               <h2>Pre-registration audit</h2>
-              <p class="mono" style="font-size:13px">{fmtDate(claim.prereg_audit.date)} · auditor: {claim.prereg_audit.auditor} · outcome already known: {String(claim.prereg_audit.outcome_already_known)}</p>
+              <p class="mono" style="font-size:13px">{fmtDate(claim.prereg_audit.date)} · outcome already known: {String(claim.prereg_audit.outcome_already_known)}</p>
               {claim.prereg_audit.note && <p>{claim.prereg_audit.note}</p>}
             </>
           )}
