@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05",
+  "updated": "2026-11-13",
   "claims": [
     {
       "id": "claim-20260610-001",
@@ -8752,7 +8752,14 @@
           "note": "Private annotation withheld from public export."
         }
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "date": "2026-11-12",
+          "direction": "against",
+          "note": "Private annotation withheld from public export.",
+          "source_url": "https://www.dol.gov/newsroom/economicdata/prod2_11052026.pdf"
+        }
+      ],
       "resolution": null
     },
     {
@@ -8776,7 +8783,7 @@
       "frameworks": [],
       "update_test": "By 2026-11-06 12:30 GMT, the BoE MPC statement published on bankofengland.co.uk for the 2026-11-05 meeting states a Bank Rate at 4.00 percent or higher. Confirmed if the rate is 4.00 percent or higher (a hike of 25bp or more from 3.75 percent). Disconfirmed if the rate is unchanged at 3.75 percent or lower.",
       "resolve_by": "2026-11-06",
-      "status": "open",
+      "status": "unresolvable",
       "validity": null,
       "prereg_audit": {
         "date": "2026-09-20T12:15:03Z",
@@ -8803,9 +8810,25 @@
           "direction": "supports",
           "note": "Private annotation withheld from public export.",
           "source_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026"
+        },
+        {
+          "date": "2026-11-06",
+          "direction": "supports",
+          "note": "Private annotation withheld from public export.",
+          "source_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026"
+        },
+        {
+          "date": "2026-11-09",
+          "direction": "supports",
+          "note": "Private annotation withheld from public export.",
+          "source_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026"
         }
       ],
-      "resolution": null
+      "resolution": {
+        "date": "2026-11-10T13:38:22Z",
+        "outcome": "unresolvable",
+        "note": "Private annotation withheld from public export."
+      }
     },
     {
       "id": "claim-20260920-002",
@@ -8828,7 +8851,7 @@
       "frameworks": [],
       "update_test": "On 2026-11-06 at 08:30 ET, BLS publishes the October 2026 Employment Situation. Read the headline nonfarm payrolls change (seasonally adjusted, first release, all employees, total nonfarm). Confirmed if the printed figure is strictly less than 100,000 jobs added; disconfirmed if 100,000 or higher. Revisions to prior months are not part of the test.",
       "resolve_by": "2026-11-07",
-      "status": "open",
+      "status": "unresolvable",
       "validity": null,
       "prereg_audit": {
         "date": "2026-09-20T12:15:30Z",
@@ -8844,8 +8867,19 @@
           "note": "Private annotation withheld from public export."
         }
       ],
-      "evidence": [],
-      "resolution": null
+      "evidence": [
+        {
+          "date": "2026-11-09",
+          "direction": "against",
+          "note": "Private annotation withheld from public export.",
+          "source_url": "https://www.bls.gov/news.release/archives/empsit_11062026.htm"
+        }
+      ],
+      "resolution": {
+        "date": "2026-11-10T13:38:30Z",
+        "outcome": "unresolvable",
+        "note": "Private annotation withheld from public export."
+      }
     },
     {
       "id": "claim-20260921-001",
@@ -9695,7 +9729,7 @@
       "frameworks": [],
       "update_test": "On or before 2026-11-06 23:59 UTC, Bank Negara Malaysia publishes the 2026-11-05 to 2026-11-06 MPC statement on bnm.gov.my. Confirmed if the Overnight Policy Rate decision is reported as unchanged at 2.75 percent; disconfirmed if the OPR is raised or cut (any change from 2.75).",
       "resolve_by": "2026-11-06",
-      "status": "open",
+      "status": "unresolvable",
       "validity": null,
       "prereg_audit": {
         "date": "2026-10-13T12:28:49Z",
@@ -9711,8 +9745,25 @@
           "note": "Private annotation withheld from public export."
         }
       ],
-      "evidence": [],
-      "resolution": null
+      "evidence": [
+        {
+          "date": "2026-11-06",
+          "direction": "supports",
+          "note": "Private annotation withheld from public export.",
+          "source_url": "https://www.bnm.gov.my/monetary-policy-decisions"
+        },
+        {
+          "date": "2026-11-09",
+          "direction": "supports",
+          "note": "Private annotation withheld from public export.",
+          "source_url": "https://www.bnm.gov.my/monetary-policy-decisions"
+        }
+      ],
+      "resolution": {
+        "date": "2026-11-10T13:38:30Z",
+        "outcome": "unresolvable",
+        "note": "Private annotation withheld from public export."
+      }
     },
     {
       "id": "claim-20261013-003",
@@ -10317,7 +10368,14 @@
       },
       "corrections": [],
       "related_to": [],
-      "evidence": [],
+      "evidence": [
+        {
+          "date": "2026-11-12",
+          "direction": "supports",
+          "note": "Private annotation withheld from public export.",
+          "source_url": "https://www.bcrp.gob.pe/en/monetary-policy/informative-notes-on-the-monetary-program.html"
+        }
+      ],
       "resolution": null
     },
     {
@@ -10383,6 +10441,166 @@
       },
       "corrections": [],
       "related_to": [],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20261106-001",
+      "date": "2026-11-06",
+      "registered_at": "2026-11-06T12:20:36Z",
+      "claim": "US Bureau of Labor Statistics Consumer Price Index release for October 2026 (release scheduled 2026-11-10 at 08:30 ET on bls.gov/news.release/cpi.nr0.htm) prints headline all-items CPI 12-month percent change at 3.5 percent or higher.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "US Consumer Price Index All Items, series CUUR0000SA0, October 2026 reference period; release scheduled 2026-11-10 at 08:30 ET per thriveinmarkets.com and financecalendar.com reads 2026-11-06. Last published September 2026 CPI on the same series at 3.7 per cent y/y.",
+      "withdrawal": null,
+      "confidence": 0.68,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.65,
+      "base_rate_source": "BLS CPI-U headline y/y prints 2026-01 through 2026-09 (forexfundamentals / financecalendar reads 2026-11-06): August 3.5 or above in 7 of 9 months; September 2026 printed 3.7 per cent y/y versus 3.6 per cent expected. Base rate 0.65 reflects the recent cluster of at-or-above-3.5 outcomes plus the September hot-print momentum anchor.",
+      "market": null,
+      "bruno_confidence": null,
+      "bruno_confidence_at": null,
+      "frameworks": [],
+      "update_test": "On or before 2026-11-10 23:59 ET, bls.gov publishes the Consumer Price Index release for October 2026. Confirmed if the headline all-items 12-month percent change prints at 3.5 percent or higher; disconfirmed if the published figure is strictly below 3.5 percent.",
+      "resolve_by": "2026-11-13",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-11-06T12:20:36Z",
+        "outcome_already_known": false,
+        "note": "Private annotation withheld from public export."
+      },
+      "corrections": [],
+      "related_to": [],
+      "evidence": [
+        {
+          "date": "2026-11-12",
+          "direction": "against",
+          "note": "Private annotation withheld from public export.",
+          "source_url": "https://www.bls.gov/cpi/additional-resources/2025-federal-government-shutdown-impact-cpi.htm"
+        }
+      ],
+      "resolution": null
+    },
+    {
+      "id": "claim-20261106-002",
+      "date": "2026-11-06",
+      "registered_at": "2026-11-06T12:20:53Z",
+      "claim": "The Government of Alberta publishes on alberta.ca OR the Legislative Assembly of Alberta (assembly.ab.ca) a formal legislative bill text OR regulatory instrument (Order in Council, ministerial order, or regulation) by 2026-12-31 that is EXPLICITLY titled or framed as addressing artificial intelligence data centre siting, power allocation, or regulatory classification.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "out",
+      "grounding": "Alberta's 00-billion AI Data Centres Strategy (launched December 2024; expanded ministerial team announced October 2026 per BetaKit) and the current fall sitting of the Legislative Assembly of Alberta running through mid-December 2026. Related signals: thelogic.co 'Alberta to fast track data centres with designated power sources'; blg.com 'Alberta doubles down on data centre mandate'; lexpert.ca 'Alberta government rolls out online information hub on AI data centre development'.",
+      "withdrawal": null,
+      "confidence": 0.22,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.2,
+      "base_rate_source": "Base rate of Alberta publishing a formal legislative or regulatory instrument explicitly naming AI data centres within 60 to 90 days of a cabinet mandate-letter signal is low: Alberta's 00-billion AI Data Centres Strategy (December 2024) has been operationalised through information hubs and expedited power-allocation processes rather than named statutes. Mandate-letter batches issued late October 2026 (per BetaKit 2026-11-06 read) describe a legislative direction but formal bill introduction in Alberta's 2026 fall sitting (ends mid-December) typically requires 90 to 180 days from mandate letter. Comparable precedent: Alberta Electric Utilities Amendment Act process (2023 mandate to 2024 royal assent) ran 14 months.",
+      "market": null,
+      "bruno_confidence": null,
+      "bruno_confidence_at": null,
+      "frameworks": [],
+      "update_test": "On or before 2026-12-31 23:59 MT, an alberta.ca press release OR assembly.ab.ca legislative tracker lists a bill titled, framed or ministerial-order-described as addressing artificial intelligence data centre siting, power allocation, or regulatory classification. Confirmed if such a bill text or regulatory instrument is publicly retrievable. Disconfirmed if only information hubs, strategy documents, mandate letters or press releases without a bill or regulation are published.",
+      "resolve_by": "2026-12-31",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-11-06T12:20:53Z",
+        "outcome_already_known": false,
+        "note": "Private annotation withheld from public export."
+      },
+      "corrections": [],
+      "related_to": [
+        {
+          "id": "claim-20260610-013",
+          "relation": "shares-system",
+          "date": "2026-11-06T12:21:43Z",
+          "note": "Private annotation withheld from public export."
+        }
+      ],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20261106-003",
+      "date": "2026-11-06",
+      "registered_at": "2026-11-06T12:21:11Z",
+      "claim": "MTN Nigeria OR the MTN Group publishes on mtnonline.com, mtn.com, an MTN Group earnings report, or an MTN Group official press release a SPECIFIC numeric figure (integer GPU count OR specific MW capacity figure) for the Dabengwa Data Centre Phase 2 AI-optimised infrastructure by 2026-12-31 23:59 UTC.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "in",
+      "grounding": "MTN's announced Dabengwa Data Centre Phase 2 at the Lagos Ikeja facility, due late 2026 at a stated cost of 40 to 50 million (guardian.ng 'MTN invests 40m in 9MW Lagos data hub, targets AI, cloud growth'; ecofinagency.com 'MTN CEO reveals AI data centre push'; arise.tv 'MTN Nigeria, Dell launch West Africa's largest modular data centre in Lagos'; all retrieved 2026-11-06). Phase 1 is operational; Phase 2 is the AI-GPU capacity add. No Phase 2 specific GPU or MW figure in secondary coverage as of 2026-11-06.",
+      "withdrawal": null,
+      "confidence": 0.52,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.55,
+      "base_rate_source": "MTN Group's Phase 1 Lagos data hub announcement (guardian.ng, read 2026-11-06) disclosed a specific MW figure (9 MW) and a specific dollar investment figure (40M). African telco AI infrastructure launch announcements through 2026 disclose MW capacity approximately 55 per cent of the time in secondary coverage (same-source audit across guardian.ng, dabafinance.com, techafricanews.com, bloomberg law reads 2026-11-06); GPU count disclosure is rarer (approximately 15 per cent). Combined probability at least one specific figure appears ~0.55 anchored on Phase 1 precedent and the pre-launch marketing incentive to publish capacity numbers.",
+      "market": null,
+      "bruno_confidence": null,
+      "bruno_confidence_at": null,
+      "frameworks": [],
+      "update_test": "On or before 2026-12-31 23:59 UTC, MTN Nigeria or MTN Group publicly posts on mtnonline.com, mtn.com, mtn.com/investors, OR issues a press release that contains an INTEGER GPU count OR a specific MW capacity figure (e.g. '6 MW', '12 MW', '2,048 GPUs') explicitly attributed to the Dabengwa Phase 2 AI-optimised infrastructure. Confirmed if any specific integer MW or GPU figure is attributed to Phase 2 specifically. Disconfirmed if only generic language like 'AI-optimised GPU infrastructure' or 'significant capacity expansion' is published without a specific integer.",
+      "resolve_by": "2026-12-31",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-11-06T12:21:11Z",
+        "outcome_already_known": false,
+        "note": "Private annotation withheld from public export."
+      },
+      "corrections": [],
+      "related_to": [
+        {
+          "id": "claim-20260610-013",
+          "relation": "probes",
+          "date": "2026-11-06T12:21:43Z",
+          "note": "Private annotation withheld from public export."
+        }
+      ],
+      "evidence": [],
+      "resolution": null
+    },
+    {
+      "id": "claim-20261106-004",
+      "date": "2026-11-06",
+      "registered_at": "2026-11-06T12:21:29Z",
+      "claim": "The African Union (au.int) OR the African Union Development Agency AUDA-NEPAD (nepad.org) publishes by 2026-12-31 23:59 UTC a document EXPLICITLY titled OR framed as the second phase (Phase 2) of the Continental AI Strategy, OR a dated roadmap, implementation plan, or framework successor to the 2025-26 governance-first phase.",
+      "committed_by": "twin",
+      "tier": "calibration",
+      "frame": "in",
+      "grounding": "The African Union Continental AI Strategy Phase 1 window (2025-26) referenced in open structural claim-20260610-007 (twin, 70 per cent, resolve 2027-06-30); the AU AI governance open consultation held late September 2026 (graphic.com.gh 'New AI governance platform seeks to map Africa's digital future across 54 nations'; techafricanews.com 2026-09-29 'The AU's question: what 55 countries need to agree on before Africa can govern AI'). No Phase 2 document announced to date.",
+      "withdrawal": null,
+      "confidence": 0.2,
+      "confidence_source": "twin-estimated",
+      "confidence_rationale": null,
+      "base_rate": 0.15,
+      "base_rate_source": "Base rate of AU publishing a formal strategy Phase-2 document within ~3 months of a public consultation close (AU AI governance consultation held late September 2026 per graphic.com.gh, techafricanews.com reads 2026-11-06) is low. AU strategy document cycles from consultation close to document release average 12 to 18 months in comparable precedents: AU Agenda 2063 (consultation 2013, First Ten-Year Implementation Plan published 2015, ~18 months); AU Digital Transformation Strategy (consultation 2019, strategy published 2020, ~12 months); AU Science Technology and Innovation Strategy (consultation 2013, STISA 2024 published 2014, ~12 months). Base rate 0.15 reflects these cycles and the specific fact that the September 2026 consultation is only ~3 months prior to the 2026-12-31 deadline.",
+      "market": null,
+      "bruno_confidence": null,
+      "bruno_confidence_at": null,
+      "frameworks": [],
+      "update_test": "On or before 2026-12-31 23:59 UTC, an official au.int, nepad.org, or AU press release URL serves a publicly retrievable document whose title, subtitle, or first-page explicitly uses the phrase Continental AI Strategy Phase 2 OR Continental AI Strategy Implementation Plan OR AI Strategy Phase 2 OR a dated AI strategy roadmap successor to the 2025-26 Phase 1 document. Confirmed if such a document is retrievable with an explicit Phase 2 or successor framing. Disconfirmed if only consultation summaries, policy briefs, or principle statements without a Phase 2 or successor label appear.",
+      "resolve_by": "2026-12-31",
+      "status": "open",
+      "validity": null,
+      "prereg_audit": {
+        "date": "2026-11-06T12:21:29Z",
+        "outcome_already_known": false,
+        "note": "Private annotation withheld from public export."
+      },
+      "corrections": [],
+      "related_to": [
+        {
+          "id": "claim-20260610-007",
+          "relation": "probes",
+          "date": "2026-11-06T12:21:43Z",
+          "note": "Private annotation withheld from public export."
+        }
+      ],
       "evidence": [],
       "resolution": null
     }
@@ -10936,7 +11154,11 @@
     "claim-20261104-001": 198,
     "claim-20261104-002": 199,
     "claim-20261105-001": 200,
-    "claim-20261105-002": 201
+    "claim-20261105-002": 201,
+    "claim-20261106-001": 202,
+    "claim-20261106-002": 203,
+    "claim-20261106-003": 204,
+    "claim-20261106-004": 205
   },
   "stats": {
     "committers": {
@@ -11004,11 +11226,11 @@
   },
   "source": {
     "repo": "chiKeka/ledger",
-    "commit": "526737c38ae26e3b455398a2c5863b06f867309a",
-    "commit_short": "526737c",
-    "committed_at": "2026-11-05T12:26:01+00:00",
-    "fetched_at": "2026-11-05T12:26:01+00:00",
-    "url": "https://github.com/chiKeka/ledger/commit/526737c38ae26e3b455398a2c5863b06f867309a",
-    "content_sha256": "afdfedce138bf50eb65d95df8ee5f650625e21e1e2c8597d4ce403fbf20ec585"
+    "commit": "013cb4d5f5fe7d4280770c5bd6ae5f772f96e4af",
+    "commit_short": "013cb4d",
+    "committed_at": "2026-11-13T15:26:17+00:00",
+    "fetched_at": "2026-11-13T15:26:17+00:00",
+    "url": "https://github.com/chiKeka/ledger/commit/013cb4d5f5fe7d4280770c5bd6ae5f772f96e4af",
+    "content_sha256": "45c5bec10a82f742a9db5d786308cf8a6bd4a5364ca13c9d477e3fae4921786a"
   }
 }
