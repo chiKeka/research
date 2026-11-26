@@ -11228,8 +11228,8 @@
     "repo": "chiKeka/ledger",
     "commit": "013cb4d5f5fe7d4280770c5bd6ae5f772f96e4af",
     "commit_short": "013cb4d",
-    "committed_at": "2026-11-13T15:26:17+00:00",
-    "fetched_at": "2026-11-13T15:26:17+00:00",
+    "committed_at": "2026-11-13T15:26:17Z",
+    "fetched_at": "2026-11-13T15:26:17Z",
     "url": "https://github.com/chiKeka/ledger/commit/013cb4d5f5fe7d4280770c5bd6ae5f772f96e4af",
     "content_sha256": "45c5bec10a82f742a9db5d786308cf8a6bd4a5364ca13c9d477e3fae4921786a"
   }
